@@ -18,7 +18,9 @@ Speaking of templates, the templates directory at the on set is what comes out o
 In the template.php file, the only changes that had been made to the original tapas base theme was the addition of two functions. I added these functions and commented them out at the bottom of the file in case we were wondering what used to happen with this file and in case the functionality needs to be recreated elsewhere. I believe this is where the images/icons directory was coming into play.
 
 
+
 /*Default drupal info below*/
+
 Place downloaded and custom themes that modify your site's appearance in this
 directory to ensure clean separation from Drupal core and to facilitate safe,
 self-contained code updates. Contributed themes from the Drupal community may
