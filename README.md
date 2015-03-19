@@ -3,7 +3,7 @@
 
 INFO ABOUT TAPAS THEMING
 
-Adaptivetheme must be enabled prior to Tapas_base being enabled.
+Adaptivetheme must be enabled prior to Tapas_base being enabled. Then tapas_base can be enabled and set to default. The .info file for the theme should take care of the custom settings that are saved in the database.
 
 I updated Adapativetheme and recreated a Tapas_base from the Pixture_reloaded subtheme to make sure it was all up to date. Both of those themes are out of the box so upgrade paths are normal.
 
