@@ -1,0 +1,63 @@
+header {
+  padding-top:60px;
+  padding-bottom:40px;
+  background: $gray-darkest;
+  h1, h2, p {
+    color: $gray-lighter;
+  }
+}
+section {
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.carousel {
+  background: $gray-darkest;
+  h1, h2, h3, h4, p {
+    color: $gray-lighter;
+  }
+}
+.pillars {
+  .fa {
+    color: $brand-primary;
+    padding: 20px;
+  }
+}
+#myCarousel {
+  .carousel-control {
+    background: none;
+    width: 4%;
+    font-size: 50px;
+    top: 32%;
+  }
+  .carousel-inner {
+    width: 96%;
+    margin-left: 2%;
+  }
+}
+footer {
+  background: $gray-darkest;
+  h1, h2, p {
+    color: $gray-lighter;
+  }
+  padding-top:20px;
+  .container & {
+    background: none;
+  }
+}
+.membership {
+  .fa-circle {
+    color: $brand-success;
+  }
+  td:nth-of-type(2), td:nth-of-type(3) {
+    text-align:center;
+  }
+}
+
+// Rounded corners
+.img-rounded {
+  border-radius: 50%;
+}
+.btn-xlg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($padding-large-vertical*2, $padding-large-horizontal*2, $font-size-h3, $line-height-large, $border-radius-large);
+}
