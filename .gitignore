@@ -34,3 +34,10 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
+
+
+#custom
+Gemfile.lock
+tapas_redesign/.sass-cache/
+_config.yml
+_site/
