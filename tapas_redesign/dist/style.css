@@ -9867,11 +9867,27 @@ hr.inverse {
   margin: 0;
 }
 
-.tools {
+.tools, .feed {
   display: none;
   background: #FFFFFF;
   padding: 20px;
   border: 1px solid #4E5D6C;
+}
+
+.feed-entry {
+  display: block;
+}
+.feed-entry.lab-notes {
+  border: 1px solid #b1dc16;
+}
+.feed-entry.annotation {
+  border: 1px solid #e69317;
+}
+.feed-entry.news {
+  border: 1px solid #6ea8e5;
+}
+.feed-entry.message {
+  border: 1px solid #b02c2c;
 }
 
 /*# sourceMappingURL=style.css.map */

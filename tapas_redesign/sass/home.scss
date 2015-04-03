@@ -107,9 +107,24 @@ footer {
 hr.inverse {
   margin:0;
 }
-.tools {
+.tools, .feed {
   display:none;
   background:$body-bg;
   padding:20px;
   border:1px solid $gray-light;
+}
+.feed-entry{
+  display:block;
+  &.lab-notes {
+    border: 1px solid $tapas-green;
+  }
+  &.annotation {
+    border: 1px solid $tapas-orange;
+  }
+  &.news {
+    border: 1px solid $tapas-blue;
+  }
+  &.message {
+    border: 1px solid $tapas-red;
+  }
 }
