@@ -10,7 +10,7 @@ section {
   padding-top:20px;
   padding-bottom:20px;
 }
-.carousel {
+.carousel, .sponsors {
   background: $gray-darkest;
   h1, h2, h3, h4, p {
     color: $gray-lighter;
@@ -60,4 +60,51 @@ footer {
 .btn-xlg {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size($padding-large-vertical*2, $padding-large-horizontal*2, $font-size-h3, $line-height-large, $border-radius-large);
+}
+.tapas-icon {
+  max-width:50px;
+  margin-top:-5px;
+}
+.toolbar {
+  position:fixed;
+  top:176px;
+  a {
+    display:block;
+    text-decoration:none;
+    background:$brand-primary;
+    //transition: width 0.5s linear 0s;
+    width:2.5em;
+    height:2.5em;
+    overflow:hidden;
+
+  }
+  .toolbar-title {
+    visibility:hidden;
+    opacity:0;
+    transition: all .2s linear;
+    color:$body-bg;
+    margin-left:-100px;
+    padding-right:10px;
+  }
+  a:hover, a:focus {
+    .toolbar-title {
+      opacity:1;
+      visibility:visible;
+      margin-left:0;
+    }
+    width:auto;
+  }
+}
+.logo {
+  max-width:100%;
+  max-height:150px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.logo.neh {
+  padding-top:22px;
+}
+hr.inverse {
+  margin:0;
 }
