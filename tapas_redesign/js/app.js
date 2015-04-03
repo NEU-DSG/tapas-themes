@@ -19,12 +19,15 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+//trigger carousel
 $(document).ready(function() {
     $('#myCarousel').carousel({
 	    interval: 10000
 	})
 });
 
-$(".toolbar .tools-link").click(function() {
-  $(".tools").slideToggle();
+//toolbar toggle buttons
+$(".toolbar a").click(function() {
+  var tool = $(this).data("toolbar");
+  $("."+tool).slideToggle();
 });
