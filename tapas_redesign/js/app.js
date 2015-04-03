@@ -24,3 +24,7 @@ $(document).ready(function() {
 	    interval: 10000
 	})
 });
+
+$(".toolbar .tools-link").click(function() {
+  $(".tools").slideToggle();
+});

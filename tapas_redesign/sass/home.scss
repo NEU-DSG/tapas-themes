@@ -68,11 +68,10 @@ footer {
 .toolbar {
   position:fixed;
   top:176px;
-  a {
+  a.toolbar-link {
     display:block;
     text-decoration:none;
     background:$brand-primary;
-    //transition: width 0.5s linear 0s;
     width:2.5em;
     height:2.5em;
     overflow:hidden;
@@ -81,12 +80,12 @@ footer {
   .toolbar-title {
     visibility:hidden;
     opacity:0;
-    transition: all .2s linear;
+    @include transition(all, 0.2s, linear);
     color:$body-bg;
     margin-left:-100px;
     padding-right:10px;
   }
-  a:hover, a:focus {
+  a.toolbar-link:hover, a.toolbar-link:focus {
     .toolbar-title {
       opacity:1;
       visibility:visible;
@@ -107,4 +106,10 @@ footer {
 }
 hr.inverse {
   margin:0;
+}
+.tools {
+  display:none;
+  background:$body-bg;
+  padding:20px;
+  border:1px solid $gray-light;
 }

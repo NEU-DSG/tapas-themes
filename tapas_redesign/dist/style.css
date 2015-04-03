@@ -9824,7 +9824,7 @@ footer h1, footer h2, footer p {
   position: fixed;
   top: 176px;
 }
-.toolbar a {
+.toolbar a.toolbar-link {
   display: block;
   text-decoration: none;
   background: #DF691A;
@@ -9835,15 +9835,17 @@ footer h1, footer h2, footer p {
 .toolbar .toolbar-title {
   visibility: hidden;
   opacity: 0;
-  transition: all .2s linear;
+  -webkit-transition: all, 0.2s, linear;
+  -o-transition: all, 0.2s, linear;
+  transition: all, 0.2s, linear;
   color: #FFFFFF;
   margin-left: -100px;
   padding-right: 10px;
 }
-.toolbar a:hover, .toolbar a:focus {
+.toolbar a.toolbar-link:hover, .toolbar a.toolbar-link:focus {
   width: auto;
 }
-.toolbar a:hover .toolbar-title, .toolbar a:focus .toolbar-title {
+.toolbar a.toolbar-link:hover .toolbar-title, .toolbar a.toolbar-link:focus .toolbar-title {
   opacity: 1;
   visibility: visible;
   margin-left: 0;
@@ -9863,6 +9865,13 @@ footer h1, footer h2, footer p {
 
 hr.inverse {
   margin: 0;
+}
+
+.tools {
+  display: none;
+  background: #FFFFFF;
+  padding: 20px;
+  border: 1px solid #4E5D6C;
 }
 
 /*# sourceMappingURL=style.css.map */
