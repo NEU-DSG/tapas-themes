@@ -30,14 +30,4 @@ $(document).ready(function() {
 $(".toolbar a").click(function() {
   var tool = $(this).data("toolbar");
   $("."+tool).slideToggle();
-  $("."+tool).focus();
-  console.log(document.activeElement);
-});
-
-$(document).click(function(event) {
-  if(!$(event.target).closest('.toolbar div').length) {
-    if($('.toolbar div').is(":visible")) {
-      $('.toolbar div').hide();
-    }
-  }
 });

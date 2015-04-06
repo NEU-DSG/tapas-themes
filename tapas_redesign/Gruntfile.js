@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var jsFiles = ['js/app.js, lib/selectivizr/selectivizr.js, js/vendor/modernizr/modernizr.js'];
+  var jsFiles = ['js/app.js'];
   // Project configuration.
 
   grunt.initConfig({
@@ -9,22 +9,15 @@ module.exports = function(grunt) {
 
     // Uglifyjs minify / mangle the js for the Frontend.
     uglify: {
-        //js: {
-          //files: {
-            //'dist/js/modernizr.min.js' : 'js/vendor/modernizr/modernizr.js',
-          //},
-        //},
-        js:{
-          files:{
-            'dist/js/app.min.js': jsFiles,
-          },
-          options: {
-            banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-                    '<%= grunt.template.today("yyyy-mm-dd") %> */'
-          }
-
-
+      js:{
+        files:{
+          'dist/js/app.min.js': jsFiles,
+        },
+        options: {
+          banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+                  '<%= grunt.template.today("yyyy-mm-dd") %> */'
         }
+      }
     },
 
     // Watch for file changes then execute tasks

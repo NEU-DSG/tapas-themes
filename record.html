@@ -91,27 +91,92 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-9">
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div class="tab-pane active" id="home-r">Home Tab.</div>
-          <div class="tab-pane" id="profile-r">Profile Tab.</div>
-          <div class="tab-pane" id="messages-r">Messages Tab.</div>
-          <div class="tab-pane" id="settings-r">Settings Tab.</div>
-        </div>
-      </div>
-
-      <div class="col-xs-3"> <!-- required for floating -->
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs tabs-right nav-stacked">
-          <li class="active"><a href="#home-r" data-toggle="tab">Home</a></li>
-          <li><a href="#profile-r" data-toggle="tab">Profile</a></li>
-          <li><a href="#messages-r" data-toggle="tab">Messages</a></li>
-          <li><a href="#settings-r" data-toggle="tab">Settings</a></li>
+      <div class="tabs-x tabs-right tab-bordered">
+        <ul class="nav nav-tabs col-lg-2">
+          <li class="active"><a href="#read-r" data-toggle="tab">Read</a></li>
+          <li><a href="#visualize-r" data-toggle="tab">Visualize</a></li>
+          <li><a href="#metadata-r" data-toggle="tab">Metadata</a></li>
+          <li><a href="#files-r" data-toggle="tab">Files</a></li>
+          <li><a href="#annotations-r" data-toggle="tab">Annotations</a></li>
+          <li><a href="#citations-r" data-toggle="tab">Citation</a></li>
         </ul>
+        <div class="tab-content col-lg-10">
+          <div class="tab-pane active" id="read-r">
+            <iframe height="1000" width="100%" name="5771.xml-tfc.xsl.xml-h1.xsl.xhtml-h2.xsl.xhtml-h3.xsl.xhtml-h4.xsl.xhtml-h5.xsl.xhtml" src="http://tapasproject.org/./sites/default/files/projects/dantiscus/16162/5771.xml-tfc.xsl.xml-h1.xsl.xhtml-h2.xsl.xhtml-h3.xsl.xhtml-h4.xsl.xhtml-h5.xsl.xhtml?889454691205173" ></iframe>
+          </div>
+          <div class="tab-pane" id="visualize-r"><iframe src="http://bl.ocks.org/Caged/raw/6476579/7d0158c142ca6bdbb085132c9daa59855f3552cb/" marginwidth="0" marginheight="0" scrolling="no" height="700" width="73%"></iframe></div>
+          <div class="tab-pane" id="metadata-r"><h2>Metadata</h2>
+            <h3 class="field-label">Title:&nbsp;</h3>
+              <div class="field-items"><div class="field-item even">Ioannes Dantiscus' Texts and Correspondence: Ioannes DANTISCUS [Alfonso] de VALDÉS</div></div>
+            <h3 class="field-label">Source:&nbsp;</h3>
+              <div class="field-items"><div class="field-item even">Ioannes DANTISCUSAlfonso de VALDÉS Valladolid</div></div>
+            <h3 class="field-label">Contributor:&nbsp;</h3>
+              <div class="field-items"><div class="field-item even">Anna Skolimowska et al. (editor)</div></div>
+            <h3 class="field-label">TAPAS URL:&nbsp;</h3>
+              <div class="field-items"><div class="field-item even">http://tapasproject.org/node/16162</div></div>
+            <h3 class="field-label">TEI XML URL:&nbsp;</h3>
+              <div class="field-items"><div class="field-item even">http://tapasproject.org/sites/default/files/projects/dantiscus/16162/5771.xml</div></div>
+            <h3 class="field-label">Rights Granted (CC):&nbsp;</h3><div class="field-items"><div class="field-item even">Attribution Share Alike (CC BY-SA)</div></div>
+          </div>
+          <div class="tab-pane" id="files-r">
+            <h3>Files</h3>
+            <h4><a href=""><i class="fa fa-file-pdf-o"></i> Download PDF</a></h4>
+            <h4><a href=""><i class="fa fa-file-code-o"></i> Download XML</a></h4>
+            <br/>
+            <h3>Images</h3>
+            <h4><a href=""><i class="fa fa-file-image-o"></i> Download JPG</a></h4>
+          </div>
+          <div class="tab-pane" id="annotations-r">
+            <h3>Annotations</h3>
+            <div class="row">
+              <div class="col-sm-1">
+              <div class="thumbnail">
+              <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+              </div><!-- /thumbnail -->
+              </div><!-- /col-sm-1 -->
+
+              <div class="col-sm-5">
+              <div class="panel panel-default">
+              <div class="panel-heading">
+              <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+              </div>
+              <div class="panel-body">
+              Panel content
+              </div><!-- /panel-body -->
+              </div><!-- /panel panel-default -->
+              </div><!-- /col-sm-5 -->
+
+              <div class="col-sm-1">
+              <div class="thumbnail">
+              <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+              </div><!-- /thumbnail -->
+              </div><!-- /col-sm-1 -->
+
+              <div class="col-sm-5">
+              <div class="panel panel-default">
+              <div class="panel-heading">
+              <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+              </div>
+              <div class="panel-body">
+              Panel content
+              </div><!-- /panel-body -->
+              </div><!-- /panel panel-default -->
+              </div><!-- /col-sm-5 -->
+              </div><!-- /row -->
+          </div>
+          <div class="tab-pane" id="citations-r">
+            <h3>Citations</h3>
+            <label for="edit-dyfield" >Style</label>
+            <select id="edit-dyfield" name="dyfield" class="form-select required"><option value="citation" selected="selected">MLA</option><option value="citation_1">AMA</option><option value="citation_2">APSA</option><option value="citation_3">APA 6th Ed.</option><option value="citation_4">ASA</option><option value="citation_5">Chicago (author-date)</option>
+            <option value="citation_6">Chicago (full note)</option><option value="citation_7">Chicago (note)</option><option value="citation_8">CSE</option><option value="citation_9">Harvard</option><option value="citation_10">IEEE</option><option value="citation_11">MHRA</option>
+            <option value="citation_12">NLM</option><option value="citation_13">Vancouver</option></select><br/><br/>
+            <span class="views-label views-label-citation">MLA</span> <br/><span class="field-content"><span class="biblio-authors">“<span class="biblio-title">Ioannes Dantiscus' Texts And Correspondence: Ioannes Dantiscus [Alfonso] De Valdés</span>”</span>. Submitted. Web.
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
   <hr class="inverse">
       <!-- FOOTER -->
       <footer>
