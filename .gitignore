@@ -41,3 +41,4 @@ Gemfile.lock
 tapas_redesign/.sass-cache/
 _config.yml
 _site/
+lib/
