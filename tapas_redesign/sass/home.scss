@@ -65,35 +65,6 @@ footer {
   max-width:50px;
   margin-top:-5px;
 }
-.toolbar {
-  position:fixed;
-  top:176px;
-  a.toolbar-link {
-    display:block;
-    text-decoration:none;
-    background:$brand-primary;
-    width:2.5em;
-    height:2.5em;
-    overflow:hidden;
-
-  }
-  .toolbar-title {
-    visibility:hidden;
-    opacity:0;
-    @include transition(all, 0.2s, linear);
-    color:$body-bg;
-    margin-left:-100px;
-    padding-right:10px;
-  }
-  a.toolbar-link:hover, a.toolbar-link:focus {
-    .toolbar-title {
-      opacity:1;
-      visibility:visible;
-      margin-left:0;
-    }
-    width:auto;
-  }
-}
 .logo {
   max-width:100%;
   max-height:150px;
@@ -106,25 +77,4 @@ footer {
 }
 hr.inverse {
   margin:0;
-}
-.tools, .feed {
-  display:none;
-  background:$body-bg;
-  padding:20px;
-  border:1px solid $gray-light;
-}
-.feed-entry{
-  display:block;
-  &.lab-notes {
-    border: 1px solid $tapas-green;
-  }
-  &.annotation {
-    border: 1px solid $tapas-orange;
-  }
-  &.news {
-    border: 1px solid $tapas-blue;
-  }
-  &.message {
-    border: 1px solid $tapas-red;
-  }
 }

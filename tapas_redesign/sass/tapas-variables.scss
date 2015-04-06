@@ -22,9 +22,13 @@ $brand-warning:         #f0ad4e;
 $brand-danger:          #d9534f;
 
 $tapas-green:           #b1dc16;
+$tapas-green-opaque:    rgba(177, 220, 22, 0.3);
 $tapas-blue:            #6ea8e5;
+$tapas-blue-opaque:     rgba(110, 168, 229, 0.3);
 $tapas-orange:          #e69317;
+$tapas-orange-opaque:   rgba(230, 147, 23, 0.3);
 $tapas-red:             #b02c2c;
+$tapas-red-opaque:      rgba(176, 44, 44, 0.3);
 
 
 //== Scaffolding
@@ -790,7 +794,7 @@ $badge-border-radius:         10px;
 $breadcrumb-padding-vertical:   8px;
 $breadcrumb-padding-horizontal: 15px;
 //** Breadcrumb background color
-$breadcrumb-bg:                 $gray-light;
+$breadcrumb-bg:                 $gray-lighter;
 //** Breadcrumb text color
 $breadcrumb-color:              $text-color;
 //** Text color of current page in the breadcrumb

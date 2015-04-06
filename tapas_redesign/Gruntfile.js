@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  var jsFiles = ['js/app.js'];
+  var jsFiles = ['js/app.js, lib/selectivizr/selectivizr.js, js/vendor/modernizr/modernizr.js'];
   // Project configuration.
 
   grunt.initConfig({
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'dist/style.css': 'sass/style.scss'
+          'dist/css/style.css': 'sass/style.scss'
         }
       }
     },
@@ -106,16 +106,6 @@ module.exports = function(grunt) {
         },
       },
     },
-    copy:{
-      js:{
-        files: [
-          {src: 'lib/selectivizr/selectivizr.js', dest: 'dist/js/selectivizr.js'},
-          {src:'js/vendor/modernizr/modernizr.js', dest: 'dist/js/modernizr.js'}
-        ]
-
-
-      }
-    },
     clean: {
       files: 'dist'
     },
@@ -127,8 +117,7 @@ module.exports = function(grunt) {
           dest: 'dist/css/',
           ext: '.min.css'
       }
-    },
-
+    }
 });
 
   // Load the contributed plugins/tasks for Grunt
@@ -138,13 +127,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
 
   // Default task to build all the assets for the front end
-  grunt.registerTask('default', [ 'clean' , 'sass', 'autoprefixer', "cssmin", 'concat', 'uglify' , 'copy']);
+  grunt.registerTask('default', [ 'clean', 'sass', 'autoprefixer', "cssmin", 'concat', 'uglify']);
 
 };
