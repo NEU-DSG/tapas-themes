@@ -1,31 +1,45 @@
+.toolbar-title {
+  visibility:hidden;
+  opacity:0;
+  @include transition(all, 0.2s, linear);
+  color:$body-bg;
+  margin-left:-100px;
+  padding-right:10px;
+}
+
 .toolbar {
   position:fixed;
   top:176px;
-  a.toolbar-link {
-    display:block;
-    text-decoration:none;
-    background:$brand-primary;
+  .panel-heading {
+    background-color:$brand-primary;
+    padding:0;
+  }
+  .panel {
+    background:transparent;
     width:2.5em;
-    height:2.5em;
-    overflow:hidden;
-
-  }
-  .toolbar-title {
-    visibility:hidden;
-    opacity:0;
-    @include transition(all, 0.2s, linear);
-    color:$body-bg;
-    margin-left:-100px;
-    padding-right:10px;
-  }
-  a.toolbar-link:hover, a.toolbar-link:focus {
-    .toolbar-title {
-      opacity:1;
-      visibility:visible;
-      margin-left:0;
-    }
+    &:hover, &:focus, .collapse.in {
+      .toolbar-title {
+        opacity:1;
+        visibility:visible;
+        margin-left:0;
+      }
     width:auto;
+    }
   }
+  .list-unstyled a {
+    color:$gray-dark;
+  }
+  .fa-star {
+    color:#FBDC4A;
+  }
+}
+
+a.toolbar-link {
+  display:block;
+  text-decoration:none;
+  background:$brand-primary;
+  overflow:hidden;
+  height:2.5em;
 }
 .tools, .feed, .bookbag, .search {
   display:none;
@@ -37,29 +51,24 @@
     margin-bottom:5px;
   }
 }
-.feed-entries{
-  @extend .list-unstyled;
+#feed p{
+  &.lab-notes {
+    background: $tapas-green-opaque;
+  }
+  &.annotation {
+    background: $tapas-orange-opaque;
+  }
+  &.news {
+    background: $tapas-blue-opaque;
+  }
+  &.message {
+    background: $tapas-red-opaque;
+  }
   a {
     color: $text-color;
     margin-top:5px;
     margin-bottom:5px;
-    padding:2px;
+    padding:4px;
     display:block;
-    &.lab-notes {
-      border: 2px solid $tapas-green;
-      background: $tapas-green-opaque;
-    }
-    &.annotation {
-      border: 2px solid $tapas-orange;
-      background: $tapas-orange-opaque;
-    }
-    &.news {
-      border: 2px solid $tapas-blue;
-      background: $tapas-blue-opaque;
-    }
-    &.message {
-      border: 2px solid $tapas-red;
-      background: $tapas-red-opaque;
-    }
   }
 }

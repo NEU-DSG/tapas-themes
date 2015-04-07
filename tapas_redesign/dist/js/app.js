@@ -25,9 +25,3 @@ $(document).ready(function() {
 	    interval: 10000
 	})
 });
-
-//toolbar toggle buttons
-$(".toolbar a").click(function() {
-  var tool = $(this).data("toolbar");
-  $("."+tool).slideToggle();
-});

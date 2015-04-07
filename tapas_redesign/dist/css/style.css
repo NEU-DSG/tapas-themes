@@ -1757,7 +1757,7 @@ ol ol {
   margin-bottom: 0;
 }
 
-.list-unstyled, .feed-entries {
+.list-unstyled {
   padding-left: 0;
   list-style: none;
 }
@@ -9764,19 +9764,7 @@ hr.inverse {
   margin: 0;
 }
 
-.toolbar {
-  position: fixed;
-  top: 176px;
-}
-.toolbar a.toolbar-link {
-  display: block;
-  text-decoration: none;
-  background: #DF691A;
-  width: 2.5em;
-  height: 2.5em;
-  overflow: hidden;
-}
-.toolbar .toolbar-title {
+.toolbar-title {
   visibility: hidden;
   opacity: 0;
   transition: all, 0.2s, linear;
@@ -9784,13 +9772,40 @@ hr.inverse {
   margin-left: -100px;
   padding-right: 10px;
 }
-.toolbar a.toolbar-link:hover, .toolbar a.toolbar-link:focus {
+
+.toolbar {
+  position: fixed;
+  top: 176px;
+}
+.toolbar .panel-heading {
+  background-color: #DF691A;
+  padding: 0;
+}
+.toolbar .panel {
+  background: transparent;
+  width: 2.5em;
+}
+.toolbar .panel:hover, .toolbar .panel:focus, .toolbar .panel .collapse.in {
   width: auto;
 }
-.toolbar a.toolbar-link:hover .toolbar-title, .toolbar a.toolbar-link:focus .toolbar-title {
+.toolbar .panel:hover .toolbar-title, .toolbar .panel:focus .toolbar-title, .toolbar .panel .collapse.in .toolbar-title {
   opacity: 1;
   visibility: visible;
   margin-left: 0;
+}
+.toolbar .list-unstyled a {
+  color: #333333;
+}
+.toolbar .fa-star {
+  color: #FBDC4A;
+}
+
+a.toolbar-link {
+  display: block;
+  text-decoration: none;
+  background: #DF691A;
+  overflow: hidden;
+  height: 2.5em;
 }
 
 .tools, .feed, .bookbag, .search {
@@ -9804,28 +9819,24 @@ hr.inverse {
   margin-bottom: 5px;
 }
 
-.feed-entries a {
+#feed p.lab-notes {
+  background: rgba(177, 220, 22, 0.3);
+}
+#feed p.annotation {
+  background: rgba(230, 147, 23, 0.3);
+}
+#feed p.news {
+  background: rgba(110, 168, 229, 0.3);
+}
+#feed p.message {
+  background: rgba(176, 44, 44, 0.3);
+}
+#feed p a {
   color: #2B3E50;
   margin-top: 5px;
   margin-bottom: 5px;
-  padding: 2px;
+  padding: 4px;
   display: block;
-}
-.feed-entries a.lab-notes {
-  border: 2px solid #b1dc16;
-  background: rgba(177, 220, 22, 0.3);
-}
-.feed-entries a.annotation {
-  border: 2px solid #e69317;
-  background: rgba(230, 147, 23, 0.3);
-}
-.feed-entries a.news {
-  border: 2px solid #6ea8e5;
-  background: rgba(110, 168, 229, 0.3);
-}
-.feed-entries a.message {
-  border: 2px solid #b02c2c;
-  background: rgba(176, 44, 44, 0.3);
 }
 
 /*!
