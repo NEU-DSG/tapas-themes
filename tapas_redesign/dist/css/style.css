@@ -4416,7 +4416,7 @@ tbody.collapse.in {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #EBEBEB;
 }
 .nav-tabs > li {
   float: left;
@@ -4429,7 +4429,7 @@ tbody.collapse.in {
   border-radius: 0 0 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #4E5D6C #4E5D6C transparent;
+  border-color: #4E5D6C #4E5D6C #EBEBEB;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #2B3E50;
@@ -9443,7 +9443,7 @@ button.close {
 .navbar {
   box-shadow: none;
   border: none;
-  font-size: 12px;
+  font-size: 15px;
 }
 .navbar-default .badge {
   background-color: #fff;
@@ -9461,7 +9461,7 @@ button.close {
   background-color: #485563;
 }
 .btn-sm, .btn-group-sm > .btn, .btn-xs, .btn-group-xs > .btn {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 body {
@@ -9503,7 +9503,7 @@ body {
   box-shadow: none;
 }
 .dropdown-menu > li > a {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
 }
 
@@ -9512,12 +9512,12 @@ body {
 }
 
 .dropdown-header {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 table,
 .table {
-  font-size: 12px;
+  font-size: 13px;
 }
 table a:not(.btn),
 .table a:not(.btn) {
@@ -9542,7 +9542,7 @@ label,
 .radio label,
 .checkbox label,
 .help-block {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
 }
 
@@ -10068,4 +10068,24 @@ hr.inverse {
 }
 .social-media a {
   color: #4E5D6C;
+}
+
+.community .panel {
+  background: transparent;
+  border: 1px solid #EBEBEB;
+}
+.community .panel a {
+  color: #2B3E50;
+}
+.community .panel-lab-notes .panel-heading {
+  background: rgba(177, 220, 22, 0.3);
+}
+.community .panel-annotation .panel-heading {
+  background: rgba(230, 147, 23, 0.3);
+}
+.community .panel-news .panel-heading {
+  background: rgba(110, 168, 229, 0.3);
+}
+.community .panel-message .panel-heading {
+  background: rgba(176, 44, 44, 0.3);
 }

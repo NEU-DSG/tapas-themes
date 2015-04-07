@@ -9,7 +9,7 @@
 .navbar {
   @include box-shadow(none);
   border: none;
-  font-size: 12px;
+  font-size: $font-size-base;
 
   &-default {
 
@@ -42,7 +42,7 @@
 
   &-sm,
   &-xs {
-    font-size: 12px;
+    font-size: $font-size-small;
   }
 }
 
@@ -88,7 +88,7 @@ body {
   @include box-shadow(none);
 
   > li > a {
-    font-size: 12px;
+    font-size: $font-size-small;
     font-weight: 300;
   }
 }
@@ -98,14 +98,14 @@ body {
 }
 
 .dropdown-header {
-  font-size: 12px;
+  font-size: $font-size-small;
 }
 
 // Tables =====================================================================
 
 table,
 .table {
-  font-size: 12px;
+  font-size: $font-size-small;
 
   a:not(.btn) {
     color: #fff;
@@ -141,7 +141,7 @@ label,
 .radio label,
 .checkbox label,
 .help-block {
-  font-size: 12px;
+  font-size: $font-size-small;
   font-weight: 300;
 }
 

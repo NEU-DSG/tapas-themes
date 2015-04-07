@@ -1,0 +1,21 @@
+.community {
+  .panel {
+    background:transparent;
+    border: 1px solid $gray-lighter;
+    a {
+      color:$text-color;
+    }
+  }
+  .panel-lab-notes .panel-heading {
+    background: $tapas-green-opaque;
+  }
+  .panel-annotation .panel-heading {
+    background: $tapas-orange-opaque;
+  }
+  .panel-news .panel-heading {
+    background: $tapas-blue-opaque;
+  }
+  .panel-message .panel-heading {
+    background: $tapas-red-opaque;
+  }
+}
