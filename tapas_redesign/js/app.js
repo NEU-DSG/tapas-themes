@@ -25,3 +25,8 @@ $(document).ready(function() {
 	    interval: 10000
 	})
 });
+
+//collapses clicks on outside click for collapses
+$(document).on('click',function(){
+	$('.collapse').collapse('hide');
+})

@@ -433,19 +433,16 @@
 
     </div><!-- /.container -->
 
-    <div class="panel-group toolbar" id="toolbar" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="toolsHeading">
-            <a class="collapsed toolbar-link" data-toggle="collapse" data-parent="#toolbar" href="#tools" aria-expanded="false" aria-controls="tools">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-square fa-stack-2x"></i>
-                <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="toolbar-title">Tools</span>
-            </a>
-        </div>
-        <div id="tools" class="panel-collapse collapse" role="tabpanel" aria-labelledby="toolsHeading">
-          <div class="panel-body">
+    <div class="toolbar" id="toolbar" role="tablist" aria-multiselectable="true">
+        <a class="collapsed toolbar-link" data-toggle="collapse" href="#tools" aria-expanded="false" aria-controls="tools">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="toolbar-title">Tools</span>
+        </a>
+        <div id="tools" class="collapse" role="tabpanel" aria-labelledby="toolsHeading">
+          <div class="tools-content">
             <ul class="list-unstyled">
                 <li><b><a href="">My Tapas</a></b></li>
                 <li><a href="">My Projects</a></li>
@@ -457,19 +454,16 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="feedHeading">
-            <a class="collapsed toolbar-link" data-toggle="collapse" data-parent="#toolbar" href="#feed" aria-expanded="false" aria-controls="feed">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-square fa-stack-2x"></i>
-                <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="toolbar-title">My Feed</span>
-            </a>
-        </div>
-        <div id="feed" class="panel-collapse collapse" role="tabpanel" aria-labelledby="feedHeading">
-          <div class="panel-body">
+
+        <a class="collapsed toolbar-link" data-toggle="collapse" href="#feed" aria-expanded="false" aria-controls="feed">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-newspaper-o fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="toolbar-title">My Feed</span>
+        </a>
+        <div id="feed" class="collapse" role="tabpanel" aria-labelledby="feedHeading">
+          <div class="feed-content">
             <p class="lab-notes"><a href="">Post from Joe Bob on [Collection Title] Collection</a></p>
             <p class="annotation"><a href="">Annotation from Billy Jean on [Record Title] Record</a></p>
             <p class="news"><a href="">News from Tapas Headquarters on [Date]</a></p>
@@ -478,19 +472,16 @@
             <a href="#">Read more in My Community <i class="fa fa-arrow-right"></i></a>
           </div>
         </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="bookbagHeading">
-            <a class="collapsed toolbar-link" data-toggle="collapse" data-parent="#toolbar" href="#bookbag" aria-expanded="false" aria-controls="bookbag">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-square fa-stack-2x"></i>
-                <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="toolbar-title">Bookbag</span>
-            </a>
-        </div>
-        <div id="bookbag" class="panel-collapse collapse" role="tabpanel" aria-labelledby="bookbagHeading">
-          <div class="panel-body">
+
+        <a class="collapsed toolbar-link" data-toggle="collapse" href="#bookbag" aria-expanded="false" aria-controls="bookbag">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="toolbar-title">Bookbag</span>
+        </a>
+        <div id="bookbag" class="collapse" role="tabpanel" aria-labelledby="bookbagHeading">
+          <div class="bookbag-content">
             <ul class="list-unstyled">
               <li><a href=""><i class="fa fa-star"></i> [Collection Title]</a></li>
               <li><a href=""><i class="fa fa-star"></i> [Record Title]</a></li>
@@ -499,19 +490,16 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="searchHeading">
-            <a class="collapsed toolbar-link" data-toggle="collapse" data-parent="#toolbar" href="#search" aria-expanded="false" aria-controls="bookbag">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-square fa-stack-2x"></i>
-                <i class="fa fa-search fa-stack-1x fa-inverse"></i>
-              </span>
-              <span class="toolbar-title">Search</span>
-            </a>
-        </div>
-        <div id="search" class="panel-collapse collapse" role="tabpanel" aria-labelledby="searchHeading">
-          <div class="panel-body">
+
+        <a class="collapsed toolbar-link" data-toggle="collapse" href="#search" aria-expanded="false" aria-controls="bookbag">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+          </span>
+          <span class="toolbar-title">Search</span>
+        </a>
+        <div id="search" class="collapse" role="tabpanel" aria-labelledby="searchHeading">
+          <div class="search-content">
             <form>
               <input type="text" placeholder="Enter keyword here..."></input>
               <input type="submit" class="btn" value="Search"></input>
@@ -519,7 +507,6 @@
             <a href="">Advanced Search <i class="fa fa-arrow-down"></i></a>
           </div>
         </div>
-      </div>
     </div>
 
     <!-- Bootstrap core JavaScript
