@@ -74,7 +74,7 @@
   <br/>
   </br/>
 
-  <div class="container">
+  <div class="container record">
     <div class="row">
       <div class="col-lg-12">
         <h1>The Greatest TAPAS Record Ever<h1>
@@ -96,10 +96,30 @@
           <li class="active"><a href="#read-r" data-toggle="tab">Read</a></li>
           <li><a href="#visualize-r" data-toggle="tab">Visualize</a></li>
           <li><a href="#metadata-r" data-toggle="tab">Metadata</a></li>
-          <li><a href="#files-r" data-toggle="tab">Files</a></li>
           <li><a href="#annotations-r" data-toggle="tab">Annotations</a></li>
-          <li><a href="#citations-r" data-toggle="tab">Citation</a></li>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Files</h3>
+            </div>
+            <div class="panel-body">
+              <h5><a href=""><i class="fa fa-file-pdf-o"></i> Download PDF</a></h5>
+              <h5><a href=""><i class="fa fa-file-code-o"></i> Download XML</a></h5>
+              <h5><a href=""><i class="fa fa-file-image-o"></i> Download JPG</a></h5>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Citation</h3>
+            </div>
+            <div class="panel-body">
+              <label for="edit-dyfield" >Style</label>
+              <select id="edit-dyfield" name="dyfield" class="form-select required"><option value="citation" selected="selected">MLA</option><option value="citation_1">AMA</option><option value="citation_2">APSA</option><option value="citation_3">APA 6th Ed.</option><option value="citation_4">ASA</option><option value="citation_5">Chicago (author-date)</option>
+              <option value="citation_6">Chicago (full note)</option><option value="citation_7">Chicago (note)</option><option value="citation_8">CSE</option><option value="citation_9">Harvard</option><option value="citation_10">IEEE</option><option value="citation_11">MHRA</option>
+              <option value="citation_12">NLM</option><option value="citation_13">Vancouver</option></select><br/><br/><p class="small"><span class="field-content"><span class="biblio-authors">“<span class="biblio-title">Ioannes Dantiscus' Texts And Correspondence: Ioannes Dantiscus [Alfonso] De Valdés</span>”</span>. Submitted. Web.</p>
+            </div>
+          </div>
         </ul>
+
         <div class="tab-content col-lg-10">
           <div class="tab-pane active" id="read-r">
             <iframe height="1000" width="100%" name="5771.xml-tfc.xsl.xml-h1.xsl.xhtml-h2.xsl.xhtml-h3.xsl.xhtml-h4.xsl.xhtml-h5.xsl.xhtml" src="http://tapasproject.org/./sites/default/files/projects/dantiscus/16162/5771.xml-tfc.xsl.xml-h1.xsl.xhtml-h2.xsl.xhtml-h3.xsl.xhtml-h4.xsl.xhtml-h5.xsl.xhtml?889454691205173" ></iframe>
@@ -117,14 +137,6 @@
             <h3 class="field-label">TEI XML URL:&nbsp;</h3>
               <div class="field-items"><div class="field-item even">http://tapasproject.org/sites/default/files/projects/dantiscus/16162/5771.xml</div></div>
             <h3 class="field-label">Rights Granted (CC):&nbsp;</h3><div class="field-items"><div class="field-item even">Attribution Share Alike (CC BY-SA)</div></div>
-          </div>
-          <div class="tab-pane" id="files-r">
-            <h3>Files</h3>
-            <h4><a href=""><i class="fa fa-file-pdf-o"></i> Download PDF</a></h4>
-            <h4><a href=""><i class="fa fa-file-code-o"></i> Download XML</a></h4>
-            <br/>
-            <h3>Images</h3>
-            <h4><a href=""><i class="fa fa-file-image-o"></i> Download JPG</a></h4>
           </div>
           <div class="tab-pane" id="annotations-r">
             <h3>Annotations</h3>
@@ -163,14 +175,6 @@
               </div><!-- /panel panel-default -->
               </div><!-- /col-sm-5 -->
               </div><!-- /row -->
-          </div>
-          <div class="tab-pane" id="citations-r">
-            <h3>Citations</h3>
-            <label for="edit-dyfield" >Style</label>
-            <select id="edit-dyfield" name="dyfield" class="form-select required"><option value="citation" selected="selected">MLA</option><option value="citation_1">AMA</option><option value="citation_2">APSA</option><option value="citation_3">APA 6th Ed.</option><option value="citation_4">ASA</option><option value="citation_5">Chicago (author-date)</option>
-            <option value="citation_6">Chicago (full note)</option><option value="citation_7">Chicago (note)</option><option value="citation_8">CSE</option><option value="citation_9">Harvard</option><option value="citation_10">IEEE</option><option value="citation_11">MHRA</option>
-            <option value="citation_12">NLM</option><option value="citation_13">Vancouver</option></select><br/><br/>
-            <span class="views-label views-label-citation">MLA</span> <br/><span class="field-content"><span class="biblio-authors">“<span class="biblio-title">Ioannes Dantiscus' Texts And Correspondence: Ioannes Dantiscus [Alfonso] De Valdés</span>”</span>. Submitted. Web.
           </div>
         </div>
       </div>

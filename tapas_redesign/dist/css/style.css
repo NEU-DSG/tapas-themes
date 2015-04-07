@@ -10022,15 +10022,13 @@ hr.inverse {
   min-height: 300px;
 }
 
-.thumbnail {
+#annotations-r .thumbnail {
   padding: 0px;
 }
-
-.panel {
+#annotations-r .panel {
   position: relative;
 }
-
-.panel > .panel-heading:after, .panel > .panel-heading:before {
+#annotations-r .panel > .panel-heading:after, #annotations-r .panel > .panel-heading:before {
   position: absolute;
   top: 11px;
   left: -16px;
@@ -10043,19 +10041,24 @@ hr.inverse {
   border-style: solid solid outset;
   pointer-events: none;
 }
-
-.panel > .panel-heading:after {
+#annotations-r .panel > .panel-heading:after {
   border-width: 7px;
   border-right-color: #f7f7f7;
   margin-top: 1px;
   margin-left: 2px;
 }
-
-.panel > .panel-heading:before {
+#annotations-r .panel > .panel-heading:before {
   border-right-color: #ddd;
   border-width: 8px;
 }
+#annotations-r .panel-body {
+  background: #FFFFFF;
+}
 
-.panel-body {
+.record .panel {
+  margin-top: 20px;
+  border: 1px solid #EBEBEB;
+}
+.record .panel-body {
   background: #FFFFFF;
 }
