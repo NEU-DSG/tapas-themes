@@ -10062,3 +10062,10 @@ hr.inverse {
 .record .panel-body {
   background: #FFFFFF;
 }
+
+.social-media {
+  padding-left: 10px;
+}
+.social-media a {
+  color: #4E5D6C;
+}
