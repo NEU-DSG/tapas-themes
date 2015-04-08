@@ -1,0 +1,12 @@
+.panel-default {
+  ul {
+    list-style:none;
+    padding:10px;
+    li {
+      padding:5px;
+    }
+    a {
+      color:$gray-dark;
+    }
+  }
+}
