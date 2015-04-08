@@ -1,4 +1,5 @@
 // Superhero 3.3.2
+//MODIFIED HEAVILY FOR TAPAS
 // Variables
 // --------------------------------------------------
 
@@ -15,12 +16,6 @@ $gray-light:             #4E5D6C;   // #999
 $gray-lighter:           #EBEBEB; // #eee
 $gray-darkest:           #2B3E50;
 
-$brand-primary:         #DF691A;
-$brand-success:         #5cb85c;
-$brand-info:            #5bc0de;
-$brand-warning:         #f0ad4e;
-$brand-danger:          #d9534f;
-
 $tapas-green:           #b1dc16;
 $tapas-green-opaque:    rgba(177, 220, 22, 0.3);
 $tapas-blue:            #6ea8e5;
@@ -30,6 +25,11 @@ $tapas-orange-opaque:   rgba(230, 147, 23, 0.3);
 $tapas-red:             #b02c2c;
 $tapas-red-opaque:      rgba(176, 44, 44, 0.3);
 
+$brand-primary:         #DF691A;
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         lighten($brand-primary, 13.5%); //#f0ad4e
+$brand-danger:          #d9534f;
 
 //== Scaffolding
 //
