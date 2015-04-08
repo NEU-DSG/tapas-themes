@@ -9764,6 +9764,10 @@ hr.inverse {
   margin: 0;
 }
 
+.list-unstyled li {
+  padding: 5px;
+}
+
 .toolbar {
   position: fixed;
   top: 176px;
@@ -9794,8 +9798,6 @@ hr.inverse {
 }
 .toolbar .list-unstyled a {
   color: #333333;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 .toolbar .fa-star {
   color: #FBDC4A;

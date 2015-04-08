@@ -34,5 +34,5 @@ $(document).on('click',function(){
 //toggle star to favorite
 $(".record-helpers a.favorite").click(function(e){
   e.preventDefault();
-  $(this).find("i").toggleClass("fa-star-o").toggleClass("fa-star");
+  $(this).find("i").toggleClass("fa-bookmark-o").toggleClass("fa-bookmark");
 })
