@@ -82,8 +82,8 @@
     </div><!-- /.row -->
 
     <div class="row">
-      <div class="tabs-x tab-bordered">
-        <ul class="nav nav-tabs">
+      <div class="tabs-above tab-bordered">
+        <ul class="nav nav-tabs col-lg-10">
           <li class="active"><a href="#all-r" data-toggle="tab">All</a></li>
           <li><a href="#lab-notes-r" data-toggle="tab">Lab Notes</a></li>
           <li><a href="#annotations-r" data-toggle="tab">Annotations</a></li>
@@ -93,6 +93,13 @@
 
         <div class="tab-content col-lg-10">
           <div class="tab-pane active" id="all-r">
+            <div class="filters">
+              <form class="form-inline">
+                <label>Show Only:
+                <select><option>Lab Notes</option><option>Annotations</option><option>Messages</option><option>News</option></select>
+              </form>
+
+            </div>
             <div class="panel panel-lab-notes">
               <div class="panel-heading">
                 <h3 class="panel-title">Post from Joe Bob on [Collection Title] Collection</h3>
@@ -159,51 +166,311 @@
 
           </div>
           <div class="tab-pane" id="lab-notes-r">
-            Lab Notes
+            <nav class="text-center">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="panel panel-lab-notes">
+              <div class="panel-heading">
+                <h3 class="panel-title">Post from Joe Bob on [Collection Title] Collection</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the post content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-lab-notes">
+              <div class="panel-heading">
+                <h3 class="panel-title">Post from Joe Bob on [Collection Title] Collection</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the post content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-lab-notes">
+              <div class="panel-heading">
+                <h3 class="panel-title">Post from Joe Bob on [Collection Title] Collection</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the post content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-lab-notes">
+              <div class="panel-heading">
+                <h3 class="panel-title">Post from Joe Bob on [Collection Title] Collection</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the post content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-lab-notes">
+              <div class="panel-heading">
+                <h3 class="panel-title">Post from Joe Bob on [Collection Title] Collection</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the post content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <nav class="text-center">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
           <div class="tab-pane" id="annotations-r">
-            <h3>Annotations</h3>
+            <nav>
+              <ul class="pager">
+                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+            </nav>
             <div class="row">
-              <div class="col-sm-1">
+              <div class="col-sm-2">
               <div class="thumbnail">
               <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
               </div><!-- /thumbnail -->
               </div><!-- /col-sm-1 -->
 
-              <div class="col-sm-5">
-              <div class="panel panel-default">
+              <div class="col-sm-10">
+              <div class="panel panel-annotation">
               <div class="panel-heading">
               <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
               </div>
               <div class="panel-body">
-              Panel content
-              </div><!-- /panel-body -->
+                <p>This is where the preview of the annotation content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>              </div><!-- /panel-body -->
               </div><!-- /panel panel-default -->
               </div><!-- /col-sm-5 -->
-
-              <div class="col-sm-1">
+            </div><!-- /row -->
+            <div class="row">
+              <div class="col-sm-2">
               <div class="thumbnail">
               <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
               </div><!-- /thumbnail -->
               </div><!-- /col-sm-1 -->
 
-              <div class="col-sm-5">
-              <div class="panel panel-default">
+              <div class="col-sm-10">
+              <div class="panel panel-annotation">
               <div class="panel-heading">
               <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
               </div>
               <div class="panel-body">
-              Panel content
-              </div><!-- /panel-body -->
+                <p>This is where the preview of the annotation content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>              </div><!-- /panel-body -->
               </div><!-- /panel panel-default -->
               </div><!-- /col-sm-5 -->
               </div><!-- /row -->
+              <div class="row">
+                <div class="col-sm-2">
+                <div class="thumbnail">
+                <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                </div><!-- /thumbnail -->
+                </div><!-- /col-sm-1 -->
+
+                <div class="col-sm-10">
+                <div class="panel panel-annotation">
+                <div class="panel-heading">
+                <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+                </div>
+                <div class="panel-body">
+                  <p>This is where the preview of the annotation content goes.</p>
+                  <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>              </div><!-- /panel-body -->
+                </div><!-- /panel panel-default -->
+                </div><!-- /col-sm-5 -->
+                </div><!-- /row -->
+                <div class="row">
+                  <div class="col-sm-2">
+                  <div class="thumbnail">
+                  <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                  </div><!-- /thumbnail -->
+                  </div><!-- /col-sm-1 -->
+
+                  <div class="col-sm-10">
+                  <div class="panel panel-annotation">
+                  <div class="panel-heading">
+                  <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+                  </div>
+                  <div class="panel-body">
+                    <p>This is where the preview of the annotation content goes.</p>
+                    <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>              </div><!-- /panel-body -->
+                  </div><!-- /panel panel-default -->
+                  </div><!-- /col-sm-5 -->
+                  </div><!-- /row -->
+                  <nav>
+                <ul class="pager">
+                  <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                  <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+                </ul>
+              </nav>
           </div>
           <div class="tab-pane" id="messages-r">
-            Messages
+            <div class="panel panel-message">
+              <div class="panel-heading">
+                <h3 class="panel-title">Message from Billy Jean </h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the message content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-message">
+              <div class="panel-heading">
+                <h3 class="panel-title">Message from Billy Jean </h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the message content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-message">
+              <div class="panel-heading">
+                <h3 class="panel-title">Message from Billy Jean </h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the message content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-message">
+              <div class="panel-heading">
+                <h3 class="panel-title">Message from Billy Jean </h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the message content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-message">
+              <div class="panel-heading">
+                <h3 class="panel-title">Message from Billy Jean </h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the message content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
           </div>
           <div class="tab-pane" id="news-r">
-            News
+            <nav>
+              <ul class="pager">
+                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+            </nav>
+            <div class="panel panel-news">
+              <div class="panel-heading">
+                <h3 class="panel-title">News from Billy Jean</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the news content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-news">
+              <div class="panel-heading">
+                <h3 class="panel-title">News from Billy Jean</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the news content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-news">
+              <div class="panel-heading">
+                <h3 class="panel-title">News from Billy Jean</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the news content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-news">
+              <div class="panel-heading">
+                <h3 class="panel-title">News from Billy Jean</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the news content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-news">
+              <div class="panel-heading">
+                <h3 class="panel-title">News from Billy Jean</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the news content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <div class="panel panel-news">
+              <div class="panel-heading">
+                <h3 class="panel-title">News from Billy Jean</h3>
+              </div>
+              <div class="panel-body">
+                <p>This is where the preview of the news content goes.</p>
+                <p class="small">Posted on April 14, 2015 at 7:26pm<span class="pull-right"><i class="fa fa-tag"></i> <a href="">News</a> | <a href="">About Tapas</a> | <a href="">Whats New</a></span></p>
+              </div>
+            </div>
+            <nav>
+              <ul class="pager">
+                <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
+                <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="filters col-lg-2">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Filters</h3>
+            </div>
+            <div class="panel-body">
+              <form class="form-inline">
+                <label>Type:</label>
+                <select><option>Choose One</option><option>Lab Notes</option><option>Annotations</option><option>Messages</option><option>News</option></select>
+                <br/>
+                <label>Sort By:</label>
+                <select><option>Choose One</option><option>Newest</option><option>Oldest </option></select>
+                <label>
+                <input type="checkbox"></input> <label> My Content</label><br/>
+                <input type="checkbox"></input> <label> My Favorites</label>
+                <br/>
+                <input type="submit" value="Filter" class="btn btn-submit"></input
+              </form>
+            </div>
           </div>
         </div>
       </div>

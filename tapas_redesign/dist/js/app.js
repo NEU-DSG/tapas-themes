@@ -30,3 +30,9 @@ $(document).ready(function() {
 $(document).on('click',function(){
 	$('.collapse').collapse('hide');
 })
+
+//toggle star to favorite
+$(".record-helpers a.favorite").click(function(e){
+  e.preventDefault();
+  $(this).find("i").toggleClass("fa-star-o").toggleClass("fa-star");
+})

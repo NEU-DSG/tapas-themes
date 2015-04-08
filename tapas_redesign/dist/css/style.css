@@ -4429,12 +4429,12 @@ tbody.collapse.in {
   border-radius: 0 0 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #4E5D6C #4E5D6C #EBEBEB;
+  border-color: #EBEBEB #EBEBEB #EBEBEB;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #2B3E50;
   background-color: #FFFFFF;
-  border: 1px solid #4E5D6C;
+  border: 1px solid #EBEBEB;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -5084,7 +5084,7 @@ tbody.collapse.in {
   line-height: 1.42857;
   text-decoration: none;
   color: #2B3E50;
-  background-color: #4E5D6C;
+  background-color: #EBEBEB;
   border: 1px solid transparent;
   margin-left: -1px;
 }
@@ -5112,7 +5112,7 @@ tbody.collapse.in {
 .pagination > .active > span:focus {
   z-index: 2;
   color: #2B3E50;
-  background-color: #DF691A;
+  background-color: rgba(230, 147, 23, 0.3);
   border-color: transparent;
   cursor: default;
 }
@@ -5180,7 +5180,7 @@ tbody.collapse.in {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #4E5D6C;
+  background-color: #EBEBEB;
   border: 1px solid transparent;
   border-radius: 15px;
 }
@@ -5202,7 +5202,7 @@ tbody.collapse.in {
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: #cacaca;
-  background-color: #4E5D6C;
+  background-color: #EBEBEB;
   cursor: not-allowed;
 }
 
@@ -10070,6 +10070,10 @@ hr.inverse {
   color: #4E5D6C;
 }
 
+.record-helpers {
+  font-size: 19px;
+}
+
 .community .panel {
   background: transparent;
   border: 1px solid #EBEBEB;
@@ -10088,4 +10092,8 @@ hr.inverse {
 }
 .community .panel-message .panel-heading {
   background: rgba(176, 44, 44, 0.3);
+}
+
+.filters {
+  padding: 10px;
 }
