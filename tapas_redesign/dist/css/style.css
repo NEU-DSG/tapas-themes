@@ -9767,6 +9767,17 @@ hr.inverse {
 .list-unstyled li {
   padding: 5px;
 }
+.list-unstyled a {
+  color: #2B3E50;
+}
+.list-unstyled a.disabled {
+  color: #EBEBEB;
+  cursor: not-allowed;
+}
+
+.navbar-nav > nav > li > a.inline {
+  display: inline-block;
+}
 
 .toolbar {
   position: fixed;
@@ -9795,12 +9806,6 @@ hr.inverse {
   opacity: 1;
   visibility: visible;
   margin-left: 0;
-}
-.toolbar .list-unstyled a {
-  color: #333333;
-}
-.toolbar .fa-star {
-  color: #FBDC4A;
 }
 
 #tools, #feed, #bookbag, #search {

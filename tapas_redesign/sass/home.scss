@@ -82,4 +82,14 @@ hr.inverse {
   li {
     padding:5px;
   }
+  a {
+    color:$text-color;
+  }
+  a.disabled {
+    color:$gray-lighter;
+    cursor:not-allowed;
+  }
+}
+.navbar-nav > nav > li > a.inline {
+  display:inline-block;
 }
