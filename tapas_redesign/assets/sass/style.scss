@@ -1,0 +1,18 @@
+@import "../../bootstrap/stylesheets/bootstrap/variables";
+@import "tapas-variables";
+
+@import "../../bootstrap/stylesheets/bootstrap/mixins";
+@import "tapas-mixins";
+
+@import "bootstrap-map";
+@import '../../lib/font-awesome/scss/font-awesome';
+
+@import "bootswatch";
+
+@import "home";
+@import "toolbar";
+@import "tabs";
+@import "annotations";
+@import "record";
+@import "community";
+@import "mytapas";
