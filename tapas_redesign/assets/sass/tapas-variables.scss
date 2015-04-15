@@ -193,9 +193,9 @@ $input-bg:                       #fff;
 $input-bg-disabled:              $gray-lighter;
 
 //** Text color for `<input>`s
-$input-color:                    $body-bg;
+$input-color:                    $text-color;
 //** `<input>` border color
-$input-border:                   transparent;
+$input-border:                   $gray-lighter;//instead of transparent
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -207,10 +207,7 @@ $input-border-radius-large:      $border-radius-large;
 $input-border-radius-small:      $border-radius-small;
 
 //** Border color for inputs on focus
-$input-border-focus:             transparent;
-
-//** Placeholder text color
-$input-color-placeholder:        #ccc;
+$input-border-focus:              $tapas-blue; //instead of transparent
 
 //** Default `.form-control` height
 $input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2);

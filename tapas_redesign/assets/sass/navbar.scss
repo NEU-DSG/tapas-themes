@@ -1,0 +1,14 @@
+#navbar {
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.navbar-header .logo img {
+  max-width:50px;
+  margin-top:5px;
+}
+.navbar-nav > nav > li > a.inline {
+  display:inline-block;
+}
+#admin-menu {
+  z-index:1043;
+}
