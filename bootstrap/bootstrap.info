@@ -23,6 +23,10 @@ regions[page_bottom]    = 'Page bottom'
 ;; Theme Settings
 ;;;;;;;;;;;;;;;;;;;;;
 
+; Container
+; --------------
+settings[bootstrap_fluid_container] = 0
+
 ; Breadcrumbs
 ; --------------
 settings[bootstrap_breadcrumb] = 1
@@ -144,4 +148,3 @@ version = "7.x-3.0"
 core = "7.x"
 project = "bootstrap"
 datestamp = "1384678107"
-

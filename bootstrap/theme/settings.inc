@@ -128,6 +128,21 @@ function _bootstrap_settings_form(&$form, $form_state) {
     '#default_value' => theme_get_setting('bootstrap_navbar_inverse'),
   );
 
+  //Container
+  $form['components']['container'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Container'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+  );
+  $form['components']['container']['bootstrap_fluid_container'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Fluid container'),
+    '#default_value' => theme_get_setting('bootstrap_fluid_container'),
+    '#description' => t('Use <code>.container-fluid</code> class. See <a href="http://getbootstrap.com/css/#grid-example-fluid">Fluid container</a>'),
+  );
+
+
   // Region wells.
   $wells = array(
     '' => t('None'),
@@ -155,6 +170,7 @@ function _bootstrap_settings_form(&$form, $form_state) {
       '#default_value' => theme_get_setting('bootstrap_region_well-' . $name),
     );
   }
+
 
   // JavaScript settings.
   $form['javascript'] = array(

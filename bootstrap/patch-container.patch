@@ -1,0 +1,99 @@
+diff --git a/bootstrap.info b/bootstrap.info
+index 1c0b976..28b7e95 100644
+--- a/bootstrap.info
++++ b/bootstrap.info
+@@ -23,6 +23,10 @@ regions[page_bottom]    = 'Page bottom'
+ ;; Theme Settings
+ ;;;;;;;;;;;;;;;;;;;;;
+
++; Container
++; --------------
++settings[bootstrap_fluid_container] = 0
++
+ ; Buttons
+ ; --------------
+ settings[bootstrap_button_size] = ''
+diff --git a/theme/settings.inc b/theme/settings.inc
+index 1aa08c0..72e5a9a 100644
+--- a/theme/settings.inc
++++ b/theme/settings.inc
+@@ -61,6 +61,20 @@ function _bootstrap_settings_form(&$form, $form_state) {
+     '#group' => 'bootstrap',
+   );
+
++  //Container
++  $form['general']['container'] = array(
++    '#type' => 'fieldset',
++    '#title' => t('Container'),
++    '#collapsible' => TRUE,
++    '#collapsed' => TRUE,
++  );
++  $form['general']['container']['bootstrap_fluid_container'] = array(
++    '#type' => 'checkbox',
++    '#title' => t('Fluid container'),
++    '#default_value' => theme_get_setting('bootstrap_fluid_container'),
++    '#description' => t('Use <code>.container-fluid</code> class. See <a href="http://getbootstrap.com/css/#grid-example-fluid">Fluid container</a>'),
++  );
++
+   // Buttons.
+   $form['general']['buttons'] = array(
+     '#type' => 'fieldset',
+diff --git a/theme/system/page.tpl.php b/theme/system/page.tpl.php
+index 42d5764..0649a94 100644
+--- a/theme/system/page.tpl.php
++++ b/theme/system/page.tpl.php
+@@ -74,7 +74,7 @@
+  */
+ ?>
+ <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
+-  <div class="container">
++  <div class="<?php print $container_class; ?>">
+     <div class="navbar-header">
+       <?php if ($logo): ?>
+         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+@@ -113,7 +113,7 @@
+   </div>
+ </header>
+
+-<div class="main-container container">
++<div class="main-container <?php print $container_class; ?>">
+
+   <header role="banner" id="page-header">
+     <?php if (!empty($site_slogan)): ?>
+@@ -165,7 +165,7 @@
+ </div>
+
+ <?php if (!empty($page['footer'])): ?>
+-  <footer class="footer container">
++  <footer class="footer <?php print $container_class; ?>">
+     <?php print render($page['footer']); ?>
+   </footer>
+ <?php endif; ?>
+diff --git a/theme/system/page.vars.php b/theme/system/page.vars.php
+index 727a517..ec64d51 100644
+--- a/theme/system/page.vars.php
++++ b/theme/system/page.vars.php
+@@ -21,6 +21,13 @@ function bootstrap_preprocess_page(&$variables) {
+     $variables['content_column_class'] = ' class="col-sm-12"';
+   }
+
++  if(theme_get_setting('bootstrap_fluid_container') === 1) {
++    $variables['container_class'] = 'container-fluid';
++  }
++  else {
++    $variables['container_class'] = 'container';
++  }
++
+   // Primary nav.
+   $variables['primary_nav'] = FALSE;
+   if ($variables['main_menu']) {
+@@ -44,6 +51,9 @@ function bootstrap_preprocess_page(&$variables) {
+   if (theme_get_setting('bootstrap_navbar_position') !== '') {
+     $variables['navbar_classes_array'][] = 'navbar-' . theme_get_setting('bootstrap_navbar_position');
+   }
++  elseif(theme_get_setting('bootstrap_fluid_container') === 1) {
++    $variables['navbar_classes_array'][] = 'container-fluid';
++  }
+   else {
+     $variables['navbar_classes_array'][] = 'container';
+   }
