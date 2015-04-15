@@ -81,15 +81,21 @@ footer {
     cursor:not-allowed;
   }
 }
-.panel-heading a {
-  display:block;
-  width:100%;
+
+a.tabledrag-handle .handle {
+  @extend .fa;
+  @extend .fa-arrows;
+  background:none;
 }
-.panel-heading a:after {
-  float:right;
-  font-family: FontAwesome;
-  content: $fa-var-arrow-up;
-}
-.panel-heading a.collapsed:after {
-  content: $fa-var-arrow-down;
-}
+// .panel-heading a {
+//   display:block;
+//   width:100%;
+// }
+// .panel-heading a:after {
+//   float:right;
+//   font-family: FontAwesome;
+//   content: $fa-var-arrow-up;
+// }
+// .panel-heading a.collapsed:after {
+//   content: $fa-var-arrow-down;
+// }

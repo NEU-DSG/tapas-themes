@@ -7120,7 +7120,7 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
-.fa {
+.fa, a.tabledrag-handle .handle {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -7194,10 +7194,10 @@ button.close {
   float: left;
 }
 
-.fa.pull-left {
+.fa.pull-left, a.tabledrag-handle .pull-left.handle {
   margin-right: .3em;
 }
-.fa.pull-right {
+.fa.pull-right, a.tabledrag-handle .pull-right.handle {
   margin-left: .3em;
 }
 
@@ -7581,7 +7581,7 @@ button.close {
   content: "";
 }
 
-.fa-arrows:before {
+.fa-arrows:before, a.tabledrag-handle .handle:before {
   content: "";
 }
 
@@ -9709,16 +9709,16 @@ body.admin-expanded.admin-vertical.admin-nw .navbar, body.admin-expanded.admin-v
   margin-left: 260px;
 }
 body.navbar-is-fixed-top {
-  padding-top: 64px !important;
+  padding-top: 50px !important;
 }
 body.navbar-is-fixed-bottom {
-  padding-bottom: 64px !important;
+  padding-bottom: 50px !important;
 }
 body.toolbar {
   padding-top: 30px !important;
 }
 body.toolbar .navbar-fixed-top {
-  top: 30px;
+  top: 21px;
 }
 body.toolbar.navbar-is-fixed-top {
   padding-top: 94px !important;
@@ -9801,7 +9801,6 @@ body #admin-menu .dropdown li {
 }
 
 .footer {
-  margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5;
@@ -10246,6 +10245,7 @@ td.radio {
 table .radio input[type="radio"],
 table .checkbox input[type="checkbox"] {
   max-width: inherit;
+  margin-left: 0;
 }
 
 .form-horizontal .form-group label {
@@ -10306,7 +10306,7 @@ table .checkbox input[type="checkbox"] {
 .front .carousel h1, .front .carousel h2, .front .carousel h3, .front .carousel h4, .front .carousel p, .front .sponsors h1, .front .sponsors h2, .front .sponsors h3, .front .sponsors h4, .front .sponsors p {
   color: #EBEBEB;
 }
-.front .pillars .fa {
+.front .pillars .fa, .front .pillars a.tabledrag-handle .handle, a.tabledrag-handle .front .pillars .handle {
   color: #DF691A;
   padding: 20px;
 }
@@ -10359,19 +10359,8 @@ footer h1, footer h2, footer p {
   cursor: not-allowed;
 }
 
-.panel-heading a {
-  display: block;
-  width: 100%;
-}
-
-.panel-heading a:after {
-  float: right;
-  font-family: FontAwesome;
-  content: "";
-}
-
-.panel-heading a.collapsed:after {
-  content: "";
+a.tabledrag-handle .handle {
+  background: none;
 }
 
 #navbar {
