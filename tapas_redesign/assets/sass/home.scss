@@ -9,8 +9,10 @@
     }
   }
   section {
-    padding-top:20px;
-    padding-bottom:20px;
+    padding:0;
+  }
+  .region-content section:not(.block-system) {
+    padding: 20px 0px 20px 0px;
   }
   .carousel, .sponsors {
     background: $gray-darkest;
@@ -36,16 +38,16 @@
       margin-left: 2%;
     }
   }
-  // .logo {
-  //   max-width:100%;
-  //   max-height:150px;
-  //   display:block;
-  //   margin-left:auto;
-  //   margin-right:auto;
-  // }
-  // .logo.neh {
-  //   padding-top:22px;
-  // }
+  img.logo {
+    max-width:100%;
+    max-height:150px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  img.logo.neh {
+    padding-top:22px;
+  }
   .membership {
     .fa-circle {
       color: $brand-success;
@@ -67,17 +69,6 @@ footer {
   }
 }
 
-// Rounded corners
-.img-rounded {
-  border-radius: 50%;
-}
-.btn-xlg {
-  // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical*2, $padding-large-horizontal*2, $font-size-h3, $line-height-large, $border-radius-large);
-}
-hr.inverse {
-  margin:0;
-}
 .list-unstyled {
   li {
     padding:5px;
@@ -89,4 +80,16 @@ hr.inverse {
     color:$gray-lighter;
     cursor:not-allowed;
   }
+}
+.panel-heading a {
+  display:block;
+  width:100%;
+}
+.panel-heading a:after {
+  float:right;
+  font-family: FontAwesome;
+  content: $fa-var-arrow-up;
+}
+.panel-heading a.collapsed:after {
+  content: $fa-var-arrow-down;
 }

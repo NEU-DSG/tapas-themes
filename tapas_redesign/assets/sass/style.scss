@@ -8,11 +8,11 @@
 @import '../../lib/font-awesome/scss/font-awesome';
 
 @import "bootswatch";
+@import "overrides";
 
 @import "home";
 @import "navbar";
 @import "toolbar";
-@import "tabs";
 @import "annotations";
 @import "record";
 @import "community";
