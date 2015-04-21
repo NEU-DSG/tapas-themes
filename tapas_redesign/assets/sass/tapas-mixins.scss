@@ -1,0 +1,15 @@
+// Light button for grey
+.btn-light {
+  @include button-variant($btn-light-color, $btn-light-bg, $btn-light-border);
+}
+// Rounded corners
+.img-rounded {
+  border-radius: 50%;
+}
+.btn-xlg {
+  // line-height: ensure even-numbered height of button next to large input
+  @include button-size($padding-large-vertical*2, $padding-large-horizontal*2, $font-size-h3, $line-height-large, $border-radius-large);
+}
+hr.inverse {
+  margin:0;
+}

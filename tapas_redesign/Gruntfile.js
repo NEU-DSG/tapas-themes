@@ -1,41 +1,69 @@
 module.exports = function(grunt) {
-
-  var jsFiles = ['js/app.js'];
-  // Project configuration.
-
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
 
     // Uglifyjs minify / mangle the js for the Frontend.
     uglify: {
-      js:{
-        files:{
-          'dist/js/app.min.js': jsFiles,
-        },
+      js_dev: {
         options: {
           banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-                  '<%= grunt.template.today("yyyy-mm-dd") %> */'
-        }
-      }
+                       '<%= grunt.template.today("yyyy-mm-dd") %> */',
+          preserveComments: 'all',
+          beautify: {
+            width: 80,
+            beautify: true
+          } // beautify
+        }, // options
+        files: {
+          'js/scripts.js': [
+            'bootstrap/javascripts/bootstrap/affix.js',
+            'bootstrap/javascripts/bootstrap/alert.js',
+            'bootstrap/javascripts/bootstrap/button.js',
+            'bootstrap/javascripts/bootstrap/carousel.js',
+            'bootstrap/javascripts/bootstrap/collapse.js',
+            'bootstrap/javascripts/bootstrap/dropdown.js',
+            'bootstrap/javascripts/bootstrap/modal.js',
+            'bootstrap/javascripts/bootstrap/tooltip.js',
+            'bootstrap/javascripts/bootstrap/popover.js',
+            'bootstrap/javascripts/bootstrap/scrollspy.js',
+            'bootstrap/javascripts/bootstrap/tab.js',
+            'bootstrap/javascripts/bootstrap/transition.js',
+            'assets/js/*.js'
+          ]
+        } // files
+      }, // js_dev
+      js_prod: {
+        files: {
+          'js/scripts.js': [
+            'bootstrap/javascripts/bootstrap/affix.js',
+            'bootstrap/javascripts/bootstrap/alert.js',
+            'bootstrap/javascripts/bootstrap/button.js',
+            'bootstrap/javascripts/bootstrap/carousel.js',
+            'bootstrap/javascripts/bootstrap/collapse.js',
+            'bootstrap/javascripts/bootstrap/dropdown.js',
+            'bootstrap/javascripts/bootstrap/modal.js',
+            'bootstrap/javascripts/bootstrap/tooltip.js',
+            'bootstrap/javascripts/bootstrap/popover.js',
+            'bootstrap/javascripts/bootstrap/scrollspy.js',
+            'bootstrap/javascripts/bootstrap/tab.js',
+            'bootstrap/javascripts/bootstrap/transition.js',
+            'assets/js/*.js'
+          ]
+        } // files
+      } // js_prod
     },
 
     // Watch for file changes then execute tasks
     watch: {
-        sass: {
-          files: 'sass/**/*.sass',
-          tasks: ['sass:dist', 'autoprefixer:dist'],
-        },
-        js:{
-          files: 'js/**/*.js',
-          tasks: ['concat', 'jshint'],
-        },
-        livereload: {
-          files: 'dist/**/*',
-          options: {
-            livereload: true,
-          },
-        },
+      sass: {
+        files: 'assets/sass/*.scss',
+        tasks: ['sass:dist', 'autoprefixer:dist'],
+      },
+      js:{
+        files: 'assets/js/*.js',
+        tasks: ['concat', 'jshint'],
+      },
     },
     sass: {
       dist: {
@@ -43,7 +71,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          'dist/css/style.css': 'sass/style.scss'
+          'css/style.css': 'assets/sass/style.scss'
         }
       }
     },
@@ -59,18 +87,18 @@ module.exports = function(grunt) {
         options: {
           import: 2
         },
-        src: ['dist/css/**/*.css']
+        src: ['css/*.css']
       },
       lax: {
         options: {
           import: false,
           force: true,
         },
-        src: ['dist/css/**/*.css']
+        src: ['css/*.css']
       }
     },
     jshint:{
-      files: ['js/src/app.js', 'Gruntfile.js'],
+      files: ['js/scripts.js', 'Gruntfile.js'],
       options: {
         force: true,
         reporter: 'jslint',
@@ -87,27 +115,27 @@ module.exports = function(grunt) {
       dist: {
         expand: true,
         flatten: true,
-        src: 'dist/css/*.css',
-        dest: 'dist/css/'
+        src: 'css/*.css',
+        dest: 'css/'
       }
     },
     concat: {
       js: {
         files: {
-          'dist/js/app.js': jsFiles,
-          'dist/js/respond.min.js': 'lib/respond/respond.min.js'
+          //'dist/js/app.js': jsFiles,
+          'js/respond.min.js': 'lib/respond/respond.min.js'
         },
       },
     },
     clean: {
-      files: 'dist'
+      files: ['css', 'img', 'js']
     },
     cssmin:{
       minify:{
           expand: true,
-          cwd: 'dist/css/',
+          cwd: 'css/',
           src: ['*.css', '!*.min.css'],
-          dest: 'dist/css/',
+          dest: 'css/',
           ext: '.min.css'
       }
     }

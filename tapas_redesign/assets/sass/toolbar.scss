@@ -1,0 +1,57 @@
+// .toolbar {
+//   position:fixed;
+//   top:176px;
+//   a.toolbar-link {
+//     display:block;
+//     text-decoration:none;
+//     background:$brand-primary;
+//     width:2.5em;
+//     height:2.5em;
+//     overflow:hidden;
+//
+//   }
+//   .toolbar-title {
+//     visibility:hidden;
+//     opacity:0;
+//     @include transition(all, 0.2s, linear);
+//     color:$body-bg;
+//     margin-left:-100px;
+//     padding-right:10px;
+//   }
+//   a.toolbar-link:hover, a.toolbar-link:focus {
+//     .toolbar-title {
+//       opacity:1;
+//       visibility:visible;
+//       margin-left:0;
+//     }
+//     width:auto;
+//   }
+// }
+// #tools, #feed, #bookbag, #search {
+//   background:$body-bg;
+//   border:1px solid $gray-light;
+// }
+// .tools-content, .feed-content, .bookbag-content, .search-content {
+//   padding:20px;
+// }
+// #feed p{
+//   &.lab-notes {
+//     background: $tapas-green-opaque;
+//   }
+//   &.annotation {
+//     background: $tapas-orange-opaque;
+//   }
+//   &.news {
+//     background: $tapas-blue-opaque;
+//   }
+//   &.message {
+//     background: $tapas-red-opaque;
+//   }
+//   a {
+//     color: $text-color;
+//     margin-top:5px;
+//     margin-bottom:5px;
+//     padding:4px;
+//     display:block;
+//   }
+// }
