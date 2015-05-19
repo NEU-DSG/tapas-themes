@@ -25,6 +25,9 @@ jQuery(document).ready(function() {
   jQuery('#myCarousel').carousel({
 	    interval: 10000
 	})
+  jQuery('[data-toggle="tooltip"]').tooltip({
+    placement: 'top'
+  })
 });
 
 //collapses clicks on outside click for collapses

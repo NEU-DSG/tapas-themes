@@ -9930,6 +9930,10 @@ fieldset .panel-heading a.panel-title:hover {
   margin-bottom: 0;
 }
 
+.form-checkbox {
+  margin-left: 0;
+}
+
 .help-block, .control-group .help-inline {
   color: #4E5D6C;
   font-size: 12px;
