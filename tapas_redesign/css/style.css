@@ -9930,7 +9930,7 @@ fieldset .panel-heading a.panel-title:hover {
   margin-bottom: 0;
 }
 
-.form-checkbox {
+.checkbox input[type="checkbox"].form-checkbox {
   margin-left: 0;
 }
 

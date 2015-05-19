@@ -25,9 +25,8 @@ jQuery(document).ready(function() {
   jQuery('#myCarousel').carousel({
 	    interval: 10000
 	})
-  jQuery('[data-toggle="tooltip"]').tooltip({
-    placement: 'top'
-  })
+  //trying to put all the tooltips on top instead of right because it pushes them off the screen
+  jQuery('[data-toggle="tooltip"]').data('bs.tooltip').options.placement = 'top';
 });
 
 //collapses clicks on outside click for collapses
