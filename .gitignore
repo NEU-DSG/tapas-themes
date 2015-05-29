@@ -38,8 +38,8 @@ xmlrpc.php
 
 #custom
 Gemfile.lock
-tapas_redesign/.sass-cache/
+/tapas_redesign/.sass-cache/
 _config.yml
-_site/
-lib/
-tapas_redesign/node_modules/
+/_site/
+/lib/
+/tapas_redesign/node_modules/
