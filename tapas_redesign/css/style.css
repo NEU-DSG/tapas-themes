@@ -9923,6 +9923,9 @@ fieldset .panel-heading a.panel-title:hover {
   border-radius: 0 0 0 0;
 }
 
+.radio, .checkbox {
+  padding-right: 5px;
+}
 .radio:first-child, .checkbox:first-child {
   margin-top: 0;
 }

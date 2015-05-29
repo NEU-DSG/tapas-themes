@@ -237,6 +237,7 @@ fieldset .panel-heading a.panel-title {
   border-radius: $border-radius-base $border-radius-base 0 0;
 }
 .radio, .checkbox {
+  padding-right:5px;
   &:first-child {
     margin-top: 0;
   }
