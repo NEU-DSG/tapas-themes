@@ -646,3 +646,56 @@ table {
 .main-container {
   padding-bottom:20px;
 }
+
+//Fixes for classes on status report
+.ok {
+  @extend .bg-success;
+}
+.info {
+  @extend .bg-info;
+}
+.warning {
+  @extend .bg-warning;
+}
+
+//fixes for alert color - keeping in overrides instead of overriding the bootswatch file
+.alert {
+  color: $text-color;
+
+  a,
+  .alert-link {
+    color: $link-color;
+  }
+}
+
+//fix for features css
+#features-export-form {
+  @include make-row;
+  #features-export-wrapper{
+    @include make-xs-column(6);
+    @extend .pull-right;
+    #features-export-wrapper {
+      width:100%;
+    }
+  }
+  #features-export-info{
+    @include make-xs-column(6);
+    @extend .pull-left;
+    #features-export-info{
+      width:100%;
+    }
+  }
+  #features-export-advanced{
+    @include make-xs-column(6);
+    @extend .pull-left;
+    #features-export-advanced{
+      width:100%;
+    }
+  }
+  #features-export-buttons{
+    @include make-xs-column(6);
+  }
+  fieldset.features-export-component .fieldset-legend {
+    white-space: normal;
+  }
+}
