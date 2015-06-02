@@ -642,14 +642,6 @@ table {
   color: darken($alert-danger-text, 10%);
 }
 
-// Allows input file and upload button to be on the same line
-.form-managed-file {
-  .form-file {
-    display:inline-block;
-    width:auto;
-  }
-}
-
 // Padding underneath main content before footer
 .main-container {
   padding-bottom:20px;
