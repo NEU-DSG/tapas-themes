@@ -10292,6 +10292,11 @@ table .checkbox input[type="checkbox"] {
   color: #19242f;
 }
 
+.form-managed-file .form-file {
+  display: inline-block;
+  width: auto;
+}
+
 .front .page-header {
   display: none;
 }
