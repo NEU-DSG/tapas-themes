@@ -29,10 +29,10 @@ jQuery(document).ready(function() {
   jQuery('[data-toggle="tooltip"]').data('bs.tooltip').options.placement = 'top';
 });
 
-//collapses clicks on outside click for collapses
-jQuery(document).on('click',function(){
-  jQuery('.collapse').collapse('hide');
-})
+// //collapses clicks on outside click for collapses - taking this out because it was causing collapses to close automatically even if you click inside the collapse itself
+// jQuery(document).on('click',function(){
+//   jQuery('.collapse').collapse('hide');
+// })
 
 //toggle star to favorite
 jQuery(".record-helpers a.favorite").click(function(e){
