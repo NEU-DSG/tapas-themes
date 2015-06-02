@@ -10297,6 +10297,10 @@ table .checkbox input[type="checkbox"] {
   width: auto;
 }
 
+.main-container {
+  padding-bottom: 20px;
+}
+
 .front .page-header {
   display: none;
 }
