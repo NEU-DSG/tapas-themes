@@ -7227,7 +7227,7 @@ button.close {
   font-weight: normal;
   font-style: normal;
 }
-.fa, a.tabledrag-handle .handle, #homebox .homebox-portlet .portlet-header .portlet-maximize, #homebox .homebox-portlet .portlet-header .portlet-minus, #homebox .homebox-portlet .portlet-header .portlet-settings, .portlet-close {
+.fa, a.tabledrag-handle .handle, #homebox .homebox-portlet .portlet-header .portlet-maximize, #homebox .homebox-portlet .portlet-header .portlet-minus, #homebox .homebox-portlet .portlet-header .portlet-settings, #homebox .homebox-portlet .portlet-header .portlet-minimize, #homebox .homebox-portlet .portlet-header .portlet-plus, .portlet-close {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -7301,10 +7301,10 @@ button.close {
   float: left;
 }
 
-.fa.pull-left, #features-export-form .fa#features-export-info, #features-export-form a.tabledrag-handle #features-export-info.handle, a.tabledrag-handle #features-export-form #features-export-info.handle, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-info.portlet-maximize, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-info.portlet-maximize, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-info.portlet-minus, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-info.portlet-minus, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-info.portlet-settings, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-info.portlet-settings, #features-export-form #features-export-info.portlet-close, #features-export-form .fa#features-export-advanced, #features-export-form a.tabledrag-handle #features-export-advanced.handle, a.tabledrag-handle #features-export-form #features-export-advanced.handle, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-advanced.portlet-maximize, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-advanced.portlet-maximize, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-advanced.portlet-minus, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-advanced.portlet-minus, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-advanced.portlet-settings, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-advanced.portlet-settings, #features-export-form #features-export-advanced.portlet-close, a.tabledrag-handle .pull-left.handle, #homebox .homebox-portlet .portlet-header .pull-left.portlet-maximize, #homebox .homebox-portlet .portlet-header .pull-left.portlet-minus, #homebox .homebox-portlet .portlet-header .pull-left.portlet-settings, .pull-left.portlet-close {
+.fa.pull-left, #features-export-form .fa#features-export-info, #features-export-form a.tabledrag-handle #features-export-info.handle, a.tabledrag-handle #features-export-form #features-export-info.handle, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-info.portlet-maximize, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-info.portlet-maximize, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-info.portlet-minus, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-info.portlet-minus, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-info.portlet-settings, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-info.portlet-settings, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-info.portlet-minimize, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-info.portlet-minimize, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-info.portlet-plus, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-info.portlet-plus, #features-export-form #features-export-info.portlet-close, #features-export-form .fa#features-export-advanced, #features-export-form a.tabledrag-handle #features-export-advanced.handle, a.tabledrag-handle #features-export-form #features-export-advanced.handle, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-advanced.portlet-maximize, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-advanced.portlet-maximize, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-advanced.portlet-minus, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-advanced.portlet-minus, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-advanced.portlet-settings, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-advanced.portlet-settings, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-advanced.portlet-minimize, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-advanced.portlet-minimize, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-advanced.portlet-plus, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-advanced.portlet-plus, #features-export-form #features-export-advanced.portlet-close, a.tabledrag-handle .pull-left.handle, #homebox .homebox-portlet .portlet-header .pull-left.portlet-maximize, #homebox .homebox-portlet .portlet-header .pull-left.portlet-minus, #homebox .homebox-portlet .portlet-header .pull-left.portlet-settings, #homebox .homebox-portlet .portlet-header .pull-left.portlet-minimize, #homebox .homebox-portlet .portlet-header .pull-left.portlet-plus, .pull-left.portlet-close {
   margin-right: .3em;
 }
-.fa.pull-right, #features-export-form .fa#features-export-wrapper, #features-export-form a.tabledrag-handle #features-export-wrapper.handle, a.tabledrag-handle #features-export-form #features-export-wrapper.handle, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-wrapper.portlet-maximize, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-wrapper.portlet-maximize, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-wrapper.portlet-minus, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-wrapper.portlet-minus, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-wrapper.portlet-settings, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-wrapper.portlet-settings, #features-export-form #features-export-wrapper.portlet-close, a.tabledrag-handle .pull-right.handle, #homebox .homebox-portlet .portlet-header .pull-right.portlet-maximize, #homebox .homebox-portlet .portlet-header .pull-right.portlet-minus, #homebox .homebox-portlet .portlet-header .pull-right.portlet-settings, .pull-right.portlet-close {
+.fa.pull-right, #features-export-form .fa#features-export-wrapper, #features-export-form a.tabledrag-handle #features-export-wrapper.handle, a.tabledrag-handle #features-export-form #features-export-wrapper.handle, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-wrapper.portlet-maximize, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-wrapper.portlet-maximize, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-wrapper.portlet-minus, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-wrapper.portlet-minus, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-wrapper.portlet-settings, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-wrapper.portlet-settings, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-wrapper.portlet-minimize, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-wrapper.portlet-minimize, #features-export-form #homebox .homebox-portlet .portlet-header #features-export-wrapper.portlet-plus, #homebox .homebox-portlet .portlet-header #features-export-form #features-export-wrapper.portlet-plus, #features-export-form #features-export-wrapper.portlet-close, a.tabledrag-handle .pull-right.handle, #homebox .homebox-portlet .portlet-header .pull-right.portlet-maximize, #homebox .homebox-portlet .portlet-header .pull-right.portlet-minus, #homebox .homebox-portlet .portlet-header .pull-right.portlet-settings, #homebox .homebox-portlet .portlet-header .pull-right.portlet-minimize, #homebox .homebox-portlet .portlet-header .pull-right.portlet-plus, .pull-right.portlet-close {
   margin-left: .3em;
 }
 
@@ -7803,15 +7803,15 @@ button.close {
   content: "";
 }
 
-.fa-expand:before {
+.fa-expand:before, #homebox .homebox-portlet .portlet-header .portlet-maximize:before {
   content: "";
 }
 
-.fa-compress:before {
+.fa-compress:before, #homebox .homebox-portlet .portlet-header .portlet-minimize:before {
   content: "";
 }
 
-.fa-plus:before {
+.fa-plus:before, #homebox .homebox-portlet .portlet-header .portlet-plus:before {
   content: "";
 }
 
@@ -8095,7 +8095,7 @@ button.close {
   content: "";
 }
 
-.fa-arrows-alt:before, #homebox .homebox-portlet .portlet-header .portlet-maximize:before {
+.fa-arrows-alt:before {
   content: "";
 }
 
@@ -10490,7 +10490,7 @@ table .checkbox input[type="checkbox"] {
 .front .carousel h1, .front .carousel h2, .front .carousel h3, .front .carousel h4, .front .carousel p, .front .sponsors h1, .front .sponsors h2, .front .sponsors h3, .front .sponsors h4, .front .sponsors p {
   color: #EBEBEB;
 }
-.front .pillars .fa, .front .pillars a.tabledrag-handle .handle, a.tabledrag-handle .front .pillars .handle, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-maximize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-maximize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minus, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-settings, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-settings, .front .pillars .portlet-close {
+.front .pillars .fa, .front .pillars a.tabledrag-handle .handle, a.tabledrag-handle .front .pillars .handle, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-maximize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-maximize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minus, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-settings, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-settings, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minimize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minimize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-plus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-plus, .front .pillars .portlet-close {
   color: #DF691A;
   padding: 20px;
 }
@@ -10666,6 +10666,12 @@ a.tabledrag-handle .handle {
   background: none;
 }
 #homebox .homebox-portlet .portlet-header .portlet-settings {
+  background: none;
+}
+#homebox .homebox-portlet .portlet-header .portlet-minimize {
+  background: none;
+}
+#homebox .homebox-portlet .portlet-header .portlet-plus {
   background: none;
 }
 

@@ -15,7 +15,7 @@
       background-color: #e3e3e3;
       .portlet-maximize{
         @extend .fa;
-        @extend .fa-arrows-alt;
+        @extend .fa-expand;
         background:none;
       }
       .portlet-minus{
@@ -26,6 +26,16 @@
       .portlet-settings{
         @extend .fa;
         @extend .fa-cog;
+        background:none;
+      }
+      .portlet-minimize{
+        @extend .fa;
+        @extend .fa-compress;
+        background:none;
+      }
+      .portlet-plus{
+        @extend .fa;
+        @extend .fa-plus;
         background:none;
       }
     }
