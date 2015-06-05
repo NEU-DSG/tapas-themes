@@ -10,6 +10,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
 
 (function($) {
   $(document).ready(function() {
+    $("body.front").find(".main-container").addClass("container-fluid").removeClass("container");
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -29,7 +30,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
 jQuery(".record-helpers a.favorite").click(function(e){
   e.preventDefault();
   jQuery(this).find("i").toggleClass("fa-bookmark-o").toggleClass("fa-bookmark");
-})
+});
 
 
 
