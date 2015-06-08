@@ -1,4 +1,8 @@
 .view-community {
+  .view-content{
+    @include make-md-column(10);
+    @include make-md-column-pull(2);
+  }
   .view-content ul {
     padding-left:0;
   }
@@ -33,6 +37,20 @@
   }
   .panel-comm-date {
     padding:10px;
+  }
+  .view-filters {
+    @include make-md-column(2);
+    @include make-md-column-push(10);
+    @extend .panel;
+    @extend .panel-default;
+    //@extend .pull-right;
+    border: 1px solid $gray-lighter;
+  }
+  .views-exposed-form {
+    @extend .panel-body;
+  }
+  .views-exposed-widget {
+    padding:0;
   }
 }
 
