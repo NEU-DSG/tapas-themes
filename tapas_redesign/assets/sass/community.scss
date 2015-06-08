@@ -38,19 +38,17 @@
   .panel-comm-date {
     padding:10px;
   }
-  .view-filters {
+  .view-filters{
     @include make-md-column(2);
     @include make-md-column-push(10);
-    @extend .panel;
-    @extend .panel-default;
-    //@extend .pull-right;
-    border: 1px solid $gray-lighter;
+    form {
+      @extend .panel;
+      @extend .panel-default;
+      border: 1px solid $gray-lighter;
+    }
   }
-  .views-exposed-form {
+  .views-exposed-form{
     @extend .panel-body;
-  }
-  .views-exposed-widget {
-    padding:0;
   }
 }
 

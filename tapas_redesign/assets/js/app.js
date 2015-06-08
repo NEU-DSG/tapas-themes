@@ -23,7 +23,11 @@ jQuery('.navbar-collapse ul li a').click(function() {
     jQuery('#myCarousel').carousel({
         interval: 10000
     });
+
+    //adding filter heading
+    $(".view").find(".view-filters form").prepend("<div class='panel-heading'>Filters</div>");
   });
+
 })(jQuery);
 
 //toggle star to favorite
