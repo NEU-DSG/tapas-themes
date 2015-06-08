@@ -1,22 +1,38 @@
-.community {
-  .panel {
+.view-community {
+  .view-content ul {
+    padding-left:0;
+  }
+  .panel-comm {
+    list-style:none;
     background:transparent;
     border: 1px solid $gray-lighter;
     a {
       color:$text-color;
     }
   }
-  .panel-lab-notes .panel-heading {
+  .panel-Lab-Note.panel-heading {
     background: $tapas-green-opaque;
   }
   .panel-annotation .panel-heading {
     background: $tapas-orange-opaque;
   }
-  .panel-news .panel-heading {
+  .panel-Article.panel-heading {
     background: $tapas-blue-opaque;
   }
   .panel-message .panel-heading {
     background: $tapas-red-opaque;
+  }
+  .panel-comm-tags {
+    float:right;
+    padding:10px;
+  }
+  .panel-comm-tags:before{
+    font-family:FontAwesome;
+    content:"\f02b";
+    padding-right:5px;
+  }
+  .panel-comm-date {
+    padding:10px;
   }
 }
 
