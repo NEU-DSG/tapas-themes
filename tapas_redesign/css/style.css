@@ -11105,3 +11105,6 @@ footer h1, footer h2, footer p {
 .container footer {
   background: none;
 }
+footer #block-menu-menu-footer-menu .block-title {
+  display: none;
+}
