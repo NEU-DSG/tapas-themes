@@ -52,6 +52,15 @@
   }
 }
 
+.block {
+  .view-community {
+    .view-content {
+      @include make-md-column(12);
+      @include make-md-column-pull(0);
+    }
+  }
+}
+
 .filters {
   padding:10px;
 }
