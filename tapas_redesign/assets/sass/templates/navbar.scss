@@ -1,0 +1,38 @@
+#navbar {
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.navbar-header .logo img {
+  max-width:50px;
+  margin-top:5px;
+  margin-right:10px;
+}
+.navbar-nav > nav > li > a.inline {
+  display:inline-block;
+}
+#admin-menu {
+  z-index:1043;
+}
+
+
+/*fix for searchbox in nav*/
+.region-navigation{
+  @extend .navbar-form;
+  #block-search-form {
+    margin: 1px 0px 2px 5px;
+  }
+  .input-group-btn{
+    button{
+      @extend .btn-info;
+    }
+  }
+}
+
+/*fix for sign in button*/
+.navbar-nav.secondary{
+  .first.last.leaf{
+    a {
+      @extend .btn-primary;
+    }
+  }
+}

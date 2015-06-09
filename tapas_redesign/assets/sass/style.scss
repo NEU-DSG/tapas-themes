@@ -1,0 +1,26 @@
+@import "../../bootstrap/stylesheets/bootstrap/variables";
+@import "tapas-variables";
+
+@import "../../bootstrap/stylesheets/bootstrap/mixins";
+@import "tapas-mixins";
+
+@import "bootstrap-map";
+@import '../../lib/font-awesome/scss/font-awesome';
+
+@import "bootswatch";
+@import "overrides";
+
+/*components refers to tapas specific content*/
+@import "components/home";
+@import "components/toolbar";
+@import "components/annotations";
+@import "components/activity-feed";
+@import "components/mytapas";
+
+/*templates refers to base drupal pieces*/
+@import "templates/navbar";
+@import "templates/record";
+@import "templates/homebox";
+@import "templates/views";
+@import "templates/blocks";
+@import "templates/footer";

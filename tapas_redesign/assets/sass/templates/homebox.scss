@@ -1,0 +1,54 @@
+#homebox{
+  .homebox-column{
+    background:none;
+  }
+  .homebox-portlet {
+    @extend .panel;
+    @extend .panel-default;
+    .homebox-portlet-inner{
+      @extend .panel-heading;
+      background-color:white;
+    }
+    .portlet-header {
+      @extend .panel-title;
+      padding:10px;
+      background-color: #e3e3e3;
+      .portlet-maximize{
+        @extend .fa;
+        @extend .fa-expand;
+        background:none;
+      }
+      .portlet-minus{
+        @extend .fa;
+        @extend .fa-minus;
+        background:none;
+      }
+      .portlet-settings{
+        @extend .fa;
+        @extend .fa-cog;
+        background:none;
+      }
+      .portlet-minimize{
+        @extend .fa;
+        @extend .fa-compress;
+        background:none;
+      }
+      .portlet-plus{
+        @extend .fa;
+        @extend .fa-plus;
+        background:none;
+      }
+    }
+    .portlet-content {
+      @extend .panel-body;
+    }
+  }
+}
+.portlet-close{
+  @extend .fa;
+  @extend .fa-times;
+  background:none;
+}
+.portlet-icon{
+  width:20px;
+}

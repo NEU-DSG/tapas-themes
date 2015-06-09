@@ -1,0 +1,23 @@
+footer {
+  background: $gray-darkest;
+  padding-bottom:0px;
+  .block{
+    background: $gray-darkest;
+  }
+  h1, h2, p {
+    color: $gray-lighter;
+  }
+  padding-top:20px;
+  .container & {
+    background: none;
+  }
+  #block-menu-menu-footer-menu {
+    .block-title{
+      display:none;
+    }
+    .menu .leaf a{
+      color: $link-color;
+      font-size:$font-size-large;
+    }
+  }
+}

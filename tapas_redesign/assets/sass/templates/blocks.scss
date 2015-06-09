@@ -1,0 +1,10 @@
+.block{
+  @extend .panel;
+  @extend .panel-default;
+  .view, ul {
+    @extend .panel-body;
+  }
+}
+.block-title {
+  @extend .panel-heading;
+}
