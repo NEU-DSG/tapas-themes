@@ -19,13 +19,15 @@ jQuery('.navbar-collapse ul li a').click(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-    //trigger carousel
-    jQuery('#myCarousel').carousel({
-        interval: 10000
-    });
 
     //adding filter heading
     $(".view").find(".view-filters form").prepend("<div class='panel-heading'>Filters</div>");
+
+    //making footer menu into three columns
+    var $children = $('.footer .menu .leaf');
+    for(var i = 0, l = $children.length; i < l; i += 3) {
+        $children.slice(i, i+3).wrapAll('<div class="col-sm-4"></div>');
+    }
   });
 
 })(jQuery);

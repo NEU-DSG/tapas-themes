@@ -1,5 +1,6 @@
 footer {
   background: $gray-darkest;
+  padding-bottom:0px;
   .block{
     background: $gray-darkest;
   }
@@ -13,6 +14,10 @@ footer {
   #block-menu-menu-footer-menu {
     .block-title{
       display:none;
+    }
+    .menu .leaf a{
+      color: $link-color;
+      font-size:$font-size-large;
     }
   }
 }

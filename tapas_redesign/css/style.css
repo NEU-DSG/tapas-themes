@@ -22,6 +22,94 @@
   background-color: #222222;
 }
 
+.btn-tapas-blue {
+  color: #fff;
+  background-color: #6ea8e5;
+  border-color: transparent;
+}
+.btn-tapas-blue:hover, .btn-tapas-blue:focus, .btn-tapas-blue.focus, .btn-tapas-blue:active, .btn-tapas-blue.active, .open > .btn-tapas-blue.dropdown-toggle {
+  color: #fff;
+  background-color: #438edd;
+  border-color: transparent;
+}
+.btn-tapas-blue:active, .btn-tapas-blue.active, .open > .btn-tapas-blue.dropdown-toggle {
+  background-image: none;
+}
+.btn-tapas-blue.disabled, .btn-tapas-blue.disabled:hover, .btn-tapas-blue.disabled:focus, .btn-tapas-blue.disabled.focus, .btn-tapas-blue.disabled:active, .btn-tapas-blue.disabled.active, .btn-tapas-blue[disabled], .btn-tapas-blue[disabled]:hover, .btn-tapas-blue[disabled]:focus, .btn-tapas-blue[disabled].focus, .btn-tapas-blue[disabled]:active, .btn-tapas-blue[disabled].active, fieldset[disabled] .btn-tapas-blue, fieldset[disabled] .btn-tapas-blue:hover, fieldset[disabled] .btn-tapas-blue:focus, fieldset[disabled] .btn-tapas-blue.focus, fieldset[disabled] .btn-tapas-blue:active, fieldset[disabled] .btn-tapas-blue.active {
+  background-color: #6ea8e5;
+  border-color: transparent;
+}
+.btn-tapas-blue .badge {
+  color: #6ea8e5;
+  background-color: #fff;
+}
+
+.btn-tapas-red {
+  color: #fff;
+  background-color: #b02c2c;
+  border-color: transparent;
+}
+.btn-tapas-red:hover, .btn-tapas-red:focus, .btn-tapas-red.focus, .btn-tapas-red:active, .btn-tapas-red.active, .open > .btn-tapas-red.dropdown-toggle {
+  color: #fff;
+  background-color: #872222;
+  border-color: transparent;
+}
+.btn-tapas-red:active, .btn-tapas-red.active, .open > .btn-tapas-red.dropdown-toggle {
+  background-image: none;
+}
+.btn-tapas-red.disabled, .btn-tapas-red.disabled:hover, .btn-tapas-red.disabled:focus, .btn-tapas-red.disabled.focus, .btn-tapas-red.disabled:active, .btn-tapas-red.disabled.active, .btn-tapas-red[disabled], .btn-tapas-red[disabled]:hover, .btn-tapas-red[disabled]:focus, .btn-tapas-red[disabled].focus, .btn-tapas-red[disabled]:active, .btn-tapas-red[disabled].active, fieldset[disabled] .btn-tapas-red, fieldset[disabled] .btn-tapas-red:hover, fieldset[disabled] .btn-tapas-red:focus, fieldset[disabled] .btn-tapas-red.focus, fieldset[disabled] .btn-tapas-red:active, fieldset[disabled] .btn-tapas-red.active {
+  background-color: #b02c2c;
+  border-color: transparent;
+}
+.btn-tapas-red .badge {
+  color: #b02c2c;
+  background-color: #fff;
+}
+
+.btn-tapas-green {
+  color: #fff;
+  background-color: #b1dc16;
+  border-color: transparent;
+}
+.btn-tapas-green:hover, .btn-tapas-green:focus, .btn-tapas-green.focus, .btn-tapas-green:active, .btn-tapas-green.active, .open > .btn-tapas-green.dropdown-toggle {
+  color: #fff;
+  background-color: #8cae11;
+  border-color: transparent;
+}
+.btn-tapas-green:active, .btn-tapas-green.active, .open > .btn-tapas-green.dropdown-toggle {
+  background-image: none;
+}
+.btn-tapas-green.disabled, .btn-tapas-green.disabled:hover, .btn-tapas-green.disabled:focus, .btn-tapas-green.disabled.focus, .btn-tapas-green.disabled:active, .btn-tapas-green.disabled.active, .btn-tapas-green[disabled], .btn-tapas-green[disabled]:hover, .btn-tapas-green[disabled]:focus, .btn-tapas-green[disabled].focus, .btn-tapas-green[disabled]:active, .btn-tapas-green[disabled].active, fieldset[disabled] .btn-tapas-green, fieldset[disabled] .btn-tapas-green:hover, fieldset[disabled] .btn-tapas-green:focus, fieldset[disabled] .btn-tapas-green.focus, fieldset[disabled] .btn-tapas-green:active, fieldset[disabled] .btn-tapas-green.active {
+  background-color: #b1dc16;
+  border-color: transparent;
+}
+.btn-tapas-green .badge {
+  color: #b1dc16;
+  background-color: #fff;
+}
+
+.btn-tapas-orange {
+  color: #fff;
+  background-color: #e69317;
+  border-color: transparent;
+}
+.btn-tapas-orange:hover, .btn-tapas-orange:focus, .btn-tapas-orange.focus, .btn-tapas-orange:active, .btn-tapas-orange.active, .open > .btn-tapas-orange.dropdown-toggle {
+  color: #fff;
+  background-color: #b87512;
+  border-color: transparent;
+}
+.btn-tapas-orange:active, .btn-tapas-orange.active, .open > .btn-tapas-orange.dropdown-toggle {
+  background-image: none;
+}
+.btn-tapas-orange.disabled, .btn-tapas-orange.disabled:hover, .btn-tapas-orange.disabled:focus, .btn-tapas-orange.disabled.focus, .btn-tapas-orange.disabled:active, .btn-tapas-orange.disabled.active, .btn-tapas-orange[disabled], .btn-tapas-orange[disabled]:hover, .btn-tapas-orange[disabled]:focus, .btn-tapas-orange[disabled].focus, .btn-tapas-orange[disabled]:active, .btn-tapas-orange[disabled].active, fieldset[disabled] .btn-tapas-orange, fieldset[disabled] .btn-tapas-orange:hover, fieldset[disabled] .btn-tapas-orange:focus, fieldset[disabled] .btn-tapas-orange.focus, fieldset[disabled] .btn-tapas-orange:active, fieldset[disabled] .btn-tapas-orange.active {
+  background-color: #e69317;
+  border-color: transparent;
+}
+.btn-tapas-orange .badge {
+  color: #e69317;
+  background-color: #fff;
+}
+
 .img-rounded {
   border-radius: 50%;
 }
@@ -11094,6 +11182,7 @@ a.tabledrag-handle .handle {
 
 footer {
   background: #2B3E50;
+  padding-bottom: 0px;
   padding-top: 20px;
 }
 footer .block {
@@ -11107,4 +11196,8 @@ footer h1, footer h2, footer p {
 }
 footer #block-menu-menu-footer-menu .block-title {
   display: none;
+}
+footer #block-menu-menu-footer-menu .menu .leaf a {
+  color: #DF691A;
+  font-size: 19px;
 }
