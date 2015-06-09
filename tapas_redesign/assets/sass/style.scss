@@ -10,12 +10,16 @@
 @import "bootswatch";
 @import "overrides";
 
-@import "home";
-@import "navbar";
-@import "toolbar";
-@import "annotations";
-@import "record";
-@import "community";
-@import "mytapas";
-@import "homebox";
-@import "views";
+/*components refers to tapas specific content*/
+@import "components/home";
+@import "components/toolbar";
+@import "components/annotations";
+@import "components/activity-feed";
+@import "components/mytapas";
+
+/*templates refers to base drupal pieces*/
+@import "templates/navbar";
+@import "templates/record";
+@import "templates/homebox";
+@import "templates/views";
+@import "templates/blocks";
