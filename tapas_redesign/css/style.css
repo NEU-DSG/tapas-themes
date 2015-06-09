@@ -10792,17 +10792,6 @@ table .checkbox input[type="checkbox"] {
   text-align: center;
 }
 
-footer {
-  background: #2B3E50;
-  padding-top: 20px;
-}
-footer h1, footer h2, footer p {
-  color: #EBEBEB;
-}
-.container footer {
-  background: none;
-}
-
 .list-unstyled li {
   padding: 5px;
 }
@@ -11101,4 +11090,18 @@ a.tabledrag-handle .handle {
 
 .portlet-icon {
   width: 20px;
+}
+
+footer {
+  background: #2B3E50;
+  padding-top: 20px;
+}
+footer .block {
+  background: #2B3E50;
+}
+footer h1, footer h2, footer p {
+  color: #EBEBEB;
+}
+.container footer {
+  background: none;
 }

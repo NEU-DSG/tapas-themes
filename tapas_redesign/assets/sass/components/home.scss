@@ -58,17 +58,6 @@
   }
 }
 
-footer {
-  background: $gray-darkest;
-  h1, h2, p {
-    color: $gray-lighter;
-  }
-  padding-top:20px;
-  .container & {
-    background: none;
-  }
-}
-
 .list-unstyled {
   li {
     padding:5px;
