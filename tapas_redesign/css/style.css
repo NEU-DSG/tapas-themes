@@ -10982,6 +10982,9 @@ a.tabledrag-handle .handle {
   border: 1px solid #EBEBEB;
 }
 
+.block .block-title {
+  margin-top: 0;
+}
 .block .view-community .view-content {
   position: relative;
   min-height: 1px;
@@ -10998,6 +11001,11 @@ a.tabledrag-handle .handle {
   .block .view-community .view-content {
     right: 0%;
   }
+}
+.block .view-community .panel-comm {
+  border: none;
+  padding: 0;
+  box-shadow: 0;
 }
 
 .filters {

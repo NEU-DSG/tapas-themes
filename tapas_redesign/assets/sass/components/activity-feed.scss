@@ -53,10 +53,18 @@
 }
 
 .block {
+  .block-title{
+    margin-top:0;
+  }
   .view-community {
     .view-content {
       @include make-md-column(12);
       @include make-md-column-pull(0);
+    }
+    .panel-comm {
+      border:none;
+      padding:0;
+      box-shadow: 0;
     }
   }
 }
