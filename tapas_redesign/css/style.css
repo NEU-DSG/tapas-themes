@@ -11182,6 +11182,7 @@ a.tabledrag-handle .handle {
 
 .block {
   background-color: transparent;
+  box-shadow: none;
 }
 
 footer {

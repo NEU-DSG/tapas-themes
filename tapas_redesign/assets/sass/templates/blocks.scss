@@ -2,6 +2,7 @@
   @extend .panel;
   @extend .panel-default;
   background-color:transparent;
+  box-shadow:none;
   .view, ul {
     @extend .panel-body;
   }
