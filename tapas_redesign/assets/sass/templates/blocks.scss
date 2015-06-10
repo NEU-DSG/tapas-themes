@@ -1,6 +1,7 @@
 .block{
   @extend .panel;
   @extend .panel-default;
+  background-color:transparent;
   .view, ul {
     @extend .panel-body;
   }
