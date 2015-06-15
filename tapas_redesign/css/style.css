@@ -11020,10 +11020,10 @@ a.tabledrag-handle .handle {
 .view-community .panel-annotation .panel-heading, .view-community .panel-annotation #homebox .homebox-portlet .homebox-portlet-inner, #homebox .homebox-portlet .view-community .panel-annotation .homebox-portlet-inner, .view-community .panel-annotation .block-title {
   background: rgba(230, 147, 23, 0.3);
 }
-.view-community .panel-Article.panel-heading, .view-community #homebox .homebox-portlet .panel-Article.homebox-portlet-inner, #homebox .homebox-portlet .view-community .panel-Article.homebox-portlet-inner, .view-community .panel-Article.block-title {
+.view-community .panel-Newsitem.panel-heading, .view-community #homebox .homebox-portlet .panel-Newsitem.homebox-portlet-inner, #homebox .homebox-portlet .view-community .panel-Newsitem.homebox-portlet-inner, .view-community .panel-Newsitem.block-title {
   background: rgba(110, 168, 229, 0.3);
 }
-.view-community .panel-message .panel-heading, .view-community .panel-message #homebox .homebox-portlet .homebox-portlet-inner, #homebox .homebox-portlet .view-community .panel-message .homebox-portlet-inner, .view-community .panel-message .block-title {
+.view-community .panel-Forum-topic .panel-heading, .view-community .panel-Forum-topic #homebox .homebox-portlet .homebox-portlet-inner, #homebox .homebox-portlet .view-community .panel-Forum-topic .homebox-portlet-inner, .view-community .panel-Forum-topic .block-title {
   background: rgba(176, 44, 44, 0.3);
 }
 .view-community .panel-comm-tags {
