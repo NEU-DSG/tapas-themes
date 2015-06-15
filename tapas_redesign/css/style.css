@@ -11059,27 +11059,27 @@ a.tabledrag-handle .handle {
   border: 1px solid #EBEBEB;
 }
 
-.block .block-title {
+.block-views .block-title {
   margin-top: 0;
 }
-.block .view-community .view-content {
+.block-views .view-community .view-content {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .block .view-community .view-content {
+  .block-views .view-community .view-content {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-  .block .view-community .view-content {
+  .block-views .view-community .view-content {
     right: 0%;
   }
 }
-.block .view-community .panel-comm {
+.block-views .view-community .panel-comm {
   border: none;
   padding: 0;
   box-shadow: 0;
