@@ -699,3 +699,17 @@ table {
     white-space: normal;
   }
 }
+
+
+//for carousel
+.carousel-caption{
+  position:relative;
+  margin:15%;
+  right:0;
+}
+
+//for thumbnails
+.thumbnail {
+  background:none;
+  border: 1px solid $gray-lighter;
+}

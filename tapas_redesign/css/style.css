@@ -10827,6 +10827,17 @@ table .checkbox input[type="checkbox"] {
   white-space: normal;
 }
 
+.carousel-caption {
+  position: relative;
+  margin: 15%;
+  right: 0;
+}
+
+.thumbnail {
+  background: none;
+  border: 1px solid #EBEBEB;
+}
+
 /*components refers to tapas specific content*/
 .front .page-header {
   display: none;
