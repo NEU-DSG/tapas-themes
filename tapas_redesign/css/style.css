@@ -10832,6 +10832,12 @@ table .checkbox input[type="checkbox"] {
   position: relative;
   margin: 15%;
   right: 0;
+  left: 0;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+  max-width: 100%;
 }
 
 .thumbnail {
@@ -11125,6 +11131,9 @@ a.tabledrag-handle .handle {
 }
 #block-menu-menu-primary-menu ul li {
   padding: 0;
+}
+#block-menu-menu-primary-menu .block ul a {
+  color: #FFF;
 }
 
 #navbar {
