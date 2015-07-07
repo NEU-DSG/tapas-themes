@@ -11125,6 +11125,7 @@ a.tabledrag-handle .handle {
 /*templates refers to base drupal pieces*/
 #block-menu-menu-primary-menu {
   margin-bottom: 0;
+  float: left;
 }
 #block-menu-menu-primary-menu ul {
   padding: 0;
