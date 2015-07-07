@@ -706,6 +706,11 @@ table {
   position:relative;
   margin:15%;
   right:0;
+  left:0;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width:100%;
+  max-width:100%;
 }
 
 //for thumbnails
