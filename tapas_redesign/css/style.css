@@ -3817,24 +3817,24 @@ select[multiple].input-lg,
   background-color: #fff;
 }
 
-.btn-primary, .navbar-nav.secondary .first.last.leaf a, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a {
+.btn-primary, .navbar-nav.secondary .first.last.leaf a, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a, #block-system-user-menu .secondary.menu.nav .first.last.leaf a {
   color: #fff;
   background-color: #DF691A;
   border-color: transparent;
 }
-.btn-primary:hover, .navbar-nav.secondary .first.last.leaf a:hover, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:hover, .btn-primary:focus, .navbar-nav.secondary .first.last.leaf a:focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:focus, .btn-primary.focus, .navbar-nav.secondary .first.last.leaf a.focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.focus, .btn-primary:active, .navbar-nav.secondary .first.last.leaf a:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:active, .btn-primary.active, .navbar-nav.secondary .first.last.leaf a.active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.active, .open > .btn-primary.dropdown-toggle, .navbar-nav.secondary .first.last.leaf .open > a.dropdown-toggle, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf .open > a.dropdown-toggle {
+.btn-primary:hover, .navbar-nav.secondary .first.last.leaf a:hover, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:hover, #block-system-user-menu .secondary.menu.nav .first.last.leaf a:hover, .btn-primary:focus, .navbar-nav.secondary .first.last.leaf a:focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:focus, #block-system-user-menu .secondary.menu.nav .first.last.leaf a:focus, .btn-primary.focus, .navbar-nav.secondary .first.last.leaf a.focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.focus, #block-system-user-menu .secondary.menu.nav .first.last.leaf a.focus, .btn-primary:active, .navbar-nav.secondary .first.last.leaf a:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:active, #block-system-user-menu .secondary.menu.nav .first.last.leaf a:active, .btn-primary.active, .navbar-nav.secondary .first.last.leaf a.active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.active, #block-system-user-menu .secondary.menu.nav .first.last.leaf a.active, .open > .btn-primary.dropdown-toggle, .navbar-nav.secondary .first.last.leaf .open > a.dropdown-toggle, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf .open > a.dropdown-toggle, #block-system-user-menu .secondary.menu.nav .first.last.leaf .open > a.dropdown-toggle {
   color: #fff;
   background-color: #b15315;
   border-color: transparent;
 }
-.btn-primary:active, .navbar-nav.secondary .first.last.leaf a:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:active, .btn-primary.active, .navbar-nav.secondary .first.last.leaf a.active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.active, .open > .btn-primary.dropdown-toggle, .navbar-nav.secondary .first.last.leaf .open > a.dropdown-toggle, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf .open > a.dropdown-toggle {
+.btn-primary:active, .navbar-nav.secondary .first.last.leaf a:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:active, #block-system-user-menu .secondary.menu.nav .first.last.leaf a:active, .btn-primary.active, .navbar-nav.secondary .first.last.leaf a.active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.active, #block-system-user-menu .secondary.menu.nav .first.last.leaf a.active, .open > .btn-primary.dropdown-toggle, .navbar-nav.secondary .first.last.leaf .open > a.dropdown-toggle, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf .open > a.dropdown-toggle, #block-system-user-menu .secondary.menu.nav .first.last.leaf .open > a.dropdown-toggle {
   background-image: none;
 }
-.btn-primary.disabled, .navbar-nav.secondary .first.last.leaf a.disabled, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled, .btn-primary.disabled:hover, .navbar-nav.secondary .first.last.leaf a.disabled:hover, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled:hover, .btn-primary.disabled:focus, .navbar-nav.secondary .first.last.leaf a.disabled:focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled:focus, .btn-primary.disabled.focus, .navbar-nav.secondary .first.last.leaf a.disabled.focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled.focus, .btn-primary.disabled:active, .navbar-nav.secondary .first.last.leaf a.disabled:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled:active, .btn-primary.disabled.active, .navbar-nav.secondary .first.last.leaf a.disabled.active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled.active, .btn-primary[disabled], .navbar-nav.secondary .first.last.leaf a[disabled], #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled], .btn-primary[disabled]:hover, .navbar-nav.secondary .first.last.leaf a[disabled]:hover, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled]:hover, .btn-primary[disabled]:focus, .navbar-nav.secondary .first.last.leaf a[disabled]:focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled]:focus, .btn-primary[disabled].focus, .navbar-nav.secondary .first.last.leaf a[disabled].focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled].focus, .btn-primary[disabled]:active, .navbar-nav.secondary .first.last.leaf a[disabled]:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled]:active, .btn-primary[disabled].active, .navbar-nav.secondary .first.last.leaf a[disabled].active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a:hover, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a:hover, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:hover, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a:focus, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a:focus, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a.focus, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a.focus, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a:active, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a:active, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a.active, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a.active, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a.active {
+.btn-primary.disabled, .navbar-nav.secondary .first.last.leaf a.disabled, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled, #block-system-user-menu .secondary.menu.nav .first.last.leaf a.disabled, .btn-primary.disabled:hover, .navbar-nav.secondary .first.last.leaf a.disabled:hover, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled:hover, #block-system-user-menu .secondary.menu.nav .first.last.leaf a.disabled:hover, .btn-primary.disabled:focus, .navbar-nav.secondary .first.last.leaf a.disabled:focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled:focus, #block-system-user-menu .secondary.menu.nav .first.last.leaf a.disabled:focus, .btn-primary.disabled.focus, .navbar-nav.secondary .first.last.leaf a.disabled.focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled.focus, #block-system-user-menu .secondary.menu.nav .first.last.leaf a.disabled.focus, .btn-primary.disabled:active, .navbar-nav.secondary .first.last.leaf a.disabled:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled:active, #block-system-user-menu .secondary.menu.nav .first.last.leaf a.disabled:active, .btn-primary.disabled.active, .navbar-nav.secondary .first.last.leaf a.disabled.active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.disabled.active, #block-system-user-menu .secondary.menu.nav .first.last.leaf a.disabled.active, .btn-primary[disabled], .navbar-nav.secondary .first.last.leaf a[disabled], #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled], #block-system-user-menu .secondary.menu.nav .first.last.leaf a[disabled], .btn-primary[disabled]:hover, .navbar-nav.secondary .first.last.leaf a[disabled]:hover, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled]:hover, #block-system-user-menu .secondary.menu.nav .first.last.leaf a[disabled]:hover, .btn-primary[disabled]:focus, .navbar-nav.secondary .first.last.leaf a[disabled]:focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled]:focus, #block-system-user-menu .secondary.menu.nav .first.last.leaf a[disabled]:focus, .btn-primary[disabled].focus, .navbar-nav.secondary .first.last.leaf a[disabled].focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled].focus, #block-system-user-menu .secondary.menu.nav .first.last.leaf a[disabled].focus, .btn-primary[disabled]:active, .navbar-nav.secondary .first.last.leaf a[disabled]:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled]:active, #block-system-user-menu .secondary.menu.nav .first.last.leaf a[disabled]:active, .btn-primary[disabled].active, .navbar-nav.secondary .first.last.leaf a[disabled].active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a[disabled].active, #block-system-user-menu .secondary.menu.nav .first.last.leaf a[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a, fieldset[disabled] #block-system-user-menu .secondary.menu.nav .first.last.leaf a, #block-system-user-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a:hover, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a:hover, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:hover, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a:hover, fieldset[disabled] #block-system-user-menu .secondary.menu.nav .first.last.leaf a:hover, #block-system-user-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a:focus, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a:focus, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a:focus, fieldset[disabled] #block-system-user-menu .secondary.menu.nav .first.last.leaf a:focus, #block-system-user-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a.focus, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a.focus, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.focus, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a.focus, fieldset[disabled] #block-system-user-menu .secondary.menu.nav .first.last.leaf a.focus, #block-system-user-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a:active, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a:active, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a:active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a:active, fieldset[disabled] #block-system-user-menu .secondary.menu.nav .first.last.leaf a:active, #block-system-user-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a:active, fieldset[disabled] .btn-primary.active, fieldset[disabled] .navbar-nav.secondary .first.last.leaf a.active, .navbar-nav.secondary .first.last.leaf fieldset[disabled] a.active, fieldset[disabled] #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a.active, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a.active, fieldset[disabled] #block-system-user-menu .secondary.menu.nav .first.last.leaf a.active, #block-system-user-menu .secondary.menu.nav .first.last.leaf fieldset[disabled] a.active {
   background-color: #DF691A;
   border-color: transparent;
 }
-.btn-primary .badge, .navbar-nav.secondary .first.last.leaf a .badge, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a .badge {
+.btn-primary .badge, .navbar-nav.secondary .first.last.leaf a .badge, #block-menu-menu-primary-menu .secondary.menu.nav .first.last.leaf a .badge, #block-system-user-menu .secondary.menu.nav .first.last.leaf a .badge {
   color: #DF691A;
   background-color: #fff;
 }
@@ -4851,16 +4851,16 @@ tbody.collapse.in {
   }
 }
 
-.navbar-nav, #block-menu-menu-primary-menu .menu.nav {
+.navbar-nav, #block-menu-menu-primary-menu .menu.nav, #block-system-user-menu .menu.nav {
   margin: 4.75px -15px;
 }
-.navbar-nav > li > a, #block-menu-menu-primary-menu .menu.nav > li > a {
+.navbar-nav > li > a, #block-menu-menu-primary-menu .menu.nav > li > a, #block-system-user-menu .menu.nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 21px;
 }
 @media (max-width: 767px) {
-  .navbar-nav .open .dropdown-menu, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu {
+  .navbar-nav .open .dropdown-menu, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu, #block-system-user-menu .menu.nav .open .dropdown-menu {
     position: static;
     float: none;
     width: auto;
@@ -4869,27 +4869,28 @@ tbody.collapse.in {
     border: 0;
     box-shadow: none;
   }
-  .navbar-nav .open .dropdown-menu > li > a, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu > li > a, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a, #block-system-user-menu .menu.nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header,
-  #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu .dropdown-header {
+  #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu .dropdown-header,
+  #block-system-user-menu .menu.nav .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
-  .navbar-nav .open .dropdown-menu > li > a, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a {
+  .navbar-nav .open .dropdown-menu > li > a, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a, #block-system-user-menu .menu.nav .open .dropdown-menu > li > a {
     line-height: 21px;
   }
-  .navbar-nav .open .dropdown-menu > li > a:hover, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:focus {
+  .navbar-nav .open .dropdown-menu > li > a:hover, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:hover, #block-system-user-menu .menu.nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus, #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:focus, #block-system-user-menu .menu.nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
 }
 @media (min-width: 768px) {
-  .navbar-nav, #block-menu-menu-primary-menu .menu.nav {
+  .navbar-nav, #block-menu-menu-primary-menu .menu.nav, #block-system-user-menu .menu.nav {
     float: left;
     margin: 0;
   }
-  .navbar-nav > li, #block-menu-menu-primary-menu .menu.nav > li {
+  .navbar-nav > li, #block-menu-menu-primary-menu .menu.nav > li, #block-system-user-menu .menu.nav > li {
     float: left;
   }
-  .navbar-nav > li > a, #block-menu-menu-primary-menu .menu.nav > li > a {
+  .navbar-nav > li > a, #block-menu-menu-primary-menu .menu.nav > li > a, #block-system-user-menu .menu.nav > li > a {
     padding-top: 9.5px;
     padding-bottom: 9.5px;
   }
@@ -4980,13 +4981,13 @@ tbody.collapse.in {
   }
 }
 
-.navbar-nav > li > .dropdown-menu, #block-menu-menu-primary-menu .menu.nav > li > .dropdown-menu {
+.navbar-nav > li > .dropdown-menu, #block-menu-menu-primary-menu .menu.nav > li > .dropdown-menu, #block-system-user-menu .menu.nav > li > .dropdown-menu {
   margin-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu, .navbar-fixed-bottom #block-menu-menu-primary-menu .menu.nav > li > .dropdown-menu, #block-menu-menu-primary-menu .navbar-fixed-bottom .menu.nav > li > .dropdown-menu {
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu, .navbar-fixed-bottom #block-menu-menu-primary-menu .menu.nav > li > .dropdown-menu, #block-menu-menu-primary-menu .navbar-fixed-bottom .menu.nav > li > .dropdown-menu, .navbar-fixed-bottom #block-system-user-menu .menu.nav > li > .dropdown-menu, #block-system-user-menu .navbar-fixed-bottom .menu.nav > li > .dropdown-menu {
   margin-bottom: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -5046,18 +5047,18 @@ tbody.collapse.in {
 .navbar-default .navbar-text {
   color: #2B3E50;
 }
-.navbar-default .navbar-nav > li > a, .navbar-default #block-menu-menu-primary-menu .menu.nav > li > a, #block-menu-menu-primary-menu .navbar-default .menu.nav > li > a {
+.navbar-default .navbar-nav > li > a, .navbar-default #block-menu-menu-primary-menu .menu.nav > li > a, #block-menu-menu-primary-menu .navbar-default .menu.nav > li > a, .navbar-default #block-system-user-menu .menu.nav > li > a, #block-system-user-menu .navbar-default .menu.nav > li > a {
   color: #EBEBEB;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav > li > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav > li > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav > li > a:focus {
-  color: #EBEBEB;
-  background-color: #485563;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default #block-menu-menu-primary-menu .menu.nav > .active > a, #block-menu-menu-primary-menu .navbar-default .menu.nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav > .active > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav > .active > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav > .active > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav > li > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav > li > a:hover, .navbar-default #block-system-user-menu .menu.nav > li > a:hover, #block-system-user-menu .navbar-default .menu.nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav > li > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav > li > a:focus, .navbar-default #block-system-user-menu .menu.nav > li > a:focus, #block-system-user-menu .navbar-default .menu.nav > li > a:focus {
   color: #EBEBEB;
   background-color: #485563;
 }
-.navbar-default .navbar-nav > .disabled > a, .navbar-default #block-menu-menu-primary-menu .menu.nav > .disabled > a, #block-menu-menu-primary-menu .navbar-default .menu.nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav > .disabled > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav > .disabled > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav > .disabled > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default #block-menu-menu-primary-menu .menu.nav > .active > a, #block-menu-menu-primary-menu .navbar-default .menu.nav > .active > a, .navbar-default #block-system-user-menu .menu.nav > .active > a, #block-system-user-menu .navbar-default .menu.nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav > .active > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav > .active > a:hover, .navbar-default #block-system-user-menu .menu.nav > .active > a:hover, #block-system-user-menu .navbar-default .menu.nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav > .active > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav > .active > a:focus, .navbar-default #block-system-user-menu .menu.nav > .active > a:focus, #block-system-user-menu .navbar-default .menu.nav > .active > a:focus {
+  color: #EBEBEB;
+  background-color: #485563;
+}
+.navbar-default .navbar-nav > .disabled > a, .navbar-default #block-menu-menu-primary-menu .menu.nav > .disabled > a, #block-menu-menu-primary-menu .navbar-default .menu.nav > .disabled > a, .navbar-default #block-system-user-menu .menu.nav > .disabled > a, #block-system-user-menu .navbar-default .menu.nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav > .disabled > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav > .disabled > a:hover, .navbar-default #block-system-user-menu .menu.nav > .disabled > a:hover, #block-system-user-menu .navbar-default .menu.nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav > .disabled > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav > .disabled > a:focus, .navbar-default #block-system-user-menu .menu.nav > .disabled > a:focus, #block-system-user-menu .navbar-default .menu.nav > .disabled > a:focus {
   color: #ccc;
   background-color: transparent;
 }
@@ -5075,23 +5076,23 @@ tbody.collapse.in {
 .navbar-default .region-navigation {
   border-color: transparent;
 }
-.navbar-default .navbar-nav > .open > a, .navbar-default #block-menu-menu-primary-menu .menu.nav > .open > a, #block-menu-menu-primary-menu .navbar-default .menu.nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav > .open > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav > .open > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav > .open > a:focus {
+.navbar-default .navbar-nav > .open > a, .navbar-default #block-menu-menu-primary-menu .menu.nav > .open > a, #block-menu-menu-primary-menu .navbar-default .menu.nav > .open > a, .navbar-default #block-system-user-menu .menu.nav > .open > a, #block-system-user-menu .navbar-default .menu.nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav > .open > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav > .open > a:hover, .navbar-default #block-system-user-menu .menu.nav > .open > a:hover, #block-system-user-menu .navbar-default .menu.nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav > .open > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav > .open > a:focus, .navbar-default #block-system-user-menu .menu.nav > .open > a:focus, #block-system-user-menu .navbar-default .menu.nav > .open > a:focus {
   background-color: #485563;
   color: #EBEBEB;
 }
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > li > a {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > li > a, .navbar-default #block-system-user-menu .menu.nav .open .dropdown-menu > li > a, #block-system-user-menu .navbar-default .menu.nav .open .dropdown-menu > li > a {
     color: #EBEBEB;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > li > a:focus {
-    color: #EBEBEB;
-    background-color: #485563;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .active > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > li > a:hover, .navbar-default #block-system-user-menu .menu.nav .open .dropdown-menu > li > a:hover, #block-system-user-menu .navbar-default .menu.nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > li > a:focus, .navbar-default #block-system-user-menu .menu.nav .open .dropdown-menu > li > a:focus, #block-system-user-menu .navbar-default .menu.nav .open .dropdown-menu > li > a:focus {
     color: #EBEBEB;
     background-color: #485563;
   }
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .disabled > a:focus {
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .active > a, .navbar-default #block-system-user-menu .menu.nav .open .dropdown-menu > .active > a, #block-system-user-menu .navbar-default .menu.nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .active > a:hover, .navbar-default #block-system-user-menu .menu.nav .open .dropdown-menu > .active > a:hover, #block-system-user-menu .navbar-default .menu.nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .active > a:focus, .navbar-default #block-system-user-menu .menu.nav .open .dropdown-menu > .active > a:focus, #block-system-user-menu .navbar-default .menu.nav .open .dropdown-menu > .active > a:focus {
+    color: #EBEBEB;
+    background-color: #485563;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .disabled > a, .navbar-default #block-system-user-menu .menu.nav .open .dropdown-menu > .disabled > a, #block-system-user-menu .navbar-default .menu.nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a:hover, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .disabled > a:hover, .navbar-default #block-system-user-menu .menu.nav .open .dropdown-menu > .disabled > a:hover, #block-system-user-menu .navbar-default .menu.nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-default #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a:focus, #block-menu-menu-primary-menu .navbar-default .menu.nav .open .dropdown-menu > .disabled > a:focus, .navbar-default #block-system-user-menu .menu.nav .open .dropdown-menu > .disabled > a:focus, #block-system-user-menu .navbar-default .menu.nav .open .dropdown-menu > .disabled > a:focus {
     color: #ccc;
     background-color: transparent;
   }
@@ -5126,18 +5127,18 @@ tbody.collapse.in {
 .navbar-inverse .navbar-text {
   color: #2B3E50;
 }
-.navbar-inverse .navbar-nav > li > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > li > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > li > a {
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > li > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > li > a, .navbar-inverse #block-system-user-menu .menu.nav > li > a, #block-system-user-menu .navbar-inverse .menu.nav > li > a {
   color: #2B3E50;
 }
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > li > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > li > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > li > a:focus {
-  color: #2B3E50;
-  background-color: #c85e17;
-}
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .active > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .active > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .active > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .active > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > li > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > li > a:hover, .navbar-inverse #block-system-user-menu .menu.nav > li > a:hover, #block-system-user-menu .navbar-inverse .menu.nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > li > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > li > a:focus, .navbar-inverse #block-system-user-menu .menu.nav > li > a:focus, #block-system-user-menu .navbar-inverse .menu.nav > li > a:focus {
   color: #2B3E50;
   background-color: #c85e17;
 }
-.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .disabled > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .disabled > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .disabled > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .disabled > a:focus {
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .active > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .active > a, .navbar-inverse #block-system-user-menu .menu.nav > .active > a, #block-system-user-menu .navbar-inverse .menu.nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .active > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .active > a:hover, .navbar-inverse #block-system-user-menu .menu.nav > .active > a:hover, #block-system-user-menu .navbar-inverse .menu.nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .active > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .active > a:focus, .navbar-inverse #block-system-user-menu .menu.nav > .active > a:focus, #block-system-user-menu .navbar-inverse .menu.nav > .active > a:focus {
+  color: #2B3E50;
+  background-color: #c85e17;
+}
+.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .disabled > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .disabled > a, .navbar-inverse #block-system-user-menu .menu.nav > .disabled > a, #block-system-user-menu .navbar-inverse .menu.nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .disabled > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .disabled > a:hover, .navbar-inverse #block-system-user-menu .menu.nav > .disabled > a:hover, #block-system-user-menu .navbar-inverse .menu.nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .disabled > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .disabled > a:focus, .navbar-inverse #block-system-user-menu .menu.nav > .disabled > a:focus, #block-system-user-menu .navbar-inverse .menu.nav > .disabled > a:focus {
   color: #444;
   background-color: transparent;
 }
@@ -5155,29 +5156,29 @@ tbody.collapse.in {
 .navbar-inverse .region-navigation {
   border-color: #bf5a16;
 }
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .open > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .open > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .open > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .open > a:focus {
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .open > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .open > a, .navbar-inverse #block-system-user-menu .menu.nav > .open > a, #block-system-user-menu .navbar-inverse .menu.nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .open > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .open > a:hover, .navbar-inverse #block-system-user-menu .menu.nav > .open > a:hover, #block-system-user-menu .navbar-inverse .menu.nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav > .open > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav > .open > a:focus, .navbar-inverse #block-system-user-menu .menu.nav > .open > a:focus, #block-system-user-menu .navbar-inverse .menu.nav > .open > a:focus {
   background-color: #c85e17;
   color: #2B3E50;
 }
 @media (max-width: 767px) {
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .dropdown-header, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .dropdown-header {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .dropdown-header, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .dropdown-header, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > .dropdown-header, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > .dropdown-header {
     border-color: transparent;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu .divider, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu .divider, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu .divider {
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu .divider, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu .divider, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu .divider, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu .divider {
     background-color: transparent;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > li > a {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > li > a, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > li > a, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > li > a {
     color: #2B3E50;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > li > a:focus {
-    color: #2B3E50;
-    background-color: #c85e17;
-  }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .active > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > li > a:hover, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > li > a:hover, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > li > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > li > a:focus, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > li > a:focus, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > li > a:focus {
     color: #2B3E50;
     background-color: #c85e17;
   }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .disabled > a:focus {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .active > a, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > .active > a, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .active > a:hover, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > .active > a:hover, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .active > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .active > a:focus, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > .active > a:focus, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > .active > a:focus {
+    color: #2B3E50;
+    background-color: #c85e17;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .disabled > a, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > .disabled > a, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a:hover, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > .disabled > a:hover, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse #block-menu-menu-primary-menu .menu.nav .open .dropdown-menu > .disabled > a:focus, #block-menu-menu-primary-menu .navbar-inverse .menu.nav .open .dropdown-menu > .disabled > a:focus, .navbar-inverse #block-system-user-menu .menu.nav .open .dropdown-menu > .disabled > a:focus, #block-system-user-menu .navbar-inverse .menu.nav .open .dropdown-menu > .disabled > a:focus {
     color: #444;
     background-color: transparent;
   }
@@ -11123,17 +11124,17 @@ a.tabledrag-handle .handle {
 }
 
 /*templates refers to base drupal pieces*/
-#block-menu-menu-primary-menu {
+#block-menu-menu-primary-menu, #block-system-user-menu {
   margin-bottom: 0;
   float: left;
 }
-#block-menu-menu-primary-menu ul {
+#block-menu-menu-primary-menu ul, #block-system-user-menu ul {
   padding: 0;
 }
-#block-menu-menu-primary-menu ul li {
+#block-menu-menu-primary-menu ul li, #block-system-user-menu ul li {
   padding: 0;
 }
-#block-menu-menu-primary-menu ul a {
+#block-menu-menu-primary-menu ul a, #block-system-user-menu ul a {
   color: #FFF;
 }
 
@@ -11148,7 +11149,7 @@ a.tabledrag-handle .handle {
   margin-right: 10px;
 }
 
-.navbar-nav > nav > li > a.inline, #block-menu-menu-primary-menu .menu.nav > nav > li > a.inline {
+.navbar-nav > nav > li > a.inline, #block-menu-menu-primary-menu .menu.nav > nav > li > a.inline, #block-system-user-menu .menu.nav > nav > li > a.inline {
   display: inline-block;
 }
 
