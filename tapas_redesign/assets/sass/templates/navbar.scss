@@ -14,6 +14,10 @@
     }
   }
 }
+#block-system-user-menu {
+  @extend .navbar-right;
+  margin-right:0;
+}
 #navbar {
   padding-top:5px;
   padding-bottom:5px;
