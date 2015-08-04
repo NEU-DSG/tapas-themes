@@ -11025,38 +11025,6 @@ a.tabledrag-handle .handle {
 .view-community .view-content ul {
   padding-left: 0;
 }
-.view-community .panel-comm {
-  list-style: none;
-  background: transparent;
-  border: 1px solid #EBEBEB;
-}
-.view-community .panel-comm a {
-  color: #2B3E50;
-}
-.view-community .panel-Lab-Note.panel-heading, .view-community #homebox .homebox-portlet .panel-Lab-Note.homebox-portlet-inner, #homebox .homebox-portlet .view-community .panel-Lab-Note.homebox-portlet-inner, .view-community .panel-Lab-Note.block-title {
-  background: rgba(177, 220, 22, 0.3);
-}
-.view-community .panel-annotation.panel-heading, .view-community #homebox .homebox-portlet .panel-annotation.homebox-portlet-inner, #homebox .homebox-portlet .view-community .panel-annotation.homebox-portlet-inner, .view-community .panel-annotation.block-title {
-  background: rgba(230, 147, 23, 0.3);
-}
-.view-community .panel-Newsitem.panel-heading, .view-community #homebox .homebox-portlet .panel-Newsitem.homebox-portlet-inner, #homebox .homebox-portlet .view-community .panel-Newsitem.homebox-portlet-inner, .view-community .panel-Newsitem.block-title {
-  background: rgba(110, 168, 229, 0.3);
-}
-.view-community .panel-Forum-topic.panel-heading, .view-community #homebox .homebox-portlet .panel-Forum-topic.homebox-portlet-inner, #homebox .homebox-portlet .view-community .panel-Forum-topic.homebox-portlet-inner, .view-community .panel-Forum-topic.block-title {
-  background: rgba(176, 44, 44, 0.3);
-}
-.view-community .panel-comm-tags {
-  float: right;
-  padding: 10px;
-}
-.view-community .panel-comm-tags:before {
-  font-family: FontAwesome;
-  content: "\f02b";
-  padding-right: 5px;
-}
-.view-community .panel-comm-date {
-  padding: 10px;
-}
 .view-community .view-filters {
   position: relative;
   min-height: 1px;
@@ -11121,6 +11089,52 @@ a.tabledrag-handle .handle {
 }
 .panel-default ul a, .view-community .view-filters form ul a, #homebox .homebox-portlet ul a, .block ul a {
   color: #333333;
+}
+
+.panel-comm {
+  list-style: none;
+  background: transparent;
+  border: 1px solid #EBEBEB;
+}
+.panel-comm a {
+  color: #2B3E50;
+}
+
+.panel-Lab-Note .panel-heading, .panel-Lab-Note #homebox .homebox-portlet .homebox-portlet-inner, #homebox .homebox-portlet .panel-Lab-Note .homebox-portlet-inner, .panel-Lab-Note .block-title {
+  background: rgba(177, 220, 22, 0.3);
+}
+
+.panel-annotation .panel-heading, .panel-annotation #homebox .homebox-portlet .homebox-portlet-inner, #homebox .homebox-portlet .panel-annotation .homebox-portlet-inner, .panel-annotation .block-title {
+  background: rgba(230, 147, 23, 0.3);
+}
+
+.panel-Newsitem .panel-heading, .panel-Newsitem #homebox .homebox-portlet .homebox-portlet-inner, #homebox .homebox-portlet .panel-Newsitem .homebox-portlet-inner, .panel-Newsitem .block-title {
+  background: rgba(110, 168, 229, 0.3);
+}
+
+.panel-Forum-topic .panel-heading, .panel-Forum-topic #homebox .homebox-portlet .homebox-portlet-inner, #homebox .homebox-portlet .panel-Forum-topic .homebox-portlet-inner, .panel-Forum-topic .block-title {
+  background: rgba(176, 44, 44, 0.3);
+}
+
+.panel-comm-tags {
+  float: right;
+  padding: 10px;
+}
+
+.panel-comm-tags:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  padding-right: 5px;
+}
+
+.panel-comm-date {
+  padding: 10px;
+}
+
+.news-categories:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  padding-right: 5px;
 }
 
 /*templates refers to base drupal pieces*/

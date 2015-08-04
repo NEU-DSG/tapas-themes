@@ -1,0 +1,38 @@
+.panel-comm {
+  list-style:none;
+  background:transparent;
+  border: 1px solid $gray-lighter;
+  a {
+    color:$text-color;
+  }
+}
+.panel-Lab-Note .panel-heading {
+  background: $tapas-green-opaque;
+}
+.panel-annotation .panel-heading {
+  background: $tapas-orange-opaque;
+}
+.panel-Newsitem .panel-heading {
+  background: $tapas-blue-opaque;
+}
+.panel-Forum-topic .panel-heading {
+  background: $tapas-red-opaque;
+}
+.panel-comm-tags {
+  float:right;
+  padding:10px;
+}
+.panel-comm-tags:before{
+  font-family:FontAwesome;
+  content:"\f02b";
+  padding-right:5px;
+}
+.panel-comm-date {
+  padding:10px;
+}
+
+.news-categories:before {
+  font-family:FontAwesome;
+  content:"\f02b";
+  padding-right:5px;
+}
