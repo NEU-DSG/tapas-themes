@@ -700,7 +700,6 @@ table {
   }
 }
 
-
 //for carousel
 .carousel-caption{
   position:relative;
@@ -717,4 +716,11 @@ table {
 .thumbnail {
   background:none;
   border: 1px solid $gray-lighter;
+}
+
+//fix for modals overflowing container
+.ctools-modal-dialog {
+  .modal-body{
+    overflow:scroll;
+  }
 }

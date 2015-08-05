@@ -6724,7 +6724,7 @@ button.close {
 
 .modal-content {
   position: relative;
-  background-color: #4E5D6C;
+  background-color: #FFF;
   border: 1px solid transparent;
   border: 1px solid transparent;
   border-radius: 0;
@@ -10844,6 +10844,10 @@ table .checkbox input[type="checkbox"] {
 .thumbnail {
   background: none;
   border: 1px solid #EBEBEB;
+}
+
+.ctools-modal-dialog .modal-body {
+  overflow: scroll;
 }
 
 /*components refers to tapas specific content*/
