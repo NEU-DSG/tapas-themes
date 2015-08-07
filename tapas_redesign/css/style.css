@@ -10950,6 +10950,7 @@ a.tabledrag-handle .handle {
 #tools, #feed, #bookbag, #search {
   background: #FFFFFF;
   border: 1px solid #4E5D6C;
+  margin-bottom: 0;
 }
 
 .tools-content, .feed-content, .bookbag-content, .search-content {

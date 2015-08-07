@@ -30,6 +30,7 @@
 #tools, #feed, #bookbag, #search {
   background:$body-bg;
   border:1px solid $gray-light;
+  margin-bottom: 0;
 }
 .tools-content, .feed-content, .bookbag-content, .search-content {
   padding:20px;
