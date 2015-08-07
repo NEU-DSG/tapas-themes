@@ -44,6 +44,12 @@
     }
   }
 }
+.feed-content .block .view {
+  padding:0;
+}
+.search-content form.form-search.content-search{
+  max-width: 300px;
+}
 #feed p{
   &.lab-notes {
     background: $tapas-green-opaque;

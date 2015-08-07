@@ -10967,6 +10967,14 @@ a.tabledrag-handle .handle {
   padding: 5px 10px;
 }
 
+.feed-content .block .view {
+  padding: 0;
+}
+
+.search-content form.form-search.content-search {
+  max-width: 300px;
+}
+
 #feed p.lab-notes {
   background: rgba(177, 220, 22, 0.3);
 }
