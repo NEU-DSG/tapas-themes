@@ -10957,6 +10957,16 @@ a.tabledrag-handle .handle {
   padding: 20px;
 }
 
+.tools-content ul.menu.nav {
+  padding: 0;
+}
+.tools-content ul.menu.nav li {
+  padding: 0;
+}
+.tools-content ul.menu.nav li a {
+  padding: 5px 10px;
+}
+
 #feed p.lab-notes {
   background: rgba(177, 220, 22, 0.3);
 }

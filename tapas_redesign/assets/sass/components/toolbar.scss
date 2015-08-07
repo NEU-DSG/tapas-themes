@@ -35,6 +35,15 @@
 .tools-content, .feed-content, .bookbag-content, .search-content {
   padding:20px;
 }
+.tools-content ul.menu.nav{
+  padding:0;
+  li {
+    padding:0;
+    a {
+      padding:5px 10px;
+    }
+  }
+}
 #feed p{
   &.lab-notes {
     background: $tapas-green-opaque;
