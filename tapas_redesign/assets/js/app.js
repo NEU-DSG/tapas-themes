@@ -28,8 +28,10 @@ jQuery('.navbar-collapse ul li a').click(function() {
     for(var i = 0, l = $children.length; i < l; i += 3) {
         $children.slice(i, i+3).wrapAll('<div class="col-sm-4"></div>');
     }
+    $(document).on('click',function(){
+	     $('.collapse').collapse('hide');
+    })
   });
-
 })(jQuery);
 
 //toggle star to favorite
