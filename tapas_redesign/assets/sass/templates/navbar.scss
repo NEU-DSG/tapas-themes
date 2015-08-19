@@ -40,6 +40,9 @@
   @extend .navbar-form;
   #block-search-form {
     margin: 1px 0px 2px 5px;
+    .block-title{
+      display:none;
+    }
   }
   .input-group-btn{
     button{

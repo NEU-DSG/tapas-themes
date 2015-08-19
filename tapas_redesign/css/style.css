@@ -11202,6 +11202,9 @@ a.tabledrag-handle .handle {
 .region-navigation #block-search-form {
   margin: 1px 0px 2px 5px;
 }
+.region-navigation #block-search-form .block-title {
+  display: none;
+}
 
 /*fix for sign in button*/
 .record .panel, .record .view-community .view-filters form, .view-community .view-filters .record form, .record #homebox .homebox-portlet, #homebox .record .homebox-portlet, .record .block {
