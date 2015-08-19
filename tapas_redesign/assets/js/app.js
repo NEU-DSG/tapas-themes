@@ -31,9 +31,10 @@ jQuery('.navbar-collapse ul li a').click(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 160
+            scrollTop: $($anchor.attr('href')).offset().top - 60
         }, 400);//, 'easeInOutExpo'
-        event.preventDefault();
+        // event.preventDefault();
+        return false;
     });
 
     //adding filter heading
