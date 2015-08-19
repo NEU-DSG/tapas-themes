@@ -11287,3 +11287,10 @@ footer #block-menu-menu-footer-menu .menu .leaf a {
   color: #DF691A;
   font-size: 19px;
 }
+
+.region-sidebar-first .nav-stacked ul li {
+  padding: 0;
+}
+.region-sidebar-first .nav-stacked ul li + li {
+  margin-top: 0;
+}
