@@ -11266,6 +11266,10 @@ a.tabledrag-handle .handle {
   box-shadow: none;
 }
 
+.block[class*=" col-"] h2.block-title {
+  margin-top: 0;
+}
+
 footer {
   background: #2B3E50;
   padding-bottom: 0px;

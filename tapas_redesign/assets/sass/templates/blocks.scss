@@ -10,3 +10,9 @@
 .block-title {
   @extend .panel-heading;
 }
+
+.block[class*=" col-"]{
+  h2.block-title{
+    margin-top:0;
+  }
+}
