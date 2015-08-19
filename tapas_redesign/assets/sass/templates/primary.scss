@@ -1,12 +1,10 @@
 .region-sidebar-first {
-  .nav-stacked {
-    ul {
-      li {
-        padding:0;
-      }
-      li + li {
-        margin-top:0;
-      }
+  ul.nav-stacked {
+    li {
+      padding:0;
+    }
+    li + li {
+      margin-top:0;
     }
   }
 }

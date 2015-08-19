@@ -11288,9 +11288,9 @@ footer #block-menu-menu-footer-menu .menu .leaf a {
   font-size: 19px;
 }
 
-.region-sidebar-first .nav-stacked ul li {
+.region-sidebar-first ul.nav-stacked li {
   padding: 0;
 }
-.region-sidebar-first .nav-stacked ul li + li {
+.region-sidebar-first ul.nav-stacked li + li {
   margin-top: 0;
 }
