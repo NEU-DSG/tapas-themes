@@ -32,8 +32,8 @@ jQuery('.navbar-collapse ul li a').click(function() {
 	     $('.collapse').collapse('hide');
     })
 
-    $("body.front").find(".region-content .block.col-sm-3").wrapAll('<div class="featured row" />');
-    $("body.front").find(".featured.row").wrap("<div class='featured container' />");
+    $("body.front").find(".region-content .block.col-sm-3").wrapAll('<div class="featured container" />');
+    $("body.front").find(".featured.row").wrap("<div class='featured row' />");
   });
 })(jQuery);
 

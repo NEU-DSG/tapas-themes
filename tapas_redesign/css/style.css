@@ -10875,23 +10875,23 @@ table .checkbox input[type="checkbox"] {
 .front section#block-block-3 {
   padding-bottom: 0;
 }
-.front .carousel, .front .sponsors {
+.front .carousel, .front .sponsors, .front .featured.row {
   background: #2B3E50;
 }
-.front .carousel h1, .front .carousel h2, .front .carousel h3, .front .carousel h4, .front .carousel p, .front .sponsors h1, .front .sponsors h2, .front .sponsors h3, .front .sponsors h4, .front .sponsors p {
+.front .carousel h1, .front .carousel h2, .front .carousel h3, .front .carousel h4, .front .carousel p, .front .sponsors h1, .front .sponsors h2, .front .sponsors h3, .front .sponsors h4, .front .sponsors p, .front .featured.row h1, .front .featured.row h2, .front .featured.row h3, .front .featured.row h4, .front .featured.row p {
   color: #EBEBEB;
 }
 .front .pillars .fa, .front .pillars a.tabledrag-handle .handle, a.tabledrag-handle .front .pillars .handle, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-maximize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-maximize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minus, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-settings, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-settings, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minimize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minimize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-plus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-plus, .front .pillars .portlet-close {
   color: #DF691A;
   padding: 20px;
 }
-.front #myCarousel .carousel-control {
+.front .carousel-control {
   background: none;
   width: 4%;
   font-size: 50px;
   top: 32%;
 }
-.front #myCarousel .carousel-inner {
+.front .carousel-inner {
   width: 96%;
   margin-left: 2%;
 }
@@ -11306,4 +11306,9 @@ footer #block-menu-menu-footer-menu .menu .leaf a {
 }
 .region-sidebar-first ul.nav-stacked li + li {
   margin-top: 0;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  background-repeat: no-repeat;
 }

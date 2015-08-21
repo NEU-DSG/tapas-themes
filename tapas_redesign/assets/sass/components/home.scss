@@ -23,7 +23,7 @@
   section#block-block-3{
     padding-bottom:0;
   }
-  .carousel, .sponsors {
+  .carousel, .sponsors, .featured.row {
     background: $gray-darkest;
     h1, h2, h3, h4, p {
       color: $gray-lighter;
@@ -35,17 +35,15 @@
       padding: 20px;
     }
   }
-  #myCarousel {
-    .carousel-control {
-      background: none;
-      width: 4%;
-      font-size: 50px;
-      top: 32%;
-    }
-    .carousel-inner {
-      width: 96%;
-      margin-left: 2%;
-    }
+  .carousel-control {
+    background: none;
+    width: 4%;
+    font-size: 50px;
+    top: 32%;
+  }
+  .carousel-inner {
+    width: 96%;
+    margin-left: 2%;
   }
   img.logo {
     max-width:100%;
