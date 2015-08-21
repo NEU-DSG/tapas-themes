@@ -28,6 +28,10 @@
     h1, h2, h3, h4, p {
       color: $gray-lighter;
     }
+    .block-title{
+      background-color: transparent;
+      border-bottom: none;
+    }
   }
   .pillars {
     .fa {
@@ -44,6 +48,9 @@
   .carousel-inner {
     width: 96%;
     margin-left: 2%;
+  }
+  .carousel-caption h3{
+    color:#FFF;
   }
   img.logo {
     max-width:100%;

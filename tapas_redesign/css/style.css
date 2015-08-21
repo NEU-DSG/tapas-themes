@@ -10881,6 +10881,10 @@ table .checkbox input[type="checkbox"] {
 .front .carousel h1, .front .carousel h2, .front .carousel h3, .front .carousel h4, .front .carousel p, .front .sponsors h1, .front .sponsors h2, .front .sponsors h3, .front .sponsors h4, .front .sponsors p, .front .featured.row h1, .front .featured.row h2, .front .featured.row h3, .front .featured.row h4, .front .featured.row p {
   color: #EBEBEB;
 }
+.front .carousel .block-title, .front .sponsors .block-title, .front .featured.row .block-title {
+  background-color: transparent;
+  border-bottom: none;
+}
 .front .pillars .fa, .front .pillars a.tabledrag-handle .handle, a.tabledrag-handle .front .pillars .handle, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-maximize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-maximize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minus, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-settings, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-settings, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minimize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minimize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-plus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-plus, .front .pillars .portlet-close {
   color: #DF691A;
   padding: 20px;
@@ -10894,6 +10898,9 @@ table .checkbox input[type="checkbox"] {
 .front .carousel-inner {
   width: 96%;
   margin-left: 2%;
+}
+.front .carousel-caption h3 {
+  color: #FFF;
 }
 .front img.logo {
   max-width: 100%;
