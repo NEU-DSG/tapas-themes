@@ -33,7 +33,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
     })
 
     $("body.front").find(".region-content .block.col-sm-3").wrapAll('<div class="featured container" />');
-    $("body.front").find(".featured.row").wrap("<div class='featured row' />");
+    $("body.front").find(".featured.container").wrap("<div class='featured row' />");
   });
 })(jQuery);
 
