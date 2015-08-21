@@ -10851,6 +10851,12 @@ table .checkbox input[type="checkbox"] {
 }
 
 /*components refers to tapas specific content*/
+.front .main-container {
+  padding-bottom: 0;
+}
+.front #block-system-main {
+  display: none;
+}
 .front .page-header {
   display: none;
 }
@@ -10865,6 +10871,9 @@ table .checkbox input[type="checkbox"] {
 }
 .front .region-content section:not(.block-system) {
   padding: 20px 0px 20px 0px;
+}
+.front section#block-block-3 {
+  padding-bottom: 0;
 }
 .front .carousel, .front .sponsors {
   background: #2B3E50;

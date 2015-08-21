@@ -31,14 +31,17 @@ jQuery('.navbar-collapse ul li a').click(function() {
     $(document).on('click',function(){
 	     $('.collapse').collapse('hide');
     })
+
+    $("body.front").find(".region-content .block.col-sm-3").wrapAll('<div class="featured row" />');
+    $("body.front").find(".featured.row").wrap("<div class='featured container' />");
   });
 })(jQuery);
 
-//toggle star to favorite
-jQuery(".record-helpers a.favorite").click(function(e){
-  e.preventDefault();
-  jQuery(this).find("i").toggleClass("fa-bookmark-o").toggleClass("fa-bookmark");
-});
+//toggle star to favorite - not implemented yet
+// jQuery(".record-helpers a.favorite").click(function(e){
+//   e.preventDefault();
+//   jQuery(this).find("i").toggleClass("fa-bookmark-o").toggleClass("fa-bookmark");
+// });
 
 
 

@@ -1,4 +1,10 @@
 .front {
+  .main-container{
+    padding-bottom:0;
+  }
+  #block-system-main{
+    display:none;
+  }
   .page-header {
     display:none;
   }
@@ -13,6 +19,9 @@
   }
   .region-content section:not(.block-system) {
     padding: 20px 0px 20px 0px;
+  }
+  section#block-block-3{
+    padding-bottom:0;
   }
   .carousel, .sponsors {
     background: $gray-darkest;
