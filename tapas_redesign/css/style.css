@@ -10899,8 +10899,13 @@ table .checkbox input[type="checkbox"] {
   width: 96%;
   margin-left: 2%;
 }
+.front .carousel-caption {
+  margin: 10%;
+  padding-top: 1px;
+}
 .front .carousel-caption h3 {
   color: #FFF;
+  font-size: 19px;
 }
 .front img.logo {
   max-width: 100%;

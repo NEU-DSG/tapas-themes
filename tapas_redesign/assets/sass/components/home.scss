@@ -49,8 +49,13 @@
     width: 96%;
     margin-left: 2%;
   }
-  .carousel-caption h3{
-    color:#FFF;
+  .carousel-caption{
+    margin: 10%;
+    padding-top: 1px;
+    h3{
+      color:#FFF;
+      font-size:19px;
+    }
   }
   img.logo {
     max-width:100%;
