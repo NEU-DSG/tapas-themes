@@ -10923,9 +10923,10 @@ table .checkbox input[type="checkbox"] {
 .front .membership td:nth-of-type(2), .front .membership td:nth-of-type(3) {
   text-align: center;
 }
-.front .view-news .more-link {
-  background: #2474c9;
+.front .view-news .more-link a {
+  background: #438edd;
   color: #FFF;
+  padding: 10px;
 }
 
 .list-unstyled li {

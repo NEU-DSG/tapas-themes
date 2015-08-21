@@ -75,9 +75,10 @@
       text-align:center;
     }
   }
-  .view-news .more-link{
-    background:darken($tapas-blue, 20%);
+  .view-news .more-link a{
+    background:darken($tapas-blue, 10%);
     color:#FFF;
+    padding:10px;
   }
 }
 
