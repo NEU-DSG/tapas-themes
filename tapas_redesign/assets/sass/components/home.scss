@@ -76,9 +76,8 @@
     }
   }
   .view-news .more-link a{
-    background:darken($tapas-blue, 10%);
-    color:#FFF;
-    padding:10px;
+    @extend .btn;
+    @extend .btn-info;
   }
 }
 
