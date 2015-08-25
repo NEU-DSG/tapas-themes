@@ -13,7 +13,7 @@
 
 
 function tapas_redesign_process(&$variables, $hook) {
-  if(in_array("toolbar", $variables['classes_array'])){
+  if(isset($variables['classes_array']) && in_array("toolbar", $variables['classes_array'])){
     if(user_is_logged_in()){
       $variables['content'] .= '<a class="toolbar-link" href="/user/logout" aria-expanded="false"><span class=" fa-stack fa-lg"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-sign-out fa-stack-1x fa-inverse"></i></span><span class="toolbar-title">Log out</span></a>';
     } else {
