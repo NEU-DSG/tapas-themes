@@ -52,7 +52,7 @@
 }
 
 /*fix for sign in button*/
-.navbar-nav.secondary{
+.navbar-nav#block-system-user-menu{
   .first.last.leaf{
     a {
       @extend .btn-primary;
