@@ -5946,7 +5946,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   line-height: 1.3;
 }
 
-.panel, .view-community .view-filters form, #homebox .homebox-portlet, .block {
+.panel, #homebox .homebox-portlet, .block {
   margin-bottom: 21px;
   background-color: #fff;
   border: 1px solid transparent;
@@ -5954,14 +5954,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.panel-body, .view-community .views-exposed-form, #homebox .homebox-portlet .portlet-content, .block .view, .block ul {
+.panel-body, #homebox .homebox-portlet .portlet-content, .block .view, .block ul {
   padding: 15px;
 }
-.panel-body:before, .view-community .views-exposed-form:before, #homebox .homebox-portlet .portlet-content:before, .block .view:before, .block ul:before, .panel-body:after, .view-community .views-exposed-form:after, #homebox .homebox-portlet .portlet-content:after, .block .view:after, .block ul:after {
+.panel-body:before, #homebox .homebox-portlet .portlet-content:before, .block .view:before, .block ul:before, .panel-body:after, #homebox .homebox-portlet .portlet-content:after, .block .view:after, .block ul:after {
   content: " ";
   display: table;
 }
-.panel-body:after, .view-community .views-exposed-form:after, #homebox .homebox-portlet .portlet-content:after, .block .view:after, .block ul:after {
+.panel-body:after, #homebox .homebox-portlet .portlet-content:after, .block .view:after, .block ul:after {
   clear: both;
 }
 
@@ -6001,33 +6001,29 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   border-bottom-left-radius: -1;
 }
 
-.panel > .list-group, .view-community .view-filters form > .list-group, #homebox .homebox-portlet > .list-group, .block > .list-group,
+.panel > .list-group, #homebox .homebox-portlet > .list-group, .block > .list-group,
 .panel > .panel-collapse > .list-group,
-.view-community .view-filters form > .panel-collapse > .list-group,
 #homebox .homebox-portlet > .panel-collapse > .list-group,
 .block > .panel-collapse > .list-group {
   margin-bottom: 0;
 }
-.panel > .list-group .list-group-item, .view-community .view-filters form > .list-group .list-group-item, #homebox .homebox-portlet > .list-group .list-group-item, .block > .list-group .list-group-item,
+.panel > .list-group .list-group-item, #homebox .homebox-portlet > .list-group .list-group-item, .block > .list-group .list-group-item,
 .panel > .panel-collapse > .list-group .list-group-item,
-.view-community .view-filters form > .panel-collapse > .list-group .list-group-item,
 #homebox .homebox-portlet > .panel-collapse > .list-group .list-group-item,
 .block > .panel-collapse > .list-group .list-group-item {
   border-width: 1px 0;
   border-radius: 0;
 }
-.panel > .list-group:first-child .list-group-item:first-child, .view-community .view-filters form > .list-group:first-child .list-group-item:first-child, #homebox .homebox-portlet > .list-group:first-child .list-group-item:first-child, .block > .list-group:first-child .list-group-item:first-child,
+.panel > .list-group:first-child .list-group-item:first-child, #homebox .homebox-portlet > .list-group:first-child .list-group-item:first-child, .block > .list-group:first-child .list-group-item:first-child,
 .panel > .panel-collapse > .list-group:first-child .list-group-item:first-child,
-.view-community .view-filters form > .panel-collapse > .list-group:first-child .list-group-item:first-child,
 #homebox .homebox-portlet > .panel-collapse > .list-group:first-child .list-group-item:first-child,
 .block > .panel-collapse > .list-group:first-child .list-group-item:first-child {
   border-top: 0;
   border-top-right-radius: -1;
   border-top-left-radius: -1;
 }
-.panel > .list-group:last-child .list-group-item:last-child, .view-community .view-filters form > .list-group:last-child .list-group-item:last-child, #homebox .homebox-portlet > .list-group:last-child .list-group-item:last-child, .block > .list-group:last-child .list-group-item:last-child,
+.panel > .list-group:last-child .list-group-item:last-child, #homebox .homebox-portlet > .list-group:last-child .list-group-item:last-child, .block > .list-group:last-child .list-group-item:last-child,
 .panel > .panel-collapse > .list-group:last-child .list-group-item:last-child,
-.view-community .view-filters form > .panel-collapse > .list-group:last-child .list-group-item:last-child,
 #homebox .homebox-portlet > .panel-collapse > .list-group:last-child .list-group-item:last-child,
 .block > .panel-collapse > .list-group:last-child .list-group-item:last-child {
   border-bottom: 0;
@@ -6043,453 +6039,339 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   border-top-width: 0;
 }
 
-.panel > .table, .view-community .view-filters form > .table, #homebox .homebox-portlet > .table, .block > .table,
+.panel > .table, #homebox .homebox-portlet > .table, .block > .table,
 .panel > .table-responsive > .table,
-.view-community .view-filters form > .table-responsive > .table,
 #homebox .homebox-portlet > .table-responsive > .table,
 .block > .table-responsive > .table,
 .panel > .panel-collapse > .table,
-.view-community .view-filters form > .panel-collapse > .table,
 #homebox .homebox-portlet > .panel-collapse > .table,
 .block > .panel-collapse > .table {
   margin-bottom: 0;
 }
-.panel > .table caption, .view-community .view-filters form > .table caption, #homebox .homebox-portlet > .table caption, .block > .table caption,
+.panel > .table caption, #homebox .homebox-portlet > .table caption, .block > .table caption,
 .panel > .table-responsive > .table caption,
-.view-community .view-filters form > .table-responsive > .table caption,
 #homebox .homebox-portlet > .table-responsive > .table caption,
 .block > .table-responsive > .table caption,
 .panel > .panel-collapse > .table caption,
-.view-community .view-filters form > .panel-collapse > .table caption,
 #homebox .homebox-portlet > .panel-collapse > .table caption,
 .block > .panel-collapse > .table caption {
   padding-left: 15px;
   padding-right: 15px;
 }
-.panel > .table:first-child, .view-community .view-filters form > .table:first-child, #homebox .homebox-portlet > .table:first-child, .block > .table:first-child,
+.panel > .table:first-child, #homebox .homebox-portlet > .table:first-child, .block > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child,
 .block > .table-responsive:first-child > .table:first-child {
   border-top-right-radius: -1;
   border-top-left-radius: -1;
 }
-.panel > .table:first-child > thead:first-child > tr:first-child, .view-community .view-filters form > .table:first-child > thead:first-child > tr:first-child, #homebox .homebox-portlet > .table:first-child > thead:first-child > tr:first-child, .block > .table:first-child > thead:first-child > tr:first-child,
+.panel > .table:first-child > thead:first-child > tr:first-child, #homebox .homebox-portlet > .table:first-child > thead:first-child > tr:first-child, .block > .table:first-child > thead:first-child > tr:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child,
-.view-community .view-filters form > .table:first-child > tbody:first-child > tr:first-child,
 #homebox .homebox-portlet > .table:first-child > tbody:first-child > tr:first-child,
 .block > .table:first-child > tbody:first-child > tr:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
 .block > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
 .block > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
   border-top-left-radius: -1;
   border-top-right-radius: -1;
 }
-.panel > .table:first-child > thead:first-child > tr:first-child td:first-child, .view-community .view-filters form > .table:first-child > thead:first-child > tr:first-child td:first-child, #homebox .homebox-portlet > .table:first-child > thead:first-child > tr:first-child td:first-child, .block > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.panel > .table:first-child > thead:first-child > tr:first-child td:first-child, #homebox .homebox-portlet > .table:first-child > thead:first-child > tr:first-child td:first-child, .block > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
-.view-community .view-filters form > .table:first-child > thead:first-child > tr:first-child th:first-child,
 #homebox .homebox-portlet > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .block > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-.view-community .view-filters form > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 #homebox .homebox-portlet > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .block > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
-.view-community .view-filters form > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 #homebox .homebox-portlet > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .block > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .block > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .block > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .block > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
 .block > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
   border-top-left-radius: -1;
 }
-.panel > .table:first-child > thead:first-child > tr:first-child td:last-child, .view-community .view-filters form > .table:first-child > thead:first-child > tr:first-child td:last-child, #homebox .homebox-portlet > .table:first-child > thead:first-child > tr:first-child td:last-child, .block > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.panel > .table:first-child > thead:first-child > tr:first-child td:last-child, #homebox .homebox-portlet > .table:first-child > thead:first-child > tr:first-child td:last-child, .block > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
-.view-community .view-filters form > .table:first-child > thead:first-child > tr:first-child th:last-child,
 #homebox .homebox-portlet > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .block > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-.view-community .view-filters form > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 #homebox .homebox-portlet > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .block > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
-.view-community .view-filters form > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 #homebox .homebox-portlet > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .block > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .block > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .block > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .block > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
-.view-community .view-filters form > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 #homebox .homebox-portlet > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
 .block > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
   border-top-right-radius: -1;
 }
-.panel > .table:last-child, .view-community .view-filters form > .table:last-child, #homebox .homebox-portlet > .table:last-child, .block > .table:last-child,
+.panel > .table:last-child, #homebox .homebox-portlet > .table:last-child, .block > .table:last-child,
 .panel > .table-responsive:last-child > .table:last-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child,
 .block > .table-responsive:last-child > .table:last-child {
   border-bottom-right-radius: -1;
   border-bottom-left-radius: -1;
 }
-.panel > .table:last-child > tbody:last-child > tr:last-child, .view-community .view-filters form > .table:last-child > tbody:last-child > tr:last-child, #homebox .homebox-portlet > .table:last-child > tbody:last-child > tr:last-child, .block > .table:last-child > tbody:last-child > tr:last-child,
+.panel > .table:last-child > tbody:last-child > tr:last-child, #homebox .homebox-portlet > .table:last-child > tbody:last-child > tr:last-child, .block > .table:last-child > tbody:last-child > tr:last-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child,
-.view-community .view-filters form > .table:last-child > tfoot:last-child > tr:last-child,
 #homebox .homebox-portlet > .table:last-child > tfoot:last-child > tr:last-child,
 .block > .table:last-child > tfoot:last-child > tr:last-child,
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
 .block > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child,
 .block > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
   border-bottom-left-radius: -1;
   border-bottom-right-radius: -1;
 }
-.panel > .table:last-child > tbody:last-child > tr:last-child td:first-child, .view-community .view-filters form > .table:last-child > tbody:last-child > tr:last-child td:first-child, #homebox .homebox-portlet > .table:last-child > tbody:last-child > tr:last-child td:first-child, .block > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.panel > .table:last-child > tbody:last-child > tr:last-child td:first-child, #homebox .homebox-portlet > .table:last-child > tbody:last-child > tr:last-child td:first-child, .block > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .panel > .table:last-child > tbody:last-child > tr:last-child th:first-child,
-.view-community .view-filters form > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 #homebox .homebox-portlet > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .block > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-.view-community .view-filters form > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 #homebox .homebox-portlet > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .block > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
-.view-community .view-filters form > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 #homebox .homebox-portlet > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .block > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .block > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .block > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .block > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
 .block > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
   border-bottom-left-radius: -1;
 }
-.panel > .table:last-child > tbody:last-child > tr:last-child td:last-child, .view-community .view-filters form > .table:last-child > tbody:last-child > tr:last-child td:last-child, #homebox .homebox-portlet > .table:last-child > tbody:last-child > tr:last-child td:last-child, .block > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.panel > .table:last-child > tbody:last-child > tr:last-child td:last-child, #homebox .homebox-portlet > .table:last-child > tbody:last-child > tr:last-child td:last-child, .block > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .panel > .table:last-child > tbody:last-child > tr:last-child th:last-child,
-.view-community .view-filters form > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 #homebox .homebox-portlet > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .block > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-.view-community .view-filters form > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 #homebox .homebox-portlet > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .block > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .panel > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
-.view-community .view-filters form > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 #homebox .homebox-portlet > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .block > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .block > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
 .panel > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .block > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .block > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
 .panel > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
-.view-community .view-filters form > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 #homebox .homebox-portlet > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
 .block > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
   border-bottom-right-radius: -1;
 }
-.panel > .panel-body + .table, .view-community .view-filters form > .panel-body + .table, #homebox .homebox-portlet > .panel-body + .table, .block > .panel-body + .table, .view-community .panel > .views-exposed-form + .table, .view-community .view-filters form > .views-exposed-form + .table, #homebox .view-community .homebox-portlet > .views-exposed-form + .table, .view-community #homebox .homebox-portlet > .views-exposed-form + .table, .view-community .block > .views-exposed-form + .table, #homebox .homebox-portlet .panel > .portlet-content + .table, .view-community .view-filters #homebox .homebox-portlet form > .portlet-content + .table, #homebox .homebox-portlet .view-community .view-filters form > .portlet-content + .table, #homebox .homebox-portlet > .portlet-content + .table, #homebox .homebox-portlet .block > .portlet-content + .table, .block .panel > .view + .table, .view-community .view-filters .block form > .view + .table, .block .view-community .view-filters form > .view + .table, #homebox .block .homebox-portlet > .view + .table, .block #homebox .homebox-portlet > .view + .table, .block > .view + .table, .block .panel > ul + .table, .view-community .view-filters .block form > ul + .table, .block .view-community .view-filters form > ul + .table, #homebox .block .homebox-portlet > ul + .table, .block #homebox .homebox-portlet > ul + .table, .block > ul + .table,
+.panel > .panel-body + .table, #homebox .homebox-portlet > .panel-body + .table, .block > .panel-body + .table, #homebox .homebox-portlet .panel > .portlet-content + .table, #homebox .homebox-portlet > .portlet-content + .table, #homebox .homebox-portlet .block > .portlet-content + .table, .block .panel > .view + .table, #homebox .block .homebox-portlet > .view + .table, .block #homebox .homebox-portlet > .view + .table, .block > .view + .table, .block .panel > ul + .table, #homebox .block .homebox-portlet > ul + .table, .block #homebox .homebox-portlet > ul + .table, .block > ul + .table,
 .panel > .panel-body + .table-responsive,
-.view-community .view-filters form > .panel-body + .table-responsive,
 #homebox .homebox-portlet > .panel-body + .table-responsive,
 .block > .panel-body + .table-responsive,
-.view-community .panel > .views-exposed-form + .table-responsive,
-.view-community .view-filters form > .views-exposed-form + .table-responsive,
-#homebox .view-community .homebox-portlet > .views-exposed-form + .table-responsive,
-.view-community #homebox .homebox-portlet > .views-exposed-form + .table-responsive,
-.view-community .block > .views-exposed-form + .table-responsive,
 #homebox .homebox-portlet .panel > .portlet-content + .table-responsive,
-.view-community .view-filters #homebox .homebox-portlet form > .portlet-content + .table-responsive,
-#homebox .homebox-portlet .view-community .view-filters form > .portlet-content + .table-responsive,
 #homebox .homebox-portlet > .portlet-content + .table-responsive,
 #homebox .homebox-portlet .block > .portlet-content + .table-responsive,
 .block .panel > .view + .table-responsive,
-.view-community .view-filters .block form > .view + .table-responsive,
-.block .view-community .view-filters form > .view + .table-responsive,
 #homebox .block .homebox-portlet > .view + .table-responsive,
 .block #homebox .homebox-portlet > .view + .table-responsive,
 .block > .view + .table-responsive,
 .block .panel > ul + .table-responsive,
-.view-community .view-filters .block form > ul + .table-responsive,
-.block .view-community .view-filters form > ul + .table-responsive,
 #homebox .block .homebox-portlet > ul + .table-responsive,
 .block #homebox .homebox-portlet > ul + .table-responsive,
 .block > ul + .table-responsive,
 .panel > .table + .panel-body,
-.view-community .view-filters form > .table + .panel-body,
 #homebox .homebox-portlet > .table + .panel-body,
 .block > .table + .panel-body,
-.view-community .panel > .table + .views-exposed-form,
-.view-community .view-filters form > .table + .views-exposed-form,
-#homebox .view-community .homebox-portlet > .table + .views-exposed-form,
-.view-community #homebox .homebox-portlet > .table + .views-exposed-form,
-.view-community .block > .table + .views-exposed-form,
 #homebox .homebox-portlet .panel > .table + .portlet-content,
-.view-community .view-filters #homebox .homebox-portlet form > .table + .portlet-content,
-#homebox .homebox-portlet .view-community .view-filters form > .table + .portlet-content,
 #homebox .homebox-portlet > .table + .portlet-content,
 #homebox .homebox-portlet .block > .table + .portlet-content,
 .block .panel > .table + .view,
-.view-community .view-filters .block form > .table + .view,
-.block .view-community .view-filters form > .table + .view,
 #homebox .block .homebox-portlet > .table + .view,
 .block #homebox .homebox-portlet > .table + .view,
 .block > .table + .view,
 .block .panel > .table + ul,
-.view-community .view-filters .block form > .table + ul,
-.block .view-community .view-filters form > .table + ul,
 #homebox .block .homebox-portlet > .table + ul,
 .block #homebox .homebox-portlet > .table + ul,
 .block > .table + ul,
 .panel > .table-responsive + .panel-body,
-.view-community .view-filters form > .table-responsive + .panel-body,
 #homebox .homebox-portlet > .table-responsive + .panel-body,
 .block > .table-responsive + .panel-body,
-.view-community .panel > .table-responsive + .views-exposed-form,
-.view-community .view-filters form > .table-responsive + .views-exposed-form,
-#homebox .view-community .homebox-portlet > .table-responsive + .views-exposed-form,
-.view-community #homebox .homebox-portlet > .table-responsive + .views-exposed-form,
-.view-community .block > .table-responsive + .views-exposed-form,
 #homebox .homebox-portlet .panel > .table-responsive + .portlet-content,
-.view-community .view-filters #homebox .homebox-portlet form > .table-responsive + .portlet-content,
-#homebox .homebox-portlet .view-community .view-filters form > .table-responsive + .portlet-content,
 #homebox .homebox-portlet > .table-responsive + .portlet-content,
 #homebox .homebox-portlet .block > .table-responsive + .portlet-content,
 .block .panel > .table-responsive + .view,
-.view-community .view-filters .block form > .table-responsive + .view,
-.block .view-community .view-filters form > .table-responsive + .view,
 #homebox .block .homebox-portlet > .table-responsive + .view,
 .block #homebox .homebox-portlet > .table-responsive + .view,
 .block > .table-responsive + .view,
 .block .panel > .table-responsive + ul,
-.view-community .view-filters .block form > .table-responsive + ul,
-.block .view-community .view-filters form > .table-responsive + ul,
 #homebox .block .homebox-portlet > .table-responsive + ul,
 .block #homebox .homebox-portlet > .table-responsive + ul,
 .block > .table-responsive + ul {
   border-top: 1px solid #EBEBEB;
 }
-.panel > .table > tbody:first-child > tr:first-child th, .view-community .view-filters form > .table > tbody:first-child > tr:first-child th, #homebox .homebox-portlet > .table > tbody:first-child > tr:first-child th, .block > .table > tbody:first-child > tr:first-child th,
+.panel > .table > tbody:first-child > tr:first-child th, #homebox .homebox-portlet > .table > tbody:first-child > tr:first-child th, .block > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td,
-.view-community .view-filters form > .table > tbody:first-child > tr:first-child td,
 #homebox .homebox-portlet > .table > tbody:first-child > tr:first-child td,
 .block > .table > tbody:first-child > tr:first-child td {
   border-top: 0;
 }
-.panel > .table-bordered, .view-community .view-filters form > .table-bordered, #homebox .homebox-portlet > .table-bordered, .block > .table-bordered,
+.panel > .table-bordered, #homebox .homebox-portlet > .table-bordered, .block > .table-bordered,
 .panel > .table-responsive > .table-bordered,
-.view-community .view-filters form > .table-responsive > .table-bordered,
 #homebox .homebox-portlet > .table-responsive > .table-bordered,
 .block > .table-responsive > .table-bordered {
   border: 0;
 }
-.panel > .table-bordered > thead > tr > th:first-child, .view-community .view-filters form > .table-bordered > thead > tr > th:first-child, #homebox .homebox-portlet > .table-bordered > thead > tr > th:first-child, .block > .table-bordered > thead > tr > th:first-child,
+.panel > .table-bordered > thead > tr > th:first-child, #homebox .homebox-portlet > .table-bordered > thead > tr > th:first-child, .block > .table-bordered > thead > tr > th:first-child,
 .panel > .table-bordered > thead > tr > td:first-child,
-.view-community .view-filters form > .table-bordered > thead > tr > td:first-child,
 #homebox .homebox-portlet > .table-bordered > thead > tr > td:first-child,
 .block > .table-bordered > thead > tr > td:first-child,
 .panel > .table-bordered > tbody > tr > th:first-child,
-.view-community .view-filters form > .table-bordered > tbody > tr > th:first-child,
 #homebox .homebox-portlet > .table-bordered > tbody > tr > th:first-child,
 .block > .table-bordered > tbody > tr > th:first-child,
 .panel > .table-bordered > tbody > tr > td:first-child,
-.view-community .view-filters form > .table-bordered > tbody > tr > td:first-child,
 #homebox .homebox-portlet > .table-bordered > tbody > tr > td:first-child,
 .block > .table-bordered > tbody > tr > td:first-child,
 .panel > .table-bordered > tfoot > tr > th:first-child,
-.view-community .view-filters form > .table-bordered > tfoot > tr > th:first-child,
 #homebox .homebox-portlet > .table-bordered > tfoot > tr > th:first-child,
 .block > .table-bordered > tfoot > tr > th:first-child,
 .panel > .table-bordered > tfoot > tr > td:first-child,
-.view-community .view-filters form > .table-bordered > tfoot > tr > td:first-child,
 #homebox .homebox-portlet > .table-bordered > tfoot > tr > td:first-child,
 .block > .table-bordered > tfoot > tr > td:first-child,
 .panel > .table-responsive > .table-bordered > thead > tr > th:first-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > thead > tr > th:first-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > thead > tr > th:first-child,
 .block > .table-responsive > .table-bordered > thead > tr > th:first-child,
 .panel > .table-responsive > .table-bordered > thead > tr > td:first-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > thead > tr > td:first-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > thead > tr > td:first-child,
 .block > .table-responsive > .table-bordered > thead > tr > td:first-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > th:first-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > tbody > tr > th:first-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tbody > tr > th:first-child,
 .block > .table-responsive > .table-bordered > tbody > tr > th:first-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > td:first-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > tbody > tr > td:first-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tbody > tr > td:first-child,
 .block > .table-responsive > .table-bordered > tbody > tr > td:first-child,
 .panel > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
 .block > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
 .panel > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tfoot > tr > td:first-child,
 .block > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
   border-left: 0;
 }
-.panel > .table-bordered > thead > tr > th:last-child, .view-community .view-filters form > .table-bordered > thead > tr > th:last-child, #homebox .homebox-portlet > .table-bordered > thead > tr > th:last-child, .block > .table-bordered > thead > tr > th:last-child,
+.panel > .table-bordered > thead > tr > th:last-child, #homebox .homebox-portlet > .table-bordered > thead > tr > th:last-child, .block > .table-bordered > thead > tr > th:last-child,
 .panel > .table-bordered > thead > tr > td:last-child,
-.view-community .view-filters form > .table-bordered > thead > tr > td:last-child,
 #homebox .homebox-portlet > .table-bordered > thead > tr > td:last-child,
 .block > .table-bordered > thead > tr > td:last-child,
 .panel > .table-bordered > tbody > tr > th:last-child,
-.view-community .view-filters form > .table-bordered > tbody > tr > th:last-child,
 #homebox .homebox-portlet > .table-bordered > tbody > tr > th:last-child,
 .block > .table-bordered > tbody > tr > th:last-child,
 .panel > .table-bordered > tbody > tr > td:last-child,
-.view-community .view-filters form > .table-bordered > tbody > tr > td:last-child,
 #homebox .homebox-portlet > .table-bordered > tbody > tr > td:last-child,
 .block > .table-bordered > tbody > tr > td:last-child,
 .panel > .table-bordered > tfoot > tr > th:last-child,
-.view-community .view-filters form > .table-bordered > tfoot > tr > th:last-child,
 #homebox .homebox-portlet > .table-bordered > tfoot > tr > th:last-child,
 .block > .table-bordered > tfoot > tr > th:last-child,
 .panel > .table-bordered > tfoot > tr > td:last-child,
-.view-community .view-filters form > .table-bordered > tfoot > tr > td:last-child,
 #homebox .homebox-portlet > .table-bordered > tfoot > tr > td:last-child,
 .block > .table-bordered > tfoot > tr > td:last-child,
 .panel > .table-responsive > .table-bordered > thead > tr > th:last-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > thead > tr > th:last-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > thead > tr > th:last-child,
 .block > .table-responsive > .table-bordered > thead > tr > th:last-child,
 .panel > .table-responsive > .table-bordered > thead > tr > td:last-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > thead > tr > td:last-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > thead > tr > td:last-child,
 .block > .table-responsive > .table-bordered > thead > tr > td:last-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > th:last-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > tbody > tr > th:last-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tbody > tr > th:last-child,
 .block > .table-responsive > .table-bordered > tbody > tr > th:last-child,
 .panel > .table-responsive > .table-bordered > tbody > tr > td:last-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > tbody > tr > td:last-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tbody > tr > td:last-child,
 .block > .table-responsive > .table-bordered > tbody > tr > td:last-child,
 .panel > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
 .block > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
 .panel > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
-.view-community .view-filters form > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tfoot > tr > td:last-child,
 .block > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
   border-right: 0;
 }
-.panel > .table-bordered > thead > tr:first-child > td, .view-community .view-filters form > .table-bordered > thead > tr:first-child > td, #homebox .homebox-portlet > .table-bordered > thead > tr:first-child > td, .block > .table-bordered > thead > tr:first-child > td,
+.panel > .table-bordered > thead > tr:first-child > td, #homebox .homebox-portlet > .table-bordered > thead > tr:first-child > td, .block > .table-bordered > thead > tr:first-child > td,
 .panel > .table-bordered > thead > tr:first-child > th,
-.view-community .view-filters form > .table-bordered > thead > tr:first-child > th,
 #homebox .homebox-portlet > .table-bordered > thead > tr:first-child > th,
 .block > .table-bordered > thead > tr:first-child > th,
 .panel > .table-bordered > tbody > tr:first-child > td,
-.view-community .view-filters form > .table-bordered > tbody > tr:first-child > td,
 #homebox .homebox-portlet > .table-bordered > tbody > tr:first-child > td,
 .block > .table-bordered > tbody > tr:first-child > td,
 .panel > .table-bordered > tbody > tr:first-child > th,
-.view-community .view-filters form > .table-bordered > tbody > tr:first-child > th,
 #homebox .homebox-portlet > .table-bordered > tbody > tr:first-child > th,
 .block > .table-bordered > tbody > tr:first-child > th,
 .panel > .table-responsive > .table-bordered > thead > tr:first-child > td,
-.view-community .view-filters form > .table-responsive > .table-bordered > thead > tr:first-child > td,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > thead > tr:first-child > td,
 .block > .table-responsive > .table-bordered > thead > tr:first-child > td,
 .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
-.view-community .view-filters form > .table-responsive > .table-bordered > thead > tr:first-child > th,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > thead > tr:first-child > th,
 .block > .table-responsive > .table-bordered > thead > tr:first-child > th,
 .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
-.view-community .view-filters form > .table-responsive > .table-bordered > tbody > tr:first-child > td,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tbody > tr:first-child > td,
 .block > .table-responsive > .table-bordered > tbody > tr:first-child > td,
 .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th,
-.view-community .view-filters form > .table-responsive > .table-bordered > tbody > tr:first-child > th,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tbody > tr:first-child > th,
 .block > .table-responsive > .table-bordered > tbody > tr:first-child > th {
   border-bottom: 0;
 }
-.panel > .table-bordered > tbody > tr:last-child > td, .view-community .view-filters form > .table-bordered > tbody > tr:last-child > td, #homebox .homebox-portlet > .table-bordered > tbody > tr:last-child > td, .block > .table-bordered > tbody > tr:last-child > td,
+.panel > .table-bordered > tbody > tr:last-child > td, #homebox .homebox-portlet > .table-bordered > tbody > tr:last-child > td, .block > .table-bordered > tbody > tr:last-child > td,
 .panel > .table-bordered > tbody > tr:last-child > th,
-.view-community .view-filters form > .table-bordered > tbody > tr:last-child > th,
 #homebox .homebox-portlet > .table-bordered > tbody > tr:last-child > th,
 .block > .table-bordered > tbody > tr:last-child > th,
 .panel > .table-bordered > tfoot > tr:last-child > td,
-.view-community .view-filters form > .table-bordered > tfoot > tr:last-child > td,
 #homebox .homebox-portlet > .table-bordered > tfoot > tr:last-child > td,
 .block > .table-bordered > tfoot > tr:last-child > td,
 .panel > .table-bordered > tfoot > tr:last-child > th,
-.view-community .view-filters form > .table-bordered > tfoot > tr:last-child > th,
 #homebox .homebox-portlet > .table-bordered > tfoot > tr:last-child > th,
 .block > .table-bordered > tfoot > tr:last-child > th,
 .panel > .table-responsive > .table-bordered > tbody > tr:last-child > td,
-.view-community .view-filters form > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 .block > .table-responsive > .table-bordered > tbody > tr:last-child > td,
 .panel > .table-responsive > .table-bordered > tbody > tr:last-child > th,
-.view-community .view-filters form > .table-responsive > .table-bordered > tbody > tr:last-child > th,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tbody > tr:last-child > th,
 .block > .table-responsive > .table-bordered > tbody > tr:last-child > th,
 .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
-.view-community .view-filters form > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
 .block > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
 .panel > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-.view-community .view-filters form > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
 #homebox .homebox-portlet > .table-responsive > .table-bordered > tfoot > tr:last-child > th,
 .block > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
   border-bottom: 0;
 }
-.panel > .table-responsive, .view-community .view-filters form > .table-responsive, #homebox .homebox-portlet > .table-responsive, .block > .table-responsive {
+.panel > .table-responsive, #homebox .homebox-portlet > .table-responsive, .block > .table-responsive {
   border: 0;
   margin-bottom: 0;
 }
@@ -6497,17 +6379,17 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group {
   margin-bottom: 21px;
 }
-.panel-group .panel, .panel-group .view-community .view-filters form, .view-community .view-filters .panel-group form, .panel-group #homebox .homebox-portlet, #homebox .panel-group .homebox-portlet, .panel-group .block {
+.panel-group .panel, .panel-group #homebox .homebox-portlet, #homebox .panel-group .homebox-portlet, .panel-group .block {
   margin-bottom: 0;
   border-radius: 0;
 }
-.panel-group .panel + .panel, .panel-group .view-community .view-filters form + .panel, .view-community .view-filters .panel-group form + .panel, .panel-group #homebox .homebox-portlet + .panel, #homebox .panel-group .homebox-portlet + .panel, .panel-group .block + .panel, .panel-group .view-community .view-filters .panel + form, .view-community .view-filters .panel-group .panel + form, .panel-group .view-community .view-filters form + form, .view-community .view-filters .panel-group form + form, .panel-group #homebox .view-community .view-filters .homebox-portlet + form, .view-community .view-filters .panel-group #homebox .homebox-portlet + form, #homebox .panel-group .view-community .view-filters .homebox-portlet + form, .view-community .view-filters #homebox .panel-group .homebox-portlet + form, .panel-group .view-community .view-filters .block + form, .view-community .view-filters .panel-group .block + form, .panel-group #homebox .panel + .homebox-portlet, #homebox .panel-group .panel + .homebox-portlet, .panel-group .view-community .view-filters #homebox form + .homebox-portlet, #homebox .panel-group .view-community .view-filters form + .homebox-portlet, .view-community .view-filters .panel-group #homebox form + .homebox-portlet, #homebox .view-community .view-filters .panel-group form + .homebox-portlet, .panel-group #homebox .homebox-portlet + .homebox-portlet, #homebox .panel-group .homebox-portlet + .homebox-portlet, .panel-group #homebox .block + .homebox-portlet, #homebox .panel-group .block + .homebox-portlet, .panel-group .panel + .block, .panel-group .view-community .view-filters form + .block, .view-community .view-filters .panel-group form + .block, .panel-group #homebox .homebox-portlet + .block, #homebox .panel-group .homebox-portlet + .block, .panel-group .block + .block {
+.panel-group .panel + .panel, .panel-group #homebox .homebox-portlet + .panel, #homebox .panel-group .homebox-portlet + .panel, .panel-group .block + .panel, .panel-group #homebox .panel + .homebox-portlet, #homebox .panel-group .panel + .homebox-portlet, .panel-group #homebox .homebox-portlet + .homebox-portlet, #homebox .panel-group .homebox-portlet + .homebox-portlet, .panel-group #homebox .block + .homebox-portlet, #homebox .panel-group .block + .homebox-portlet, .panel-group .panel + .block, .panel-group #homebox .homebox-portlet + .block, #homebox .panel-group .homebox-portlet + .block, .panel-group .block + .block {
   margin-top: 5px;
 }
 .panel-group .panel-heading, .panel-group #homebox .homebox-portlet .homebox-portlet-inner, #homebox .homebox-portlet .panel-group .homebox-portlet-inner, .panel-group .block-title {
   border-bottom: 0;
 }
-.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-group .block-title + .panel-collapse > .panel-body, .panel-group .view-community .panel-heading + .panel-collapse > .views-exposed-form, .view-community .panel-group .panel-heading + .panel-collapse > .views-exposed-form, .panel-group #homebox .homebox-portlet .view-community .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-group .view-community .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .panel-group .view-community .block-title + .panel-collapse > .views-exposed-form, .view-community .panel-group .block-title + .panel-collapse > .views-exposed-form, .panel-group #homebox .homebox-portlet .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-group .panel-heading + .panel-collapse > .portlet-content, .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > .portlet-content, .panel-group #homebox .homebox-portlet .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-group .block-title + .panel-collapse > .portlet-content, .panel-group .block .panel-heading + .panel-collapse > .view, .block .panel-group .panel-heading + .panel-collapse > .view, .panel-group #homebox .homebox-portlet .block .homebox-portlet-inner + .panel-collapse > .view, .block .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > .view, #homebox .homebox-portlet .panel-group .block .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > .view, .panel-group .block .block-title + .panel-collapse > .view, .block .panel-group .block-title + .panel-collapse > .view, .panel-group .block .panel-heading + .panel-collapse > ul, .block .panel-group .panel-heading + .panel-collapse > ul, .panel-group #homebox .homebox-portlet .block .homebox-portlet-inner + .panel-collapse > ul, .block .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > ul, #homebox .homebox-portlet .panel-group .block .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > ul, .panel-group .block .block-title + .panel-collapse > ul, .block .panel-group .block-title + .panel-collapse > ul,
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-group .block-title + .panel-collapse > .panel-body, .panel-group #homebox .homebox-portlet .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-group .panel-heading + .panel-collapse > .portlet-content, .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > .portlet-content, .panel-group #homebox .homebox-portlet .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-group .block-title + .panel-collapse > .portlet-content, .panel-group .block .panel-heading + .panel-collapse > .view, .block .panel-group .panel-heading + .panel-collapse > .view, .panel-group #homebox .homebox-portlet .block .homebox-portlet-inner + .panel-collapse > .view, .block .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > .view, #homebox .homebox-portlet .panel-group .block .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > .view, .panel-group .block .block-title + .panel-collapse > .view, .block .panel-group .block-title + .panel-collapse > .view, .panel-group .block .panel-heading + .panel-collapse > ul, .block .panel-group .panel-heading + .panel-collapse > ul, .panel-group #homebox .homebox-portlet .block .homebox-portlet-inner + .panel-collapse > ul, .block .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > ul, #homebox .homebox-portlet .panel-group .block .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > ul, .panel-group .block .block-title + .panel-collapse > ul, .block .panel-group .block-title + .panel-collapse > ul,
 .panel-group .panel-heading + .panel-collapse > .list-group,
 .panel-group #homebox .homebox-portlet .homebox-portlet-inner + .panel-collapse > .list-group,
 #homebox .homebox-portlet .panel-group .homebox-portlet-inner + .panel-collapse > .list-group,
@@ -6517,26 +6399,26 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 .panel-group .panel-footer {
   border-top: 0;
 }
-.panel-group .panel-footer + .panel-collapse .panel-body, .panel-group .panel-footer + .panel-collapse .view-community .views-exposed-form, .view-community .panel-group .panel-footer + .panel-collapse .views-exposed-form, .panel-group .panel-footer + .panel-collapse #homebox .homebox-portlet .portlet-content, #homebox .homebox-portlet .panel-group .panel-footer + .panel-collapse .portlet-content, .panel-group .panel-footer + .panel-collapse .block .view, .block .panel-group .panel-footer + .panel-collapse .view, .panel-group .panel-footer + .panel-collapse .block ul, .block .panel-group .panel-footer + .panel-collapse ul {
+.panel-group .panel-footer + .panel-collapse .panel-body, .panel-group .panel-footer + .panel-collapse #homebox .homebox-portlet .portlet-content, #homebox .homebox-portlet .panel-group .panel-footer + .panel-collapse .portlet-content, .panel-group .panel-footer + .panel-collapse .block .view, .block .panel-group .panel-footer + .panel-collapse .view, .panel-group .panel-footer + .panel-collapse .block ul, .block .panel-group .panel-footer + .panel-collapse ul {
   border-bottom: 1px solid transparent;
 }
 
-.panel-default, .view-community .view-filters form, #homebox .homebox-portlet, .block {
+.panel-default, #homebox .homebox-portlet, .block {
   border-color: #EBEBEB;
 }
-.panel-default > .panel-heading, .view-community .view-filters form > .panel-heading, #homebox .homebox-portlet > .panel-heading, .block > .panel-heading, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner, .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner, #homebox .homebox-portlet .view-community .view-filters form > .homebox-portlet-inner, #homebox .homebox-portlet > .homebox-portlet-inner, #homebox .homebox-portlet .block > .homebox-portlet-inner, .panel-default > .block-title, .view-community .view-filters form > .block-title, #homebox .homebox-portlet > .block-title, .block > .block-title {
+.panel-default > .panel-heading, #homebox .homebox-portlet > .panel-heading, .block > .panel-heading, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner, #homebox .homebox-portlet > .homebox-portlet-inner, #homebox .homebox-portlet .block > .homebox-portlet-inner, .panel-default > .block-title, #homebox .homebox-portlet > .block-title, .block > .block-title {
   color: #333333;
   background-color: #f5f5f5;
   border-color: #EBEBEB;
 }
-.panel-default > .panel-heading + .panel-collapse > .panel-body, .view-community .view-filters form > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet > .panel-heading + .panel-collapse > .panel-body, .block > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .panel-body, .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet .view-community .view-filters form > .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-default > .block-title + .panel-collapse > .panel-body, .view-community .view-filters form > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet > .block-title + .panel-collapse > .panel-body, .block > .block-title + .panel-collapse > .panel-body, .view-community .panel-default > .panel-heading + .panel-collapse > .views-exposed-form, .view-community .view-filters form > .panel-heading + .panel-collapse > .views-exposed-form, #homebox .view-community .homebox-portlet > .panel-heading + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet > .panel-heading + .panel-collapse > .views-exposed-form, .view-community .block > .panel-heading + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .view-community .panel-default > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .view-community .view-filters form > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, #homebox .view-community .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .view-community .block > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community .panel-default > .block-title + .panel-collapse > .views-exposed-form, .view-community .view-filters form > .block-title + .panel-collapse > .views-exposed-form, #homebox .view-community .homebox-portlet > .block-title + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet > .block-title + .panel-collapse > .views-exposed-form, .view-community .block > .block-title + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-default > .panel-heading + .panel-collapse > .portlet-content, .view-community .view-filters #homebox .homebox-portlet form > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .view-community .view-filters form > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .portlet-content, .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .view-community .view-filters form > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-default > .block-title + .panel-collapse > .portlet-content, .view-community .view-filters #homebox .homebox-portlet form > .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet .view-community .view-filters form > .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .block-title + .panel-collapse > .portlet-content, .block .panel-default > .panel-heading + .panel-collapse > .view, .view-community .view-filters .block form > .panel-heading + .panel-collapse > .view, .block .view-community .view-filters form > .panel-heading + .panel-collapse > .view, #homebox .block .homebox-portlet > .panel-heading + .panel-collapse > .view, .block #homebox .homebox-portlet > .panel-heading + .panel-collapse > .view, .block > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-default > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .view, .view-community .view-filters #homebox .homebox-portlet .block form > .homebox-portlet-inner + .panel-collapse > .view, .block .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner + .panel-collapse > .view, #homebox .homebox-portlet .view-community .view-filters .block form > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .view-community .view-filters form > .homebox-portlet-inner + .panel-collapse > .view, #homebox .block .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .view, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-default > .block-title + .panel-collapse > .view, .view-community .view-filters .block form > .block-title + .panel-collapse > .view, .block .view-community .view-filters form > .block-title + .panel-collapse > .view, #homebox .block .homebox-portlet > .block-title + .panel-collapse > .view, .block #homebox .homebox-portlet > .block-title + .panel-collapse > .view, .block > .block-title + .panel-collapse > .view, .block .panel-default > .panel-heading + .panel-collapse > ul, .view-community .view-filters .block form > .panel-heading + .panel-collapse > ul, .block .view-community .view-filters form > .panel-heading + .panel-collapse > ul, #homebox .block .homebox-portlet > .panel-heading + .panel-collapse > ul, .block #homebox .homebox-portlet > .panel-heading + .panel-collapse > ul, .block > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-default > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > ul, .view-community .view-filters #homebox .homebox-portlet .block form > .homebox-portlet-inner + .panel-collapse > ul, .block .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner + .panel-collapse > ul, #homebox .homebox-portlet .view-community .view-filters .block form > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .view-community .view-filters form > .homebox-portlet-inner + .panel-collapse > ul, #homebox .block .homebox-portlet > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > ul, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-default > .block-title + .panel-collapse > ul, .view-community .view-filters .block form > .block-title + .panel-collapse > ul, .block .view-community .view-filters form > .block-title + .panel-collapse > ul, #homebox .block .homebox-portlet > .block-title + .panel-collapse > ul, .block #homebox .homebox-portlet > .block-title + .panel-collapse > ul, .block > .block-title + .panel-collapse > ul {
+.panel-default > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet > .panel-heading + .panel-collapse > .panel-body, .block > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-default > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet > .block-title + .panel-collapse > .panel-body, .block > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-default > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-default > .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .block-title + .panel-collapse > .portlet-content, .block .panel-default > .panel-heading + .panel-collapse > .view, #homebox .block .homebox-portlet > .panel-heading + .panel-collapse > .view, .block #homebox .homebox-portlet > .panel-heading + .panel-collapse > .view, .block > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-default > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .view, #homebox .block .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .view, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-default > .block-title + .panel-collapse > .view, #homebox .block .homebox-portlet > .block-title + .panel-collapse > .view, .block #homebox .homebox-portlet > .block-title + .panel-collapse > .view, .block > .block-title + .panel-collapse > .view, .block .panel-default > .panel-heading + .panel-collapse > ul, #homebox .block .homebox-portlet > .panel-heading + .panel-collapse > ul, .block #homebox .homebox-portlet > .panel-heading + .panel-collapse > ul, .block > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-default > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > ul, #homebox .block .homebox-portlet > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > ul, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-default > .block-title + .panel-collapse > ul, #homebox .block .homebox-portlet > .block-title + .panel-collapse > ul, .block #homebox .homebox-portlet > .block-title + .panel-collapse > ul, .block > .block-title + .panel-collapse > ul {
   border-top-color: #EBEBEB;
 }
-.panel-default > .panel-heading .badge, .view-community .view-filters form > .panel-heading .badge, #homebox .homebox-portlet > .panel-heading .badge, .block > .panel-heading .badge, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner .badge, .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner .badge, #homebox .homebox-portlet .view-community .view-filters form > .homebox-portlet-inner .badge, #homebox .homebox-portlet > .homebox-portlet-inner .badge, #homebox .homebox-portlet .block > .homebox-portlet-inner .badge, .panel-default > .block-title .badge, .view-community .view-filters form > .block-title .badge, #homebox .homebox-portlet > .block-title .badge, .block > .block-title .badge {
+.panel-default > .panel-heading .badge, #homebox .homebox-portlet > .panel-heading .badge, .block > .panel-heading .badge, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner .badge, #homebox .homebox-portlet > .homebox-portlet-inner .badge, #homebox .homebox-portlet .block > .homebox-portlet-inner .badge, .panel-default > .block-title .badge, #homebox .homebox-portlet > .block-title .badge, .block > .block-title .badge {
   color: #f5f5f5;
   background-color: #333333;
 }
-.panel-default > .panel-footer + .panel-collapse > .panel-body, .view-community .view-filters form > .panel-footer + .panel-collapse > .panel-body, #homebox .homebox-portlet > .panel-footer + .panel-collapse > .panel-body, .block > .panel-footer + .panel-collapse > .panel-body, .view-community .panel-default > .panel-footer + .panel-collapse > .views-exposed-form, .view-community .view-filters form > .panel-footer + .panel-collapse > .views-exposed-form, #homebox .view-community .homebox-portlet > .panel-footer + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet > .panel-footer + .panel-collapse > .views-exposed-form, .view-community .block > .panel-footer + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-default > .panel-footer + .panel-collapse > .portlet-content, .view-community .view-filters #homebox .homebox-portlet form > .panel-footer + .panel-collapse > .portlet-content, #homebox .homebox-portlet .view-community .view-filters form > .panel-footer + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .panel-footer + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .panel-footer + .panel-collapse > .portlet-content, .block .panel-default > .panel-footer + .panel-collapse > .view, .view-community .view-filters .block form > .panel-footer + .panel-collapse > .view, .block .view-community .view-filters form > .panel-footer + .panel-collapse > .view, #homebox .block .homebox-portlet > .panel-footer + .panel-collapse > .view, .block #homebox .homebox-portlet > .panel-footer + .panel-collapse > .view, .block > .panel-footer + .panel-collapse > .view, .block .panel-default > .panel-footer + .panel-collapse > ul, .view-community .view-filters .block form > .panel-footer + .panel-collapse > ul, .block .view-community .view-filters form > .panel-footer + .panel-collapse > ul, #homebox .block .homebox-portlet > .panel-footer + .panel-collapse > ul, .block #homebox .homebox-portlet > .panel-footer + .panel-collapse > ul, .block > .panel-footer + .panel-collapse > ul {
+.panel-default > .panel-footer + .panel-collapse > .panel-body, #homebox .homebox-portlet > .panel-footer + .panel-collapse > .panel-body, .block > .panel-footer + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-default > .panel-footer + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .panel-footer + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .panel-footer + .panel-collapse > .portlet-content, .block .panel-default > .panel-footer + .panel-collapse > .view, #homebox .block .homebox-portlet > .panel-footer + .panel-collapse > .view, .block #homebox .homebox-portlet > .panel-footer + .panel-collapse > .view, .block > .panel-footer + .panel-collapse > .view, .block .panel-default > .panel-footer + .panel-collapse > ul, #homebox .block .homebox-portlet > .panel-footer + .panel-collapse > ul, .block #homebox .homebox-portlet > .panel-footer + .panel-collapse > ul, .block > .panel-footer + .panel-collapse > ul {
   border-bottom-color: #EBEBEB;
 }
 
@@ -6548,14 +6430,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-color: #DF691A;
   border-color: transparent;
 }
-.panel-primary > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-primary > .block-title + .panel-collapse > .panel-body, .view-community .panel-primary > .panel-heading + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .view-community .panel-primary > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community .panel-primary > .block-title + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-primary > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-primary > .block-title + .panel-collapse > .portlet-content, .block .panel-primary > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-primary > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-primary > .block-title + .panel-collapse > .view, .block .panel-primary > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-primary > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-primary > .block-title + .panel-collapse > ul {
+.panel-primary > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-primary > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-primary > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-primary > .block-title + .panel-collapse > .portlet-content, .block .panel-primary > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-primary > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-primary > .block-title + .panel-collapse > .view, .block .panel-primary > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-primary > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-primary > .block-title + .panel-collapse > ul {
   border-top-color: transparent;
 }
 .panel-primary > .panel-heading .badge, #homebox .homebox-portlet .panel-primary > .homebox-portlet-inner .badge, .panel-primary > .block-title .badge {
   color: #DF691A;
   background-color: #fff;
 }
-.panel-primary > .panel-footer + .panel-collapse > .panel-body, .view-community .panel-primary > .panel-footer + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-primary > .panel-footer + .panel-collapse > .portlet-content, .block .panel-primary > .panel-footer + .panel-collapse > .view, .block .panel-primary > .panel-footer + .panel-collapse > ul {
+.panel-primary > .panel-footer + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-primary > .panel-footer + .panel-collapse > .portlet-content, .block .panel-primary > .panel-footer + .panel-collapse > .view, .block .panel-primary > .panel-footer + .panel-collapse > ul {
   border-bottom-color: transparent;
 }
 
@@ -6567,14 +6449,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-color: rgba(92, 184, 92, 0.25);
   border-color: transparent;
 }
-.panel-success > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-success > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-success > .block-title + .panel-collapse > .panel-body, .view-community .panel-success > .panel-heading + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .view-community .panel-success > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet .panel-success > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community .panel-success > .block-title + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-success > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-success > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-success > .block-title + .panel-collapse > .portlet-content, .block .panel-success > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-success > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-success > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-success > .block-title + .panel-collapse > .view, .block .panel-success > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-success > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-success > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-success > .block-title + .panel-collapse > ul {
+.panel-success > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-success > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-success > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-success > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-success > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-success > .block-title + .panel-collapse > .portlet-content, .block .panel-success > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-success > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-success > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-success > .block-title + .panel-collapse > .view, .block .panel-success > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-success > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-success > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-success > .block-title + .panel-collapse > ul {
   border-top-color: transparent;
 }
 .panel-success > .panel-heading .badge, #homebox .homebox-portlet .panel-success > .homebox-portlet-inner .badge, .panel-success > .block-title .badge {
   color: rgba(92, 184, 92, 0.25);
   background-color: #2B3E50;
 }
-.panel-success > .panel-footer + .panel-collapse > .panel-body, .view-community .panel-success > .panel-footer + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-success > .panel-footer + .panel-collapse > .portlet-content, .block .panel-success > .panel-footer + .panel-collapse > .view, .block .panel-success > .panel-footer + .panel-collapse > ul {
+.panel-success > .panel-footer + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-success > .panel-footer + .panel-collapse > .portlet-content, .block .panel-success > .panel-footer + .panel-collapse > .view, .block .panel-success > .panel-footer + .panel-collapse > ul {
   border-bottom-color: transparent;
 }
 
@@ -6586,14 +6468,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-color: rgba(91, 192, 222, 0.25);
   border-color: transparent;
 }
-.panel-info > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-info > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-info > .block-title + .panel-collapse > .panel-body, .view-community .panel-info > .panel-heading + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .view-community .panel-info > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet .panel-info > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community .panel-info > .block-title + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-info > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-info > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-info > .block-title + .panel-collapse > .portlet-content, .block .panel-info > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-info > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-info > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-info > .block-title + .panel-collapse > .view, .block .panel-info > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-info > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-info > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-info > .block-title + .panel-collapse > ul {
+.panel-info > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-info > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-info > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-info > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-info > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-info > .block-title + .panel-collapse > .portlet-content, .block .panel-info > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-info > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-info > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-info > .block-title + .panel-collapse > .view, .block .panel-info > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-info > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-info > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-info > .block-title + .panel-collapse > ul {
   border-top-color: transparent;
 }
 .panel-info > .panel-heading .badge, #homebox .homebox-portlet .panel-info > .homebox-portlet-inner .badge, .panel-info > .block-title .badge {
   color: rgba(91, 192, 222, 0.25);
   background-color: #2B3E50;
 }
-.panel-info > .panel-footer + .panel-collapse > .panel-body, .view-community .panel-info > .panel-footer + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-info > .panel-footer + .panel-collapse > .portlet-content, .block .panel-info > .panel-footer + .panel-collapse > .view, .block .panel-info > .panel-footer + .panel-collapse > ul {
+.panel-info > .panel-footer + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-info > .panel-footer + .panel-collapse > .portlet-content, .block .panel-info > .panel-footer + .panel-collapse > .view, .block .panel-info > .panel-footer + .panel-collapse > ul {
   border-bottom-color: transparent;
 }
 
@@ -6605,14 +6487,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-color: rgba(240, 173, 78, 0.25);
   border-color: transparent;
 }
-.panel-warning > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-warning > .block-title + .panel-collapse > .panel-body, .view-community .panel-warning > .panel-heading + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .view-community .panel-warning > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community .panel-warning > .block-title + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-warning > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-warning > .block-title + .panel-collapse > .portlet-content, .block .panel-warning > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-warning > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-warning > .block-title + .panel-collapse > .view, .block .panel-warning > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-warning > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-warning > .block-title + .panel-collapse > ul {
+.panel-warning > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-warning > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-warning > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-warning > .block-title + .panel-collapse > .portlet-content, .block .panel-warning > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-warning > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-warning > .block-title + .panel-collapse > .view, .block .panel-warning > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-warning > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-warning > .block-title + .panel-collapse > ul {
   border-top-color: transparent;
 }
 .panel-warning > .panel-heading .badge, #homebox .homebox-portlet .panel-warning > .homebox-portlet-inner .badge, .panel-warning > .block-title .badge {
   color: rgba(240, 173, 78, 0.25);
   background-color: #2B3E50;
 }
-.panel-warning > .panel-footer + .panel-collapse > .panel-body, .view-community .panel-warning > .panel-footer + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-warning > .panel-footer + .panel-collapse > .portlet-content, .block .panel-warning > .panel-footer + .panel-collapse > .view, .block .panel-warning > .panel-footer + .panel-collapse > ul {
+.panel-warning > .panel-footer + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-warning > .panel-footer + .panel-collapse > .portlet-content, .block .panel-warning > .panel-footer + .panel-collapse > .view, .block .panel-warning > .panel-footer + .panel-collapse > ul {
   border-bottom-color: transparent;
 }
 
@@ -6624,14 +6506,14 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-color: rgba(217, 83, 79, 0.25);
   border-color: transparent;
 }
-.panel-danger > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-danger > .block-title + .panel-collapse > .panel-body, .view-community .panel-danger > .panel-heading + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .view-community .panel-danger > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner + .panel-collapse > .views-exposed-form, .view-community .panel-danger > .block-title + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-danger > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-danger > .block-title + .panel-collapse > .portlet-content, .block .panel-danger > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-danger > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-danger > .block-title + .panel-collapse > .view, .block .panel-danger > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-danger > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-danger > .block-title + .panel-collapse > ul {
+.panel-danger > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-danger > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-danger > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-danger > .block-title + .panel-collapse > .portlet-content, .block .panel-danger > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-danger > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-danger > .block-title + .panel-collapse > .view, .block .panel-danger > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-danger > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-danger > .block-title + .panel-collapse > ul {
   border-top-color: transparent;
 }
 .panel-danger > .panel-heading .badge, #homebox .homebox-portlet .panel-danger > .homebox-portlet-inner .badge, .panel-danger > .block-title .badge {
   color: rgba(217, 83, 79, 0.25);
   background-color: #2B3E50;
 }
-.panel-danger > .panel-footer + .panel-collapse > .panel-body, .view-community .panel-danger > .panel-footer + .panel-collapse > .views-exposed-form, #homebox .homebox-portlet .panel-danger > .panel-footer + .panel-collapse > .portlet-content, .block .panel-danger > .panel-footer + .panel-collapse > .view, .block .panel-danger > .panel-footer + .panel-collapse > ul {
+.panel-danger > .panel-footer + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-danger > .panel-footer + .panel-collapse > .portlet-content, .block .panel-danger > .panel-footer + .panel-collapse > .view, .block .panel-danger > .panel-footer + .panel-collapse > ul {
   border-bottom-color: transparent;
 }
 
@@ -10166,10 +10048,10 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   background-color: rgba(212, 63, 58, 0.25);
 }
 
-.panel, .view-community .view-filters form, #homebox .homebox-portlet, .block {
+.panel, #homebox .homebox-portlet, .block {
   border: none;
 }
-.panel-default > .panel-heading, .view-community .view-filters form > .panel-heading, #homebox .homebox-portlet > .panel-heading, .block > .panel-heading, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner, .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner, #homebox .homebox-portlet .view-community .view-filters form > .homebox-portlet-inner, #homebox .homebox-portlet > .homebox-portlet-inner, #homebox .homebox-portlet .block > .homebox-portlet-inner, .panel-default > .block-title, .view-community .view-filters form > .block-title, #homebox .homebox-portlet > .block-title, .block > .block-title {
+.panel-default > .panel-heading, #homebox .homebox-portlet > .panel-heading, .block > .panel-heading, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner, #homebox .homebox-portlet > .homebox-portlet-inner, #homebox .homebox-portlet .block > .homebox-portlet-inner, .panel-default > .block-title, #homebox .homebox-portlet > .block-title, .block > .block-title {
   background-color: #e3e3e3;
   color: #2B3E50;
 }
@@ -10402,7 +10284,7 @@ fieldset legend.panel-heading, fieldset #homebox .homebox-portlet legend.homebox
   margin: 0;
 }
 
-fieldset .panel-body, fieldset .view-community .views-exposed-form, .view-community fieldset .views-exposed-form, fieldset #homebox .homebox-portlet .portlet-content, #homebox .homebox-portlet fieldset .portlet-content, fieldset .block .view, .block fieldset .view, fieldset .block ul, .block fieldset ul {
+fieldset .panel-body, fieldset #homebox .homebox-portlet .portlet-content, #homebox .homebox-portlet fieldset .portlet-content, fieldset .block .view, .block fieldset .view, fieldset .block ul, .block fieldset ul {
   clear: both;
 }
 
@@ -11057,10 +10939,10 @@ a.tabledrag-handle .handle {
 #annotations-r .thumbnail {
   padding: 0px;
 }
-#annotations-r .panel, #annotations-r .view-community .view-filters form, .view-community .view-filters #annotations-r form, #annotations-r #homebox .homebox-portlet, #homebox #annotations-r .homebox-portlet, #annotations-r .block {
+#annotations-r .panel, #annotations-r #homebox .homebox-portlet, #homebox #annotations-r .homebox-portlet, #annotations-r .block {
   position: relative;
 }
-#annotations-r .panel > .panel-heading:after, #annotations-r .view-community .view-filters form > .panel-heading:after, .view-community .view-filters #annotations-r form > .panel-heading:after, #annotations-r #homebox .homebox-portlet > .panel-heading:after, #homebox #annotations-r .homebox-portlet > .panel-heading:after, #annotations-r .block > .panel-heading:after, #annotations-r #homebox .homebox-portlet .panel > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .panel > .homebox-portlet-inner:after, #annotations-r .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .view-community .view-filters form > .homebox-portlet-inner:after, .view-community .view-filters #annotations-r #homebox .homebox-portlet form > .homebox-portlet-inner:after, #homebox .homebox-portlet .view-community .view-filters #annotations-r form > .homebox-portlet-inner:after, #annotations-r #homebox .homebox-portlet > .homebox-portlet-inner:after, #homebox #annotations-r .homebox-portlet > .homebox-portlet-inner:after, #annotations-r #homebox .homebox-portlet .block > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .block > .homebox-portlet-inner:after, #annotations-r .panel > .block-title:after, #annotations-r .view-community .view-filters form > .block-title:after, .view-community .view-filters #annotations-r form > .block-title:after, #annotations-r #homebox .homebox-portlet > .block-title:after, #homebox #annotations-r .homebox-portlet > .block-title:after, #annotations-r .block > .block-title:after, #annotations-r .panel > .panel-heading:before, #annotations-r .view-community .view-filters form > .panel-heading:before, .view-community .view-filters #annotations-r form > .panel-heading:before, #annotations-r #homebox .homebox-portlet > .panel-heading:before, #homebox #annotations-r .homebox-portlet > .panel-heading:before, #annotations-r .block > .panel-heading:before, #annotations-r #homebox .homebox-portlet .panel > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .panel > .homebox-portlet-inner:before, #annotations-r .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .view-community .view-filters form > .homebox-portlet-inner:before, .view-community .view-filters #annotations-r #homebox .homebox-portlet form > .homebox-portlet-inner:before, #homebox .homebox-portlet .view-community .view-filters #annotations-r form > .homebox-portlet-inner:before, #annotations-r #homebox .homebox-portlet > .homebox-portlet-inner:before, #homebox #annotations-r .homebox-portlet > .homebox-portlet-inner:before, #annotations-r #homebox .homebox-portlet .block > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .block > .homebox-portlet-inner:before, #annotations-r .panel > .block-title:before, #annotations-r .view-community .view-filters form > .block-title:before, .view-community .view-filters #annotations-r form > .block-title:before, #annotations-r #homebox .homebox-portlet > .block-title:before, #homebox #annotations-r .homebox-portlet > .block-title:before, #annotations-r .block > .block-title:before {
+#annotations-r .panel > .panel-heading:after, #annotations-r #homebox .homebox-portlet > .panel-heading:after, #homebox #annotations-r .homebox-portlet > .panel-heading:after, #annotations-r .block > .panel-heading:after, #annotations-r #homebox .homebox-portlet .panel > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .panel > .homebox-portlet-inner:after, #annotations-r #homebox .homebox-portlet > .homebox-portlet-inner:after, #homebox #annotations-r .homebox-portlet > .homebox-portlet-inner:after, #annotations-r #homebox .homebox-portlet .block > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .block > .homebox-portlet-inner:after, #annotations-r .panel > .block-title:after, #annotations-r #homebox .homebox-portlet > .block-title:after, #homebox #annotations-r .homebox-portlet > .block-title:after, #annotations-r .block > .block-title:after, #annotations-r .panel > .panel-heading:before, #annotations-r #homebox .homebox-portlet > .panel-heading:before, #homebox #annotations-r .homebox-portlet > .panel-heading:before, #annotations-r .block > .panel-heading:before, #annotations-r #homebox .homebox-portlet .panel > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .panel > .homebox-portlet-inner:before, #annotations-r #homebox .homebox-portlet > .homebox-portlet-inner:before, #homebox #annotations-r .homebox-portlet > .homebox-portlet-inner:before, #annotations-r #homebox .homebox-portlet .block > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .block > .homebox-portlet-inner:before, #annotations-r .panel > .block-title:before, #annotations-r #homebox .homebox-portlet > .block-title:before, #homebox #annotations-r .homebox-portlet > .block-title:before, #annotations-r .block > .block-title:before {
   position: absolute;
   top: 11px;
   left: -16px;
@@ -11073,103 +10955,41 @@ a.tabledrag-handle .handle {
   border-style: solid solid outset;
   pointer-events: none;
 }
-#annotations-r .panel > .panel-heading:after, #annotations-r .view-community .view-filters form > .panel-heading:after, .view-community .view-filters #annotations-r form > .panel-heading:after, #annotations-r #homebox .homebox-portlet > .panel-heading:after, #homebox #annotations-r .homebox-portlet > .panel-heading:after, #annotations-r .block > .panel-heading:after, #annotations-r #homebox .homebox-portlet .panel > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .panel > .homebox-portlet-inner:after, #annotations-r .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .view-community .view-filters form > .homebox-portlet-inner:after, .view-community .view-filters #annotations-r #homebox .homebox-portlet form > .homebox-portlet-inner:after, #homebox .homebox-portlet .view-community .view-filters #annotations-r form > .homebox-portlet-inner:after, #annotations-r #homebox .homebox-portlet > .homebox-portlet-inner:after, #homebox #annotations-r .homebox-portlet > .homebox-portlet-inner:after, #annotations-r #homebox .homebox-portlet .block > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .block > .homebox-portlet-inner:after, #annotations-r .panel > .block-title:after, #annotations-r .view-community .view-filters form > .block-title:after, .view-community .view-filters #annotations-r form > .block-title:after, #annotations-r #homebox .homebox-portlet > .block-title:after, #homebox #annotations-r .homebox-portlet > .block-title:after, #annotations-r .block > .block-title:after {
+#annotations-r .panel > .panel-heading:after, #annotations-r #homebox .homebox-portlet > .panel-heading:after, #homebox #annotations-r .homebox-portlet > .panel-heading:after, #annotations-r .block > .panel-heading:after, #annotations-r #homebox .homebox-portlet .panel > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .panel > .homebox-portlet-inner:after, #annotations-r #homebox .homebox-portlet > .homebox-portlet-inner:after, #homebox #annotations-r .homebox-portlet > .homebox-portlet-inner:after, #annotations-r #homebox .homebox-portlet .block > .homebox-portlet-inner:after, #homebox .homebox-portlet #annotations-r .block > .homebox-portlet-inner:after, #annotations-r .panel > .block-title:after, #annotations-r #homebox .homebox-portlet > .block-title:after, #homebox #annotations-r .homebox-portlet > .block-title:after, #annotations-r .block > .block-title:after {
   border-width: 7px;
   border-right-color: #f7f7f7;
   margin-top: 1px;
   margin-left: 2px;
 }
-#annotations-r .panel > .panel-heading:before, #annotations-r .view-community .view-filters form > .panel-heading:before, .view-community .view-filters #annotations-r form > .panel-heading:before, #annotations-r #homebox .homebox-portlet > .panel-heading:before, #homebox #annotations-r .homebox-portlet > .panel-heading:before, #annotations-r .block > .panel-heading:before, #annotations-r #homebox .homebox-portlet .panel > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .panel > .homebox-portlet-inner:before, #annotations-r .view-community .view-filters #homebox .homebox-portlet form > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .view-community .view-filters form > .homebox-portlet-inner:before, .view-community .view-filters #annotations-r #homebox .homebox-portlet form > .homebox-portlet-inner:before, #homebox .homebox-portlet .view-community .view-filters #annotations-r form > .homebox-portlet-inner:before, #annotations-r #homebox .homebox-portlet > .homebox-portlet-inner:before, #homebox #annotations-r .homebox-portlet > .homebox-portlet-inner:before, #annotations-r #homebox .homebox-portlet .block > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .block > .homebox-portlet-inner:before, #annotations-r .panel > .block-title:before, #annotations-r .view-community .view-filters form > .block-title:before, .view-community .view-filters #annotations-r form > .block-title:before, #annotations-r #homebox .homebox-portlet > .block-title:before, #homebox #annotations-r .homebox-portlet > .block-title:before, #annotations-r .block > .block-title:before {
+#annotations-r .panel > .panel-heading:before, #annotations-r #homebox .homebox-portlet > .panel-heading:before, #homebox #annotations-r .homebox-portlet > .panel-heading:before, #annotations-r .block > .panel-heading:before, #annotations-r #homebox .homebox-portlet .panel > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .panel > .homebox-portlet-inner:before, #annotations-r #homebox .homebox-portlet > .homebox-portlet-inner:before, #homebox #annotations-r .homebox-portlet > .homebox-portlet-inner:before, #annotations-r #homebox .homebox-portlet .block > .homebox-portlet-inner:before, #homebox .homebox-portlet #annotations-r .block > .homebox-portlet-inner:before, #annotations-r .panel > .block-title:before, #annotations-r #homebox .homebox-portlet > .block-title:before, #homebox #annotations-r .homebox-portlet > .block-title:before, #annotations-r .block > .block-title:before {
   border-right-color: #ddd;
   border-width: 8px;
 }
-#annotations-r .panel-body, #annotations-r .view-community .views-exposed-form, .view-community #annotations-r .views-exposed-form, #annotations-r #homebox .homebox-portlet .portlet-content, #homebox .homebox-portlet #annotations-r .portlet-content, #annotations-r .block .view, .block #annotations-r .view, #annotations-r .block ul, .block #annotations-r ul {
+#annotations-r .panel-body, #annotations-r #homebox .homebox-portlet .portlet-content, #homebox .homebox-portlet #annotations-r .portlet-content, #annotations-r .block .view, .block #annotations-r .view, #annotations-r .block ul, .block #annotations-r ul {
   background: #FFFFFF;
 }
 
-.view-community .view-content {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .view-community .view-content {
-    float: left;
-    width: 83.33333%;
-  }
-}
-@media (min-width: 992px) {
-  .view-community .view-content {
-    right: 16.66667%;
-  }
-}
-.view-community .view-content ul {
-  padding-left: 0;
-}
-.view-community .view-filters {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .view-community .view-filters {
-    float: left;
-    width: 16.66667%;
-  }
-}
-@media (min-width: 992px) {
-  .view-community .view-filters {
-    left: 83.33333%;
-  }
-}
-.view-community .view-filters form {
-  border: 1px solid #EBEBEB;
+.panel-title > a, #homebox .homebox-portlet .portlet-header > a {
+  display: block;
+  padding: 10px 15px;
 }
 
-.block-views .block-title {
-  margin-top: 0;
-}
-.block-views .view-community .view-content {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .block-views .view-community .view-content {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .block-views .view-community .view-content {
-    right: 0%;
-  }
-}
-.block-views .view-community .panel-comm {
-  border: none;
+.panel-heading, #homebox .homebox-portlet .homebox-portlet-inner, .block-title {
   padding: 0;
-  box-shadow: 0;
-}
-
-.filters {
-  padding: 10px;
 }
 
 #block-search-form .input-group {
   padding-bottom: 20px;
 }
 
-.panel-default ul, .view-community .view-filters form ul, #homebox .homebox-portlet ul, .block ul {
+.panel-default ul, #homebox .homebox-portlet ul, .block ul {
   list-style: none;
   padding: 10px;
 }
-.panel-default ul li, .view-community .view-filters form ul li, #homebox .homebox-portlet ul li, .block ul li {
+.panel-default ul li, #homebox .homebox-portlet ul li, .block ul li {
   padding: 5px;
 }
-.panel-default ul a, .view-community .view-filters form ul a, #homebox .homebox-portlet ul a, .block ul a {
+.panel-default ul a, #homebox .homebox-portlet ul a, .block ul a {
   color: #333333;
 }
 
@@ -11266,7 +11086,7 @@ a.tabledrag-handle .handle {
 }
 
 /*fix for sign in button*/
-.record .panel, .record .view-community .view-filters form, .view-community .view-filters .record form, .record #homebox .homebox-portlet, #homebox .record .homebox-portlet, .record .block {
+.record .panel, .record #homebox .homebox-portlet, #homebox .record .homebox-portlet, .record .block {
   margin-top: 20px;
 }
 
