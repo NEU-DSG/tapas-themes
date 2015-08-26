@@ -9,6 +9,7 @@
 }
 .block-title {
   @extend .panel-heading;
+  padding:10px 15px;
 }
 
 .block[class*=" col-"]{
