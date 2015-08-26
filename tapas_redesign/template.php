@@ -102,5 +102,6 @@ function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
 function tapas_redesign_preprocess_block(&$variables, $hook) {
   if ($variables['elements']['#block']->module == 'search' && $variables['elements']['#block']->region == 'content') {
     $variables['elements']['#block']->subject = NULL;
+    $variables['classes_array'][] = "col-sm-9";
   }
 }
