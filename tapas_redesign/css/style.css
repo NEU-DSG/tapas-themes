@@ -11161,6 +11161,9 @@ a.tabledrag-handle .handle {
 #block-search-form--2 {
   padding: 35px;
 }
+#block-search-form--2 .input-group {
+  padding-bottom: 20px;
+}
 
 .panel-default ul, .view-community .view-filters form ul, #homebox .homebox-portlet ul, .block ul {
   list-style: none;

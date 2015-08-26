@@ -98,3 +98,9 @@ function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
       break;
   }
 }
+
+function tapas_redesign_preprocess_block(&$variables, $hook) {
+  if ($variables['elements']['#block']->module == 'search' && $variables['elements']['#block']->region == 'content') {
+    $variables['elements']['#block']->subject = NULL;
+  }
+}
