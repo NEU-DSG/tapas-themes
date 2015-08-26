@@ -104,4 +104,7 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
     $variables['elements']['#block']->subject = NULL;
     $variables['classes_array'][] = "col-sm-9";
   }
+  if ($variables['elements']['#block']->module == 'menu' && $variables['elements']['#block']->region == 'toolbar'){
+    $variables['content'] = '<li class="leaf"><a href="/user"><span class="fa fa-user"></span> My Account</a></li>'.$variables['content'];
+  }
 }
