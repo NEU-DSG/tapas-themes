@@ -10329,15 +10329,12 @@ fieldset .panel-heading a.panel-title:hover, fieldset #homebox .homebox-portlet 
 
 .panel-heading, #homebox .homebox-portlet .homebox-portlet-inner, .block-title {
   display: block;
+  padding: 0;
 }
 
 .panel-title > a, #homebox .homebox-portlet .portlet-header > a {
   display: block;
   padding: 10px 15px;
-}
-
-.panel-heading + .panel-title, #homebox .homebox-portlet .homebox-portlet-inner + .panel-title, .block-title + .panel-title, #homebox .homebox-portlet .panel-heading + .portlet-header, #homebox .homebox-portlet .homebox-portlet-inner + .portlet-header, #homebox .homebox-portlet .block-title + .portlet-header {
-  padding: 0;
 }
 
 a.tabledrag-handle .handle {

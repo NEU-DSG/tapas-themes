@@ -257,15 +257,13 @@ fieldset .panel-heading a.panel-title {
 }
 .panel-heading {
   display: block;
+  padding:0;
 }
 
 //makes panel heading links full width
 .panel-title > a {
   display:block;
   padding:10px 15px;
-}
-.panel-heading + .panel-title{
-  padding:0;
 }
 
 a.tabledrag-handle .handle {
