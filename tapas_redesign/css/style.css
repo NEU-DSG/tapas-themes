@@ -10291,7 +10291,6 @@ fieldset .panel-body, fieldset #homebox .homebox-portlet .portlet-content, #home
 fieldset .panel-heading a.panel-title, fieldset #homebox .homebox-portlet .homebox-portlet-inner a.panel-title, #homebox .homebox-portlet fieldset .homebox-portlet-inner a.panel-title, fieldset .block-title a.panel-title, fieldset .panel-heading #homebox .homebox-portlet a.portlet-header, #homebox .homebox-portlet fieldset .panel-heading a.portlet-header, fieldset #homebox .homebox-portlet .homebox-portlet-inner a.portlet-header, #homebox .homebox-portlet fieldset .homebox-portlet-inner a.portlet-header, fieldset .block-title #homebox .homebox-portlet a.portlet-header, #homebox .homebox-portlet fieldset .block-title a.portlet-header {
   color: inherit;
   display: block;
-  margin: -10px -15px;
   padding: 10px 15px;
 }
 fieldset .panel-heading a.panel-title:hover, fieldset #homebox .homebox-portlet .homebox-portlet-inner a.panel-title:hover, #homebox .homebox-portlet fieldset .homebox-portlet-inner a.panel-title:hover, fieldset .block-title a.panel-title:hover, fieldset .panel-heading #homebox .homebox-portlet a.portlet-header:hover, #homebox .homebox-portlet fieldset .panel-heading a.portlet-header:hover, fieldset #homebox .homebox-portlet .homebox-portlet-inner a.portlet-header:hover, #homebox .homebox-portlet fieldset .homebox-portlet-inner a.portlet-header:hover, fieldset .block-title #homebox .homebox-portlet a.portlet-header:hover, #homebox .homebox-portlet fieldset .block-title a.portlet-header:hover {
