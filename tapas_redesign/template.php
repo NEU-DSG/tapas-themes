@@ -24,8 +24,10 @@ function tapas_redesign_process(&$variables, $hook) {
 
 
 function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
-  switch ($form['#id']) {
-    case 'search-block-form':
+  drupal_set_message("form_id is ".$form_id." and form['#id'] is ".$form['#id']);
+  switch ($form['form_id']['#id']) {
+    case 'edit-search-block-form':
+      dpm($form);
       // Keyword boxes:
       $form['advanced'] = array(
         '#type' => 'fieldset',
@@ -93,7 +95,7 @@ function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
 
       $form['#validate'][] = 'node_search_validate';
       break;
-    case 'search-block-form--2':
+    case 'edit-search-block-form--2':
       $form['link'] = array('#markup' => l(t('Advanced Search'),'search/node'));
       break;
   }
