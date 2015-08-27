@@ -119,8 +119,9 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
   }
   if ($variables['elements']['#block']->module == 'search' && $variables['elements']['#block']->region == 'toolbar') {
     // dpm($variables);
-    $form = $variables['elements']['search_block_form'];
-    $form['link'] = array('#markup' => l(t('Advanced Search'),'search/node'));
+    // $form = $variables['elements']['search_block_form'];
+    // $form['link'] = array('#markup' => l(t('Advanced Search'),'search/node'));
+    $variables['content'] .= "<br/><a href='/search/node'>Advanced Search</a>";
   }
   if ($variables['elements']['#block']->module == 'menu' && $variables['elements']['#block']->region == 'toolbar'){
     $variables['content'] = '<ul class="menu nav"><li class="leaf"><a href="/user"><span class="fa fa-user"></span> My Account</a></li></ul>'.$variables['content'];
