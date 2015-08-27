@@ -111,9 +111,9 @@ a.tabledrag-handle .handle {
 // .panel-heading a.collapsed:after {
 //   content: $fa-var-arrow-down;
 // }
-#archive-info{
+#archive-info, #discover-info, #publish-info, #share-info{
   .modal-body{
-    .col-md-2:first-of-type{
+    .col-md-2:nth-of-type(1){
       background-image: url(&quot;http://tapasdev.neu.edu/profiles/buildtapas/themes/tapas-themes/tapas_redesign/logo.png&quot;);
       background-repeat: no-repeat;
       background-position: 83% center;
@@ -121,7 +121,7 @@ a.tabledrag-handle .handle {
       height: 197px;
       opacity: 0.4;
     }
-    .col-md-4:first-of-type{
+    .col-md-4:nth-of-type(1){
       border-left: medium solid rgba(0, 0, 0, 0.17);
     }
   }
