@@ -98,12 +98,12 @@ function tapas_redesign_form_search_block_form_alter(&$form, &$form_state, $form
   // drupal_set_message("form_id is ".$form_id." and form['#id'] is ".$form['#id']);
   // switch ($form['form_id']['#id']) {
     // case 'search-block-form':
-      // dpm($form);
-      $blocks = block_list("toolbar");
-      if (in_array("search", $blocks)){
-        kpr($blocks);
-
-      }
+      dpm($form);
+      // $blocks = block_list("toolbar");
+      // if (in_array("search", $blocks)){
+      //   kpr($blocks);
+      //
+      // }
       // Keyword boxes:
 
       // break;
@@ -118,7 +118,9 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
     $variables['classes_array'][] = "col-sm-9";
   }
   if ($variables['elements']['#block']->module == 'search' && $variables['elements']['#block']->region == 'toolbar') {
-    dpm($variables);
+    // dpm($variables);
+    $form = $variables['elements']['search_block_form'];
+    $form['link'] = array('#markup' => l(t('Advanced Search'),'search/node'));
   }
   if ($variables['elements']['#block']->module == 'menu' && $variables['elements']['#block']->region == 'toolbar'){
     $variables['content'] = '<ul class="menu nav"><li class="leaf"><a href="/user"><span class="fa fa-user"></span> My Account</a></li></ul>'.$variables['content'];
