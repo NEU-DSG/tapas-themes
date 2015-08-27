@@ -99,22 +99,11 @@ a.tabledrag-handle .handle {
   @extend .fa-arrows;
   background:none;
 }
-// .panel-heading a {
-//   display:block;
-//   width:100%;
-// }
-// .panel-heading a:after {
-//   float:right;
-//   font-family: FontAwesome;
-//   content: $fa-var-arrow-up;
-// }
-// .panel-heading a.collapsed:after {
-//   content: $fa-var-arrow-down;
-// }
+
 #archive-info, #discover-info, #publish-info, #share-info{
   .modal-body{
     .col-md-2:nth-of-type(1){
-      background-image: url(&quot;http://tapasdev.neu.edu/profiles/buildtapas/themes/tapas-themes/tapas_redesign/logo.png&quot;);
+      background-image: url('http://tapasdev.neu.edu/profiles/buildtapas/themes/tapas-themes/tapas_redesign/logo.png');
       background-repeat: no-repeat;
       background-position: 83% center;
       background-size: 99% auto;
