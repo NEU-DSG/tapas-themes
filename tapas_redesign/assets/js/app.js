@@ -41,17 +41,17 @@ jQuery('.navbar-collapse ul li a').click(function() {
     $("body.front").find(".featured.container").wrap("<div class='featured row' />");
 
     //required js for the more buttons on the homepage
-    $("a[id^=more-]").on("click", function(e){
-       e.preventDefault();
-       var id =	 $(this).attr('id');
-       id = id.split('-')[1];
-       $("#"+id+"-info").toggleClass("hidden");
-    	 $("[id$=-info]").not("#"+id+"-info").each(function(){
-    		 if(!$(this).hasClass("hidden")){
-    			 $(this).toggleClass("hidden");
-    		 }
-    	 });
-    });
+    // $("a[id^=more-]").on("click", function(e){
+    //    e.preventDefault();
+    //    var id =	 $(this).attr('id');
+    //    id = id.split('-')[1];
+    //    $("#"+id+"-info").toggleClass("hidden");
+    // 	 $("[id$=-info]").not("#"+id+"-info").each(function(){
+    // 		 if(!$(this).hasClass("hidden")){
+    // 			 $(this).toggleClass("hidden");
+    // 		 }
+    // 	 });
+    // });
   });
 })(jQuery);
 
