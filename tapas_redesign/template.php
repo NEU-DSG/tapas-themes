@@ -22,89 +22,103 @@ function tapas_redesign_process(&$variables, $hook) {
   }
 }
 
+// function tapas_redesign_form_search_block_form_alter(&$form, &$form_state, $form_id){
+//   if(block_load('search', 'form')->region == 'toolbar'){
+//     $form['link'] = array('#markup' => l(t('Advanced Search'),'search/node'));
+//   } else {
+//     $form['advanced'] = array(
+//       '#type' => 'fieldset',
+//       '#title' => t('Advanced search'),
+//       '#collapsible' => TRUE,
+//       '#collapsed' => TRUE,
+//       '#attributes' => array('class' => array('search-advanced')),
+//     );
+//     $form['advanced']['keywords'] = array(
+//       '#prefix' => '<div class="criterion">',
+//       '#suffix' => '</div>',
+//     );
+//     $form['advanced']['keywords']['or'] = array(
+//       '#type' => 'textfield',
+//       '#title' => t('Containing any of the words'),
+//       '#size' => 30,
+//       '#maxlength' => 255,
+//     );
+//     $form['advanced']['keywords']['phrase'] = array(
+//       '#type' => 'textfield',
+//       '#title' => t('Containing the phrase'),
+//       '#size' => 30,
+//       '#maxlength' => 255,
+//     );
+//     $form['advanced']['keywords']['negative'] = array(
+//       '#type' => 'textfield',
+//       '#title' => t('Containing none of the words'),
+//       '#size' => 30,
+//       '#maxlength' => 255,
+//     );
+//
+//     // Node types:
+//     $types = array_map('check_plain', node_type_get_names());
+//     $form['advanced']['type'] = array(
+//       '#type' => 'checkboxes',
+//       '#title' => t('Only of the type(s)'),
+//       '#prefix' => '<div class="criterion">',
+//       '#suffix' => '</div>',
+//       '#options' => $types,
+//     );
+//     $form['advanced']['submit'] = array(
+//       '#type' => 'submit',
+//       '#value' => t('Advanced search'),
+//       '#prefix' => '<div class="action">',
+//       '#suffix' => '</div>',
+//       '#weight' => 100,
+//     );
+//
+//     // Languages:
+//     $language_options = array();
+//     foreach (language_list('language') as $key => $entity) {
+//       if ($entity->enabled) {
+//         $language_options[$key] = $entity->name;
+//       }
+//     }
+//     if (count($language_options) > 1) {
+//       $form['advanced']['language'] = array(
+//         '#type' => 'checkboxes',
+//         '#title' => t('Languages'),
+//         '#prefix' => '<div class="criterion">',
+//         '#suffix' => '</div>',
+//         '#options' => $language_options,
+//       );
+//     }
+//
+//     $form['#validate'][] = 'node_search_validate';
+//   }
+// }
 
-function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
-  drupal_set_message("form_id is ".$form_id." and form['#id'] is ".$form['#id']);
-  switch ($form['form_id']['#id']) {
-    case 'edit-search-block-form':
-      dpm($form);
+function tapas_redesign_form_search_block_form_alter(&$form, &$form_state, $form_id) {
+  // drupal_set_message("form_id is ".$form_id." and form['#id'] is ".$form['#id']);
+  // switch ($form['form_id']['#id']) {
+    // case 'search-block-form':
+      // dpm($form);
+      $blocks = block_list("toolbar");
+      if (in_array("search", $blocks)){
+        kpr($blocks);
+
+      }
       // Keyword boxes:
-      $form['advanced'] = array(
-        '#type' => 'fieldset',
-        '#title' => t('Advanced search'),
-        '#collapsible' => TRUE,
-        '#collapsed' => TRUE,
-        '#attributes' => array('class' => array('search-advanced')),
-      );
-      $form['advanced']['keywords'] = array(
-        '#prefix' => '<div class="criterion">',
-        '#suffix' => '</div>',
-      );
-      $form['advanced']['keywords']['or'] = array(
-        '#type' => 'textfield',
-        '#title' => t('Containing any of the words'),
-        '#size' => 30,
-        '#maxlength' => 255,
-      );
-      $form['advanced']['keywords']['phrase'] = array(
-        '#type' => 'textfield',
-        '#title' => t('Containing the phrase'),
-        '#size' => 30,
-        '#maxlength' => 255,
-      );
-      $form['advanced']['keywords']['negative'] = array(
-        '#type' => 'textfield',
-        '#title' => t('Containing none of the words'),
-        '#size' => 30,
-        '#maxlength' => 255,
-      );
 
-      // Node types:
-      $types = array_map('check_plain', node_type_get_names());
-      $form['advanced']['type'] = array(
-        '#type' => 'checkboxes',
-        '#title' => t('Only of the type(s)'),
-        '#prefix' => '<div class="criterion">',
-        '#suffix' => '</div>',
-        '#options' => $types,
-      );
-      $form['advanced']['submit'] = array(
-        '#type' => 'submit',
-        '#value' => t('Advanced search'),
-        '#prefix' => '<div class="action">',
-        '#suffix' => '</div>',
-        '#weight' => 100,
-      );
-
-      // Languages:
-      $language_options = array();
-      foreach (language_list('language') as $key => $entity) {
-        if ($entity->enabled) {
-          $language_options[$key] = $entity->name;
-        }
-      }
-      if (count($language_options) > 1) {
-        $form['advanced']['language'] = array(
-          '#type' => 'checkboxes',
-          '#title' => t('Languages'),
-          '#prefix' => '<div class="criterion">',
-          '#suffix' => '</div>',
-          '#options' => $language_options,
-        );
-      }
-
-      $form['#validate'][] = 'node_search_validate';
-      break;
-    case 'edit-search-block-form--2':
-      $form['link'] = array('#markup' => l(t('Advanced Search'),'search/node'));
-      break;
-  }
+      // break;
+    // case 'edit-search-block-form--2':
+      // break;
+  // }
 }
 
 function tapas_redesign_preprocess_block(&$variables, $hook) {
   if ($variables['elements']['#block']->module == 'search' && $variables['elements']['#block']->region == 'content') {
     $variables['elements']['#block']->subject = NULL;
     $variables['classes_array'][] = "col-sm-9";
+  }
+  if ($variables['elements']['#block']->module == 'search' && $variables['elements']['#block']->region == 'toolbar') {
+    dpm($variables);
   }
   if ($variables['elements']['#block']->module == 'menu' && $variables['elements']['#block']->region == 'toolbar'){
     $variables['content'] = '<ul class="menu nav"><li class="leaf"><a href="/user"><span class="fa fa-user"></span> My Account</a></li></ul>'.$variables['content'];
