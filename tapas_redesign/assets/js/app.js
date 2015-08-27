@@ -28,9 +28,13 @@ jQuery('.navbar-collapse ul li a').click(function() {
     for(var i = 0, l = $children.length; i < l; i += 3) {
         $children.slice(i, i+3).wrapAll('<div class="col-sm-4"></div>');
     }
-    $(document).on('click',function(){
-	     $('.collapse').collapse('hide');
-    })
+    //closes collapse when you click outside them
+    $(document).click(function(e){
+      //!$(e.target).is('.collapse') ||
+      if($(e.target).parents('.collapse').length == 0) {
+         $('.collapse').collapse('hide');
+      }
+    });
 
     //making the featured content into a row so it can be styled correctly
     $("body.front").find(".region-content .block.col-sm-3").wrapAll('<div class="featured container" />');
