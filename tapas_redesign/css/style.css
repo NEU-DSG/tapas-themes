@@ -10886,6 +10886,9 @@ a.tabledrag-handle .handle {
   visibility: visible;
   margin-left: 0;
 }
+.toolbar fieldset.search-advanced {
+  display: none;
+}
 
 #tools, #feed, #bookbag, #search {
   background: #FFFFFF;

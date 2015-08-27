@@ -26,6 +26,9 @@
     }
     width:auto;
   }
+  fieldset.search-advanced {
+    display:none;
+  }
 }
 #tools, #feed, #bookbag, #search {
   background:$body-bg;
