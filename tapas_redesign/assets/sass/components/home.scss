@@ -111,3 +111,18 @@ a.tabledrag-handle .handle {
 // .panel-heading a.collapsed:after {
 //   content: $fa-var-arrow-down;
 // }
+#archive-info{
+  .modal-body{
+    .col-md-2:first-of-type{
+      background-image: url(&quot;http://tapasdev.neu.edu/profiles/buildtapas/themes/tapas-themes/tapas_redesign/logo.png&quot;);
+      background-repeat: no-repeat;
+      background-position: 83% center;
+      background-size: 99% auto;
+      height: 197px;
+      opacity: 0.4;
+    }
+    .col-md-4:first-of-type{
+      border-left: medium solid rgba(0, 0, 0, 0.17);
+    }
+  }
+}
