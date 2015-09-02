@@ -105,7 +105,7 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
 }
 
 function tapas_redesign_preprocess_node(&$variables){
-  if ($node->type == 'tapascollection-project' && $variables['view_mode'] == 'full'){
+  if ($node->type == 'tapascollection_project' && $variables['view_mode'] == 'full'){
     $variables ['classes_array'][] = "col-sm-3";
   }
 }
