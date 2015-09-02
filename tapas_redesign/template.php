@@ -103,9 +103,3 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
     $variables['content'] = '<ul class="menu nav"><li class="leaf"><a href="/user"><span class="fa fa-user"></span> My Account</a></li></ul>'.$variables['content'];
   }
 }
-
-function tapas_redesign_preprocess_node(&$variables){
-  if ($node->type == 'tapascollection_project' && $variables['view_mode'] == 'full'){
-    $variables ['classes_array'][] = "col-sm-3";
-  }
-}
