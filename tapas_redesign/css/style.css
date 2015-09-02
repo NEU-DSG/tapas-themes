@@ -11206,13 +11206,18 @@ footer #block-menu-menu-footer-menu .menu .leaf a {
 
 .field-item img {
   height: auto;
-  max-height: 250px;
+  max-height: 300px;
   width: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 
 .sharethis-buttons {
   padding-top: 10px;
+}
+
+.field-name-tc-field-description {
+  word-wrap: break-word;
 }
