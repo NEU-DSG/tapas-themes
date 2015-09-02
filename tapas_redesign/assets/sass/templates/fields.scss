@@ -5,7 +5,12 @@
   }
 }
 .field-item img{
-  width:100%;
+  height: auto;
+  max-height: 250px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sharethis-buttons{
   padding-top:10px;
