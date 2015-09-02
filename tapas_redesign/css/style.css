@@ -11196,3 +11196,14 @@ footer #block-menu-menu-footer-menu .menu .leaf a {
   background-image: none;
   background-repeat: no-repeat;
 }
+
+.field.field-label-above {
+  padding-top: 5px;
+}
+.field.field-label-above .field-items {
+  padding-left: 8px;
+}
+
+.sharethis-buttons {
+  padding-top: 10px;
+}
