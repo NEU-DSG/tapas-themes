@@ -8,3 +8,19 @@
 .node-tapascollection-project{
   @extend .col-sm-3;
 }
+
+.view-collections-in-project{
+  .thumbnail{
+    .collection-no-image{
+      color:$gray-darkest;
+      .fa-folder-o{
+        font-size:100px;
+        opacity:.5;
+        display:block;
+      }
+      &:hover{
+        text-decoration:none;
+      }
+    }
+  }
+}
