@@ -102,8 +102,7 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
   if ($variables['elements']['#block']->module == 'menu' && $variables['elements']['#block']->region == 'toolbar'){
     $variables['content'] = '<ul class="menu nav"><li class="leaf"><a href="/user"><span class="fa fa-user"></span> My Account</a></li></ul>'.$variables['content'];
   }
-  if ($variables['elements']['#block']->module == 'view' && $variables['elements']['#block']->delta == 'collections_in_project-block'){
-    // dpm($variables);
-    // $variables['elements']['#block']->title .= "<a href='/node/add/tapascollection-collection'><span class='fa fa-plus'></span> Add New</a>";
+  if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'collections_in_project-block'){
+    $variables['elements']['#block']->subject .= "<a href='/node/add/tapascollection-collection' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
   }
 }
