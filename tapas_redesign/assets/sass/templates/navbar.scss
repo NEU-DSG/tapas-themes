@@ -59,3 +59,24 @@
     }
   }
 }
+
+/*adding icons to node edit*/
+.tabs--primary{
+  li:first-of-type{
+    a:before{
+      @extend .fa;
+      @extend .fa-eye;
+      padding-right:5px;
+    }
+  }
+  a[href*="edit"]:before{
+    @extend .fa;
+    @extend .fa-pencil;
+    padding-right:5px;
+  }
+  a[href*="group"]:before{
+    @extend .fa;
+    @extend .fa-users;
+    padding-right:5px;
+  }
+}
