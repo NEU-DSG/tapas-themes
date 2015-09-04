@@ -38,6 +38,9 @@
         @extend .fa-plus;
         background:none;
       }
+      > a{
+        padding:0 15px;
+      }
     }
     .portlet-content {
       @extend .panel-body;

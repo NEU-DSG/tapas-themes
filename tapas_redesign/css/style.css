@@ -11183,6 +11183,9 @@ a.tabledrag-handle .handle {
 #homebox .homebox-portlet .portlet-header .portlet-plus {
   background: none;
 }
+#homebox .homebox-portlet .portlet-header > a {
+  padding: 0 15px;
+}
 
 .portlet-close {
   background: none;
