@@ -11192,17 +11192,17 @@ a.tabledrag-handle .handle {
   width: 20px;
 }
 
-.block-views .carousel-inner > .item > img, .block-views .carousel-inner > .item > a > img {
+body:not(.front) .block-views .carousel-inner > .item > img, body:not(.front) .block-views .carousel-inner > .item > a > img {
   width: auto;
   max-width: 100%;
   height: 200px;
   margin-left: auto;
   margin-right: auto;
 }
-.block-views .carousel-control {
+body:not(.front) .block-views .carousel-control {
   color: #2B3E50;
 }
-.block-views .carousel-indicators > li {
+body:not(.front) .block-views .carousel-indicators > li {
   background-color: #2B3E50;
 }
 
