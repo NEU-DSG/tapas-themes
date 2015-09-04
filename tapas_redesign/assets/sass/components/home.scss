@@ -13,6 +13,32 @@
     h1, h2, p {
       color: $gray-lighter;
     }
+    .logo {
+      padding-right:20px;
+    }
+    h1{
+      padding-right:10px;
+    }
+    h4 {
+      color:#FFF;
+      padding-right:10%;
+      &::first-letter{
+        font-size:150%;
+      }
+    @media(max-width:$screen-xs-max){
+      //do stuff here
+    }
+    }
+    .col-lg-4{
+      border-left:solid 1px $gray-light;
+      p{
+        padding:40px 30px 0px 40px;
+      }
+      p + p {
+        padding-top:10px;
+        padding-bottom:30px;
+      }
+    }
   }
   section {
     padding:0;

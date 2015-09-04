@@ -37,21 +37,9 @@ jQuery('.navbar-collapse ul li a').click(function() {
     });
 
     //making the featured content into a row so it can be styled correctly
-    $("body.front").find(".region-content .block.col-sm-3").wrapAll('<div class="featured container" />');
-    $("body.front").find(".featured.container").wrap("<div class='featured row' />");
+    $("body.front").find(".region-content .block.col-sm-3").wrapAll('<div class="featured row" />');
+    $("body.front").find(".featured.row").wrap("<div class='featured container-fluid' />");
 
-    //required js for the more buttons on the homepage
-    // $("a[id^=more-]").on("click", function(e){
-    //    e.preventDefault();
-    //    var id =	 $(this).attr('id');
-    //    id = id.split('-')[1];
-    //    $("#"+id+"-info").toggleClass("hidden");
-    // 	 $("[id$=-info]").not("#"+id+"-info").each(function(){
-    // 		 if(!$(this).hasClass("hidden")){
-    // 			 $(this).toggleClass("hidden");
-    // 		 }
-    // 	 });
-    // });
   });
 })(jQuery);
 
