@@ -42,3 +42,5 @@ Gemfile.lock
 _config.yml
 /_site/
 /tapas_redesign/node_modules/
+.DS_Store
+*/.DS_Store

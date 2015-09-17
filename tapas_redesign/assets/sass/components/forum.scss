@@ -1,0 +1,15 @@
+.topic-status-new, .topic-status-hot, .topic-status-hot-new{
+  @extend .fa;
+  @extend .fa-comment;
+}
+.topic-status-sticky{
+  @extend .fa;
+  @extend .fa-thumb-tack;
+}
+.topic-status-closed{
+  @extend .fa;
+  @extend .fa-lock;
+}
+#forum .icon{
+  width:10px;
+}
