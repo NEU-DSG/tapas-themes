@@ -11043,6 +11043,18 @@ a.tabledrag-handle .handle {
   color: #2B3E50;
 }
 
+.panel-Newsitem {
+  border: 1px solid #eee;
+}
+.panel-Newsitem > span.small {
+  padding-left: 15px;
+  line-height: 35px;
+}
+.panel-Newsitem > span.pull-right, #features-export-form .panel-Newsitem > span#features-export-wrapper {
+  padding-right: 15px;
+  line-height: 35px;
+}
+
 .panel-Lab-Note .panel-heading, .panel-Lab-Note #homebox .homebox-portlet .homebox-portlet-inner, #homebox .homebox-portlet .panel-Lab-Note .homebox-portlet-inner, .panel-Lab-Note .block-title {
   background: rgba(177, 220, 22, 0.3);
 }

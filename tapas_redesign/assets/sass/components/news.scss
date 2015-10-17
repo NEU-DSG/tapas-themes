@@ -6,6 +6,17 @@
     color:$text-color;
   }
 }
+.panel-Newsitem{
+  border:1px solid #eee;
+  > span.small{
+    padding-left:15px;
+    line-height:35px;
+  }
+  > span.pull-right{
+    padding-right:15px;
+    line-height:35px;
+  }
+}
 .panel-Lab-Note .panel-heading {
   background: $tapas-green-opaque;
 }
