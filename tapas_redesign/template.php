@@ -11,7 +11,6 @@
      }
  }
 
-
 function tapas_redesign_process(&$variables, $hook) {
   if(isset($variables['classes_array']) && in_array("toolbar", $variables['classes_array'])){
     if(user_is_logged_in()){
@@ -104,5 +103,8 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
   }
   if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'collections_in_project-block'){
     $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+  }
+  if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'records_in_collection-block'){
+    $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-record' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
   }
 }
