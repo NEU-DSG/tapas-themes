@@ -61,14 +61,18 @@
 }
 
 /*adding icons to node edit*/
-.tabs--primary{
-  li:first-of-type{
-    a:before{
-      @extend .fa;
-      @extend .fa-eye;
-      padding-right:5px;
+.logged-in{
+  .tabs--primary{
+    li:first-of-type{
+      a:before{
+        @extend .fa;
+        @extend .fa-eye;
+        padding-right:5px;
+      }
     }
   }
+}
+.tabs--primary{
   a[href*="edit"]:before{
     @extend .fa;
     @extend .fa-pencil;
