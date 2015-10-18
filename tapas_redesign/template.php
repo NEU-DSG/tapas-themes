@@ -117,6 +117,9 @@ function tapas_redesign_preprocess_field(&$variables, $hook) {
     case 'og_tapas_c_to_p':
       $variables['label'] = t('Project');
       break;
+    case 'og_tapas_r_to_c':
+      $variables['label'] = t('Collection');
+      break;
   }
 
 }
