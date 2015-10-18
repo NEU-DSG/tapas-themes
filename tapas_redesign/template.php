@@ -108,3 +108,16 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
     $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-record' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
   }
 }
+
+function tapas_redesign_preprocess_field(&$variables, $hook) {
+  $field_name = $variables['element']['#field_name'];
+  $view_mode = $variables['element']['#view_mode'];
+
+  switch ($field_name) {
+    case 'og_tapas_c_to_p':
+      dpm($variables);
+      $variables['label'] = t('Project');
+      break;
+  }
+
+}
