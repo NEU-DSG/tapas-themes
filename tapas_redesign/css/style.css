@@ -11226,6 +11226,10 @@ body:not(.front) .block-views .carousel-indicators > li {
   background-color: #2B3E50;
 }
 
+.list-group-item {
+  background: transparent;
+}
+
 .block {
   background-color: transparent;
   box-shadow: none;
