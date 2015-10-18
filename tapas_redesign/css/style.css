@@ -11230,6 +11230,10 @@ body:not(.front) .block-views .carousel-indicators > li {
   background: transparent;
 }
 
+.inline {
+  display: inline !important;
+}
+
 .block {
   background-color: transparent;
   box-shadow: none;
