@@ -102,10 +102,26 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
     $variables['content'] = '<ul class="menu nav"><li class="leaf"><a href="/user"><span class="fa fa-user"></span> My Account</a></li></ul>'.$variables['content'];
   }
   if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'collections_in_project-block'){
-    $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+    $node = menu_get_object();
+    if (isset($node->nid)) {
+      $nid = $node->nid;
+    }
+    if(isset($nid)){
+      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection?edit[og_tapas_c_to_p][und][0][default]=".$nid."' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+    } else {
+      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+    }
   }
   if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'ece40a341bd3abd96179414c41afa18d'){
-    $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-record' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+    $node = menu_get_object();
+    if (isset($node->nid)) {
+      $nid = $node->nid;
+    }
+    if(isset($nid)){
+      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-record?edit[og_tapas_r_to_c][und][0][default]=".$nid."' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+    } else {
+      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-record' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+    }
   }
 }
 
@@ -121,5 +137,4 @@ function tapas_redesign_preprocess_field(&$variables, $hook) {
       $variables['label'] = t('Collection');
       break;
   }
-
 }
