@@ -11234,6 +11234,11 @@ body:not(.front) .block-views .carousel-indicators > li {
   display: inline !important;
 }
 
+.add-new {
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
 .block {
   background-color: transparent;
   box-shadow: none;
