@@ -61,7 +61,7 @@
 }
 
 /*adding icons to node edit*/
-.logged-in{
+.logged-in:not(.page-search-node){
   .tabs--primary{
     li:first-of-type{
       a:before{
