@@ -48,7 +48,7 @@ module.exports = function(grunt) {
             'bootstrap/javascripts/bootstrap/scrollspy.js',
             'bootstrap/javascripts/bootstrap/tab.js',
             'bootstrap/javascripts/bootstrap/transition.js',
-            'assets/js/*.js'
+            'assets/js/app.js'
           ]
         } // files
       } // js_prod
