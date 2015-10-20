@@ -157,7 +157,7 @@ function tapas_redesign_preprocess_node(&$variables){
   switch($node->type){
     case 'tapas_record':
       if ($variables['view_mode'] == 'full'){
-        drupal_add_js($theme_path.'/assets/js/record.js', 'file');
+        drupal_add_js($theme_path.'/assets/js/record.js', array('type'=>'file', 'requires_jquery'=>true));
       }
       // dpm($node);
       break;
