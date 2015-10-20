@@ -11155,6 +11155,13 @@ a.tabledrag-handle .handle {
   padding-right: 5px;
 }
 
+.tabs-left .vertical-tab-button {
+  padding-right: 0;
+}
+.tabs-left .vertical-tabs-list {
+  padding-right: 0;
+}
+
 .record .panel, .record #homebox .homebox-portlet, #homebox .record .homebox-portlet, .record .block {
   margin-top: 20px;
 }
