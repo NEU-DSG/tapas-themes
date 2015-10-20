@@ -138,3 +138,28 @@ function tapas_redesign_preprocess_field(&$variables, $hook) {
       break;
   }
 }
+
+function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id){
+    case 'tapas_record_node_form':
+      $form['og_tapas_r_to_c']['und']['#title'] = t('Collection');
+      break;
+    case 'tapas_collection_node_form':
+      $form['og_tapas_c_to_p']['und']['#title'] = t('Project');
+      break;
+  }
+}
+
+
+function tapas_redesign_preprocess_node(&$variables){
+  $node = $variables['elements']['#node'];
+  $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
+  switch($node->type){
+    case 'tapas_record':
+      if ($variables['view_mode'] == 'full'){
+        drupal_add_js($theme_path.'/assets/js/record.js', 'file');
+      }
+      // dpm($node);
+      break;
+  }
+}
