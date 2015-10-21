@@ -11096,6 +11096,13 @@ a.tabledrag-handle .handle {
   width: 10px;
 }
 
+.page-search .node {
+  font-size: 90%;
+}
+.page-search .node h2 a {
+  font-size: 80%;
+}
+
 /*templates refers to base drupal pieces*/
 #block-menu-menu-primary-menu, #block-system-user-menu {
   margin-bottom: 0;
