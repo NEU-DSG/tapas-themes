@@ -11182,6 +11182,26 @@ a.tabledrag-handle .handle {
   height: 22px !important;
 }
 
+.group-record-file-content .field-type-file .field-item {
+  clear: both;
+}
+.group-record-file-content .field-type-file span.file {
+  clear: both;
+}
+.group-record-file-content .field-type-file span.file img.file-icon {
+  display: none;
+}
+.group-record-file-content .field-type-file span.file a:before {
+  font-family: "FontAwesome";
+  padding-right: 5px;
+}
+.group-record-file-content .field-type-file span.file a[type*=image]:before, .group-record-file-content .field-type-file span.file a[type~=image]:before {
+  content: "\f1c5";
+}
+.group-record-file-content .field-type-file span.file a[type*=xml]:before, .group-record-file-content .field-type-file span.file a[type~=xml]:before {
+  content: "\f1c9";
+}
+
 #homebox .homebox-column {
   background: none;
 }

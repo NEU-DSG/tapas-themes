@@ -17,3 +17,28 @@
 .stMainServices{
   height:22px !important;
 }
+
+
+.group-record-file-content{
+  .field-type-file{
+    .field-item{
+      clear:both;
+    }
+    span.file{
+      clear:both;
+      img.file-icon{
+        display:none;
+      }
+      a:before {
+        font-family:"FontAwesome";
+        padding-right:5px;
+      }
+      a[type*=image]:before, a[type~=image]:before{
+        content:"\f1c5";
+      }
+      a[type*=xml]:before, a[type~=xml]:before{
+        content:"\f1c9";
+      }
+    }
+  }
+}
