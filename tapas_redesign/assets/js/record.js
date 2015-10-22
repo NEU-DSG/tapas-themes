@@ -1,6 +1,6 @@
 (function($) {
   $(document).ready(function() {
-    $(".reading").prepend("<script id='reader_js' src='http://rails_api.tapasdev.neu.edu/reading_interface/teibp/js/teibp.js'></script><link rel='stylesheet' type='text/css' id='reader_css_1'></link><link rel='stylesheet' type='text/css' id='reader_css_2'></link><link rel='stylesheet' type='text/css' id='reader_css_3'></link>");
+    $(".reading").prepend("<link rel='stylesheet' type='text/css' id='reader_css_1'></link><link rel='stylesheet' type='text/css' id='reader_css_2'></link><link rel='stylesheet' type='text/css' id='reader_css_3'></link>");
     var style = $(".form-item-reading-selector select[name='reading_selector']").val();
     console.log(style);
     show_style(style);
@@ -19,19 +19,28 @@
       $("link[id^='reader_css_']").each(function(){
         $(this).attr('href','');
       });
-      $("#reader_js").attr('src','');
       $("."+style_class).show();
       if (style == 'teibp'){
-        $("#reader_js").attr('src','http://rails_api.tapasdev.neu.edu/reading_interface/teibp/js/teibp.js');
-        $("#reader_css_1").attr("href", "http://rails_api.tapasdev.neu.edu/reading_interface/teibp/css/teibp.css");
-        $("#reader_css_2").attr("href", "http://rails_api.tapasdev.neu.edu/reading_interface/teibp/css/sleepy.css");
-        $("#reader_css_3").attr("href", "http://rails_api.tapasdev.neu.edu/reading_interface/teibp/css/terminal.css");
+        $("#reader_css_1").attr("href", "http://rails_api.localhost:8080/reading_interface/teibp/css/teibp.css");
+        $("#reader_css_2").attr("href", "http://rails_api.localhost:8080/reading_interface/teibp/css/sleepy.css");
+        $("#reader_css_3").attr("href", "http://rails_api.localhost:8080/reading_interface/teibp/css/terminal.css");
+        initialize_teibp();
       }
       if (style == 'tapas_generic'){
-        $("#reader_js").attr('src','http://rails_api.tapasdev.neu.edu/reading_interface/tapas-generic/js/tapas-generic.js');
-        $("#reader_css_1").attr("href", "http://rails_api.tapasdev.neu.edu/reading_interface/tapas-generic/css/tapasGnormal.css");
-        $("#reader_css_2").attr("href", "http://rails_api.tapasdev.neu.edu/reading_interface/tapas-generic/css/tapasGdiplo.css");
+        $("#reader_css_1").attr("href", "http://localhost/~beekerz/tapas-generic/css/tapasGnormal.css");
+        $("#reader_css_2").attr("href", "http://localhost/~beekerz/tapas-generic/css/tapasGdiplo.css");
+        initialize_tapas_generic();
       }
     }
   });
 })(jQuery);
+
+jQuery.browser = {};
+(function () {
+    jQuery.browser.msie = false;
+    jQuery.browser.version = 0;
+    if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+        jQuery.browser.msie = true;
+        jQuery.browser.version = RegExp.$1;
+    }
+})();

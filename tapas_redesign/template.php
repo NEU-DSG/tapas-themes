@@ -149,17 +149,3 @@ function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
       break;
   }
 }
-
-
-function tapas_redesign_preprocess_node(&$variables){
-  $node = $variables['elements']['#node'];
-  $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
-  switch($node->type){
-    case 'tapas_record':
-      if ($variables['view_mode'] == 'full'){
-        drupal_add_js($theme_path.'/assets/js/record.js', array('type'=>'file', 'requires_jquery'=>true));
-      }
-      // dpm($node);
-      break;
-  }
-}
