@@ -21,13 +21,13 @@
       });
       $("."+style_class).show();
       if (style == 'teibp'){
-        $("#reader_css_1").attr("href", "http://rails_api.localhost:8080/reading_interface/teibp/css/teibp.css");
-        $("#reader_css_2").attr("href", "http://rails_api.localhost:8080/reading_interface/teibp/css/sleepy.css");
+        $("#reader_css_1").attr("href", "http://rails_api.tapasdev.neu.edu/reading_interface/teibp/css/teibp.css");
+        $("#reader_css_2").attr("href", "http://rails_api.tapasdev.neu.edu/reading_interface/teibp/css/sleepy.css");
         $("#reader_css_3").attr("href", "http://rails_api.localhost:8080/reading_interface/teibp/css/terminal.css");
       }
       if (style == 'tapas_generic'){
-        $("#reader_css_1").attr("href", "http://localhost/~beekerz/tapas-generic/css/tapasGnormal.css");
-        $("#reader_css_2").attr("href", "http://localhost/~beekerz/tapas-generic/css/tapasGdiplo.css");
+        $("#reader_css_1").attr("href", "http://rails_api.tapasdev.neu.edu/reading_interface/tapas-generic/css/tapasGnormal.css");
+        $("#reader_css_2").attr("href", "http://rails_api.tapasdev.neu.edu/reading_interface/tapas-generic/tapas-generic/css/tapasGdiplo.css");
       }
     }
   });
