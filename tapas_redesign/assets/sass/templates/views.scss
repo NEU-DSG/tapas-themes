@@ -41,3 +41,10 @@ body:not(.front){
 h4.support-file .btn{
   margin-left:10px;
 }
+.thumbnail h4.support-file .btn{
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}

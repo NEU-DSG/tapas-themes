@@ -11277,6 +11277,14 @@ h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .vi
   margin-left: 10px;
 }
 
+.thumbnail h4.support-file .btn, .thumbnail h4.support-file .front .view-news .more-link a, .front .view-news .more-link .thumbnail h4.support-file a, .thumbnail h4.support-file .node-readmore a, .node-readmore .thumbnail h4.support-file a {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
 .block {
   background-color: transparent;
   box-shadow: none;
