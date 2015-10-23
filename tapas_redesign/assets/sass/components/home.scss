@@ -141,21 +141,14 @@ a.tabledrag-handle .handle {
       background-size: 99% auto;
       height: 197px;
       opacity: 0.4;
-    }
-    .col-md-4:nth-of-type(1){
-      border-left: medium solid rgba(0, 0, 0, 0.17);
-    }
-  }
-}
-
-@media(max-width:$screen-sm-min){
-  #archive-info, #discover-info, #publish-info, #share-info{
-    .modal-body{
-      .col-md-2:nth-of-type(1){
+      @media(max-width:$screen-md-min){
         background-size: contain;
         height: 100px;
         background-position: left;
       }
+    }
+    .col-md-4:nth-of-type(1){
+      border-left: medium solid rgba(0, 0, 0, 0.17);
     }
   }
 }

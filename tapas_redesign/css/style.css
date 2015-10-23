@@ -10896,17 +10896,17 @@ a.tabledrag-handle .handle {
   height: 197px;
   opacity: 0.4;
 }
-#archive-info .modal-body .col-md-4:nth-of-type(1), #discover-info .modal-body .col-md-4:nth-of-type(1), #publish-info .modal-body .col-md-4:nth-of-type(1), #share-info .modal-body .col-md-4:nth-of-type(1) {
-  border-left: medium solid rgba(0, 0, 0, 0.17);
-}
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #archive-info .modal-body .col-md-2:nth-of-type(1), #discover-info .modal-body .col-md-2:nth-of-type(1), #publish-info .modal-body .col-md-2:nth-of-type(1), #share-info .modal-body .col-md-2:nth-of-type(1) {
     background-size: contain;
     height: 100px;
     background-position: left;
   }
 }
+#archive-info .modal-body .col-md-4:nth-of-type(1), #discover-info .modal-body .col-md-4:nth-of-type(1), #publish-info .modal-body .col-md-4:nth-of-type(1), #share-info .modal-body .col-md-4:nth-of-type(1) {
+  border-left: medium solid rgba(0, 0, 0, 0.17);
+}
+
 .toolbar {
   position: fixed;
   top: 176px;
