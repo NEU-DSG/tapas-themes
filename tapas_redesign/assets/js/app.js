@@ -9,6 +9,43 @@ jQuery('.navbar-collapse ul li a').click(function() {
 });
 
 (function($) {
+  //for equal height thumbnails
+  $(window).resize(checkAdjustThumbnailHeight);
+  $(document).ready(checkAdjustThumbnailHeight);
+
+  //for equal height thumbnails
+  function checkAdjustThumbnailHeight() {
+    $("body").append('<span id="mq-detector"><span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg"></span></span>');
+    if ($("#mq-detector > span.visible-lg").is(":visible")) {
+      adjustThumbnailHeight();
+    }
+    else if ($("#mq-detector > span.visible-md").is(":visible")) {
+      adjustThumbnailHeight();
+    }
+    else if ($("#mq-detector > span.visible-sm").is(":visible")) {
+      inheritThumbailHeight();
+    }
+    else if ($("#mq-detector > span.visible-xs").is(":visible")) {
+      inheritThumbailHeight();
+    }
+    else { }
+  }
+  function adjustThumbnailHeight() {
+    var heights = [ ];
+    $(".thumbnail").each(function() {
+      heights.push( $(this).height() );
+    });
+    var max = Math.max.apply(null, heights);
+    $(".thumbnail").each(function() {
+      $(this).height(max);
+    });
+  }
+  function inheritThumbailHeight() {
+    $(".thumbnail").each(function() {
+      $(this).css("height", "inherit");
+    });
+  }
+
   $(document).ready(function() {
     $("body.front").find(".main-container").addClass("container-fluid").removeClass("container");
     // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -45,9 +82,9 @@ jQuery('.navbar-collapse ul li a').click(function() {
       $(this).append("<button class='btn btn-info btn-xs'>Support File</button>");
     });
 
+    //for the back to top button
     $('body').prepend('<a href="#" class="back-to-top"><span class="fa fa-chevron-up"></span></a>');
     var amountScrolled = 300;
-
     $(window).scroll(function() {
     	if ( $(window).scrollTop() > amountScrolled ) {
     		$('a.back-to-top').fadeIn('slow');
@@ -61,6 +98,8 @@ jQuery('.navbar-collapse ul li a').click(function() {
     	}, 700);
     	return false;
     });
+
+
 
   });
 })(jQuery);
