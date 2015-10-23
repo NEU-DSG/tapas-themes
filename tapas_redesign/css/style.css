@@ -11172,7 +11172,7 @@ a.tabledrag-handle .handle {
   #block-system-user-menu {
     clear: both;
   }
-  #block-system-user-menu ul {
+  #block-system-user-menu ul.menu.nav {
     margin: 0;
   }
 }
