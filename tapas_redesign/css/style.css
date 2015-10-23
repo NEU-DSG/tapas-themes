@@ -11326,6 +11326,10 @@ h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .vi
   margin-bottom: 22px;
 }
 
+table a:not(.btn), .table a:not(.btn) {
+  text-decoration: none;
+}
+
 .block {
   background-color: transparent;
   box-shadow: none;

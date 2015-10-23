@@ -54,3 +54,7 @@ h4.support-file .btn{
   margin-top: 22px;
   margin-bottom: 22px;
 }
+
+table a:not(.btn), .table a:not(.btn){
+  text-decoration: none;
+}
