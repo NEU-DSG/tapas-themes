@@ -58,3 +58,9 @@ h4.support-file .btn{
 table a:not(.btn), .table a:not(.btn){
   text-decoration: none;
 }
+
+.views-table{
+  td{
+    vertical-align: middle;
+  }
+}
