@@ -60,7 +60,7 @@ table a:not(.btn), .table a:not(.btn){
 }
 
 .views-table{
-  td{
+  .table > tbody > tr > td{
     vertical-align: middle;
   }
 }

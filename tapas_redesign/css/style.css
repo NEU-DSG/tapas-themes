@@ -11330,7 +11330,7 @@ table a:not(.btn), .table a:not(.btn) {
   text-decoration: none;
 }
 
-.views-table td {
+.views-table .table > tbody > tr > td {
   vertical-align: middle;
 }
 
