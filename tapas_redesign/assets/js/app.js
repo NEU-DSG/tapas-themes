@@ -45,6 +45,23 @@ jQuery('.navbar-collapse ul li a').click(function() {
       $(this).append("<button class='btn btn-info btn-xs'>Support File</button>");
     });
 
+    $('body').prepend('<a href="#" class="back-to-top"><span class="fa fa-chevron-up"></span></a>');
+    var amountScrolled = 300;
+
+    $(window).scroll(function() {
+    	if ( $(window).scrollTop() > amountScrolled ) {
+    		$('a.back-to-top').fadeIn('slow');
+    	} else {
+    		$('a.back-to-top').fadeOut('slow');
+    	}
+    });
+    $('a.back-to-top').on("click", function() {
+    	$('body, html').animate({
+    		scrollTop: 0
+    	}, 700);
+    	return false;
+    });
+
   });
 })(jQuery);
 

@@ -11183,6 +11183,26 @@ a.tabledrag-handle .handle {
     margin: 0;
   }
 }
+a.back-to-top {
+  display: none;
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: #5bc0de;
+}
+
+a.back-to-top .fa, a.back-to-top a.tabledrag-handle .handle, a.tabledrag-handle a.back-to-top .handle, a.back-to-top .topic-status-new, a.back-to-top .topic-status-hot, a.back-to-top .topic-status-hot-new, a.back-to-top .topic-status-sticky, a.back-to-top .topic-status-closed, a.back-to-top .logged-in:not(.page-search) .tabs--primary li:first-of-type a:before, .logged-in:not(.page-search) .tabs--primary li:first-of-type a.back-to-top a:before, a.back-to-top .tabs--primary a[href*="edit"]:before, .tabs--primary a.back-to-top a[href*="edit"]:before, a.back-to-top .tabs--primary a[href*="group"]:before, .tabs--primary a.back-to-top a[href*="group"]:before, a.back-to-top #homebox .homebox-portlet .portlet-header .portlet-maximize, #homebox .homebox-portlet .portlet-header a.back-to-top .portlet-maximize, a.back-to-top #homebox .homebox-portlet .portlet-header .portlet-minus, #homebox .homebox-portlet .portlet-header a.back-to-top .portlet-minus, a.back-to-top #homebox .homebox-portlet .portlet-header .portlet-settings, #homebox .homebox-portlet .portlet-header a.back-to-top .portlet-settings, a.back-to-top #homebox .homebox-portlet .portlet-header .portlet-minimize, #homebox .homebox-portlet .portlet-header a.back-to-top .portlet-minimize, a.back-to-top #homebox .homebox-portlet .portlet-header .portlet-plus, #homebox .homebox-portlet .portlet-header a.back-to-top .portlet-plus, a.back-to-top .portlet-close {
+  color: #fff;
+  position: relative;
+  left: 18px;
+  top: 16px;
+  font-size: 19px;
+  transition: all 0.3s ease;
+}
+
 .record .panel, .record #homebox .homebox-portlet, #homebox .record .homebox-portlet, .record .block {
   margin-top: 20px;
 }

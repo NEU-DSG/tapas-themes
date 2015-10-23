@@ -102,3 +102,26 @@
     }
   }
 }
+
+a.back-to-top {
+	display: none;
+	width: 55px;
+	height: 55px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: $brand-info;
+}
+a.back-to-top .fa{
+  color: #fff;
+  position: relative;
+  left: 18px;
+  top: 16px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
