@@ -40,6 +40,11 @@ jQuery('.navbar-collapse ul li a').click(function() {
     $("body.front").find(".region-content .block.col-sm-3").wrapAll('<div class="featured row" />');
     $("body.front").find(".featured.row").wrap("<div class='featured container-fluid' />");
 
+    //adding support file flags in the my view
+    $(".view-my h4.support-file").each(function(){
+      $(this).after("<button class='btn btn-info btn-xs'>Support File</button>");
+    });
+
   });
 })(jQuery);
 
