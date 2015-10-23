@@ -93,3 +93,12 @@
     padding-right:0;
   }
 }
+
+@media(max-width:$screen-sm-min){
+  #block-system-user-menu{
+    clear:both;
+    ul{
+      margin:0;
+    }
+  }
+}

@@ -10843,11 +10843,10 @@ table .checkbox input[type="checkbox"] {
   margin-left: 2%;
 }
 .front .carousel-inner > .item > img, .front .carousel-inner > .item > a > img {
-  width: auto;
-  max-width: 100%;
-  height: 200px;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
+  width: 100%;
 }
 .front .carousel-caption {
   margin: 10%;
@@ -11169,6 +11168,14 @@ a.tabledrag-handle .handle {
   padding-right: 0;
 }
 
+@media (max-width: 768px) {
+  #block-system-user-menu {
+    clear: both;
+  }
+  #block-system-user-menu ul {
+    margin: 0;
+  }
+}
 .record .panel, .record #homebox .homebox-portlet, #homebox .record .homebox-portlet, .record .block {
   margin-top: 20px;
 }
