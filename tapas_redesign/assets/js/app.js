@@ -42,7 +42,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
 
     //adding support file flags in the my view
     $(".view-my h4.support-file").each(function(){
-      $(this).after("<button class='btn btn-info btn-xs'>Support File</button>");
+      $(this).append("<button class='btn btn-info btn-xs'>Support File</button>");
     });
 
   });

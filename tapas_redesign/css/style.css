@@ -11273,6 +11273,10 @@ body:not(.front) .block-views .carousel-indicators > li {
   margin-bottom: 15px;
 }
 
+h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .view-news .more-link h4.support-file a, h4.support-file .node-readmore a, .node-readmore h4.support-file a {
+  margin-left: 10px;
+}
+
 .block {
   background-color: transparent;
   box-shadow: none;
