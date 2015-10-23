@@ -10828,6 +10828,12 @@ table .checkbox input[type="checkbox"] {
   background-color: transparent;
   border-bottom: none;
 }
+.front .featured.row .block-title {
+  margin-bottom: 0;
+}
+.front .featured.row .view-header {
+  margin-bottom: 15px;
+}
 .front .pillars .fa, .front .pillars a.tabledrag-handle .handle, a.tabledrag-handle .front .pillars .handle, .front .pillars .topic-status-new, .front .pillars .topic-status-hot, .front .pillars .topic-status-hot-new, .front .pillars .topic-status-sticky, .front .pillars .topic-status-closed, .front .pillars .logged-in:not(.page-search) .tabs--primary li:first-of-type a:before, .logged-in:not(.page-search) .tabs--primary li:first-of-type .front .pillars a:before, .front .pillars .tabs--primary a[href*="edit"]:before, .tabs--primary .front .pillars a[href*="edit"]:before, .front .pillars .tabs--primary a[href*="group"]:before, .tabs--primary .front .pillars a[href*="group"]:before, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-maximize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-maximize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minus, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-settings, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-settings, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minimize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minimize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-plus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-plus, .front .pillars .portlet-close {
   color: #DF691A;
   padding: 20px;

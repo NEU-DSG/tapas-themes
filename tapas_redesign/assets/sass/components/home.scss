@@ -59,6 +59,14 @@
       border-bottom: none;
     }
   }
+  .featured.row{
+    .block-title{
+      margin-bottom:0;
+    }
+    .view-header{
+      margin-bottom:15px;
+    }
+  }
   .pillars {
     .fa {
       color: $brand-primary;
