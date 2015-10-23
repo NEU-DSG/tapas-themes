@@ -11285,6 +11285,13 @@ h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .vi
   margin-top: 10px;
 }
 
+.collection-no-image img {
+  width: 220px;
+  padding: 10px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
 .block {
   background-color: transparent;
   box-shadow: none;
