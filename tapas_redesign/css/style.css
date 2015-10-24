@@ -10755,14 +10755,13 @@ table .checkbox input[type="checkbox"] {
   right: 0;
   left: 0;
 }
+.carousel-caption h3 {
+  font-size: 22px;
+}
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   width: 100%;
   max-width: 100%;
-}
-
-h3.carousel {
-  font-size: 22px;
 }
 
 .thumbnail {

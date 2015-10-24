@@ -74,7 +74,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
     });
 
     //making the featured content into a row so it can be styled correctly
-    $("body.front").find(".region-content .block.col-sm-3").wrapAll('<div class="featured row" />');
+    $("body.front").find(".region-content .block.col-md-3").wrapAll('<div class="featured row" />');
     $("body.front").find(".featured.row").wrap("<div class='featured container-fluid' />");
 
     //adding support file flags in the my view
