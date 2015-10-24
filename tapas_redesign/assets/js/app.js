@@ -49,7 +49,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
   $(document).ready(function() {
     $("body.front").find(".main-container").addClass("container-fluid").removeClass("container");
     // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
+    $('a.page-scroll, #TOC a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 80
