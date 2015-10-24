@@ -5965,7 +5965,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   clear: both;
 }
 
-.panel-heading, #homebox .homebox-portlet .homebox-portlet-inner, .block-title {
+.panel-heading, #homebox .homebox-portlet .homebox-portlet-inner, .block-title, h2.block-title {
   padding: 10px 15px;
   border-bottom: 1px solid transparent;
   border-top-right-radius: -1;
@@ -6411,7 +6411,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
   background-color: #f5f5f5;
   border-color: #EBEBEB;
 }
-.panel-default > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet > .panel-heading + .panel-collapse > .panel-body, .block > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-default > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet > .block-title + .panel-collapse > .panel-body, .block > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-default > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-default > .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .block-title + .panel-collapse > .portlet-content, .block .panel-default > .panel-heading + .panel-collapse > .view, #homebox .block .homebox-portlet > .panel-heading + .panel-collapse > .view, .block #homebox .homebox-portlet > .panel-heading + .panel-collapse > .view, .block > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-default > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .view, #homebox .block .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .view, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-default > .block-title + .panel-collapse > .view, #homebox .block .homebox-portlet > .block-title + .panel-collapse > .view, .block #homebox .homebox-portlet > .block-title + .panel-collapse > .view, .block > .block-title + .panel-collapse > .view, .block .panel-default > .panel-heading + .panel-collapse > ul, #homebox .block .homebox-portlet > .panel-heading + .panel-collapse > ul, .block #homebox .homebox-portlet > .panel-heading + .panel-collapse > ul, .block > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-default > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > ul, #homebox .block .homebox-portlet > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > ul, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-default > .block-title + .panel-collapse > ul, #homebox .block .homebox-portlet > .block-title + .panel-collapse > ul, .block #homebox .homebox-portlet > .block-title + .panel-collapse > ul, .block > .block-title + .panel-collapse > ul {
+.panel-default > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet > .panel-heading + .panel-collapse > .panel-body, .block > .panel-heading + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .panel-body, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .panel-body, .panel-default > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet > .block-title + .panel-collapse > .panel-body, .block > .block-title + .panel-collapse > .panel-body, #homebox .homebox-portlet .panel-default > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .panel-heading + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .portlet-content, #homebox .homebox-portlet .panel-default > .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet > .block-title + .panel-collapse > .portlet-content, #homebox .homebox-portlet .block > .block-title + .panel-collapse > .portlet-content, .block .panel-default > .panel-heading + .panel-collapse > .view, #homebox .block .homebox-portlet > .panel-heading + .panel-collapse > .view, .block #homebox .homebox-portlet > .panel-heading + .panel-collapse > .view, .block > .panel-heading + .panel-collapse > .view, #homebox .homebox-portlet .block .panel-default > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > .view, #homebox .block .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .view, .block #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > .view, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > .view, .block .panel-default > .block-title + .panel-collapse > .view, #homebox .block .homebox-portlet > .block-title + .panel-collapse > .view, .block #homebox .homebox-portlet > .block-title + .panel-collapse > .view, .block > .block-title + .panel-collapse > .view, .block .panel-default > .panel-heading + .panel-collapse > ul, #homebox .block .homebox-portlet > .panel-heading + .panel-collapse > ul, .block #homebox .homebox-portlet > .panel-heading + .panel-collapse > ul, .block > .panel-heading + .panel-collapse > ul, #homebox .homebox-portlet .block .panel-default > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet .panel-default > .homebox-portlet-inner + .panel-collapse > ul, #homebox .block .homebox-portlet > .homebox-portlet-inner + .panel-collapse > ul, .block #homebox .homebox-portlet > .homebox-portlet-inner + .panel-collapse > ul, #homebox .homebox-portlet .block > .homebox-portlet-inner + .panel-collapse > ul, .block .panel-default > .block-title + .panel-collapse > ul, #homebox .block .homebox-portlet > .block-title + .panel-collapse > ul, .block #homebox .homebox-portlet > .block-title + .panel-collapse > ul, .block > .block-title + .panel-collapse > ul, .block > h2.block-title + .panel-collapse > ul {
   border-top-color: #EBEBEB;
 }
 .panel-default > .panel-heading .badge, #homebox .homebox-portlet > .panel-heading .badge, .block > .panel-heading .badge, #homebox .homebox-portlet .panel-default > .homebox-portlet-inner .badge, #homebox .homebox-portlet > .homebox-portlet-inner .badge, #homebox .homebox-portlet .block > .homebox-portlet-inner .badge, .panel-default > .block-title .badge, #homebox .homebox-portlet > .block-title .badge, .block > .block-title .badge {
@@ -10327,7 +10327,7 @@ fieldset .panel-heading a.panel-title:hover, fieldset #homebox .homebox-portlet 
   padding: 0;
 }
 
-.panel-heading, #homebox .homebox-portlet .homebox-portlet-inner, .block-title {
+.panel-heading, #homebox .homebox-portlet .homebox-portlet-inner, .block-title, h2.block-title {
   display: block;
   padding: 0;
 }
@@ -10759,6 +10759,10 @@ table .checkbox input[type="checkbox"] {
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   width: 100%;
   max-width: 100%;
+}
+
+h3.carousel {
+  font-size: 22px;
 }
 
 .thumbnail {
@@ -11345,8 +11349,9 @@ table a:not(.btn), .table a:not(.btn) {
   box-shadow: none;
 }
 
-.block-title {
+.block-title, h2.block-title {
   padding: 10px 15px;
+  font-size: 28px;
 }
 
 .block[class*=" col-"] h2.block-title {

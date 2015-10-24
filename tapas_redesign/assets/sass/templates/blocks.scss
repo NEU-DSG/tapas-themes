@@ -7,9 +7,10 @@
     @extend .panel-body;
   }
 }
-.block-title {
+.block-title, h2.block-title {
   @extend .panel-heading;
   padding:10px 15px;
+  font-size:28px;
 }
 
 .block[class*=" col-"]{
