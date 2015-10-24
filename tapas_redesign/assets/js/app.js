@@ -99,7 +99,15 @@ jQuery('.navbar-collapse ul li a').click(function() {
     	return false;
     });
 
-
+    //autopopulate slugs for projects and collections
+    $("#tapas-project-node-form input[name='title'], #tapas-collection-node-form input[name='title']").on("keyup", function(){
+      var title = $(this).val();
+      title = title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').substr(0, 30);
+      if (title.substr(title.length-1) == '-'){
+        title = title.substring(0, title.length - 1);
+      }
+      $("#edit-field-tapas-slug-und-0-value").val(title);
+    });
 
   });
 })(jQuery);
