@@ -136,6 +136,22 @@ function tapas_redesign_preprocess_field(&$variables, $hook) {
     case 'og_tapas_r_to_c':
       $variables['label'] = t('Collection');
       break;
+    case 'group_group':
+      if ($variables['element']['#bundle'] == 'tapas_project'){
+        $variables['label'] = t('Project');
+      }
+      if ($variables['element']['#bundle'] == 'tapas_collection'){
+        $variables['label'] = t('Collection');
+      }
+      break;
+    case 'group_access':
+      if ($variables['element']['#bundle'] == 'tapas_project'){
+        $variables['label'] = t('Project Visibility');
+      }
+      if ($variables['element']['#bundle'] == 'tapas_collection'){
+        $variables['label'] = t('Collection Visibility');
+      }
+      break;
   }
 }
 
@@ -146,6 +162,10 @@ function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
       break;
     case 'tapas_collection_node_form':
       $form['og_tapas_c_to_p']['und']['#title'] = t('Project');
+      $form['group_access']['und']['#title'] = t('Collection Visibility');
+      break;
+    case 'tapas_project_node_form':
+      $form['group_access']['und']['#title'] = t('Project Visibility');
       break;
   }
 }
