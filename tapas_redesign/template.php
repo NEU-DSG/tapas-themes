@@ -103,17 +103,12 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
   }
   if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'collections_in_project-block'){
     global $user;
-    // print $user->uid;
-    dpm($user);
     $node = menu_get_object();
-    dpm($node);
     if (isset($node->nid)) {
       $nid = $node->nid;
     }
-    if(isset($nid) && $node->group_group['und'][0]['value'] == 1){
+    if(isset($nid) && og_is_member('node', $nid, 'user', $user) == 1){
       $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection?edit[og_tapas_c_to_p][und][0][default]=".$nid."' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
-    } else {
-      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
     }
   }
   if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'ece40a341bd3abd96179414c41afa18d'){
@@ -121,10 +116,8 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
     if (isset($node->nid)) {
       $nid = $node->nid;
     }
-    if(isset($nid)){
+    if(isset($nid) && og_is_member('node', $nid, 'user', $user) == 1){
       $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-record?edit[og_tapas_r_to_c][und][0][default]=".$nid."' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
-    } else {
-      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-record' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
     }
   }
 }
