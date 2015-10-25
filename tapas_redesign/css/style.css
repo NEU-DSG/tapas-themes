@@ -11424,3 +11424,10 @@ footer #block-menu-menu-footer-menu .menu .leaf a {
 .field-name-tc-field-description {
   word-wrap: break-word;
 }
+
+.form-autocomplete .dropdown-menu {
+  background: #ddd;
+}
+.form-autocomplete .dropdown-menu li {
+  background: #ddd;
+}
