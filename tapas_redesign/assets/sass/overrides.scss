@@ -734,3 +734,11 @@ table {
     overflow:scroll;
   }
 }
+
+//fix so the toolbar doesn't cover content on small screens
+.main-container{
+  padding-bottom:0;
+  @media(max-width:$screen-xs-max){
+    margin-left:1.8em;
+  }
+}

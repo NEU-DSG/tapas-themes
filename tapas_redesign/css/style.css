@@ -10773,6 +10773,15 @@ table .checkbox input[type="checkbox"] {
   overflow: scroll;
 }
 
+.main-container {
+  padding-bottom: 0;
+}
+@media (max-width: 767px) {
+  .main-container {
+    margin-left: 1.8em;
+  }
+}
+
 /*components refers to tapas specific content*/
 .front .main-container {
   padding-bottom: 0;
