@@ -91,6 +91,7 @@ function tapas_redesign_form_search_block_form_alter(&$form, &$form_state, $form
 
 
 function tapas_redesign_preprocess_block(&$variables, $hook) {
+  global $user;
   if ($variables['elements']['#block']->module == 'search' && $variables['elements']['#block']->region == 'content') {
     $variables['elements']['#block']->subject = NULL;
     $variables['classes_array'][] = "col-sm-9";
@@ -102,7 +103,6 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
     $variables['content'] = '<ul class="menu nav"><li class="leaf"><a href="/user"><span class="fa fa-user"></span> My Account</a></li></ul>'.$variables['content'];
   }
   if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'collections_in_project-block'){
-    global $user;
     $node = menu_get_object();
     if (isset($node->nid)) {
       $nid = $node->nid;
