@@ -11048,8 +11048,7 @@ a.tabledrag-handle .handle {
   padding-bottom: 20px;
 }
 
-#block-views-news-block-4 h2.block-title, #block-views-news-block-4 h2.block-title, #block-user-online h2.block-title {
-  text-decoration: underline;
+#block-views-news-block-4 h2.block-title, #block-user-new h2.block-title, #block-user-online h2.block-title {
   border-bottom: none;
   background: transparent;
   padding-bottom: 0;
