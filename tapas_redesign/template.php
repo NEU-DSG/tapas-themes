@@ -159,7 +159,6 @@ function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
       $form['og_tapas_r_to_c']['und']['#title'] = t('Collection');
       break;
     case 'tapas_collection_node_form':
-      dpm(drupal_get_query_parameters());
       $form['og_tapas_c_to_p']['und']['#title'] = t('Project');
       $form['group_access']['und']['#title'] = t('Collection Visibility');
       if (drupal_get_query_parameters()['disabled'] == 1){
