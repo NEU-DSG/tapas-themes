@@ -48,7 +48,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
   $(document).ready(function() {
 
     //adding support file flags in the my view
-    $("h4.support-file").each(function(){
+    $("h4.support-file, h5.support-file").each(function(){
       $(this).append("<button class='btn btn-info btn-xs'>Support File</button>");
     });
     $(document).ready(checkAdjustThumbnailHeight);
