@@ -108,7 +108,8 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
       $nid = $node->nid;
     }
     if(isset($nid) && og_is_member('node', $nid, 'user', $user) == 1){
-      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection?edit[og_tapas_c_to_p][und][0][default]=".$nid."' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+      $group_access = $node->group_access['und'][0]['value'];
+      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection?edit[og_tapas_c_to_p][und][0][default]=".$nid."&edit[group_access][und][1]=".$group_access."&disabled=".$group_access."' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
     }
   }
   if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'ece40a341bd3abd96179414c41afa18d'){
@@ -158,8 +159,13 @@ function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
       $form['og_tapas_r_to_c']['und']['#title'] = t('Collection');
       break;
     case 'tapas_collection_node_form':
+      dpm(drupal_get_query_parameters());
       $form['og_tapas_c_to_p']['und']['#title'] = t('Project');
       $form['group_access']['und']['#title'] = t('Collection Visibility');
+      if (drupal_get_query_parameters()['disabled'] == 1){
+        $form['og_tapas_c_to_p']['und']['#disabled'] = true;
+        $form['group_access']['und']['#disabled'] = true;
+      }
       break;
     case 'tapas_project_node_form':
       $form['group_access']['und']['#title'] = t('Project Visibility');
