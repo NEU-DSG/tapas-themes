@@ -11,7 +11,6 @@ jQuery('.navbar-collapse ul li a').click(function() {
 (function($) {
   //for equal height thumbnails
   $(window).resize(checkAdjustThumbnailHeight);
-  $(document).ready(checkAdjustThumbnailHeight);
 
   //for equal height thumbnails
   function checkAdjustThumbnailHeight() {
@@ -47,6 +46,13 @@ jQuery('.navbar-collapse ul li a').click(function() {
   }
 
   $(document).ready(function() {
+
+    //adding support file flags in the my view
+    $("h4.support-file").each(function(){
+      $(this).append("<button class='btn btn-info btn-xs'>Support File</button>");
+    });
+    $(document).ready(checkAdjustThumbnailHeight);
+
     $("body.front").find(".main-container").addClass("container-fluid").removeClass("container");
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll, #TOC a').bind('click', function(event) {
@@ -76,11 +82,6 @@ jQuery('.navbar-collapse ul li a').click(function() {
     //making the featured content into a row so it can be styled correctly
     $("body.front").find(".region-content .block.col-md-3").wrapAll('<div class="featured row" />');
     $("body.front").find(".featured.row").wrap("<div class='featured container-fluid' />");
-
-    //adding support file flags in the my view
-    $("h4.support-file").each(function(){
-      $(this).append("<button class='btn btn-info btn-xs'>Support File</button>");
-    });
 
     //for the back to top button
     $('body').prepend('<a href="#" class="back-to-top"><span class="fa fa-chevron-up"></span></a>');
