@@ -11331,11 +11331,11 @@ body:not(.front) .block-views .carousel-indicators > li {
   margin-bottom: 15px;
 }
 
-h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .view-news .more-link h4.support-file a, h4.support-file .node-readmore a, .node-readmore h4.support-file a {
+h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .view-news .more-link h4.support-file a, h4.support-file .node-readmore a, .node-readmore h4.support-file a, h5.support-file .btn, h5.support-file .front .view-news .more-link a, .front .view-news .more-link h5.support-file a, h5.support-file .node-readmore a, .node-readmore h5.support-file a {
   margin-left: 10px;
 }
 
-.thumbnail h4.support-file .btn, .thumbnail h4.support-file .front .view-news .more-link a, .front .view-news .more-link .thumbnail h4.support-file a, .thumbnail h4.support-file .node-readmore a, .node-readmore .thumbnail h4.support-file a {
+.thumbnail h4.support-file .btn, .thumbnail h4.support-file .front .view-news .more-link a, .front .view-news .more-link .thumbnail h4.support-file a, .thumbnail h4.support-file .node-readmore a, .node-readmore .thumbnail h4.support-file a, .thumbnail h5.support-file .btn, .thumbnail h5.support-file .front .view-news .more-link a, .front .view-news .more-link .thumbnail h5.support-file a, .thumbnail h5.support-file .node-readmore a, .node-readmore .thumbnail h5.support-file a {
   clear: both;
   display: block;
   margin-left: auto;

@@ -38,10 +38,10 @@ body:not(.front){
   margin-bottom:15px;
 }
 
-h4.support-file .btn{
+h4.support-file .btn, h5.support-file .btn{
   margin-left:10px;
 }
-.thumbnail h4.support-file .btn{
+.thumbnail h4.support-file .btn, .thumbnail h5.support-file .btn{
   clear: both;
   display: block;
   margin-left: auto;
