@@ -110,9 +110,9 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
     if(isset($nid) && og_is_member('node', $nid, 'user', $user) == 1){
       $group_access = $node->group_access['und'][0]['value'];
       if ($group_access == 1){
-        $group_access = "&edit[group_access][und][1]=".$group_access."&disabled=".$group_access;
+        $group_access = "edit[group_access][und][1]=".$group_access."&disabled=".$group_access;
       } else {
-        $group_access = "&edit[group_access][und][0]=0&disabled=0";
+        $group_access = "edit[group_access][und][0]=0&edit[group_access][und][1]=0&disabled=0";
       }
       $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection?edit[og_tapas_c_to_p][und][0][default]=".$nid."&".$group_access."' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
     }
