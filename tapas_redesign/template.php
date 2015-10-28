@@ -166,7 +166,7 @@ function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
     case 'tapas_collection_node_form':
       $form['og_tapas_c_to_p']['und']['#title'] = t('Project');
       $form['group_access']['und']['#title'] = t('Collection Visibility');
-      if (drupal_get_query_parameters()['disabled'] == 1){
+      if (isset(drupal_get_query_parameters()['disabled']) && drupal_get_query_parameters()['disabled'] == 1){
         $form['og_tapas_c_to_p']['und']['#disabled'] = true;
         $form['group_access']['und']['#disabled'] = true;
       }
