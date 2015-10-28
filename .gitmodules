@@ -1,0 +1,3 @@
+[submodule "tapas_redesign/lib/tapas-generic"]
+	path = tapas_redesign/lib/tapas-generic
+	url = https://github.com/NEU-DSG/tapas-generic
