@@ -10825,7 +10825,8 @@ table .checkbox input[type="checkbox"] {
   padding: 0;
 }
 .front .region-content section:not(.block-system) {
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
+  margin-top: 0;
 }
 .front section#block-block-3 {
   padding-bottom: 0;
