@@ -11,6 +11,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
 (function($) {
   //for equal height thumbnails
   $(window).resize(checkAdjustThumbnailHeight);
+  $(window).resize(checkVerticalTabs);
 
   //for equal height thumbnails
   function checkAdjustThumbnailHeight() {
@@ -44,6 +45,21 @@ jQuery('.navbar-collapse ul li a').click(function() {
       $(this).css("height", "inherit");
     });
   }
+  function checkVerticalTabs(){
+    if ($(window).width() < 767){
+      $(".group-tei-record .vertical-tabs .vertical-tabs-list .vertical-tab-button").removeClass('vertical-tab-button');
+      $(".group-tei-record .vertical-tabs .vertical-tabs-list").removeClass('vertical-tabs-list');
+      $(".group-tei-record .vertical-tabs .vertical-tabs-panes").removeClass('vertical-tabs-panes').removeClass('vertical-tabs-processed').addClass('col-sm-12');
+      $(".group-tei-record .vertical-tabs").removeClass('tabs-left').removeClass('vertical-tabs').addClass('horizontal-tabs');
+    } else {
+      if ($(".group-tei-record .tabbable").hasClass('horizontal-tabs')){
+        $(".group-tei-record .horizontal-tabs").addClass('vertical-tabs').addClass('tabs-left').removeClass('horizontal-tabs');
+        $(".group-tei-record .vertical-tabs .col-sm-12").addClass('vertical-tabs-panes').addClass('vertical-tabs-processed').removeClass('col-sm-12');
+        $(".group-tei-record .vertical-tabs .nav-tabs").addClass('vertical-tabs-list');
+        $(".group-tei-record .vertical-tabs .vertical-tabs-list li").addClass('vertical-tab-button');
+      }
+    }
+  }
 
   $(document).ready(function() {
 
@@ -52,6 +68,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
       $(this).append("<button class='btn btn-info btn-xs'>Support File</button>");
     });
     $(document).ready(checkAdjustThumbnailHeight);
+    checkVerticalTabs;
 
     $("body.front").find(".main-container").addClass("container-fluid").removeClass("container");
     // jQuery for page scrolling feature - requires jQuery Easing plugin
