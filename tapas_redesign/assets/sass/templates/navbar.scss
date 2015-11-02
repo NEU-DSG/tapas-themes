@@ -95,8 +95,12 @@
 }
 
 @media(max-width:$screen-sm-min){
+  #block-menu-menu-primary-menu .nav{
+    padding-left:35px;
+  }
   #block-system-user-menu{
     clear:both;
+    padding-left:35px;
     ul.menu.nav{
       margin:0;
     }

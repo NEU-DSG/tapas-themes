@@ -10777,11 +10777,6 @@ table .checkbox input[type="checkbox"] {
 .main-container {
   padding-bottom: 0;
 }
-@media (max-width: 767px) {
-  .main-container {
-    margin-left: 1.8em;
-  }
-}
 
 /*components refers to tapas specific content*/
 .front .main-container {
@@ -11196,8 +11191,13 @@ a.tabledrag-handle .handle {
 }
 
 @media (max-width: 768px) {
+  #block-menu-menu-primary-menu .nav {
+    padding-left: 35px;
+  }
+
   #block-system-user-menu {
     clear: both;
+    padding-left: 35px;
   }
   #block-system-user-menu ul.menu.nav {
     margin: 0;
