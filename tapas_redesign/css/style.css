@@ -11402,6 +11402,11 @@ footer #block-menu-menu-footer-menu .menu .leaf a {
   background-repeat: no-repeat;
 }
 
+.no-thumbnail {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .field.field-label-above {
   padding-top: 5px;
 }
