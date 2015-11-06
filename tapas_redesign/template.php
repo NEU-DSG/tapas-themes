@@ -115,6 +115,9 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
         $group_access = "edit[group_access][und][0]=0&edit[group_access][und][1]=0&disabled=0";
       }
       $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection?edit[og_tapas_c_to_p][und][0][default]=".$nid."&".$group_access."' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+      if(!isset($variables['elements']['#views_contextual_links_info']['views_ui']['view']->total_rows)){
+        $variables['content'] = '<div class="view view-collections-in-project view-id-collections_in_project view-display-id-block view-dom-id-'.$variables['elements']['#views_contextual_links_info']['views_ui']['view']->dom_id.'"><div class="view-empty">There are no collections yet in this project. <a href="/node/add/tapas-collection?edit[og_tapas_c_to_p][und][0][default]='.$nid.'&'.$group_access.'" class="btn btn-xs btn-default"> Add Collection</a>    </div></div>';
+      }
     }
   }
   if ($variables['elements']['#block']->module == 'views' && $variables['elements']['#block']->delta == 'ece40a341bd3abd96179414c41afa18d'){
