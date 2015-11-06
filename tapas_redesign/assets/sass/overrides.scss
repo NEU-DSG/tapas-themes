@@ -739,8 +739,7 @@ table {
 .html:not(.front) .main-container{
   padding-bottom:0;
   @media(max-width:$screen-xs-max){
-    // margin-left:1.8em;
-    > .row > section.col-sm-12:first-of-type{
+    > .row:first-of-type > section[class^="col-"], > .row:first-of-type > section[class*=" col-"]{
       padding-left:40px;
     }
   }

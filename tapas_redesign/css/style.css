@@ -10778,7 +10778,7 @@ table .checkbox input[type="checkbox"] {
   padding-bottom: 0;
 }
 @media (max-width: 767px) {
-  .html:not(.front) .main-container > .row > section.col-sm-12:first-of-type {
+  .html:not(.front) .main-container > .row:first-of-type > section[class^="col-"], .html:not(.front) .main-container > .row:first-of-type > section[class*=" col-"] {
     padding-left: 40px;
   }
 }
