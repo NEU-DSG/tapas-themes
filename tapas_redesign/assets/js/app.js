@@ -12,6 +12,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
   //for equal height thumbnails
   $(window).resize(checkAdjustThumbnailHeight);
   $(window).resize(checkVerticalTabs);
+  $(window).resize(fixSubMenus);
 
   //for equal height thumbnails
   function checkAdjustThumbnailHeight() {
@@ -45,6 +46,8 @@ jQuery('.navbar-collapse ul li a').click(function() {
       $(this).css("height", "inherit");
     });
   }
+
+  //makes vertical tabs into horizontal tabs on smaller devices
   function checkVerticalTabs(){
     if ($(window).width() < 767){
       $(".group-tei-record .vertical-tabs .vertical-tabs-list .vertical-tab-button").removeClass('vertical-tab-button');
@@ -61,14 +64,34 @@ jQuery('.navbar-collapse ul li a').click(function() {
     }
   }
 
+  //fix for affixed sidebar navs
+  function fixSubMenus(){
+    if ($("body").hasClass("sidebar-first")){
+      if ($(window).width() < 900){
+        $(".region-sidebar-first").find(".affix").each(function(){
+          $(this).removeClass('affix');
+          $(this).insertAfter('h1.page-header');
+        });
+      } else {
+        $(".sidebar-first .page-header").next("section.block").each(function(){
+          $(this).addClass('affix');
+          $(this).appendTo('.region-sidebar-first');
+        });
+      }
+    }
+  }
+
+
   $(document).ready(function() {
 
     //adding support file flags in the my view
     $("h4.support-file, h5.support-file").each(function(){
       $(this).append("<button class='btn btn-info btn-xs'>Support File</button>");
     });
-    $(document).ready(checkAdjustThumbnailHeight);
+
+    checkAdjustThumbnailHeight;
     checkVerticalTabs;
+    fixSubMenus;
 
     $("body.front").find(".main-container").addClass("container-fluid").removeClass("container");
     // jQuery for page scrolling feature - requires jQuery Easing plugin
