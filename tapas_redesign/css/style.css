@@ -10774,8 +10774,13 @@ table .checkbox input[type="checkbox"] {
   overflow: scroll;
 }
 
-.main-container {
+.html:not(.front) .main-container {
   padding-bottom: 0;
+}
+@media (max-width: 767px) {
+  .html:not(.front) .main-container > .row > section.col-sm-12:first-of-type {
+    padding-left: 40px;
+  }
 }
 
 /*components refers to tapas specific content*/

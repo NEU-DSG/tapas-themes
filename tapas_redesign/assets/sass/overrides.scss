@@ -736,9 +736,12 @@ table {
 }
 
 //fix so the toolbar doesn't cover content on small screens
-.main-container{
+.html:not(.front) .main-container{
   padding-bottom:0;
   @media(max-width:$screen-xs-max){
     // margin-left:1.8em;
+    > .row > section.col-sm-12:first-of-type{
+      padding-left:40px;
+    }
   }
 }
