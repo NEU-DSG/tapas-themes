@@ -179,3 +179,25 @@ function tapas_redesign_form_alter(&$form, &$form_state, $form_id) {
       break;
   }
 }
+
+function tapas_redesign_menu_local_tasks_alter(&$data, $router_item, $root_path) {
+  if ($root_path == "user/%"){
+    $data['tabs'][0]['output'][4]['#weight'] = 1;
+    $data['tabs'][0]['output'][0]['#weight'] = 2;
+    $data['tabs'][0]['output'][1]['#weight'] = 3;
+    $data['tabs'][0]['output'][2]['#weight'] = 4;
+    $data['tabs'][0]['output'][3]['#weight'] = 5;
+    $data['tabs'][0]['output'][5]['#weight'] = 6;
+    $data['tabs'][0]['output'][6]['#weight'] = 7;
+    $data['tabs'][0]['output'][0]['#link']['title'] = "My Account";
+  }
+}
+
+function tapas_redesign_menu_breadcrumb_alter(&$active_trail, $item) {
+  if ($item['path'] == "group/%/%/admin/people"){
+    $node = node_load($item['fragments'][2]);
+    $title = $node->title;
+    $active_trail[1] = ["href"=>$item['fragments'][1]."/".$item['fragments'][2], "title"=>$title];
+    $active_trail[2] = ["href"=>$item['fragments'][1]."/".$item['fragments'][2]."/group", "title"=>"Group"];
+  }
+}
