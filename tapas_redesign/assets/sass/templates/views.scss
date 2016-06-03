@@ -62,3 +62,21 @@ table a:not(.btn), .table a:not(.btn){
 .views-table.table > tbody > tr > td{
   vertical-align: middle;
 }
+
+
+.view-node-select-list{
+  select{
+    width: auto;
+    display: inline;
+  }
+  button.form-submit{
+    margin-top:-4px;
+  }
+}
+
+.view-test-reader-pane{
+  .tapas-generic #tapasToolbox{
+    left:0;
+    top:0;
+  }
+}
