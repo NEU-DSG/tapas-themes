@@ -17,7 +17,9 @@ jQuery('.navbar-collapse ul li a').click(function() {
 
   //for equal height thumbnails
   function checkAdjustThumbnailHeight() {
-    $("body").append('<span id="mq-detector"><span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg"></span></span>');
+    if (!$("#mq-detector").length){
+      $("body").append('<span id="mq-detector"><span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg"></span></span>');
+    }
     if ($("#mq-detector > span.visible-lg").is(":visible")) {
       adjustThumbnailHeight();
     }
@@ -35,7 +37,11 @@ jQuery('.navbar-collapse ul li a').click(function() {
   function adjustThumbnailHeight() {
     var heights = [ ];
     $(".thumbnail").each(function() {
-      heights.push( $(this).height() );
+      var gridHeight = 0;
+      $(this).find(".grid-hover").each(function(){
+        gridHeight += $(this).outerHeight();
+      });
+      heights.push( $(this).height() - gridHeight);
     });
     var max = Math.max.apply(null, heights);
     $(".thumbnail").each(function() {

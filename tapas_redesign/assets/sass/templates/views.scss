@@ -85,6 +85,10 @@ h4.support-file .btn, h5.support-file .btn{
     &:hover .grid-hover-parent{
       opacity: .9;
       transition: opacity .5s;
+      text-decoration: none;
+      .views-label{
+        font-weight:bold;
+      }
     }
   }
 }
