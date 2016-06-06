@@ -11302,7 +11302,7 @@ h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .vi
   margin-bottom: 22px;
 }
 
-.list-view .collection-no-image img {
+.list-view .collection-no-image img, .list-view .img-responsive {
   width: 90px;
   display: inline-block;
   text-align: left;
