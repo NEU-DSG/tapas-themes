@@ -11302,6 +11302,36 @@ h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .vi
   margin-bottom: 22px;
 }
 
+.list-view .collection-no-image img {
+  width: 90px;
+  display: inline-block;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+}
+.list-view .views-field-field-tapas-thumbnail, .list-view .views-field-field-tapas-thumbnail .field-content, .list-view .views-field-title {
+  display: inline-block;
+}
+.list-view .views-field:not(.views-field-title):not(.views-field-field-tapas-thumbnail) {
+  margin-left: 100px;
+}
+
+.grid-view .thumbnail .grid-hover-parent {
+  opacity: 0;
+  transition: opacity .5s;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background: #EBEBEB;
+  padding: 20px;
+}
+.grid-view .thumbnail:hover .grid-hover-parent {
+  opacity: .9;
+  transition: opacity .5s;
+}
+
 table a:not(.btn), .table a:not(.btn) {
   text-decoration: none;
 }

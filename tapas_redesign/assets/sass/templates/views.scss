@@ -54,6 +54,40 @@ h4.support-file .btn, h5.support-file .btn{
   margin-top: 22px;
   margin-bottom: 22px;
 }
+.list-view{
+  .collection-no-image img{
+    width:90px;
+    display: inline-block;
+    text-align:left;
+    padding:10px;
+    margin:0;
+  }
+   .views-field-field-tapas-thumbnail, .views-field-field-tapas-thumbnail .field-content, .views-field-title{
+    display: inline-block;
+  }
+  .views-field:not(.views-field-title):not(.views-field-field-tapas-thumbnail){
+    margin-left:100px;
+  }
+}
+.grid-view{
+  .thumbnail {
+    .grid-hover-parent{
+      opacity:0;
+      transition: opacity .5s;
+      width:90%;
+      height:90%;
+      position:absolute;
+      top:0;
+      left:10px;
+      background: $gray-lighter;
+      padding: 20px;
+    }
+    &:hover .grid-hover-parent{
+      opacity: .9;
+      transition: opacity .5s;
+    }
+  }
+}
 
 table a:not(.btn), .table a:not(.btn){
   text-decoration: none;
