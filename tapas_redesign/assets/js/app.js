@@ -81,9 +81,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
     }
   }
 
-
   $(document).ready(function() {
-
     //adding support file flags in the my view
     $("h4.support-file, h5.support-file").each(function(){
       $(this).append("<button class='btn btn-info btn-xs'>Support File</button>");
@@ -148,6 +146,13 @@ jQuery('.navbar-collapse ul li a').click(function() {
         title = title.substring(0, title.length - 1);
       }
       $("#edit-field-tapas-slug-und-0-value").val(title);
+    });
+
+    /*making some metadata display on hover instead of default display - for all records grid view, attachs to view class grid-view and field class grid-hover*/
+    $(".grid-view").find(".thumbnail").each(function(){
+      $(this).find(".grid-hover").wrapAll('<a class="grid-hover-parent" />');
+      var node_href = $(this).find("h5.text-center a").attr("href");
+      $(this).find(".grid-hover-parent").attr("href", node_href);
     });
 
   });
