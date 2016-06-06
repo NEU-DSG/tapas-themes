@@ -68,6 +68,11 @@ h4.support-file .btn, h5.support-file .btn{
   .views-field:not(.views-field-title):not(.views-field-field-tapas-thumbnail){
     margin-left:100px;
   }
+  @media(max-width:$screen-md-min){
+    .views-field:not(.views-field-title):not(.views-field-field-tapas-thumbnail){
+      margin-left:0;
+    }
+  }
   .views-field-field-tapas-thumbnail{
     float:left;
   }
