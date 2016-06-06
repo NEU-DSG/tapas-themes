@@ -11315,6 +11315,9 @@ h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .vi
 .list-view .views-field:not(.views-field-title):not(.views-field-field-tapas-thumbnail) {
   margin-left: 100px;
 }
+.list-view .views-field-field-tapas-thumbnail {
+  float: left;
+}
 
 .grid-view .thumbnail .grid-hover-parent {
   opacity: 0;

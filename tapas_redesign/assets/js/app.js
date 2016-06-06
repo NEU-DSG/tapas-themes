@@ -35,18 +35,22 @@ jQuery('.navbar-collapse ul li a').click(function() {
     else { }
   }
   function adjustThumbnailHeight() {
-    var heights = [ ];
-    $(".thumbnail").each(function() {
-      var gridHeight = 0;
-      $(this).find(".grid-hover").each(function(){
-        gridHeight += $(this).outerHeight();
+    if (!($(".thumbnail").parents(".list-view").length)){
+      var heights = [ ];
+      $(".thumbnail").each(function() {
+        var gridHeight = 0;
+        if (!$(this).find(".grid-hover-parent").length){
+          $(this).find(".grid-hover").each(function(){
+            gridHeight += $(this).outerHeight();
+          });
+        }
+        heights.push( $(this).height() - gridHeight);
       });
-      heights.push( $(this).height() - gridHeight);
-    });
-    var max = Math.max.apply(null, heights);
-    $(".thumbnail").each(function() {
-      $(this).height(max);
-    });
+      var max = Math.max.apply(null, heights);
+      $(".thumbnail").each(function() {
+        $(this).height(max);
+      });
+    }
   }
   function inheritThumbailHeight() {
     $(".thumbnail").each(function() {

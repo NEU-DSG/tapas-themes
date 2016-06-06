@@ -68,6 +68,9 @@ h4.support-file .btn, h5.support-file .btn{
   .views-field:not(.views-field-title):not(.views-field-field-tapas-thumbnail){
     margin-left:100px;
   }
+  .views-field-field-tapas-thumbnail{
+    float:left;
+  }
 }
 .grid-view{
   .thumbnail {
