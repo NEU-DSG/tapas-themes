@@ -13,10 +13,13 @@ jQuery('.navbar-collapse ul li a').click(function() {
   $(window).resize(checkAdjustThumbnailHeight);
   $(window).resize(checkVerticalTabs);
   $(window).resize(fixSubMenus);
+  $(window).resize(fixGridView);
 
   //for equal height thumbnails
   function checkAdjustThumbnailHeight() {
-    $("body").append('<span id="mq-detector"><span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg"></span></span>');
+    if (!$("#mq-detector").length){
+      $("body").append('<span id="mq-detector"><span class="visible-xs"></span><span class="visible-sm"></span><span class="visible-md"></span><span class="visible-lg"></span></span>');
+    }
     if ($("#mq-detector > span.visible-lg").is(":visible")) {
       adjustThumbnailHeight();
     }
@@ -32,14 +35,22 @@ jQuery('.navbar-collapse ul li a').click(function() {
     else { }
   }
   function adjustThumbnailHeight() {
-    var heights = [ ];
-    $(".thumbnail").each(function() {
-      heights.push( $(this).height() );
-    });
-    var max = Math.max.apply(null, heights);
-    $(".thumbnail").each(function() {
-      $(this).height(max);
-    });
+    if (!($(".thumbnail").parents(".list-view").length)){
+      var heights = [ ];
+      $(".thumbnail").each(function() {
+        var gridHeight = 0;
+        if (!$(this).find(".grid-hover-parent").length){
+          $(this).find(".grid-hover").each(function(){
+            gridHeight += $(this).outerHeight();
+          });
+        }
+        heights.push( $(this).height() - gridHeight);
+      });
+      var max = Math.max.apply(null, heights);
+      $(".thumbnail").each(function() {
+        $(this).height(max);
+      });
+    }
   }
   function inheritThumbailHeight() {
     $(".thumbnail").each(function() {
@@ -81,6 +92,18 @@ jQuery('.navbar-collapse ul li a').click(function() {
     }
   }
 
+  /*making some metadata display on hover instead of default display - for all records grid view, attachs to view class grid-view and field class grid-hover*/
+  function fixGridView(){
+    $(".grid-view").find(".thumbnail").each(function(){
+      if (!$(this).find(".grid-hover-parent").length){
+        $(this).find(".grid-hover").wrapAll('<a class="grid-hover-parent" />');
+        var node_href = $(this).find("h5.text-center a").attr("href");
+        $(this).find(".grid-hover-parent").attr("href", node_href);
+      }
+      $(this).find(".grid-hover-parent").css("height", $(this).outerHeight()).css("width", $(this).outerWidth());
+    });
+  }
+
   $(document).ready(function() {
     //adding support file flags in the my view
     $("h4.support-file, h5.support-file").each(function(){
@@ -90,6 +113,7 @@ jQuery('.navbar-collapse ul li a').click(function() {
     checkAdjustThumbnailHeight;
     checkVerticalTabs;
     fixSubMenus;
+    fixGridView;
 
     $("body.front").find(".main-container").addClass("container-fluid").removeClass("container");
     // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -146,13 +170,6 @@ jQuery('.navbar-collapse ul li a').click(function() {
         title = title.substring(0, title.length - 1);
       }
       $("#edit-field-tapas-slug-und-0-value").val(title);
-    });
-
-    /*making some metadata display on hover instead of default display - for all records grid view, attachs to view class grid-view and field class grid-hover*/
-    $(".grid-view").find(".thumbnail").each(function(){
-      $(this).find(".grid-hover").wrapAll('<a class="grid-hover-parent" />');
-      var node_href = $(this).find("h5.text-center a").attr("href");
-      $(this).find(".grid-hover-parent").attr("href", node_href);
     });
 
   });

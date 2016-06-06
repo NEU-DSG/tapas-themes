@@ -55,7 +55,10 @@ h4.support-file .btn, h5.support-file .btn{
   margin-bottom: 22px;
 }
 .list-view{
-  .collection-no-image img{
+  .thumbnail {
+    overflow: auto;
+  }
+  .collection-no-image img, .img-responsive{
     width:90px;
     display: inline-block;
     text-align:left;
@@ -68,23 +71,35 @@ h4.support-file .btn, h5.support-file .btn{
   .views-field:not(.views-field-title):not(.views-field-field-tapas-thumbnail){
     margin-left:100px;
   }
+  @media(max-width:$screen-md-min){
+    .views-field:not(.views-field-title):not(.views-field-field-tapas-thumbnail){
+      margin-left:0;
+    }
+  }
+  .views-field-field-tapas-thumbnail{
+    float:left;
+  }
 }
 .grid-view{
   .thumbnail {
     .grid-hover-parent{
       opacity:0;
       transition: opacity .5s;
-      width:90%;
-      height:90%;
+      width:100%;
+      height:100%;
       position:absolute;
       top:0;
-      left:10px;
+      left:15px;
       background: $gray-lighter;
       padding: 20px;
     }
     &:hover .grid-hover-parent{
       opacity: .9;
       transition: opacity .5s;
+      text-decoration: none;
+      .views-label{
+        font-weight:bold;
+      }
     }
   }
 }
