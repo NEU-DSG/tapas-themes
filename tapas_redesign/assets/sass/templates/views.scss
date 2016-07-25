@@ -128,4 +128,9 @@ table a:not(.btn), .table a:not(.btn){
     left:0;
     top:0;
   }
+  .reading{
+    max-height: 800px;
+    overflow-y: scroll;
+    margin-bottom: 40px;
+  }
 }

@@ -11367,6 +11367,11 @@ table a:not(.btn), .table a:not(.btn) {
   left: 0;
   top: 0;
 }
+.view-test-reader-pane .reading {
+  max-height: 800px;
+  overflow-y: scroll;
+  margin-bottom: 40px;
+}
 
 .block {
   background-color: transparent;
