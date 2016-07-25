@@ -11205,6 +11205,9 @@ a.tabledrag-handle .handle {
 .node-forum .comment {
   padding: 20px;
 }
+.node-forum .indented .comment {
+  border-left: 3px solid #f3f3f3;
+}
 .node-forum .comment:nth-of-type(even) {
   background: #f3f3f3;
 }

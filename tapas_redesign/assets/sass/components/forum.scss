@@ -26,6 +26,9 @@
   .comment {
     padding: 20px;
   }
+  .indented .comment {
+    border-left: 3px solid #f3f3f3;
+  }
   .comment:nth-of-type(even){
     background: #f3f3f3;
   }
