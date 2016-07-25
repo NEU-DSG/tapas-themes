@@ -19,9 +19,12 @@
     float: left;
     padding-right: 20px;
   }
-  .comment {
+  .comment.comment-by-node-author.comment-by-viewer.clearfix {
       border-left: 5px solid #2B3E50;
       padding-left: 20px;
+  }
+  .comment {
+    padding: 20px;
   }
   .comment:nth-of-type(even){
     background: #f3f3f3;
