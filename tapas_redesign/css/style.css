@@ -411,14 +411,18 @@ th {
     display: none;
   }
 
-  .btn > .caret, .front .view-news .more-link a > .caret, .node-readmore a > .caret,
+  .btn > .caret, .front .view-news .more-link a > .caret, .node-forum .comment-delete a > .caret, .node-forum .comment-edit a > .caret, .node-forum .comment-reply a > .caret, .node-forum .comment-add a > .caret, .node-readmore a > .caret,
   .dropup > .btn > .caret,
   .front .view-news .more-link .dropup > a > .caret,
+  .node-forum .comment-delete .dropup > a > .caret,
+  .node-forum .comment-edit .dropup > a > .caret,
+  .node-forum .comment-reply .dropup > a > .caret,
+  .node-forum .comment-add .dropup > a > .caret,
   .node-readmore .dropup > a > .caret {
     border-top-color: #000 !important;
   }
 
-  .label {
+  .label, .node-forum .new {
     border: 1px solid #000;
   }
 
@@ -2091,19 +2095,19 @@ pre code {
   clear: both;
 }
 
-.row {
+.row, .node-forum .comment {
   margin-left: -15px;
   margin-right: -15px;
 }
-.row:before, .row:after {
+.row:before, .node-forum .comment:before, .row:after, .node-forum .comment:after {
   content: " ";
   display: table;
 }
-.row:after {
+.row:after, .node-forum .comment:after {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .page-node .node-tapas-project, .page-node .node-tapas-collection, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .node-forum .comment .user-picture, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .page-node .node-tapas-project, .page-node .node-tapas-collection, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2319,11 +2323,11 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .page-node .node-tapas-project, .page-node .node-tapas-collection, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .node-forum .comment .user-picture, .col-sm-2, .col-sm-3, .page-node .node-tapas-project, .page-node .node-tapas-collection, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
 
-  .col-sm-1 {
+  .col-sm-1, .node-forum .comment .user-picture {
     width: 8.33333%;
   }
 
@@ -3422,10 +3426,18 @@ input[type="checkbox"] {
 .input-group-lg > .form-control-static.input-group-addon,
 .input-group-lg > .input-group-btn > .form-control-static.btn,
 .front .view-news .more-link .input-group-lg > .input-group-btn > a.form-control-static,
+.node-forum .comment-delete .input-group-lg > .input-group-btn > a.form-control-static,
+.node-forum .comment-edit .input-group-lg > .input-group-btn > a.form-control-static,
+.node-forum .comment-reply .input-group-lg > .input-group-btn > a.form-control-static,
+.node-forum .comment-add .input-group-lg > .input-group-btn > a.form-control-static,
 .node-readmore .input-group-lg > .input-group-btn > a.form-control-static, .form-control-static.input-sm, .input-group-sm > .form-control-static.form-control,
 .input-group-sm > .form-control-static.input-group-addon,
 .input-group-sm > .input-group-btn > .form-control-static.btn,
 .front .view-news .more-link .input-group-sm > .input-group-btn > a.form-control-static,
+.node-forum .comment-delete .input-group-sm > .input-group-btn > a.form-control-static,
+.node-forum .comment-edit .input-group-sm > .input-group-btn > a.form-control-static,
+.node-forum .comment-reply .input-group-sm > .input-group-btn > a.form-control-static,
+.node-forum .comment-add .input-group-sm > .input-group-btn > a.form-control-static,
 .node-readmore .input-group-sm > .input-group-btn > a.form-control-static {
   padding-left: 0;
   padding-right: 0;
@@ -3435,6 +3447,10 @@ input[type="checkbox"] {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .btn,
 .front .view-news .more-link .input-group-sm > .input-group-btn > a,
+.node-forum .comment-delete .input-group-sm > .input-group-btn > a,
+.node-forum .comment-edit .input-group-sm > .input-group-btn > a,
+.node-forum .comment-reply .input-group-sm > .input-group-btn > a,
+.node-forum .comment-add .input-group-sm > .input-group-btn > a,
 .node-readmore .input-group-sm > .input-group-btn > a {
   height: 31px;
   padding: 5px 10px;
@@ -3487,6 +3503,10 @@ select[multiple].input-sm,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn,
 .front .view-news .more-link .input-group-lg > .input-group-btn > a,
+.node-forum .comment-delete .input-group-lg > .input-group-btn > a,
+.node-forum .comment-edit .input-group-lg > .input-group-btn > a,
+.node-forum .comment-reply .input-group-lg > .input-group-btn > a,
+.node-forum .comment-add .input-group-lg > .input-group-btn > a,
 .node-readmore .input-group-lg > .input-group-btn > a {
   height: 52px;
   padding: 12px 24px;
@@ -3559,6 +3579,10 @@ select[multiple].input-lg,
 .input-group-lg > .input-group-addon + .form-control-feedback,
 .input-group-lg > .input-group-btn > .btn + .form-control-feedback,
 .front .view-news .more-link .input-group-lg > .input-group-btn > a + .form-control-feedback,
+.node-forum .comment-delete .input-group-lg > .input-group-btn > a + .form-control-feedback,
+.node-forum .comment-edit .input-group-lg > .input-group-btn > a + .form-control-feedback,
+.node-forum .comment-reply .input-group-lg > .input-group-btn > a + .form-control-feedback,
+.node-forum .comment-add .input-group-lg > .input-group-btn > a + .form-control-feedback,
 .node-readmore .input-group-lg > .input-group-btn > a + .form-control-feedback {
   width: 52px;
   height: 52px;
@@ -3569,6 +3593,10 @@ select[multiple].input-lg,
 .input-group-sm > .input-group-addon + .form-control-feedback,
 .input-group-sm > .input-group-btn > .btn + .form-control-feedback,
 .front .view-news .more-link .input-group-sm > .input-group-btn > a + .form-control-feedback,
+.node-forum .comment-delete .input-group-sm > .input-group-btn > a + .form-control-feedback,
+.node-forum .comment-edit .input-group-sm > .input-group-btn > a + .form-control-feedback,
+.node-forum .comment-reply .input-group-sm > .input-group-btn > a + .form-control-feedback,
+.node-forum .comment-add .input-group-sm > .input-group-btn > a + .form-control-feedback,
 .node-readmore .input-group-sm > .input-group-btn > a + .form-control-feedback {
   width: 31px;
   height: 31px;
@@ -3759,7 +3787,7 @@ select[multiple].input-lg,
   }
 }
 
-.btn, .front .view-news .more-link a, .node-readmore a {
+.btn, .front .view-news .more-link a, .node-forum .comment-delete a, .node-forum .comment-edit a, .node-forum .comment-reply a, .node-forum .comment-add a, .node-readmore a {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -3780,21 +3808,21 @@ select[multiple].input-lg,
   -ms-user-select: none;
   user-select: none;
 }
-.btn:focus, .front .view-news .more-link a:focus, .node-readmore a:focus, .btn.focus, .front .view-news .more-link a.focus, .node-readmore a.focus, .btn:active:focus, .front .view-news .more-link a:active:focus, .node-readmore a:active:focus, .btn:active.focus, .front .view-news .more-link a:active.focus, .node-readmore a:active.focus, .btn.active:focus, .front .view-news .more-link a.active:focus, .node-readmore a.active:focus, .btn.active.focus, .front .view-news .more-link a.active.focus, .node-readmore a.active.focus {
+.btn:focus, .front .view-news .more-link a:focus, .node-forum .comment-delete a:focus, .node-forum .comment-edit a:focus, .node-forum .comment-reply a:focus, .node-forum .comment-add a:focus, .node-readmore a:focus, .btn.focus, .front .view-news .more-link a.focus, .node-forum .comment-delete a.focus, .node-forum .comment-edit a.focus, .node-forum .comment-reply a.focus, .node-forum .comment-add a.focus, .node-readmore a.focus, .btn:active:focus, .front .view-news .more-link a:active:focus, .node-forum .comment-delete a:active:focus, .node-forum .comment-edit a:active:focus, .node-forum .comment-reply a:active:focus, .node-forum .comment-add a:active:focus, .node-readmore a:active:focus, .btn:active.focus, .front .view-news .more-link a:active.focus, .node-forum .comment-delete a:active.focus, .node-forum .comment-edit a:active.focus, .node-forum .comment-reply a:active.focus, .node-forum .comment-add a:active.focus, .node-readmore a:active.focus, .btn.active:focus, .front .view-news .more-link a.active:focus, .node-forum .comment-delete a.active:focus, .node-forum .comment-edit a.active:focus, .node-forum .comment-reply a.active:focus, .node-forum .comment-add a.active:focus, .node-readmore a.active:focus, .btn.active.focus, .front .view-news .more-link a.active.focus, .node-forum .comment-delete a.active.focus, .node-forum .comment-edit a.active.focus, .node-forum .comment-reply a.active.focus, .node-forum .comment-add a.active.focus, .node-readmore a.active.focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover, .front .view-news .more-link a:hover, .node-readmore a:hover, .btn:focus, .front .view-news .more-link a:focus, .node-readmore a:focus, .btn.focus, .front .view-news .more-link a.focus, .node-readmore a.focus {
+.btn:hover, .front .view-news .more-link a:hover, .node-forum .comment-delete a:hover, .node-forum .comment-edit a:hover, .node-forum .comment-reply a:hover, .node-forum .comment-add a:hover, .node-readmore a:hover, .btn:focus, .front .view-news .more-link a:focus, .node-forum .comment-delete a:focus, .node-forum .comment-edit a:focus, .node-forum .comment-reply a:focus, .node-forum .comment-add a:focus, .node-readmore a:focus, .btn.focus, .front .view-news .more-link a.focus, .node-forum .comment-delete a.focus, .node-forum .comment-edit a.focus, .node-forum .comment-reply a.focus, .node-forum .comment-add a.focus, .node-readmore a.focus {
   color: #fff;
   text-decoration: none;
 }
-.btn:active, .front .view-news .more-link a:active, .node-readmore a:active, .btn.active, .front .view-news .more-link a.active, .node-readmore a.active {
+.btn:active, .front .view-news .more-link a:active, .node-forum .comment-delete a:active, .node-forum .comment-edit a:active, .node-forum .comment-reply a:active, .node-forum .comment-add a:active, .node-readmore a:active, .btn.active, .front .view-news .more-link a.active, .node-forum .comment-delete a.active, .node-forum .comment-edit a.active, .node-forum .comment-reply a.active, .node-forum .comment-add a.active, .node-readmore a.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.btn.disabled, .front .view-news .more-link a.disabled, .node-readmore a.disabled, .btn[disabled], .front .view-news .more-link a[disabled], .node-readmore a[disabled], fieldset[disabled] .btn, fieldset[disabled] .front .view-news .more-link a, .front .view-news .more-link fieldset[disabled] a, fieldset[disabled] .node-readmore a, .node-readmore fieldset[disabled] a {
+.btn.disabled, .front .view-news .more-link a.disabled, .node-forum .comment-delete a.disabled, .node-forum .comment-edit a.disabled, .node-forum .comment-reply a.disabled, .node-forum .comment-add a.disabled, .node-readmore a.disabled, .btn[disabled], .front .view-news .more-link a[disabled], .node-forum .comment-delete a[disabled], .node-forum .comment-edit a[disabled], .node-forum .comment-reply a[disabled], .node-forum .comment-add a[disabled], .node-readmore a[disabled], fieldset[disabled] .btn, fieldset[disabled] .front .view-news .more-link a, .front .view-news .more-link fieldset[disabled] a, fieldset[disabled] .node-forum .comment-delete a, .node-forum .comment-delete fieldset[disabled] a, fieldset[disabled] .node-forum .comment-edit a, .node-forum .comment-edit fieldset[disabled] a, fieldset[disabled] .node-forum .comment-reply a, .node-forum .comment-reply fieldset[disabled] a, fieldset[disabled] .node-forum .comment-add a, .node-forum .comment-add fieldset[disabled] a, fieldset[disabled] .node-readmore a, .node-readmore fieldset[disabled] a {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -3846,90 +3874,90 @@ select[multiple].input-lg,
   background-color: #fff;
 }
 
-.btn-success, .node-readmore a {
+.btn-success, .node-forum .comment-reply a, .node-readmore a {
   color: #fff;
   background-color: #5cb85c;
   border-color: transparent;
 }
-.btn-success:hover, .node-readmore a:hover, .btn-success:focus, .node-readmore a:focus, .btn-success.focus, .node-readmore a.focus, .btn-success:active, .node-readmore a:active, .btn-success.active, .node-readmore a.active, .open > .btn-success.dropdown-toggle, .node-readmore .open > a.dropdown-toggle {
+.btn-success:hover, .node-forum .comment-reply a:hover, .node-readmore a:hover, .btn-success:focus, .node-forum .comment-reply a:focus, .node-readmore a:focus, .btn-success.focus, .node-forum .comment-reply a.focus, .node-readmore a.focus, .btn-success:active, .node-forum .comment-reply a:active, .node-readmore a:active, .btn-success.active, .node-forum .comment-reply a.active, .node-readmore a.active, .open > .btn-success.dropdown-toggle, .node-forum .comment-reply .open > a.dropdown-toggle, .node-readmore .open > a.dropdown-toggle {
   color: #fff;
   background-color: #449d44;
   border-color: transparent;
 }
-.btn-success:active, .node-readmore a:active, .btn-success.active, .node-readmore a.active, .open > .btn-success.dropdown-toggle, .node-readmore .open > a.dropdown-toggle {
+.btn-success:active, .node-forum .comment-reply a:active, .node-readmore a:active, .btn-success.active, .node-forum .comment-reply a.active, .node-readmore a.active, .open > .btn-success.dropdown-toggle, .node-forum .comment-reply .open > a.dropdown-toggle, .node-readmore .open > a.dropdown-toggle {
   background-image: none;
 }
-.btn-success.disabled, .node-readmore a.disabled, .btn-success.disabled:hover, .node-readmore a.disabled:hover, .btn-success.disabled:focus, .node-readmore a.disabled:focus, .btn-success.disabled.focus, .node-readmore a.disabled.focus, .btn-success.disabled:active, .node-readmore a.disabled:active, .btn-success.disabled.active, .node-readmore a.disabled.active, .btn-success[disabled], .node-readmore a[disabled], .btn-success[disabled]:hover, .node-readmore a[disabled]:hover, .btn-success[disabled]:focus, .node-readmore a[disabled]:focus, .btn-success[disabled].focus, .node-readmore a[disabled].focus, .btn-success[disabled]:active, .node-readmore a[disabled]:active, .btn-success[disabled].active, .node-readmore a[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .node-readmore a, .node-readmore fieldset[disabled] a, fieldset[disabled] .btn-success:hover, fieldset[disabled] .node-readmore a:hover, .node-readmore fieldset[disabled] a:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .node-readmore a:focus, .node-readmore fieldset[disabled] a:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .node-readmore a.focus, .node-readmore fieldset[disabled] a.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .node-readmore a:active, .node-readmore fieldset[disabled] a:active, fieldset[disabled] .btn-success.active, fieldset[disabled] .node-readmore a.active, .node-readmore fieldset[disabled] a.active {
+.btn-success.disabled, .node-forum .comment-reply a.disabled, .node-readmore a.disabled, .btn-success.disabled:hover, .node-forum .comment-reply a.disabled:hover, .node-readmore a.disabled:hover, .btn-success.disabled:focus, .node-forum .comment-reply a.disabled:focus, .node-readmore a.disabled:focus, .btn-success.disabled.focus, .node-forum .comment-reply a.disabled.focus, .node-readmore a.disabled.focus, .btn-success.disabled:active, .node-forum .comment-reply a.disabled:active, .node-readmore a.disabled:active, .btn-success.disabled.active, .node-forum .comment-reply a.disabled.active, .node-readmore a.disabled.active, .btn-success[disabled], .node-forum .comment-reply a[disabled], .node-readmore a[disabled], .btn-success[disabled]:hover, .node-forum .comment-reply a[disabled]:hover, .node-readmore a[disabled]:hover, .btn-success[disabled]:focus, .node-forum .comment-reply a[disabled]:focus, .node-readmore a[disabled]:focus, .btn-success[disabled].focus, .node-forum .comment-reply a[disabled].focus, .node-readmore a[disabled].focus, .btn-success[disabled]:active, .node-forum .comment-reply a[disabled]:active, .node-readmore a[disabled]:active, .btn-success[disabled].active, .node-forum .comment-reply a[disabled].active, .node-readmore a[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .node-forum .comment-reply a, .node-forum .comment-reply fieldset[disabled] a, fieldset[disabled] .node-readmore a, .node-readmore fieldset[disabled] a, fieldset[disabled] .btn-success:hover, fieldset[disabled] .node-forum .comment-reply a:hover, .node-forum .comment-reply fieldset[disabled] a:hover, fieldset[disabled] .node-readmore a:hover, .node-readmore fieldset[disabled] a:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .node-forum .comment-reply a:focus, .node-forum .comment-reply fieldset[disabled] a:focus, fieldset[disabled] .node-readmore a:focus, .node-readmore fieldset[disabled] a:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .node-forum .comment-reply a.focus, .node-forum .comment-reply fieldset[disabled] a.focus, fieldset[disabled] .node-readmore a.focus, .node-readmore fieldset[disabled] a.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .node-forum .comment-reply a:active, .node-forum .comment-reply fieldset[disabled] a:active, fieldset[disabled] .node-readmore a:active, .node-readmore fieldset[disabled] a:active, fieldset[disabled] .btn-success.active, fieldset[disabled] .node-forum .comment-reply a.active, .node-forum .comment-reply fieldset[disabled] a.active, fieldset[disabled] .node-readmore a.active, .node-readmore fieldset[disabled] a.active {
   background-color: #5cb85c;
   border-color: transparent;
 }
-.btn-success .badge, .node-readmore a .badge {
+.btn-success .badge, .node-forum .comment-reply a .badge, .node-readmore a .badge {
   color: #5cb85c;
   background-color: #fff;
 }
 
-.btn-info, .front .view-news .more-link a, .region-navigation .input-group-btn button {
+.btn-info, .front .view-news .more-link a, .node-forum .comment-add a, .region-navigation .input-group-btn button {
   color: #fff;
   background-color: #5bc0de;
   border-color: transparent;
 }
-.btn-info:hover, .front .view-news .more-link a:hover, .region-navigation .input-group-btn button:hover, .btn-info:focus, .front .view-news .more-link a:focus, .region-navigation .input-group-btn button:focus, .btn-info.focus, .front .view-news .more-link a.focus, .region-navigation .input-group-btn button.focus, .btn-info:active, .front .view-news .more-link a:active, .region-navigation .input-group-btn button:active, .btn-info.active, .front .view-news .more-link a.active, .region-navigation .input-group-btn button.active, .open > .btn-info.dropdown-toggle, .front .view-news .more-link .open > a.dropdown-toggle, .region-navigation .input-group-btn .open > button.dropdown-toggle {
+.btn-info:hover, .front .view-news .more-link a:hover, .node-forum .comment-add a:hover, .region-navigation .input-group-btn button:hover, .btn-info:focus, .front .view-news .more-link a:focus, .node-forum .comment-add a:focus, .region-navigation .input-group-btn button:focus, .btn-info.focus, .front .view-news .more-link a.focus, .node-forum .comment-add a.focus, .region-navigation .input-group-btn button.focus, .btn-info:active, .front .view-news .more-link a:active, .node-forum .comment-add a:active, .region-navigation .input-group-btn button:active, .btn-info.active, .front .view-news .more-link a.active, .node-forum .comment-add a.active, .region-navigation .input-group-btn button.active, .open > .btn-info.dropdown-toggle, .front .view-news .more-link .open > a.dropdown-toggle, .node-forum .comment-add .open > a.dropdown-toggle, .region-navigation .input-group-btn .open > button.dropdown-toggle {
   color: #fff;
   background-color: #31b0d5;
   border-color: transparent;
 }
-.btn-info:active, .front .view-news .more-link a:active, .region-navigation .input-group-btn button:active, .btn-info.active, .front .view-news .more-link a.active, .region-navigation .input-group-btn button.active, .open > .btn-info.dropdown-toggle, .front .view-news .more-link .open > a.dropdown-toggle, .region-navigation .input-group-btn .open > button.dropdown-toggle {
+.btn-info:active, .front .view-news .more-link a:active, .node-forum .comment-add a:active, .region-navigation .input-group-btn button:active, .btn-info.active, .front .view-news .more-link a.active, .node-forum .comment-add a.active, .region-navigation .input-group-btn button.active, .open > .btn-info.dropdown-toggle, .front .view-news .more-link .open > a.dropdown-toggle, .node-forum .comment-add .open > a.dropdown-toggle, .region-navigation .input-group-btn .open > button.dropdown-toggle {
   background-image: none;
 }
-.btn-info.disabled, .front .view-news .more-link a.disabled, .region-navigation .input-group-btn button.disabled, .btn-info.disabled:hover, .front .view-news .more-link a.disabled:hover, .region-navigation .input-group-btn button.disabled:hover, .btn-info.disabled:focus, .front .view-news .more-link a.disabled:focus, .region-navigation .input-group-btn button.disabled:focus, .btn-info.disabled.focus, .front .view-news .more-link a.disabled.focus, .region-navigation .input-group-btn button.disabled.focus, .btn-info.disabled:active, .front .view-news .more-link a.disabled:active, .region-navigation .input-group-btn button.disabled:active, .btn-info.disabled.active, .front .view-news .more-link a.disabled.active, .region-navigation .input-group-btn button.disabled.active, .btn-info[disabled], .front .view-news .more-link a[disabled], .region-navigation .input-group-btn button[disabled], .btn-info[disabled]:hover, .front .view-news .more-link a[disabled]:hover, .region-navigation .input-group-btn button[disabled]:hover, .btn-info[disabled]:focus, .front .view-news .more-link a[disabled]:focus, .region-navigation .input-group-btn button[disabled]:focus, .btn-info[disabled].focus, .front .view-news .more-link a[disabled].focus, .region-navigation .input-group-btn button[disabled].focus, .btn-info[disabled]:active, .front .view-news .more-link a[disabled]:active, .region-navigation .input-group-btn button[disabled]:active, .btn-info[disabled].active, .front .view-news .more-link a[disabled].active, .region-navigation .input-group-btn button[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .front .view-news .more-link a, .front .view-news .more-link fieldset[disabled] a, fieldset[disabled] .region-navigation .input-group-btn button, .region-navigation .input-group-btn fieldset[disabled] button, fieldset[disabled] .btn-info:hover, fieldset[disabled] .front .view-news .more-link a:hover, .front .view-news .more-link fieldset[disabled] a:hover, fieldset[disabled] .region-navigation .input-group-btn button:hover, .region-navigation .input-group-btn fieldset[disabled] button:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .front .view-news .more-link a:focus, .front .view-news .more-link fieldset[disabled] a:focus, fieldset[disabled] .region-navigation .input-group-btn button:focus, .region-navigation .input-group-btn fieldset[disabled] button:focus, fieldset[disabled] .btn-info.focus, fieldset[disabled] .front .view-news .more-link a.focus, .front .view-news .more-link fieldset[disabled] a.focus, fieldset[disabled] .region-navigation .input-group-btn button.focus, .region-navigation .input-group-btn fieldset[disabled] button.focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .front .view-news .more-link a:active, .front .view-news .more-link fieldset[disabled] a:active, fieldset[disabled] .region-navigation .input-group-btn button:active, .region-navigation .input-group-btn fieldset[disabled] button:active, fieldset[disabled] .btn-info.active, fieldset[disabled] .front .view-news .more-link a.active, .front .view-news .more-link fieldset[disabled] a.active, fieldset[disabled] .region-navigation .input-group-btn button.active, .region-navigation .input-group-btn fieldset[disabled] button.active {
+.btn-info.disabled, .front .view-news .more-link a.disabled, .node-forum .comment-add a.disabled, .region-navigation .input-group-btn button.disabled, .btn-info.disabled:hover, .front .view-news .more-link a.disabled:hover, .node-forum .comment-add a.disabled:hover, .region-navigation .input-group-btn button.disabled:hover, .btn-info.disabled:focus, .front .view-news .more-link a.disabled:focus, .node-forum .comment-add a.disabled:focus, .region-navigation .input-group-btn button.disabled:focus, .btn-info.disabled.focus, .front .view-news .more-link a.disabled.focus, .node-forum .comment-add a.disabled.focus, .region-navigation .input-group-btn button.disabled.focus, .btn-info.disabled:active, .front .view-news .more-link a.disabled:active, .node-forum .comment-add a.disabled:active, .region-navigation .input-group-btn button.disabled:active, .btn-info.disabled.active, .front .view-news .more-link a.disabled.active, .node-forum .comment-add a.disabled.active, .region-navigation .input-group-btn button.disabled.active, .btn-info[disabled], .front .view-news .more-link a[disabled], .node-forum .comment-add a[disabled], .region-navigation .input-group-btn button[disabled], .btn-info[disabled]:hover, .front .view-news .more-link a[disabled]:hover, .node-forum .comment-add a[disabled]:hover, .region-navigation .input-group-btn button[disabled]:hover, .btn-info[disabled]:focus, .front .view-news .more-link a[disabled]:focus, .node-forum .comment-add a[disabled]:focus, .region-navigation .input-group-btn button[disabled]:focus, .btn-info[disabled].focus, .front .view-news .more-link a[disabled].focus, .node-forum .comment-add a[disabled].focus, .region-navigation .input-group-btn button[disabled].focus, .btn-info[disabled]:active, .front .view-news .more-link a[disabled]:active, .node-forum .comment-add a[disabled]:active, .region-navigation .input-group-btn button[disabled]:active, .btn-info[disabled].active, .front .view-news .more-link a[disabled].active, .node-forum .comment-add a[disabled].active, .region-navigation .input-group-btn button[disabled].active, fieldset[disabled] .btn-info, fieldset[disabled] .front .view-news .more-link a, .front .view-news .more-link fieldset[disabled] a, fieldset[disabled] .node-forum .comment-add a, .node-forum .comment-add fieldset[disabled] a, fieldset[disabled] .region-navigation .input-group-btn button, .region-navigation .input-group-btn fieldset[disabled] button, fieldset[disabled] .btn-info:hover, fieldset[disabled] .front .view-news .more-link a:hover, .front .view-news .more-link fieldset[disabled] a:hover, fieldset[disabled] .node-forum .comment-add a:hover, .node-forum .comment-add fieldset[disabled] a:hover, fieldset[disabled] .region-navigation .input-group-btn button:hover, .region-navigation .input-group-btn fieldset[disabled] button:hover, fieldset[disabled] .btn-info:focus, fieldset[disabled] .front .view-news .more-link a:focus, .front .view-news .more-link fieldset[disabled] a:focus, fieldset[disabled] .node-forum .comment-add a:focus, .node-forum .comment-add fieldset[disabled] a:focus, fieldset[disabled] .region-navigation .input-group-btn button:focus, .region-navigation .input-group-btn fieldset[disabled] button:focus, fieldset[disabled] .btn-info.focus, fieldset[disabled] .front .view-news .more-link a.focus, .front .view-news .more-link fieldset[disabled] a.focus, fieldset[disabled] .node-forum .comment-add a.focus, .node-forum .comment-add fieldset[disabled] a.focus, fieldset[disabled] .region-navigation .input-group-btn button.focus, .region-navigation .input-group-btn fieldset[disabled] button.focus, fieldset[disabled] .btn-info:active, fieldset[disabled] .front .view-news .more-link a:active, .front .view-news .more-link fieldset[disabled] a:active, fieldset[disabled] .node-forum .comment-add a:active, .node-forum .comment-add fieldset[disabled] a:active, fieldset[disabled] .region-navigation .input-group-btn button:active, .region-navigation .input-group-btn fieldset[disabled] button:active, fieldset[disabled] .btn-info.active, fieldset[disabled] .front .view-news .more-link a.active, .front .view-news .more-link fieldset[disabled] a.active, fieldset[disabled] .node-forum .comment-add a.active, .node-forum .comment-add fieldset[disabled] a.active, fieldset[disabled] .region-navigation .input-group-btn button.active, .region-navigation .input-group-btn fieldset[disabled] button.active {
   background-color: #5bc0de;
   border-color: transparent;
 }
-.btn-info .badge, .front .view-news .more-link a .badge, .region-navigation .input-group-btn button .badge {
+.btn-info .badge, .front .view-news .more-link a .badge, .node-forum .comment-add a .badge, .region-navigation .input-group-btn button .badge {
   color: #5bc0de;
   background-color: #fff;
 }
 
-.btn-warning {
+.btn-warning, .node-forum .comment-edit a {
   color: #fff;
   background-color: #eb9053;
   border-color: transparent;
 }
-.btn-warning:hover, .btn-warning:focus, .btn-warning.focus, .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
+.btn-warning:hover, .node-forum .comment-edit a:hover, .btn-warning:focus, .node-forum .comment-edit a:focus, .btn-warning.focus, .node-forum .comment-edit a.focus, .btn-warning:active, .node-forum .comment-edit a:active, .btn-warning.active, .node-forum .comment-edit a.active, .open > .btn-warning.dropdown-toggle, .node-forum .comment-edit .open > a.dropdown-toggle {
   color: #fff;
   background-color: #e67225;
   border-color: transparent;
 }
-.btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
+.btn-warning:active, .node-forum .comment-edit a:active, .btn-warning.active, .node-forum .comment-edit a.active, .open > .btn-warning.dropdown-toggle, .node-forum .comment-edit .open > a.dropdown-toggle {
   background-image: none;
 }
-.btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
+.btn-warning.disabled, .node-forum .comment-edit a.disabled, .btn-warning.disabled:hover, .node-forum .comment-edit a.disabled:hover, .btn-warning.disabled:focus, .node-forum .comment-edit a.disabled:focus, .btn-warning.disabled.focus, .node-forum .comment-edit a.disabled.focus, .btn-warning.disabled:active, .node-forum .comment-edit a.disabled:active, .btn-warning.disabled.active, .node-forum .comment-edit a.disabled.active, .btn-warning[disabled], .node-forum .comment-edit a[disabled], .btn-warning[disabled]:hover, .node-forum .comment-edit a[disabled]:hover, .btn-warning[disabled]:focus, .node-forum .comment-edit a[disabled]:focus, .btn-warning[disabled].focus, .node-forum .comment-edit a[disabled].focus, .btn-warning[disabled]:active, .node-forum .comment-edit a[disabled]:active, .btn-warning[disabled].active, .node-forum .comment-edit a[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .node-forum .comment-edit a, .node-forum .comment-edit fieldset[disabled] a, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .node-forum .comment-edit a:hover, .node-forum .comment-edit fieldset[disabled] a:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .node-forum .comment-edit a:focus, .node-forum .comment-edit fieldset[disabled] a:focus, fieldset[disabled] .btn-warning.focus, fieldset[disabled] .node-forum .comment-edit a.focus, .node-forum .comment-edit fieldset[disabled] a.focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .node-forum .comment-edit a:active, .node-forum .comment-edit fieldset[disabled] a:active, fieldset[disabled] .btn-warning.active, fieldset[disabled] .node-forum .comment-edit a.active, .node-forum .comment-edit fieldset[disabled] a.active {
   background-color: #eb9053;
   border-color: transparent;
 }
-.btn-warning .badge {
+.btn-warning .badge, .node-forum .comment-edit a .badge {
   color: #eb9053;
   background-color: #fff;
 }
 
-.btn-danger {
+.btn-danger, .node-forum .comment-delete a {
   color: #fff;
   background-color: #d9534f;
   border-color: transparent;
 }
-.btn-danger:hover, .btn-danger:focus, .btn-danger.focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
+.btn-danger:hover, .node-forum .comment-delete a:hover, .btn-danger:focus, .node-forum .comment-delete a:focus, .btn-danger.focus, .node-forum .comment-delete a.focus, .btn-danger:active, .node-forum .comment-delete a:active, .btn-danger.active, .node-forum .comment-delete a.active, .open > .btn-danger.dropdown-toggle, .node-forum .comment-delete .open > a.dropdown-toggle {
   color: #fff;
   background-color: #c9302c;
   border-color: transparent;
 }
-.btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
+.btn-danger:active, .node-forum .comment-delete a:active, .btn-danger.active, .node-forum .comment-delete a.active, .open > .btn-danger.dropdown-toggle, .node-forum .comment-delete .open > a.dropdown-toggle {
   background-image: none;
 }
-.btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
+.btn-danger.disabled, .node-forum .comment-delete a.disabled, .btn-danger.disabled:hover, .node-forum .comment-delete a.disabled:hover, .btn-danger.disabled:focus, .node-forum .comment-delete a.disabled:focus, .btn-danger.disabled.focus, .node-forum .comment-delete a.disabled.focus, .btn-danger.disabled:active, .node-forum .comment-delete a.disabled:active, .btn-danger.disabled.active, .node-forum .comment-delete a.disabled.active, .btn-danger[disabled], .node-forum .comment-delete a[disabled], .btn-danger[disabled]:hover, .node-forum .comment-delete a[disabled]:hover, .btn-danger[disabled]:focus, .node-forum .comment-delete a[disabled]:focus, .btn-danger[disabled].focus, .node-forum .comment-delete a[disabled].focus, .btn-danger[disabled]:active, .node-forum .comment-delete a[disabled]:active, .btn-danger[disabled].active, .node-forum .comment-delete a[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .node-forum .comment-delete a, .node-forum .comment-delete fieldset[disabled] a, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .node-forum .comment-delete a:hover, .node-forum .comment-delete fieldset[disabled] a:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .node-forum .comment-delete a:focus, .node-forum .comment-delete fieldset[disabled] a:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .node-forum .comment-delete a.focus, .node-forum .comment-delete fieldset[disabled] a.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .node-forum .comment-delete a:active, .node-forum .comment-delete fieldset[disabled] a:active, fieldset[disabled] .btn-danger.active, fieldset[disabled] .node-forum .comment-delete a.active, .node-forum .comment-delete fieldset[disabled] a.active {
   background-color: #d9534f;
   border-color: transparent;
 }
-.btn-danger .badge {
+.btn-danger .badge, .node-forum .comment-delete a .badge {
   color: #d9534f;
   background-color: #fff;
 }
@@ -3956,21 +3984,21 @@ select[multiple].input-lg,
   text-decoration: none;
 }
 
-.btn-lg, .btn-group-lg > .btn, .front .view-news .more-link .btn-group-lg > a, .node-readmore .btn-group-lg > a {
+.btn-lg, .btn-group-lg > .btn, .front .view-news .more-link .btn-group-lg > a, .node-forum .comment-delete .btn-group-lg > a, .node-forum .comment-edit .btn-group-lg > a, .node-forum .comment-reply .btn-group-lg > a, .node-forum .comment-add .btn-group-lg > a, .node-readmore .btn-group-lg > a {
   padding: 12px 24px;
   font-size: 19px;
   line-height: 1.33333;
   border-radius: 0;
 }
 
-.btn-sm, .btn-group-sm > .btn, .front .view-news .more-link .btn-group-sm > a, .node-readmore .btn-group-sm > a {
+.btn-sm, .btn-group-sm > .btn, .front .view-news .more-link .btn-group-sm > a, .node-forum .comment-add .btn-group-sm > a, .node-readmore .btn-group-sm > a, .node-forum .comment-delete a, .node-forum .comment-edit a, .node-forum .comment-reply a {
   padding: 5px 10px;
   font-size: 13px;
   line-height: 1.5;
   border-radius: 0;
 }
 
-.btn-xs, .btn-group-xs > .btn, .front .view-news .more-link .btn-group-xs > a, .node-readmore .btn-group-xs > a {
+.btn-xs, .btn-group-xs > .btn, .front .view-news .more-link .btn-group-xs > a, .node-forum .comment-delete .btn-group-xs > a, .node-forum .comment-edit .btn-group-xs > a, .node-forum .comment-reply .btn-group-xs > a, .node-forum .comment-add .btn-group-xs > a, .node-readmore .btn-group-xs > a {
   padding: 1px 5px;
   font-size: 13px;
   line-height: 1.5;
@@ -4177,38 +4205,74 @@ tbody.collapse.in {
   display: inline-block;
   vertical-align: middle;
 }
-.btn-group > .btn, .front .view-news .more-link .btn-group > a, .node-readmore .btn-group > a,
+.btn-group > .btn, .front .view-news .more-link .btn-group > a, .node-forum .comment-delete .btn-group > a, .node-forum .comment-edit .btn-group > a, .node-forum .comment-reply .btn-group > a, .node-forum .comment-add .btn-group > a, .node-readmore .btn-group > a,
 .btn-group-vertical > .btn,
 .front .view-news .more-link .btn-group-vertical > a,
+.node-forum .comment-delete .btn-group-vertical > a,
+.node-forum .comment-edit .btn-group-vertical > a,
+.node-forum .comment-reply .btn-group-vertical > a,
+.node-forum .comment-add .btn-group-vertical > a,
 .node-readmore .btn-group-vertical > a {
   position: relative;
   float: left;
 }
-.btn-group > .btn:hover, .front .view-news .more-link .btn-group > a:hover, .node-readmore .btn-group > a:hover, .btn-group > .btn:focus, .front .view-news .more-link .btn-group > a:focus, .node-readmore .btn-group > a:focus, .btn-group > .btn:active, .front .view-news .more-link .btn-group > a:active, .node-readmore .btn-group > a:active, .btn-group > .btn.active, .front .view-news .more-link .btn-group > a.active, .node-readmore .btn-group > a.active,
+.btn-group > .btn:hover, .front .view-news .more-link .btn-group > a:hover, .node-forum .comment-delete .btn-group > a:hover, .node-forum .comment-edit .btn-group > a:hover, .node-forum .comment-reply .btn-group > a:hover, .node-forum .comment-add .btn-group > a:hover, .node-readmore .btn-group > a:hover, .btn-group > .btn:focus, .front .view-news .more-link .btn-group > a:focus, .node-forum .comment-delete .btn-group > a:focus, .node-forum .comment-edit .btn-group > a:focus, .node-forum .comment-reply .btn-group > a:focus, .node-forum .comment-add .btn-group > a:focus, .node-readmore .btn-group > a:focus, .btn-group > .btn:active, .front .view-news .more-link .btn-group > a:active, .node-forum .comment-delete .btn-group > a:active, .node-forum .comment-edit .btn-group > a:active, .node-forum .comment-reply .btn-group > a:active, .node-forum .comment-add .btn-group > a:active, .node-readmore .btn-group > a:active, .btn-group > .btn.active, .front .view-news .more-link .btn-group > a.active, .node-forum .comment-delete .btn-group > a.active, .node-forum .comment-edit .btn-group > a.active, .node-forum .comment-reply .btn-group > a.active, .node-forum .comment-add .btn-group > a.active, .node-readmore .btn-group > a.active,
 .btn-group-vertical > .btn:hover,
 .front .view-news .more-link .btn-group-vertical > a:hover,
+.node-forum .comment-delete .btn-group-vertical > a:hover,
+.node-forum .comment-edit .btn-group-vertical > a:hover,
+.node-forum .comment-reply .btn-group-vertical > a:hover,
+.node-forum .comment-add .btn-group-vertical > a:hover,
 .node-readmore .btn-group-vertical > a:hover,
 .btn-group-vertical > .btn:focus,
 .front .view-news .more-link .btn-group-vertical > a:focus,
+.node-forum .comment-delete .btn-group-vertical > a:focus,
+.node-forum .comment-edit .btn-group-vertical > a:focus,
+.node-forum .comment-reply .btn-group-vertical > a:focus,
+.node-forum .comment-add .btn-group-vertical > a:focus,
 .node-readmore .btn-group-vertical > a:focus,
 .btn-group-vertical > .btn:active,
 .front .view-news .more-link .btn-group-vertical > a:active,
+.node-forum .comment-delete .btn-group-vertical > a:active,
+.node-forum .comment-edit .btn-group-vertical > a:active,
+.node-forum .comment-reply .btn-group-vertical > a:active,
+.node-forum .comment-add .btn-group-vertical > a:active,
 .node-readmore .btn-group-vertical > a:active,
 .btn-group-vertical > .btn.active,
 .front .view-news .more-link .btn-group-vertical > a.active,
+.node-forum .comment-delete .btn-group-vertical > a.active,
+.node-forum .comment-edit .btn-group-vertical > a.active,
+.node-forum .comment-reply .btn-group-vertical > a.active,
+.node-forum .comment-add .btn-group-vertical > a.active,
 .node-readmore .btn-group-vertical > a.active {
   z-index: 2;
 }
 
-.btn-group .btn + .btn, .btn-group .front .view-news .more-link a + .btn, .front .view-news .more-link .btn-group a + .btn, .btn-group .node-readmore a + .btn, .node-readmore .btn-group a + .btn, .btn-group .front .view-news .more-link .btn + a, .front .view-news .more-link .btn-group .btn + a, .btn-group .front .view-news .more-link a + a, .front .view-news .more-link .btn-group a + a, .btn-group .node-readmore .btn + a, .node-readmore .btn-group .btn + a, .btn-group .front .view-news .more-link .node-readmore a + a, .front .view-news .more-link .btn-group .node-readmore a + a, .btn-group .node-readmore a + a, .node-readmore .btn-group a + a,
+.btn-group .btn + .btn, .btn-group .front .view-news .more-link a + .btn, .front .view-news .more-link .btn-group a + .btn, .btn-group .node-forum .comment-delete a + .btn, .node-forum .comment-delete .btn-group a + .btn, .btn-group .node-forum .comment-edit a + .btn, .node-forum .comment-edit .btn-group a + .btn, .btn-group .node-forum .comment-reply a + .btn, .node-forum .comment-reply .btn-group a + .btn, .btn-group .node-forum .comment-add a + .btn, .node-forum .comment-add .btn-group a + .btn, .btn-group .node-readmore a + .btn, .node-readmore .btn-group a + .btn, .btn-group .front .view-news .more-link .btn + a, .front .view-news .more-link .btn-group .btn + a, .btn-group .front .view-news .more-link a + a, .front .view-news .more-link .btn-group a + a, .btn-group .node-forum .comment-delete .btn + a, .node-forum .comment-delete .btn-group .btn + a, .btn-group .node-forum .comment-delete a + a, .node-forum .comment-delete .btn-group a + a, .node-forum .comment-edit .btn-group .comment-delete a + a, .node-forum .comment-reply .btn-group .comment-delete a + a, .node-forum .comment-add .btn-group .comment-delete a + a, .btn-group .node-forum .comment-edit .btn + a, .node-forum .comment-edit .btn-group .btn + a, .node-forum .comment-delete .btn-group .comment-edit a + a, .btn-group .node-forum .comment-edit a + a, .node-forum .comment-edit .btn-group a + a, .node-forum .comment-reply .btn-group .comment-edit a + a, .node-forum .comment-add .btn-group .comment-edit a + a, .btn-group .node-forum .comment-reply .btn + a, .node-forum .comment-reply .btn-group .btn + a, .node-forum .comment-delete .btn-group .comment-reply a + a, .node-forum .comment-edit .btn-group .comment-reply a + a, .btn-group .node-forum .comment-reply a + a, .node-forum .comment-reply .btn-group a + a, .node-forum .comment-add .btn-group .comment-reply a + a, .btn-group .node-forum .comment-add .btn + a, .node-forum .comment-add .btn-group .btn + a, .node-forum .comment-delete .btn-group .comment-add a + a, .node-forum .comment-edit .btn-group .comment-add a + a, .node-forum .comment-reply .btn-group .comment-add a + a, .btn-group .node-forum .comment-add a + a, .node-forum .comment-add .btn-group a + a, .btn-group .node-readmore .btn + a, .node-readmore .btn-group .btn + a, .btn-group .front .view-news .more-link .node-readmore a + a, .front .view-news .more-link .btn-group .node-readmore a + a, .btn-group .node-forum .comment-delete .node-readmore a + a, .node-forum .comment-delete .btn-group .node-readmore a + a, .btn-group .node-forum .comment-edit .node-readmore a + a, .node-forum .comment-edit .btn-group .node-readmore a + a, .btn-group .node-forum .comment-reply .node-readmore a + a, .node-forum .comment-reply .btn-group .node-readmore a + a, .btn-group .node-forum .comment-add .node-readmore a + a, .node-forum .comment-add .btn-group .node-readmore a + a, .btn-group .node-readmore a + a, .node-readmore .btn-group a + a,
 .btn-group .btn + .btn-group,
 .btn-group .front .view-news .more-link a + .btn-group,
 .front .view-news .more-link .btn-group a + .btn-group,
+.btn-group .node-forum .comment-delete a + .btn-group,
+.node-forum .comment-delete .btn-group a + .btn-group,
+.btn-group .node-forum .comment-edit a + .btn-group,
+.node-forum .comment-edit .btn-group a + .btn-group,
+.btn-group .node-forum .comment-reply a + .btn-group,
+.node-forum .comment-reply .btn-group a + .btn-group,
+.btn-group .node-forum .comment-add a + .btn-group,
+.node-forum .comment-add .btn-group a + .btn-group,
 .btn-group .node-readmore a + .btn-group,
 .node-readmore .btn-group a + .btn-group,
 .btn-group .btn-group + .btn,
 .btn-group .front .view-news .more-link .btn-group + a,
 .front .view-news .more-link .btn-group .btn-group + a,
+.btn-group .node-forum .comment-delete .btn-group + a,
+.node-forum .comment-delete .btn-group .btn-group + a,
+.btn-group .node-forum .comment-edit .btn-group + a,
+.node-forum .comment-edit .btn-group .btn-group + a,
+.btn-group .node-forum .comment-reply .btn-group + a,
+.node-forum .comment-reply .btn-group .btn-group + a,
+.btn-group .node-forum .comment-add .btn-group + a,
+.node-forum .comment-add .btn-group .btn-group + a,
 .btn-group .node-readmore .btn-group + a,
 .node-readmore .btn-group .btn-group + a,
 .btn-group .btn-group + .btn-group {
@@ -4229,25 +4293,25 @@ tbody.collapse.in {
 .btn-toolbar .input-group {
   float: left;
 }
-.btn-toolbar > .btn, .front .view-news .more-link .btn-toolbar > a, .node-readmore .btn-toolbar > a,
+.btn-toolbar > .btn, .front .view-news .more-link .btn-toolbar > a, .node-forum .comment-delete .btn-toolbar > a, .node-forum .comment-edit .btn-toolbar > a, .node-forum .comment-reply .btn-toolbar > a, .node-forum .comment-add .btn-toolbar > a, .node-readmore .btn-toolbar > a,
 .btn-toolbar > .btn-group,
 .btn-toolbar > .input-group {
   margin-left: 5px;
 }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .front .view-news .more-link .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .node-readmore .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .front .view-news .more-link .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .node-forum .comment-delete .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .node-forum .comment-edit .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .node-forum .comment-reply .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .node-forum .comment-add .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .node-readmore .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
 }
 
-.btn-group > .btn:first-child, .front .view-news .more-link .btn-group > a:first-child, .node-readmore .btn-group > a:first-child {
+.btn-group > .btn:first-child, .front .view-news .more-link .btn-group > a:first-child, .node-forum .comment-delete .btn-group > a:first-child, .node-forum .comment-edit .btn-group > a:first-child, .node-forum .comment-reply .btn-group > a:first-child, .node-forum .comment-add .btn-group > a:first-child, .node-readmore .btn-group > a:first-child {
   margin-left: 0;
 }
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .front .view-news .more-link .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .node-readmore .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .front .view-news .more-link .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .node-forum .comment-delete .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .node-forum .comment-edit .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .node-forum .comment-reply .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .node-forum .comment-add .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .node-readmore .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn:last-child:not(:first-child), .front .view-news .more-link .btn-group > a:last-child:not(:first-child), .node-readmore .btn-group > a:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .front .view-news .more-link .btn-group > a:last-child:not(:first-child), .node-forum .comment-delete .btn-group > a:last-child:not(:first-child), .node-forum .comment-edit .btn-group > a:last-child:not(:first-child), .node-forum .comment-reply .btn-group > a:last-child:not(:first-child), .node-forum .comment-add .btn-group > a:last-child:not(:first-child), .node-readmore .btn-group > a:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -4257,17 +4321,17 @@ tbody.collapse.in {
   float: left;
 }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .front .view-news .more-link .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .node-readmore .btn-group > .btn-group:not(:first-child):not(:last-child) > a {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, .front .view-news .more-link .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .node-forum .comment-delete .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .node-forum .comment-edit .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .node-forum .comment-reply .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .node-forum .comment-add .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .node-readmore .btn-group > .btn-group:not(:first-child):not(:last-child) > a {
   border-radius: 0;
 }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .front .view-news .more-link .btn-group > .btn-group:first-child:not(:last-child) > a:last-child, .node-readmore .btn-group > .btn-group:first-child:not(:last-child) > a:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, .front .view-news .more-link .btn-group > .btn-group:first-child:not(:last-child) > a:last-child, .node-forum .comment-delete .btn-group > .btn-group:first-child:not(:last-child) > a:last-child, .node-forum .comment-edit .btn-group > .btn-group:first-child:not(:last-child) > a:last-child, .node-forum .comment-reply .btn-group > .btn-group:first-child:not(:last-child) > a:last-child, .node-forum .comment-add .btn-group > .btn-group:first-child:not(:last-child) > a:last-child, .node-readmore .btn-group > .btn-group:first-child:not(:last-child) > a:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .front .view-news .more-link .btn-group > .btn-group:last-child:not(:first-child) > a:first-child, .node-readmore .btn-group > .btn-group:last-child:not(:first-child) > a:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, .front .view-news .more-link .btn-group > .btn-group:last-child:not(:first-child) > a:first-child, .node-forum .comment-delete .btn-group > .btn-group:last-child:not(:first-child) > a:first-child, .node-forum .comment-edit .btn-group > .btn-group:last-child:not(:first-child) > a:first-child, .node-forum .comment-reply .btn-group > .btn-group:last-child:not(:first-child) > a:first-child, .node-forum .comment-add .btn-group > .btn-group:last-child:not(:first-child) > a:first-child, .node-readmore .btn-group > .btn-group:last-child:not(:first-child) > a:first-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4277,12 +4341,12 @@ tbody.collapse.in {
   outline: 0;
 }
 
-.btn-group > .btn + .dropdown-toggle, .front .view-news .more-link .btn-group > a + .dropdown-toggle, .node-readmore .btn-group > a + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .front .view-news .more-link .btn-group > a + .dropdown-toggle, .node-forum .comment-delete .btn-group > a + .dropdown-toggle, .node-forum .comment-edit .btn-group > a + .dropdown-toggle, .node-forum .comment-reply .btn-group > a + .dropdown-toggle, .node-forum .comment-add .btn-group > a + .dropdown-toggle, .node-readmore .btn-group > a + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .front .view-news .more-link .btn-group-lg.btn-group > a + .dropdown-toggle, .node-readmore .btn-group-lg.btn-group > a + .dropdown-toggle {
+.btn-group > .btn-lg + .dropdown-toggle, .btn-group-lg.btn-group > .btn + .dropdown-toggle, .front .view-news .more-link .btn-group-lg.btn-group > a + .dropdown-toggle, .node-forum .comment-delete .btn-group-lg.btn-group > a + .dropdown-toggle, .node-forum .comment-edit .btn-group-lg.btn-group > a + .dropdown-toggle, .node-forum .comment-reply .btn-group-lg.btn-group > a + .dropdown-toggle, .node-forum .comment-add .btn-group-lg.btn-group > a + .dropdown-toggle, .node-readmore .btn-group-lg.btn-group > a + .dropdown-toggle {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -4294,23 +4358,27 @@ tbody.collapse.in {
   box-shadow: none;
 }
 
-.btn .caret, .front .view-news .more-link a .caret, .node-readmore a .caret {
+.btn .caret, .front .view-news .more-link a .caret, .node-forum .comment-delete a .caret, .node-forum .comment-edit a .caret, .node-forum .comment-reply a .caret, .node-forum .comment-add a .caret, .node-readmore a .caret {
   margin-left: 0;
 }
 
-.btn-lg .caret, .btn-group-lg > .btn .caret, .front .view-news .more-link .btn-group-lg > a .caret, .node-readmore .btn-group-lg > a .caret {
+.btn-lg .caret, .btn-group-lg > .btn .caret, .front .view-news .more-link .btn-group-lg > a .caret, .node-forum .comment-delete .btn-group-lg > a .caret, .node-forum .comment-edit .btn-group-lg > a .caret, .node-forum .comment-reply .btn-group-lg > a .caret, .node-forum .comment-add .btn-group-lg > a .caret, .node-readmore .btn-group-lg > a .caret {
   border-width: 5px 5px 0;
   border-bottom-width: 0;
 }
 
-.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .front .view-news .more-link .btn-group-lg > a .caret, .front .view-news .more-link .dropup .btn-group-lg > a .caret, .dropup .node-readmore .btn-group-lg > a .caret, .node-readmore .dropup .btn-group-lg > a .caret {
+.dropup .btn-lg .caret, .dropup .btn-group-lg > .btn .caret, .dropup .front .view-news .more-link .btn-group-lg > a .caret, .front .view-news .more-link .dropup .btn-group-lg > a .caret, .dropup .node-forum .comment-delete .btn-group-lg > a .caret, .node-forum .comment-delete .dropup .btn-group-lg > a .caret, .dropup .node-forum .comment-edit .btn-group-lg > a .caret, .node-forum .comment-edit .dropup .btn-group-lg > a .caret, .dropup .node-forum .comment-reply .btn-group-lg > a .caret, .node-forum .comment-reply .dropup .btn-group-lg > a .caret, .dropup .node-forum .comment-add .btn-group-lg > a .caret, .node-forum .comment-add .dropup .btn-group-lg > a .caret, .dropup .node-readmore .btn-group-lg > a .caret, .node-readmore .dropup .btn-group-lg > a .caret {
   border-width: 0 5px 5px;
 }
 
-.btn-group-vertical > .btn, .front .view-news .more-link .btn-group-vertical > a, .node-readmore .btn-group-vertical > a,
+.btn-group-vertical > .btn, .front .view-news .more-link .btn-group-vertical > a, .node-forum .comment-delete .btn-group-vertical > a, .node-forum .comment-edit .btn-group-vertical > a, .node-forum .comment-reply .btn-group-vertical > a, .node-forum .comment-add .btn-group-vertical > a, .node-readmore .btn-group-vertical > a,
 .btn-group-vertical > .btn-group,
 .btn-group-vertical > .btn-group > .btn,
 .front .view-news .more-link .btn-group-vertical > .btn-group > a,
+.node-forum .comment-delete .btn-group-vertical > .btn-group > a,
+.node-forum .comment-edit .btn-group-vertical > .btn-group > a,
+.node-forum .comment-reply .btn-group-vertical > .btn-group > a,
+.node-forum .comment-add .btn-group-vertical > .btn-group > a,
 .node-readmore .btn-group-vertical > .btn-group > a {
   display: block;
   float: none;
@@ -4324,46 +4392,54 @@ tbody.collapse.in {
 .btn-group-vertical > .btn-group:after {
   clear: both;
 }
-.btn-group-vertical > .btn-group > .btn, .front .view-news .more-link .btn-group-vertical > .btn-group > a, .node-readmore .btn-group-vertical > .btn-group > a {
+.btn-group-vertical > .btn-group > .btn, .front .view-news .more-link .btn-group-vertical > .btn-group > a, .node-forum .comment-delete .btn-group-vertical > .btn-group > a, .node-forum .comment-edit .btn-group-vertical > .btn-group > a, .node-forum .comment-reply .btn-group-vertical > .btn-group > a, .node-forum .comment-add .btn-group-vertical > .btn-group > a, .node-readmore .btn-group-vertical > .btn-group > a {
   float: none;
 }
-.btn-group-vertical > .btn + .btn, .front .view-news .more-link .btn-group-vertical > a + .btn, .node-readmore .btn-group-vertical > a + .btn, .front .view-news .more-link .btn-group-vertical > .btn + a, .front .view-news .more-link .btn-group-vertical > a + a, .node-readmore .btn-group-vertical > .btn + a, .node-readmore .btn-group-vertical > a + a,
+.btn-group-vertical > .btn + .btn, .front .view-news .more-link .btn-group-vertical > a + .btn, .node-forum .comment-delete .btn-group-vertical > a + .btn, .node-forum .comment-edit .btn-group-vertical > a + .btn, .node-forum .comment-reply .btn-group-vertical > a + .btn, .node-forum .comment-add .btn-group-vertical > a + .btn, .node-readmore .btn-group-vertical > a + .btn, .front .view-news .more-link .btn-group-vertical > .btn + a, .front .view-news .more-link .btn-group-vertical > a + a, .node-forum .comment-delete .btn-group-vertical > .btn + a, .node-forum .comment-delete .btn-group-vertical > a + a, .node-forum .comment-edit .btn-group-vertical > .btn + a, .node-forum .comment-edit .btn-group-vertical > a + a, .node-forum .comment-reply .btn-group-vertical > .btn + a, .node-forum .comment-reply .btn-group-vertical > a + a, .node-forum .comment-add .btn-group-vertical > .btn + a, .node-forum .comment-add .btn-group-vertical > a + a, .node-readmore .btn-group-vertical > .btn + a, .node-readmore .btn-group-vertical > a + a,
 .btn-group-vertical > .btn + .btn-group,
 .front .view-news .more-link .btn-group-vertical > a + .btn-group,
+.node-forum .comment-delete .btn-group-vertical > a + .btn-group,
+.node-forum .comment-edit .btn-group-vertical > a + .btn-group,
+.node-forum .comment-reply .btn-group-vertical > a + .btn-group,
+.node-forum .comment-add .btn-group-vertical > a + .btn-group,
 .node-readmore .btn-group-vertical > a + .btn-group,
 .btn-group-vertical > .btn-group + .btn,
 .front .view-news .more-link .btn-group-vertical > .btn-group + a,
+.node-forum .comment-delete .btn-group-vertical > .btn-group + a,
+.node-forum .comment-edit .btn-group-vertical > .btn-group + a,
+.node-forum .comment-reply .btn-group-vertical > .btn-group + a,
+.node-forum .comment-add .btn-group-vertical > .btn-group + a,
 .node-readmore .btn-group-vertical > .btn-group + a,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
   margin-left: 0;
 }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .front .view-news .more-link .btn-group-vertical > a:not(:first-child):not(:last-child), .node-readmore .btn-group-vertical > a:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .front .view-news .more-link .btn-group-vertical > a:not(:first-child):not(:last-child), .node-forum .comment-delete .btn-group-vertical > a:not(:first-child):not(:last-child), .node-forum .comment-edit .btn-group-vertical > a:not(:first-child):not(:last-child), .node-forum .comment-reply .btn-group-vertical > a:not(:first-child):not(:last-child), .node-forum .comment-add .btn-group-vertical > a:not(:first-child):not(:last-child), .node-readmore .btn-group-vertical > a:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
-.btn-group-vertical > .btn:first-child:not(:last-child), .front .view-news .more-link .btn-group-vertical > a:first-child:not(:last-child), .node-readmore .btn-group-vertical > a:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), .front .view-news .more-link .btn-group-vertical > a:first-child:not(:last-child), .node-forum .comment-delete .btn-group-vertical > a:first-child:not(:last-child), .node-forum .comment-edit .btn-group-vertical > a:first-child:not(:last-child), .node-forum .comment-reply .btn-group-vertical > a:first-child:not(:last-child), .node-forum .comment-add .btn-group-vertical > a:first-child:not(:last-child), .node-readmore .btn-group-vertical > a:first-child:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn:last-child:not(:first-child), .front .view-news .more-link .btn-group-vertical > a:last-child:not(:first-child), .node-readmore .btn-group-vertical > a:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), .front .view-news .more-link .btn-group-vertical > a:last-child:not(:first-child), .node-forum .comment-delete .btn-group-vertical > a:last-child:not(:first-child), .node-forum .comment-edit .btn-group-vertical > a:last-child:not(:first-child), .node-forum .comment-reply .btn-group-vertical > a:last-child:not(:first-child), .node-forum .comment-add .btn-group-vertical > a:last-child:not(:first-child), .node-readmore .btn-group-vertical > a:last-child:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .front .view-news .more-link .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .node-readmore .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, .front .view-news .more-link .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .node-forum .comment-delete .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .node-forum .comment-edit .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .node-forum .comment-reply .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .node-forum .comment-add .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .node-readmore .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a {
   border-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .front .view-news .more-link .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .node-readmore .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, .front .view-news .more-link .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .node-forum .comment-delete .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .node-forum .comment-edit .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .node-forum .comment-reply .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .node-forum .comment-add .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .node-readmore .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child,
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .front .view-news .more-link .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .node-readmore .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, .front .view-news .more-link .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .node-forum .comment-delete .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .node-forum .comment-edit .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .node-forum .comment-reply .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .node-forum .comment-add .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .node-readmore .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -4374,28 +4450,40 @@ tbody.collapse.in {
   table-layout: fixed;
   border-collapse: separate;
 }
-.btn-group-justified > .btn, .front .view-news .more-link .btn-group-justified > a, .node-readmore .btn-group-justified > a,
+.btn-group-justified > .btn, .front .view-news .more-link .btn-group-justified > a, .node-forum .comment-delete .btn-group-justified > a, .node-forum .comment-edit .btn-group-justified > a, .node-forum .comment-reply .btn-group-justified > a, .node-forum .comment-add .btn-group-justified > a, .node-readmore .btn-group-justified > a,
 .btn-group-justified > .btn-group {
   float: none;
   display: table-cell;
   width: 1%;
 }
-.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .front .view-news .more-link a, .front .view-news .more-link .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group .node-readmore a, .node-readmore .btn-group-justified > .btn-group a {
+.btn-group-justified > .btn-group .btn, .btn-group-justified > .btn-group .front .view-news .more-link a, .front .view-news .more-link .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group .node-forum .comment-delete a, .node-forum .comment-delete .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group .node-forum .comment-edit a, .node-forum .comment-edit .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group .node-forum .comment-reply a, .node-forum .comment-reply .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group .node-forum .comment-add a, .node-forum .comment-add .btn-group-justified > .btn-group a, .btn-group-justified > .btn-group .node-readmore a, .node-readmore .btn-group-justified > .btn-group a {
   width: 100%;
 }
 .btn-group-justified > .btn-group .dropdown-menu {
   left: auto;
 }
 
-[data-toggle="buttons"] > .btn input[type="radio"], .front .view-news .more-link [data-toggle="buttons"] > a input[type="radio"], .node-readmore [data-toggle="buttons"] > a input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], .front .view-news .more-link [data-toggle="buttons"] > a input[type="radio"], .node-forum .comment-delete [data-toggle="buttons"] > a input[type="radio"], .node-forum .comment-edit [data-toggle="buttons"] > a input[type="radio"], .node-forum .comment-reply [data-toggle="buttons"] > a input[type="radio"], .node-forum .comment-add [data-toggle="buttons"] > a input[type="radio"], .node-readmore [data-toggle="buttons"] > a input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"],
 .front .view-news .more-link [data-toggle="buttons"] > a input[type="checkbox"],
+.node-forum .comment-delete [data-toggle="buttons"] > a input[type="checkbox"],
+.node-forum .comment-edit [data-toggle="buttons"] > a input[type="checkbox"],
+.node-forum .comment-reply [data-toggle="buttons"] > a input[type="checkbox"],
+.node-forum .comment-add [data-toggle="buttons"] > a input[type="checkbox"],
 .node-readmore [data-toggle="buttons"] > a input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
 .front .view-news .more-link [data-toggle="buttons"] > .btn-group > a input[type="radio"],
+.node-forum .comment-delete [data-toggle="buttons"] > .btn-group > a input[type="radio"],
+.node-forum .comment-edit [data-toggle="buttons"] > .btn-group > a input[type="radio"],
+.node-forum .comment-reply [data-toggle="buttons"] > .btn-group > a input[type="radio"],
+.node-forum .comment-add [data-toggle="buttons"] > .btn-group > a input[type="radio"],
 .node-readmore [data-toggle="buttons"] > .btn-group > a input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"],
 .front .view-news .more-link [data-toggle="buttons"] > .btn-group > a input[type="checkbox"],
+.node-forum .comment-delete [data-toggle="buttons"] > .btn-group > a input[type="checkbox"],
+.node-forum .comment-edit [data-toggle="buttons"] > .btn-group > a input[type="checkbox"],
+.node-forum .comment-reply [data-toggle="buttons"] > .btn-group > a input[type="checkbox"],
+.node-forum .comment-add [data-toggle="buttons"] > .btn-group > a input[type="checkbox"],
 .node-readmore [data-toggle="buttons"] > .btn-group > a input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
@@ -4453,6 +4541,10 @@ tbody.collapse.in {
 .input-group-sm > .input-group-addon,
 .input-group-sm > .input-group-btn > .input-group-addon.btn,
 .front .view-news .more-link .input-group-sm > .input-group-btn > a.input-group-addon,
+.node-forum .comment-delete .input-group-sm > .input-group-btn > a.input-group-addon,
+.node-forum .comment-edit .input-group-sm > .input-group-btn > a.input-group-addon,
+.node-forum .comment-reply .input-group-sm > .input-group-btn > a.input-group-addon,
+.node-forum .comment-add .input-group-sm > .input-group-btn > a.input-group-addon,
 .node-readmore .input-group-sm > .input-group-btn > a.input-group-addon {
   padding: 5px 10px;
   font-size: 13px;
@@ -4462,6 +4554,10 @@ tbody.collapse.in {
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .input-group-addon.btn,
 .front .view-news .more-link .input-group-lg > .input-group-btn > a.input-group-addon,
+.node-forum .comment-delete .input-group-lg > .input-group-btn > a.input-group-addon,
+.node-forum .comment-edit .input-group-lg > .input-group-btn > a.input-group-addon,
+.node-forum .comment-reply .input-group-lg > .input-group-btn > a.input-group-addon,
+.node-forum .comment-add .input-group-lg > .input-group-btn > a.input-group-addon,
 .node-readmore .input-group-lg > .input-group-btn > a.input-group-addon {
   padding: 12px 24px;
   font-size: 19px;
@@ -4476,16 +4572,32 @@ tbody.collapse.in {
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
 .front .view-news .more-link .input-group-btn:first-child > a,
+.node-forum .comment-delete .input-group-btn:first-child > a,
+.node-forum .comment-edit .input-group-btn:first-child > a,
+.node-forum .comment-reply .input-group-btn:first-child > a,
+.node-forum .comment-add .input-group-btn:first-child > a,
 .node-readmore .input-group-btn:first-child > a,
 .input-group-btn:first-child > .btn-group > .btn,
 .front .view-news .more-link .input-group-btn:first-child > .btn-group > a,
+.node-forum .comment-delete .input-group-btn:first-child > .btn-group > a,
+.node-forum .comment-edit .input-group-btn:first-child > .btn-group > a,
+.node-forum .comment-reply .input-group-btn:first-child > .btn-group > a,
+.node-forum .comment-add .input-group-btn:first-child > .btn-group > a,
 .node-readmore .input-group-btn:first-child > .btn-group > a,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .front .view-news .more-link .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
+.node-forum .comment-delete .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
+.node-forum .comment-edit .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
+.node-forum .comment-reply .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
+.node-forum .comment-add .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
 .node-readmore .input-group-btn:last-child > a:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > .btn-group:not(:last-child) > .btn,
 .front .view-news .more-link .input-group-btn:last-child > .btn-group:not(:last-child) > a,
+.node-forum .comment-delete .input-group-btn:last-child > .btn-group:not(:last-child) > a,
+.node-forum .comment-edit .input-group-btn:last-child > .btn-group:not(:last-child) > a,
+.node-forum .comment-reply .input-group-btn:last-child > .btn-group:not(:last-child) > a,
+.node-forum .comment-add .input-group-btn:last-child > .btn-group:not(:last-child) > a,
 .node-readmore .input-group-btn:last-child > .btn-group:not(:last-child) > a {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
@@ -4499,16 +4611,32 @@ tbody.collapse.in {
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
 .front .view-news .more-link .input-group-btn:last-child > a,
+.node-forum .comment-delete .input-group-btn:last-child > a,
+.node-forum .comment-edit .input-group-btn:last-child > a,
+.node-forum .comment-reply .input-group-btn:last-child > a,
+.node-forum .comment-add .input-group-btn:last-child > a,
 .node-readmore .input-group-btn:last-child > a,
 .input-group-btn:last-child > .btn-group > .btn,
 .front .view-news .more-link .input-group-btn:last-child > .btn-group > a,
+.node-forum .comment-delete .input-group-btn:last-child > .btn-group > a,
+.node-forum .comment-edit .input-group-btn:last-child > .btn-group > a,
+.node-forum .comment-reply .input-group-btn:last-child > .btn-group > a,
+.node-forum .comment-add .input-group-btn:last-child > .btn-group > a,
 .node-readmore .input-group-btn:last-child > .btn-group > a,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
 .front .view-news .more-link .input-group-btn:first-child > a:not(:first-child),
+.node-forum .comment-delete .input-group-btn:first-child > a:not(:first-child),
+.node-forum .comment-edit .input-group-btn:first-child > a:not(:first-child),
+.node-forum .comment-reply .input-group-btn:first-child > a:not(:first-child),
+.node-forum .comment-add .input-group-btn:first-child > a:not(:first-child),
 .node-readmore .input-group-btn:first-child > a:not(:first-child),
 .input-group-btn:first-child > .btn-group:not(:first-child) > .btn,
 .front .view-news .more-link .input-group-btn:first-child > .btn-group:not(:first-child) > a,
+.node-forum .comment-delete .input-group-btn:first-child > .btn-group:not(:first-child) > a,
+.node-forum .comment-edit .input-group-btn:first-child > .btn-group:not(:first-child) > a,
+.node-forum .comment-reply .input-group-btn:first-child > .btn-group:not(:first-child) > a,
+.node-forum .comment-add .input-group-btn:first-child > .btn-group:not(:first-child) > a,
 .node-readmore .input-group-btn:first-child > .btn-group:not(:first-child) > a {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -4523,20 +4651,20 @@ tbody.collapse.in {
   font-size: 0;
   white-space: nowrap;
 }
-.input-group-btn > .btn, .front .view-news .more-link .input-group-btn > a, .node-readmore .input-group-btn > a {
+.input-group-btn > .btn, .front .view-news .more-link .input-group-btn > a, .node-forum .comment-delete .input-group-btn > a, .node-forum .comment-edit .input-group-btn > a, .node-forum .comment-reply .input-group-btn > a, .node-forum .comment-add .input-group-btn > a, .node-readmore .input-group-btn > a {
   position: relative;
 }
-.input-group-btn > .btn + .btn, .front .view-news .more-link .input-group-btn > a + .btn, .node-readmore .input-group-btn > a + .btn, .front .view-news .more-link .input-group-btn > .btn + a, .front .view-news .more-link .input-group-btn > a + a, .node-readmore .input-group-btn > .btn + a, .node-readmore .input-group-btn > a + a {
+.input-group-btn > .btn + .btn, .front .view-news .more-link .input-group-btn > a + .btn, .node-forum .comment-delete .input-group-btn > a + .btn, .node-forum .comment-edit .input-group-btn > a + .btn, .node-forum .comment-reply .input-group-btn > a + .btn, .node-forum .comment-add .input-group-btn > a + .btn, .node-readmore .input-group-btn > a + .btn, .front .view-news .more-link .input-group-btn > .btn + a, .front .view-news .more-link .input-group-btn > a + a, .node-forum .comment-delete .input-group-btn > .btn + a, .node-forum .comment-delete .input-group-btn > a + a, .node-forum .comment-edit .input-group-btn > .btn + a, .node-forum .comment-edit .input-group-btn > a + a, .node-forum .comment-reply .input-group-btn > .btn + a, .node-forum .comment-reply .input-group-btn > a + a, .node-forum .comment-add .input-group-btn > .btn + a, .node-forum .comment-add .input-group-btn > a + a, .node-readmore .input-group-btn > .btn + a, .node-readmore .input-group-btn > a + a {
   margin-left: -1px;
 }
-.input-group-btn > .btn:hover, .front .view-news .more-link .input-group-btn > a:hover, .node-readmore .input-group-btn > a:hover, .input-group-btn > .btn:focus, .front .view-news .more-link .input-group-btn > a:focus, .node-readmore .input-group-btn > a:focus, .input-group-btn > .btn:active, .front .view-news .more-link .input-group-btn > a:active, .node-readmore .input-group-btn > a:active {
+.input-group-btn > .btn:hover, .front .view-news .more-link .input-group-btn > a:hover, .node-forum .comment-delete .input-group-btn > a:hover, .node-forum .comment-edit .input-group-btn > a:hover, .node-forum .comment-reply .input-group-btn > a:hover, .node-forum .comment-add .input-group-btn > a:hover, .node-readmore .input-group-btn > a:hover, .input-group-btn > .btn:focus, .front .view-news .more-link .input-group-btn > a:focus, .node-forum .comment-delete .input-group-btn > a:focus, .node-forum .comment-edit .input-group-btn > a:focus, .node-forum .comment-reply .input-group-btn > a:focus, .node-forum .comment-add .input-group-btn > a:focus, .node-readmore .input-group-btn > a:focus, .input-group-btn > .btn:active, .front .view-news .more-link .input-group-btn > a:active, .node-forum .comment-delete .input-group-btn > a:active, .node-forum .comment-edit .input-group-btn > a:active, .node-forum .comment-reply .input-group-btn > a:active, .node-forum .comment-add .input-group-btn > a:active, .node-readmore .input-group-btn > a:active {
   z-index: 2;
 }
-.input-group-btn:first-child > .btn, .front .view-news .more-link .input-group-btn:first-child > a, .node-readmore .input-group-btn:first-child > a,
+.input-group-btn:first-child > .btn, .front .view-news .more-link .input-group-btn:first-child > a, .node-forum .comment-delete .input-group-btn:first-child > a, .node-forum .comment-edit .input-group-btn:first-child > a, .node-forum .comment-reply .input-group-btn:first-child > a, .node-forum .comment-add .input-group-btn:first-child > a, .node-readmore .input-group-btn:first-child > a,
 .input-group-btn:first-child > .btn-group {
   margin-right: -1px;
 }
-.input-group-btn:last-child > .btn, .front .view-news .more-link .input-group-btn:last-child > a, .node-readmore .input-group-btn:last-child > a,
+.input-group-btn:last-child > .btn, .front .view-news .more-link .input-group-btn:last-child > a, .node-forum .comment-delete .input-group-btn:last-child > a, .node-forum .comment-edit .input-group-btn:last-child > a, .node-forum .comment-reply .input-group-btn:last-child > a, .node-forum .comment-add .input-group-btn:last-child > a, .node-readmore .input-group-btn:last-child > a,
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
@@ -5031,11 +5159,11 @@ tbody.collapse.in {
   margin-top: 0.5px;
   margin-bottom: 0.5px;
 }
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .front .view-news .more-link .btn-group-sm > a.navbar-btn, .node-readmore .btn-group-sm > a.navbar-btn {
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .front .view-news .more-link .btn-group-sm > a.navbar-btn, .node-forum .comment-add .btn-group-sm > a.navbar-btn, .node-readmore .btn-group-sm > a.navbar-btn, .node-forum .comment-delete a.navbar-btn, .node-forum .comment-edit a.navbar-btn, .node-forum .comment-reply a.navbar-btn {
   margin-top: 4.5px;
   margin-bottom: 4.5px;
 }
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .front .view-news .more-link .btn-group-xs > a.navbar-btn, .node-readmore .btn-group-xs > a.navbar-btn {
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .front .view-news .more-link .btn-group-xs > a.navbar-btn, .node-forum .comment-delete .btn-group-xs > a.navbar-btn, .node-forum .comment-edit .btn-group-xs > a.navbar-btn, .node-forum .comment-reply .btn-group-xs > a.navbar-btn, .node-forum .comment-add .btn-group-xs > a.navbar-btn, .node-readmore .btn-group-xs > a.navbar-btn {
   margin-top: 9px;
   margin-bottom: 9px;
 }
@@ -5389,7 +5517,7 @@ tbody.collapse.in {
   cursor: not-allowed;
 }
 
-.label {
+.label, .node-forum .new {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
@@ -5401,15 +5529,15 @@ tbody.collapse.in {
   vertical-align: baseline;
   border-radius: .25em;
 }
-.label:empty {
+.label:empty, .node-forum .new:empty {
   display: none;
 }
-.btn .label, .front .view-news .more-link a .label, .node-readmore a .label {
+.btn .label, .front .view-news .more-link a .label, .node-forum .comment-delete a .label, .node-forum .comment-edit a .label, .node-forum .comment-reply a .label, .node-forum .comment-add a .label, .node-readmore a .label, .btn .node-forum .new, .node-forum .btn .new, .front .view-news .more-link a .node-forum .new, .node-forum .front .view-news .more-link a .new, .node-forum .comment-delete a .new, .node-forum .comment-edit a .new, .node-forum .comment-reply a .new, .node-forum .comment-add a .new, .node-readmore a .node-forum .new, .node-forum .node-readmore a .new {
   position: relative;
   top: -1px;
 }
 
-a.label:hover, a.label:focus {
+a.label:hover, .node-forum a.new:hover, a.label:focus, .node-forum a.new:focus {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -5436,10 +5564,10 @@ a.label:hover, a.label:focus {
   background-color: #449d44;
 }
 
-.label-info {
+.label-info, .node-forum .new {
   background-color: #5bc0de;
 }
-.label-info[href]:hover, .label-info[href]:focus {
+.label-info[href]:hover, .node-forum [href].new:hover, .label-info[href]:focus, .node-forum [href].new:focus {
   background-color: #31b0d5;
 }
 
@@ -5474,11 +5602,11 @@ a.label:hover, a.label:focus {
 .badge:empty {
   display: none;
 }
-.btn .badge, .front .view-news .more-link a .badge, .node-readmore a .badge {
+.btn .badge, .front .view-news .more-link a .badge, .node-forum .comment-delete a .badge, .node-forum .comment-edit a .badge, .node-forum .comment-reply a .badge, .node-forum .comment-add a .badge, .node-readmore a .badge {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge, .btn-group-xs > .btn .badge, .front .view-news .more-link .btn-group-xs > a .badge, .node-readmore .btn-group-xs > a .badge, .btn-group-xs > .btn .badge, .front .view-news .more-link .btn-group-xs > a .badge, .node-readmore .btn-group-xs > a .badge {
+.btn-xs .badge, .btn-group-xs > .btn .badge, .front .view-news .more-link .btn-group-xs > a .badge, .node-forum .comment-delete .btn-group-xs > a .badge, .node-forum .comment-edit .btn-group-xs > a .badge, .node-forum .comment-reply .btn-group-xs > a .badge, .node-forum .comment-add .btn-group-xs > a .badge, .node-readmore .btn-group-xs > a .badge, .btn-group-xs > .btn .badge, .front .view-news .more-link .btn-group-xs > a .badge, .node-forum .comment-delete .btn-group-xs > a .badge, .node-forum .comment-edit .btn-group-xs > a .badge, .node-forum .comment-reply .btn-group-xs > a .badge, .node-forum .comment-add .btn-group-xs > a .badge, .node-readmore .btn-group-xs > a .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -6684,11 +6812,11 @@ button.close {
 .modal-footer:after {
   clear: both;
 }
-.modal-footer .btn + .btn, .modal-footer .front .view-news .more-link a + .btn, .front .view-news .more-link .modal-footer a + .btn, .modal-footer .node-readmore a + .btn, .node-readmore .modal-footer a + .btn, .modal-footer .front .view-news .more-link .btn + a, .front .view-news .more-link .modal-footer .btn + a, .modal-footer .front .view-news .more-link a + a, .front .view-news .more-link .modal-footer a + a, .modal-footer .node-readmore .btn + a, .node-readmore .modal-footer .btn + a, .modal-footer .front .view-news .more-link .node-readmore a + a, .front .view-news .more-link .modal-footer .node-readmore a + a, .modal-footer .node-readmore a + a, .node-readmore .modal-footer a + a {
+.modal-footer .btn + .btn, .modal-footer .front .view-news .more-link a + .btn, .front .view-news .more-link .modal-footer a + .btn, .modal-footer .node-forum .comment-delete a + .btn, .node-forum .comment-delete .modal-footer a + .btn, .modal-footer .node-forum .comment-edit a + .btn, .node-forum .comment-edit .modal-footer a + .btn, .modal-footer .node-forum .comment-reply a + .btn, .node-forum .comment-reply .modal-footer a + .btn, .modal-footer .node-forum .comment-add a + .btn, .node-forum .comment-add .modal-footer a + .btn, .modal-footer .node-readmore a + .btn, .node-readmore .modal-footer a + .btn, .modal-footer .front .view-news .more-link .btn + a, .front .view-news .more-link .modal-footer .btn + a, .modal-footer .front .view-news .more-link a + a, .front .view-news .more-link .modal-footer a + a, .modal-footer .node-forum .comment-delete .btn + a, .node-forum .comment-delete .modal-footer .btn + a, .modal-footer .node-forum .comment-delete a + a, .node-forum .comment-delete .modal-footer a + a, .node-forum .comment-edit .modal-footer .comment-delete a + a, .node-forum .comment-reply .modal-footer .comment-delete a + a, .node-forum .comment-add .modal-footer .comment-delete a + a, .modal-footer .node-forum .comment-edit .btn + a, .node-forum .comment-edit .modal-footer .btn + a, .node-forum .comment-delete .modal-footer .comment-edit a + a, .modal-footer .node-forum .comment-edit a + a, .node-forum .comment-edit .modal-footer a + a, .node-forum .comment-reply .modal-footer .comment-edit a + a, .node-forum .comment-add .modal-footer .comment-edit a + a, .modal-footer .node-forum .comment-reply .btn + a, .node-forum .comment-reply .modal-footer .btn + a, .node-forum .comment-delete .modal-footer .comment-reply a + a, .node-forum .comment-edit .modal-footer .comment-reply a + a, .modal-footer .node-forum .comment-reply a + a, .node-forum .comment-reply .modal-footer a + a, .node-forum .comment-add .modal-footer .comment-reply a + a, .modal-footer .node-forum .comment-add .btn + a, .node-forum .comment-add .modal-footer .btn + a, .node-forum .comment-delete .modal-footer .comment-add a + a, .node-forum .comment-edit .modal-footer .comment-add a + a, .node-forum .comment-reply .modal-footer .comment-add a + a, .modal-footer .node-forum .comment-add a + a, .node-forum .comment-add .modal-footer a + a, .modal-footer .node-readmore .btn + a, .node-readmore .modal-footer .btn + a, .modal-footer .front .view-news .more-link .node-readmore a + a, .front .view-news .more-link .modal-footer .node-readmore a + a, .modal-footer .node-forum .comment-delete .node-readmore a + a, .node-forum .comment-delete .modal-footer .node-readmore a + a, .modal-footer .node-forum .comment-edit .node-readmore a + a, .node-forum .comment-edit .modal-footer .node-readmore a + a, .modal-footer .node-forum .comment-reply .node-readmore a + a, .node-forum .comment-reply .modal-footer .node-readmore a + a, .modal-footer .node-forum .comment-add .node-readmore a + a, .node-forum .comment-add .modal-footer .node-readmore a + a, .modal-footer .node-readmore a + a, .node-readmore .modal-footer a + a {
   margin-left: 5px;
   margin-bottom: 0;
 }
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .front .view-news .more-link a + .btn, .front .view-news .more-link .modal-footer .btn-group a + .btn, .modal-footer .btn-group .node-readmore a + .btn, .node-readmore .modal-footer .btn-group a + .btn, .modal-footer .btn-group .front .view-news .more-link .btn + a, .front .view-news .more-link .modal-footer .btn-group .btn + a, .modal-footer .btn-group .front .view-news .more-link a + a, .front .view-news .more-link .modal-footer .btn-group a + a, .modal-footer .btn-group .node-readmore .btn + a, .node-readmore .modal-footer .btn-group .btn + a, .modal-footer .btn-group .front .view-news .more-link .node-readmore a + a, .front .view-news .more-link .modal-footer .btn-group .node-readmore a + a, .modal-footer .btn-group .node-readmore a + a, .node-readmore .modal-footer .btn-group a + a {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .front .view-news .more-link a + .btn, .front .view-news .more-link .modal-footer .btn-group a + .btn, .modal-footer .btn-group .node-forum .comment-delete a + .btn, .node-forum .comment-delete .modal-footer .btn-group a + .btn, .modal-footer .btn-group .node-forum .comment-edit a + .btn, .node-forum .comment-edit .modal-footer .btn-group a + .btn, .modal-footer .btn-group .node-forum .comment-reply a + .btn, .node-forum .comment-reply .modal-footer .btn-group a + .btn, .modal-footer .btn-group .node-forum .comment-add a + .btn, .node-forum .comment-add .modal-footer .btn-group a + .btn, .modal-footer .btn-group .node-readmore a + .btn, .node-readmore .modal-footer .btn-group a + .btn, .modal-footer .btn-group .front .view-news .more-link .btn + a, .front .view-news .more-link .modal-footer .btn-group .btn + a, .modal-footer .btn-group .front .view-news .more-link a + a, .front .view-news .more-link .modal-footer .btn-group a + a, .modal-footer .btn-group .node-forum .comment-delete .btn + a, .node-forum .comment-delete .modal-footer .btn-group .btn + a, .modal-footer .btn-group .node-forum .comment-delete a + a, .node-forum .comment-delete .modal-footer .btn-group a + a, .node-forum .comment-edit .modal-footer .btn-group .comment-delete a + a, .node-forum .comment-reply .modal-footer .btn-group .comment-delete a + a, .node-forum .comment-add .modal-footer .btn-group .comment-delete a + a, .modal-footer .btn-group .node-forum .comment-edit .btn + a, .node-forum .comment-edit .modal-footer .btn-group .btn + a, .node-forum .comment-delete .modal-footer .btn-group .comment-edit a + a, .modal-footer .btn-group .node-forum .comment-edit a + a, .node-forum .comment-edit .modal-footer .btn-group a + a, .node-forum .comment-reply .modal-footer .btn-group .comment-edit a + a, .node-forum .comment-add .modal-footer .btn-group .comment-edit a + a, .modal-footer .btn-group .node-forum .comment-reply .btn + a, .node-forum .comment-reply .modal-footer .btn-group .btn + a, .node-forum .comment-delete .modal-footer .btn-group .comment-reply a + a, .node-forum .comment-edit .modal-footer .btn-group .comment-reply a + a, .modal-footer .btn-group .node-forum .comment-reply a + a, .node-forum .comment-reply .modal-footer .btn-group a + a, .node-forum .comment-add .modal-footer .btn-group .comment-reply a + a, .modal-footer .btn-group .node-forum .comment-add .btn + a, .node-forum .comment-add .modal-footer .btn-group .btn + a, .node-forum .comment-delete .modal-footer .btn-group .comment-add a + a, .node-forum .comment-edit .modal-footer .btn-group .comment-add a + a, .node-forum .comment-reply .modal-footer .btn-group .comment-add a + a, .modal-footer .btn-group .node-forum .comment-add a + a, .node-forum .comment-add .modal-footer .btn-group a + a, .modal-footer .btn-group .node-readmore .btn + a, .node-readmore .modal-footer .btn-group .btn + a, .modal-footer .btn-group .front .view-news .more-link .node-readmore a + a, .front .view-news .more-link .modal-footer .btn-group .node-readmore a + a, .modal-footer .btn-group .node-forum .comment-delete .node-readmore a + a, .node-forum .comment-delete .modal-footer .btn-group .node-readmore a + a, .modal-footer .btn-group .node-forum .comment-edit .node-readmore a + a, .node-forum .comment-edit .modal-footer .btn-group .node-readmore a + a, .modal-footer .btn-group .node-forum .comment-reply .node-readmore a + a, .node-forum .comment-reply .modal-footer .btn-group .node-readmore a + a, .modal-footer .btn-group .node-forum .comment-add .node-readmore a + a, .node-forum .comment-add .modal-footer .btn-group .node-readmore a + a, .modal-footer .btn-group .node-readmore a + a, .node-readmore .modal-footer .btn-group a + a {
   margin-left: -1px;
 }
 .modal-footer .btn-block + .btn-block {
@@ -7134,7 +7262,7 @@ button.close {
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
-.carousel-caption .btn, .carousel-caption .front .view-news .more-link a, .front .view-news .more-link .carousel-caption a, .carousel-caption .node-readmore a, .node-readmore .carousel-caption a {
+.carousel-caption .btn, .carousel-caption .front .view-news .more-link a, .front .view-news .more-link .carousel-caption a, .carousel-caption .node-forum .comment-delete a, .node-forum .comment-delete .carousel-caption a, .carousel-caption .node-forum .comment-edit a, .node-forum .comment-edit .carousel-caption a, .carousel-caption .node-forum .comment-reply a, .node-forum .comment-reply .carousel-caption a, .carousel-caption .node-forum .comment-add a, .node-forum .comment-add .carousel-caption a, .carousel-caption .node-readmore a, .node-readmore .carousel-caption a {
   text-shadow: none;
 }
 
@@ -9814,13 +9942,13 @@ button.close {
   color: #DF691A;
 }
 
-.btn, .front .view-news .more-link a, .node-readmore a {
+.btn, .front .view-news .more-link a, .node-forum .comment-delete a, .node-forum .comment-edit a, .node-forum .comment-reply a, .node-forum .comment-add a, .node-readmore a {
   font-weight: 300;
 }
 .btn-default:hover {
   background-color: #485563;
 }
-.btn-sm, .btn-group-sm > .btn, .front .view-news .more-link .btn-group-sm > a, .node-readmore .btn-group-sm > a, .btn-xs, .btn-group-xs > .btn, .front .view-news .more-link .btn-group-xs > a, .node-readmore .btn-group-xs > a {
+.btn-sm, .btn-group-sm > .btn, .front .view-news .more-link .btn-group-sm > a, .node-forum .comment-add .btn-group-sm > a, .node-readmore .btn-group-sm > a, .node-forum .comment-delete a, .node-forum .comment-edit a, .node-forum .comment-reply a, .btn-xs, .btn-group-xs > .btn, .front .view-news .more-link .btn-group-xs > a, .node-forum .comment-delete .btn-group-xs > a, .node-forum .comment-edit .btn-group-xs > a, .node-forum .comment-reply .btn-group-xs > a, .node-forum .comment-add .btn-group-xs > a, .node-readmore .btn-group-xs > a {
   font-size: 13px;
 }
 
@@ -9965,7 +10093,7 @@ label,
   color: #2B3E50;
 }
 
-.label {
+.label, .node-forum .new {
   font-weight: 300;
 }
 
@@ -10574,7 +10702,7 @@ td.radio {
   display: table-cell;
 }
 
-.views-display-settings .label {
+.views-display-settings .label, .views-display-settings .node-forum .new, .node-forum .views-display-settings .new {
   font-size: 100%;
   color: #666666;
 }
@@ -10722,7 +10850,7 @@ table .checkbox input[type="checkbox"] {
   padding-bottom: 0;
 }
 @media (max-width: 767px) {
-  .html:not(.front) .main-container > .row:first-of-type > section[class^="col-"], .html:not(.front) .main-container > .row:first-of-type > section[class*=" col-"] {
+  .html:not(.front) .main-container > .row:first-of-type > section[class^="col-"], .html:not(.front) .node-forum .main-container > .comment:first-of-type > section[class^="col-"], .node-forum .html:not(.front) .main-container > .comment:first-of-type > section[class^="col-"], .html:not(.front) .main-container > .row:first-of-type > section[class*=" col-"], .html:not(.front) .node-forum .main-container > .comment:first-of-type > section[class*=" col-"], .node-forum .html:not(.front) .main-container > .comment:first-of-type > section[class*=" col-"] {
     padding-left: 40px;
   }
 }
@@ -10776,20 +10904,20 @@ table .checkbox input[type="checkbox"] {
 .front section#block-block-3 {
   padding-bottom: 0;
 }
-.front .carousel, .front .sponsors, .front .featured.row {
+.front .carousel, .front .sponsors, .front .featured.row, .front .node-forum .featured.comment, .node-forum .front .featured.comment {
   background: #2B3E50;
 }
-.front .carousel h1, .front .carousel h2, .front .carousel h3, .front .carousel h4, .front .carousel p, .front .sponsors h1, .front .sponsors h2, .front .sponsors h3, .front .sponsors h4, .front .sponsors p, .front .featured.row h1, .front .featured.row h2, .front .featured.row h3, .front .featured.row h4, .front .featured.row p {
+.front .carousel h1, .front .carousel h2, .front .carousel h3, .front .carousel h4, .front .carousel p, .front .sponsors h1, .front .sponsors h2, .front .sponsors h3, .front .sponsors h4, .front .sponsors p, .front .featured.row h1, .front .node-forum .featured.comment h1, .node-forum .front .featured.comment h1, .front .featured.row h2, .front .node-forum .featured.comment h2, .node-forum .front .featured.comment h2, .front .featured.row h3, .front .node-forum .featured.comment h3, .node-forum .front .featured.comment h3, .front .featured.row h4, .front .node-forum .featured.comment h4, .node-forum .front .featured.comment h4, .front .featured.row p, .front .node-forum .featured.comment p, .node-forum .front .featured.comment p {
   color: #EBEBEB;
 }
-.front .carousel .block-title, .front .sponsors .block-title, .front .featured.row .block-title {
+.front .carousel .block-title, .front .sponsors .block-title, .front .featured.row .block-title, .front .node-forum .featured.comment .block-title, .node-forum .front .featured.comment .block-title {
   background-color: transparent;
   border-bottom: none;
 }
-.front .featured.row .block-title {
+.front .featured.row .block-title, .front .node-forum .featured.comment .block-title, .node-forum .front .featured.comment .block-title {
   margin-bottom: 0;
 }
-.front .featured.row .view-header {
+.front .featured.row .view-header, .front .node-forum .featured.comment .view-header, .node-forum .front .featured.comment .view-header {
   margin-bottom: 15px;
 }
 .front .pillars .fa, .front .pillars a.tabledrag-handle .handle, a.tabledrag-handle .front .pillars .handle, .front .pillars .topic-status-new, .front .pillars .topic-status-hot, .front .pillars .topic-status-hot-new, .front .pillars .topic-status-sticky, .front .pillars .topic-status-closed, .front .pillars .logged-in:not(.page-search) .tabs--primary li:first-of-type a:before, .logged-in:not(.page-search) .tabs--primary li:first-of-type .front .pillars a:before, .front .pillars .tabs--primary a[href*="edit"]:before, .tabs--primary .front .pillars a[href*="edit"]:before, .front .pillars .tabs--primary a[href*="group"]:before, .tabs--primary .front .pillars a[href*="group"]:before, .front .pillars .ui-dialog .ui-dialog-titlebar-close:before, .ui-dialog .front .pillars .ui-dialog-titlebar-close:before, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-maximize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-maximize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minus, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-settings, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-settings, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-minimize, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-minimize, .front .pillars #homebox .homebox-portlet .portlet-header .portlet-plus, #homebox .homebox-portlet .portlet-header .front .pillars .portlet-plus, .front .pillars .portlet-close {
@@ -11066,6 +11194,43 @@ a.tabledrag-handle .handle {
   width: 10px;
 }
 
+.node-forum header .submitted .user-picture {
+  float: left;
+  padding-right: 20px;
+}
+.node-forum .comment.comment-by-node-author.comment-by-viewer.clearfix {
+  border-left: 5px solid #2B3E50;
+  padding-left: 20px;
+}
+.node-forum .comment:nth-of-type(even) {
+  background: #f3f3f3;
+}
+.node-forum .indented {
+  margin-left: 30px;
+  padding: 18px;
+}
+.node-forum .comment {
+  margin-left: 25px;
+}
+.node-forum .comment .user-picture .img-responsive, .node-forum .comment .user-picture {
+  display: inline-block;
+}
+.node-forum .comment .user-picture {
+  padding-top: 20px;
+}
+.node-forum .comment-delete a {
+  color: #fff;
+}
+.node-forum .comment-edit a {
+  color: #fff;
+}
+.node-forum .comment-reply a {
+  color: #fff;
+}
+.node-forum .comment-add a {
+  color: #fff;
+}
+
 .page-search .node {
   font-size: 90%;
 }
@@ -11283,11 +11448,11 @@ body:not(.front) .block-views .carousel-indicators > li {
   margin-bottom: 15px;
 }
 
-h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .view-news .more-link h4.support-file a, h4.support-file .node-readmore a, .node-readmore h4.support-file a, h5.support-file .btn, h5.support-file .front .view-news .more-link a, .front .view-news .more-link h5.support-file a, h5.support-file .node-readmore a, .node-readmore h5.support-file a {
+h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .view-news .more-link h4.support-file a, h4.support-file .node-forum .comment-delete a, .node-forum .comment-delete h4.support-file a, h4.support-file .node-forum .comment-edit a, .node-forum .comment-edit h4.support-file a, h4.support-file .node-forum .comment-reply a, .node-forum .comment-reply h4.support-file a, h4.support-file .node-forum .comment-add a, .node-forum .comment-add h4.support-file a, h4.support-file .node-readmore a, .node-readmore h4.support-file a, h5.support-file .btn, h5.support-file .front .view-news .more-link a, .front .view-news .more-link h5.support-file a, h5.support-file .node-forum .comment-delete a, .node-forum .comment-delete h5.support-file a, h5.support-file .node-forum .comment-edit a, .node-forum .comment-edit h5.support-file a, h5.support-file .node-forum .comment-reply a, .node-forum .comment-reply h5.support-file a, h5.support-file .node-forum .comment-add a, .node-forum .comment-add h5.support-file a, h5.support-file .node-readmore a, .node-readmore h5.support-file a {
   margin-left: 10px;
 }
 
-.thumbnail h4.support-file .btn, .thumbnail h4.support-file .front .view-news .more-link a, .front .view-news .more-link .thumbnail h4.support-file a, .thumbnail h4.support-file .node-readmore a, .node-readmore .thumbnail h4.support-file a, .thumbnail h5.support-file .btn, .thumbnail h5.support-file .front .view-news .more-link a, .front .view-news .more-link .thumbnail h5.support-file a, .thumbnail h5.support-file .node-readmore a, .node-readmore .thumbnail h5.support-file a {
+.thumbnail h4.support-file .btn, .thumbnail h4.support-file .front .view-news .more-link a, .front .view-news .more-link .thumbnail h4.support-file a, .thumbnail h4.support-file .node-forum .comment-delete a, .node-forum .comment-delete .thumbnail h4.support-file a, .thumbnail h4.support-file .node-forum .comment-edit a, .node-forum .comment-edit .thumbnail h4.support-file a, .thumbnail h4.support-file .node-forum .comment-reply a, .node-forum .comment-reply .thumbnail h4.support-file a, .thumbnail h4.support-file .node-forum .comment-add a, .node-forum .comment-add .thumbnail h4.support-file a, .thumbnail h4.support-file .node-readmore a, .node-readmore .thumbnail h4.support-file a, .thumbnail h5.support-file .btn, .thumbnail h5.support-file .front .view-news .more-link a, .front .view-news .more-link .thumbnail h5.support-file a, .thumbnail h5.support-file .node-forum .comment-delete a, .node-forum .comment-delete .thumbnail h5.support-file a, .thumbnail h5.support-file .node-forum .comment-edit a, .node-forum .comment-edit .thumbnail h5.support-file a, .thumbnail h5.support-file .node-forum .comment-reply a, .node-forum .comment-reply .thumbnail h5.support-file a, .thumbnail h5.support-file .node-forum .comment-add a, .node-forum .comment-add .thumbnail h5.support-file a, .thumbnail h5.support-file .node-readmore a, .node-readmore .thumbnail h5.support-file a {
   clear: both;
   display: block;
   margin-left: auto;
