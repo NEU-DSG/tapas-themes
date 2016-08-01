@@ -42,7 +42,6 @@
           showInvisibles: true,
           readOnly: true,
         });
-        editor.find('Julia');
       }
     }
 
