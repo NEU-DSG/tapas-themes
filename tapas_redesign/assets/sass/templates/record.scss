@@ -45,3 +45,9 @@
   @extend .fa;
   @extend .fa-close;
 }
+
+.view-records-in-collection-view {
+  .thumbnail a {
+    word-wrap: break-word;
+  }
+}

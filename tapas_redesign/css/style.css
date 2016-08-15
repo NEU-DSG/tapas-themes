@@ -11390,6 +11390,10 @@ a.back-to-top .fa, a.back-to-top a.tabledrag-handle .handle, a.tabledrag-handle 
   content: "\f1c9";
 }
 
+.view-records-in-collection-view .thumbnail a {
+  word-wrap: break-word;
+}
+
 #homebox .homebox-column {
   background: none;
 }
