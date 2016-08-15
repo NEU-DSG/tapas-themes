@@ -11517,6 +11517,9 @@ h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .vi
 .grid-view .thumbnail:hover .grid-hover-parent .views-label {
   font-weight: bold;
 }
+.grid-view .thumbnail a {
+  word-wrap: break-word;
+}
 
 table a:not(.btn), .table a:not(.btn) {
   text-decoration: none;
