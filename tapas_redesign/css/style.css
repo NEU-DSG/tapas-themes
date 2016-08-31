@@ -11394,6 +11394,10 @@ a.back-to-top .fa, a.back-to-top a.tabledrag-handle .handle, a.tabledrag-handle 
   word-wrap: break-word;
 }
 
+.field-name-field-tapas-description {
+  word-wrap: break-word;
+}
+
 #homebox .homebox-column {
   background: none;
 }
