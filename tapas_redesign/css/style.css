@@ -10412,7 +10412,7 @@ fieldset .panel-heading a.panel-title:hover, fieldset #homebox .homebox-portlet 
   padding: 0;
 }
 
-.popover-content {
+.popover-content .help-block {
   color: #EBEBEB;
 }
 
