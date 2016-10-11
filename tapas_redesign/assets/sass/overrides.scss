@@ -249,10 +249,13 @@ fieldset .panel-heading a.panel-title {
 // }
 
 .help-block, .control-group .help-inline {
-  color: $gray-lighter;
+  color: $gray-light;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
+}
+.popover-content {
+  color: $gray-lighter;
 }
 .panel-heading {
   display: block;
