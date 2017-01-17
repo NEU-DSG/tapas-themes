@@ -13,3 +13,65 @@
 #forum .icon{
   width:10px;
 }
+
+.node-forum {
+  header .submitted .user-picture {
+    float: left;
+    padding-right: 20px;
+  }
+  .comment.comment-by-node-author.comment-by-viewer.clearfix {
+      border-left: 5px solid #2B3E50;
+      padding-left: 20px;
+  }
+  .comment {
+    padding: 20px;
+  }
+  .indented .comment {
+    border-left: 3px solid #f3f3f3;
+  }
+  .comment:nth-of-type(even){
+    background: #f3f3f3;
+  }
+  .indented {
+      margin-left: 30px;
+      padding: 18px;
+  }
+  .comment {
+    @extend .row;
+    margin-left: 25px;
+  }
+  .comment .user-picture .img-responsive, .comment .user-picture{
+    display: inline-block;
+  }
+  .comment .user-picture {
+    @extend .col-sm-1;
+    padding-top: 20px;
+  }
+  .comment-delete a{
+    @extend .btn;
+    @extend .btn-danger;
+    @extend .btn-sm;
+    color: #fff;
+  }
+  .comment-edit a{
+    @extend .btn;
+    @extend .btn-warning;
+    @extend .btn-sm;
+    color: #fff;
+  }
+  .comment-reply a{
+    @extend .btn;
+    @extend .btn-success;
+    @extend .btn-sm;
+    color: #fff;
+  }
+  .comment-add a {
+    @extend .btn;
+    @extend .btn-info;
+    color: #fff;
+  }
+  .new {
+    @extend .label;
+    @extend .label-info;
+  }
+}
