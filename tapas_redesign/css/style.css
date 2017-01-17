@@ -10412,6 +10412,10 @@ fieldset .panel-heading a.panel-title:hover, fieldset #homebox .homebox-portlet 
   padding: 0;
 }
 
+.popover-content .help-block {
+  color: #EBEBEB;
+}
+
 .panel-heading, #homebox .homebox-portlet .homebox-portlet-inner, .block-title, h2.block-title {
   display: block;
   padding: 0;
@@ -11129,7 +11133,7 @@ a.tabledrag-handle .handle {
   padding: 5px;
 }
 .panel-default ul a, #homebox .homebox-portlet ul a, .block ul a {
-  color: #333333;
+  color: #DF691A;
 }
 
 .panel-comm {
@@ -11390,6 +11394,14 @@ a.back-to-top .fa, a.back-to-top a.tabledrag-handle .handle, a.tabledrag-handle 
   content: "\f1c9";
 }
 
+.view-records-in-collection-view .thumbnail a {
+  word-wrap: break-word;
+}
+
+.field-name-field-tapas-description {
+  word-wrap: break-word;
+}
+
 #homebox .homebox-column {
   background: none;
 }
@@ -11516,6 +11528,9 @@ h4.support-file .btn, h4.support-file .front .view-news .more-link a, .front .vi
 }
 .grid-view .thumbnail:hover .grid-hover-parent .views-label {
   font-weight: bold;
+}
+.grid-view .thumbnail a {
+  word-wrap: break-word;
 }
 
 table a:not(.btn), .table a:not(.btn) {
