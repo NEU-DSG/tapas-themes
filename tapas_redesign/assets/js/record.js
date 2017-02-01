@@ -35,13 +35,13 @@
         editor = ace.edit("ace");
         editor.setTheme("ace/theme/chrome");
         editor.getSession().setMode("ace/mode/xml");
+        editor.getSession().setUseWrapMode(true);
         editor.setOptions({
           maxLines: Infinity,
           minLines: 20,
           useSoftTabs: true,
           showInvisibles: true,
           readOnly: true,
-          useWrapMode: true,
         });
       }
     }
