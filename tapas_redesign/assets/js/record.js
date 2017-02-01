@@ -41,15 +41,16 @@
           useSoftTabs: true,
           showInvisibles: true,
           readOnly: true,
+          useWrapMode: true,
         });
       }
     }
 
     $('#toggle_word_wrap').on('change', function(){
       if ($('#toggle_word_wrap').is(':checked')){
-        editor.getSession().setUseWrapMode(true);
-      } else {
         editor.getSession().setUseWrapMode(false);
+      } else {
+        editor.getSession().setUseWrapMode(true);
       }
     });
 
