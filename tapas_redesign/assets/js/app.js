@@ -1,8 +1,3 @@
-// Highlight the top nav as scrolling occurs
-jQuery('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
-
 // Closes the Responsive Menu on Menu Item Click
 jQuery('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();

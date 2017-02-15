@@ -54,6 +54,7 @@
         editor = ace.edit("ace");
         editor.setTheme("ace/theme/chrome");
         editor.getSession().setMode("ace/mode/xml");
+        editor.getSession().setUseWrapMode(true);
         editor.setOptions({
           maxLines: Infinity,
           minLines: 20,
@@ -128,9 +129,9 @@
 
     $('#toggle_word_wrap').on('change', function(){
       if ($('#toggle_word_wrap').is(':checked')){
-        editor.getSession().setUseWrapMode(true);
-      } else {
         editor.getSession().setUseWrapMode(false);
+      } else {
+        editor.getSession().setUseWrapMode(true);
       }
     });
 
