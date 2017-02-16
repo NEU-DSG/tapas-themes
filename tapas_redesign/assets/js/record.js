@@ -6,7 +6,8 @@
       $(this).prepend("<link rel='stylesheet' type='text/css' id='reader_css_1'></link><link rel='stylesheet' type='text/css' id='reader_css_2'></link><link rel='stylesheet' type='text/css' id='reader_css_3'></link>");
       var style = $(this).parents(".node").find(".form-item-reading-selector select[name='reading_selector']").val();
       console.log(style);
-      show_style(style);
+      var pane = $(this);
+      show_style(pane, style);
     });
 
     $(".form-item-reading-selector select[name='reading_selector']").on("change", function(e){
