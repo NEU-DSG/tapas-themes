@@ -29,5 +29,9 @@ jQuery(document).ready(function(){
 });
 
 function switchThemes(theme){
-	jQuery(".teibp").removeClass('sleepytime').removeClass('terminal').removeClass('default').addClass(jQuery(theme.target).val());
+	// console.log(theme);
+	console.log(jQuery(theme).parents("#teibpToolbox").siblings("#tei_wrapper").find(".teibp"));
+	console.log(jQuery(theme).val());
+	jQuery(theme).parents("#teibpToolbox").siblings("#tei_wrapper").find(".teibp").removeClass('sleepytime').removeClass('terminal').removeClass('default').addClass(jQuery(theme).val());
+	jQuery(theme).parents("#teibpToolbox").parents(".teibp").removeClass('sleepytime').removeClass('terminal').removeClass('default').addClass(jQuery(theme).val());
 }
