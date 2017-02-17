@@ -28,6 +28,22 @@
         var pane = $(this).parents(".form-item").siblings(".reading");
         show_style(pane, style);
       });
+
+      $('#toggle_word_wrap').on('change', function(){
+        if ($('#toggle_word_wrap').is(':checked')){
+          editor.getSession().setUseWrapMode(false);
+        } else {
+          editor.getSession().setUseWrapMode(true);
+        }
+      });
+
+      $('#toggle_invisibles').on('change', function(){
+        if ($('#toggle_invisibles').is(':checked')){
+          editor.setShowInvisibles(false);
+        } else {
+          editor.setShowInvisibles(true);
+        }
+      });
     }
 
     function show_style(pane, style){
@@ -40,6 +56,7 @@
       });
       pane.find("."+style_class).show();
       if (style == 'teibp'){
+        pane.find(".teibp").addClass("default");
         console.log("going to teibp");
         pane.find("#reader_css_1").attr("href", "/profiles/buildtapas/themes/tapas-themes/tapas_redesign/lib/teibp/css/teibp.css");
         pane.find("#reader_css_2").attr("href", "/profiles/buildtapas/themes/tapas-themes/tapas_redesign/lib/teibp/css/sleepy.css");
@@ -66,83 +83,67 @@
       }
     }
 
-    if ($(".view-two-pane-reader").length){
-      console.log("we're on the two pane viewer so lets fix it up");
-      $(".ctools-jump-menu-select").on("change", function(){
+    if ($(".view-compare").length){
+      var left = $(".view-compare .left");
+      var left_nid = left.find("article").attr("id");
+      if (left_nid){
+        left_nid = left_nid.split("-")[1];
+      } else {
+        left_nid = null;
+      }
+      var right = $(".view_compare .right");
+      var right_nid = right.find("article").attr("id");
+      if (right_nid){
+        right_nid = right_nid.split("-")[1];
+      } else {
+        right_nid = null;
+      }
+      left.find(".ctools-jump-menu-select option[value*='"+left_nid+"']").prop('selected', true);
+      right.find(".ctools-jump-menu-select option[value*='"+right_nid+"']").prop('selected', true);
+      $(".ctools-jump-menu-select").on("change", function(e){
+        e.preventDefault();
         var nid = $(this).val();
         nid = nid.split("::/");
         nid = nid[nid.length -1];
-        console.log("nid we're getting is"+nid);
-        node_div = $(this).parents(".view-test-reader-pane").find(".view-content .views-row-1");
-        ajax_get_node(node_div, nid, true);
-      });
-    }
-
-    function processAjaxData(response, urlPath, side, style){
-      // console.log(response);
-      // document.getElementById("content").innerHTML = response.html;
-      // document.title = response.pageTitle;
-      // urlPath = "compare/3/6/4";
-      window.history.pushState({"html":response, "side":side, "title":"Two-Pane Reader", "t_style":style},"", urlPath);
-      console.log(window.history);
-    }
-
-    window.onpopstate = function(e){
-      console.log("State has been popped");
-      // if(e.state){
-        // console.log(e.state);
-        // console.log(e.state.side);
-        // $("."+e.state.side+" .view-content .views-row-1").html(e.state.html);
-        // show_style($("."+e.state.side+" .view-content .views-row-1").find(".reading"), e.state.t_style);
-        // document.getElementById("content").innerHTML = e.state.html;
-        // document.title = e.state.pageTitle;
-      // } else {
-        // console.log("this is back to the original so we need to revert but how?");
-        var pathname = $(location).attr("href");
-        console.log(pathname);
-        pathname = pathname.split("/");
-        left_node = pathname[pathname.length - 2];
-        right_node = pathname[pathname.length -1];
-        console.log("left is " + left_node);
-        console.log("right is " + right_node);
-        ajax_get_node($(".view-dislpay-id-reader_left .view-content .views-row-1"), left_node, false);
-        ajax_get_node($(".view-display-id-reader_right .view-content .views-row-1"), right_node, false);
-      // }
-    };
-
-    function ajax_get_node(node_div, nid, history){
-      var url = "/node/get/ajax/"+nid;
-      node_div.load(url, function(response, status, xhr){
-        var style = $(this).parents(".view-test-reader-pane").find(".form-item-reading-selector select[name='reading_selector']").val();
-        console.log(style);
-        pane = $(this).parents(".view-test-reader-pane").find(".reading");
-        classes = $(this).parents(".view-test-reader-pane").attr("class");
-        classes = classes.split(" ");
-        side = classes[3];
-        pane.prepend("<link rel='stylesheet' type='text/css' id='reader_css_1'></link><link rel='stylesheet' type='text/css' id='reader_css_2'></link><link rel='stylesheet' type='text/css' id='reader_css_3'></link>");
-        show_style(pane, style);
-        if (history == true){
-          processAjaxData(response, nid, side, style);
+        if ($(this).parents(".left").length){
+          get_reader_view(nid, "left");
         }
-        make_clickable($("body"));
+        if ($(this).parents(".right").length){
+          get_reader_view(nid, "right");
+        }
       });
     }
 
-    $('#toggle_word_wrap').on('change', function(){
-      if ($('#toggle_word_wrap').is(':checked')){
-        editor.getSession().setUseWrapMode(false);
-      } else {
-        editor.getSession().setUseWrapMode(true);
-      }
-    });
-
-    $('#toggle_invisibles').on('change', function(){
-      if ($('#toggle_invisibles').is(':checked')){
-        editor.setShowInvisibles(false);
-      } else {
-        editor.setShowInvisibles(true);
-      }
-    });
+    function get_reader_view(nid, side){
+      pathArray = location.href.split( '/' );
+      protocol = pathArray[0];
+      host = pathArray[2];
+      url = protocol + '//' + host;
+      var side = $(".view-compare ."+side);
+      side.append("<span class='fa fa-spinner fa-spin fa-4x'></span>");
+      $.ajax({
+        url: url + '/views/ajax',
+        type: 'post',
+        data: {
+          view_name: 'test_reader_pane',
+          view_display_id: 'block_2', //your display id
+          view_args: nid, // your views arguments
+        },
+        dataType: 'json',
+        success: function (response) {
+          side.find(".view-test-reader-pane").remove();
+          side.find(".fa-spinner").remove();
+          if (response[1] !== undefined) {
+            side.append(response[1].data);
+            var pane = side.find(".reading");
+            pane.prepend("<link rel='stylesheet' type='text/css' id='reader_css_1'></link><link rel='stylesheet' type='text/css' id='reader_css_2'></link><link rel='stylesheet' type='text/css' id='reader_css_3'></link>");
+            var style = side.find(".form-item-reading-selector select[name='reading_selector']").val();
+            make_clickable($("body"));
+            show_style(pane, style);
+          }
+        }
+      });
+    }
 
   });
 })(jQuery);
