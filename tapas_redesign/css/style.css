@@ -10405,6 +10405,10 @@ fieldset .panel-heading a.panel-title:hover, fieldset #homebox .homebox-portlet 
   margin-bottom: 0;
 }
 
+.reading .checkbox label {
+  padding-left: 40px;
+}
+
 .help-block, .control-group .help-inline {
   color: #4E5D6C;
   font-size: 12px;
