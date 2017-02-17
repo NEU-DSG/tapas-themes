@@ -6,9 +6,9 @@
  */
 
  function tapas_redesign_preprocess_region(&$variables, $hook) {
-     if($variables['region'] == "toolbar"){
-         $variables['classes_array'][] = 'toolbar';
-     }
+    if($variables['region'] == "toolbar"){
+      $variables['classes_array'][] = 'toolbar';
+    }
  }
 
 function tapas_redesign_process(&$variables, $hook) {
@@ -199,5 +199,18 @@ function tapas_redesign_menu_breadcrumb_alter(&$active_trail, $item) {
     $title = $node->title;
     $active_trail[1] = ["href"=>$item['fragments'][1]."/".$item['fragments'][2], "title"=>$title];
     $active_trail[2] = ["href"=>$item['fragments'][1]."/".$item['fragments'][2]."/group", "title"=>"Group"];
+  }
+}
+
+function tapas_redesign_preprocess_views_view(&$vars){
+  if (isset($vars['view']->name) && $vars['view']->name == "compare"){
+    $theme_path = drupal_get_path('theme', variable_get('theme_default', NULL));
+    drupal_add_js($theme_path.'/assets/js/record.js', array('type'=>'file', 'requires_jquery'=>true));
+    drupal_add_js($theme_path.'/assets/js/ace.js', array('type'=>'file', 'requires_jquery'=>true));
+    drupal_add_library('system','ui.dialog');
+    drupal_add_js('/profiles/buildtapas/themes/tapas-themes/tapas_redesign/lib/teibp/js/teibp.js', array('type'=>'file'));
+    drupal_add_js('/profiles/buildtapas/themes/tapas-themes/tapas_redesign/lib/tapas-generic/js/jquery/plugins/jquery.blockUI.js', array('type'=>'file'));
+    drupal_add_js('/profiles/buildtapas/themes/tapas-themes/tapas_redesign/lib/tapas-generic/js/contextualItems.js', array('type'=>'file'));
+    drupal_add_js('/profiles/buildtapas/themes/tapas-themes/tapas_redesign/lib/tapas-generic/js/tapas-generic.js', array('type'=>'file'));
   }
 }
