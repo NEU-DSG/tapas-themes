@@ -55,3 +55,20 @@
 .field-name-field-tapas-description {
   word-wrap: break-word;
 }
+
+
+// fixes so the ace xml viewer is resizeable
+.reader_tei {
+  width: 100%;
+  height: 500px;
+  padding: 5px;
+  position: relative;
+}
+
+#ace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
