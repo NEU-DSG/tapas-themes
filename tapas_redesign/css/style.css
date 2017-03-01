@@ -11415,7 +11415,7 @@ a.back-to-top .fa, a.back-to-top a.tabledrag-handle .handle, a.tabledrag-handle 
 
 #ace {
   position: absolute;
-  top: 0;
+  top: 80px;
   left: 0;
   right: 0;
   bottom: 0;
