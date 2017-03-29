@@ -114,9 +114,11 @@ function tapas_redesign_preprocess_block(&$variables, $hook) {
       } else {
         $group_access = "edit[group_access][und][0]=0&edit[group_access][und][1]=0&disabled=0";
       }
-      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection?edit[og_tapas_c_to_p][und][0][default]=".$nid."&".$group_access."' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+      $variables['elements']['#block']->subject .= "<a href='/node/add/tapas-collection' class='pull-right h5'><span class='fa fa-plus'></span> Add New</a>";
+      // ?edit[og_tapas_c_to_p][und][0][default]=".$nid."&".$group_access." - temporarily remove prepopulating fields because it is not working
       if (strpos($variables['content'],'view-empty') !== false) {
-        $variables['content'] = '<div class="view view-collections-in-project view-id-collections_in_project view-display-id-block view-dom-id-'.$variables['elements']['#views_contextual_links_info']['views_ui']['view']->dom_id.'"><div class="view-empty">There are no collections yet in this project. <a href="/node/add/tapas-collection?edit[og_tapas_c_to_p][und][0][default]='.$nid.'&'.$group_access.'" class="btn btn-xs btn-default"> Add Collection</a>    </div></div>';
+        $variables['content'] = '<div class="view view-collections-in-project view-id-collections_in_project view-display-id-block view-dom-id-'.$variables['elements']['#views_contextual_links_info']['views_ui']['view']->dom_id.'"><div class="view-empty">There are no collections yet in this project. <a href="/node/add/tapas-collection" class="btn btn-xs btn-default"> Add Collection</a>    </div></div>';
+        // ?edit[og_tapas_c_to_p][und][0][default]='.$nid.'&'.$group_access.' - temporarily remove prepopulating fields because it is not working
       }
     }
   }
